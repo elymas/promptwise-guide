@@ -1,0 +1,10 @@
+---
+import Diagram from './Diagram.astro';
+import { path, type Topic } from '../data/topics';
+interface Props { topic: Topic; }
+const {topic} = Astro.props;
+---
+<a class="guide-card" href={path(`guides/${topic.slug}/`)} style={`--card-accent:${topic.accent}`}>
+  <Diagram kind={topic.slug} accent={topic.accent} />
+  <div class="card-body"><div class="eyebrow"><span>{topic.number} / {topic.english}</span><span class="arrow" aria-hidden="true">↗</span></div><h3>{topic.title}</h3><p>{topic.summary}</p><div class="tags">{topic.sources.slice(0,3).map(id => <span>{id}</span>)}{topic.sources.length>3 && <span>+{topic.sources.length-3}</span>}</div></div>
+</a>

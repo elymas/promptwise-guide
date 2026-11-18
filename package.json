@@ -1,0 +1,14 @@
+{
+  "name": "promptwise-guide",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "astro check && astro build",
+    "preview": "astro preview --host 127.0.0.1",
+    "check": "astro check"
+  },
+  "dependencies": { "astro": "^6.0.8", "@astrojs/check": "^0.9.8", "@astrojs/sitemap": "^3.7.1", "typescript": "^6.0.2" },
+  "packageManager": "pnpm@9.15.9"
+}

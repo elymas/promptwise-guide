@@ -1,0 +1,74 @@
+{
+  "depth": {
+    "status": "planned",
+    "video": null,
+    "poster": null,
+    "duration": 6,
+    "model": null,
+    "resolution": null,
+    "reviewed": false
+  },
+  "light": {
+    "status": "planned",
+    "video": null,
+    "poster": null,
+    "duration": 6,
+    "model": null,
+    "resolution": null,
+    "reviewed": false
+  },
+  "contact": {
+    "status": "planned",
+    "video": null,
+    "poster": null,
+    "duration": 6,
+    "model": null,
+    "resolution": null,
+    "reviewed": false
+  },
+  "camera": {
+    "status": "planned",
+    "video": null,
+    "poster": null,
+    "duration": 6,
+    "model": null,
+    "resolution": null,
+    "reviewed": false
+  },
+  "performance": {
+    "status": "planned",
+    "video": null,
+    "poster": null,
+    "duration": 6,
+    "model": null,
+    "resolution": null,
+    "reviewed": false
+  },
+  "identity": {
+    "status": "planned",
+    "video": null,
+    "poster": null,
+    "duration": 6,
+    "model": null,
+    "resolution": null,
+    "reviewed": false
+  },
+  "continuity": {
+    "status": "planned",
+    "video": null,
+    "poster": null,
+    "duration": 6,
+    "model": null,
+    "resolution": null,
+    "reviewed": false
+  },
+  "story": {
+    "status": "planned",
+    "video": null,
+    "poster": null,
+    "duration": 6,
+    "model": null,
+    "resolution": null,
+    "reviewed": false
+  }
+}
