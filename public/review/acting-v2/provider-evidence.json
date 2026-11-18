@@ -1,0 +1,16 @@
+{
+  "provider": "Tein",
+  "api_host": "https://api.tein.ai",
+  "generation_route": "/v1/generate",
+  "readback_route": "/v1/jobs/{id}",
+  "verified_at": "2026-11-18T14:27:54.901622+00:00",
+  "job_id": "gen_0da1b2a06188cd22ab4b5e30fd6c21f7",
+  "status": "succeeded",
+  "model": "seedance-2",
+  "quality": "mini",
+  "usage_cost_usd": 0.0684,
+  "key_disclosed": false,
+  "fallback_provider": null,
+  "batch_usage_cost_usd": 2.9937,
+  "cap_usd": 3
+}

@@ -11,5 +11,9 @@
   "new_spend_so_far_usd": 0,
   "authorization_status": "additional_budget_required_before_paid_requests",
   "includes": "6 stills,20 video requests112 output seconds;7 acting A/B cards+1 camera card, local assembly and ACT04/10 analyses; targeted repairs only inside3USD",
-  "excludes": "720p/G5, paid TTS, top-up, unrelated pilot funds"
+  "excludes": "720p/G5, paid TTS, top-up, unrelated pilot funds",
+  "status": "historical_quote_before_execution",
+  "execution_status": "completed_drafts",
+  "actual_cost_usd": "2.9937",
+  "result_url": "https://elymas.github.io/promptwise-guide/review/acting-v2/"
 }

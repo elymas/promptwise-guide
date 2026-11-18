@@ -1,0 +1,337 @@
+{
+  "provider": "Tein",
+  "api_host": "https://api.tein.ai",
+  "new_batch_cost_usd": 2.9937,
+  "new_video_requests": 24,
+  "preserved_cards": [
+    "ACT-03",
+    "ACT-08",
+    "ACT-11"
+  ],
+  "cards": [
+    {
+      "id": "ACT-01",
+      "title": "안도: 표정 이름에서 보이는 호흡으로",
+      "kind": "direction_specificity",
+      "duration": 6,
+      "status": "차이가 명확함 · 호흡 뒤에 도착하는 미소",
+      "note": "얼굴이 크게 보이는 같은 근접 프레임으로 두 테이크를 다시 만들었습니다. A는 작은 미소를 보이다 차분하게 돌아오고, B는 중반의 긴 내쉼 뒤 얼굴이 풀리며 후반에 미소가 자리 잡습니다. 이전의 작은 얼굴 크기보다 순서를 읽기 쉽습니다.",
+      "cast": [
+        "CLAIRE"
+      ],
+      "speech": [],
+      "a_label": "안도라는 감정 이름",
+      "b_label": "호흡 → 이완 → 미소",
+      "a": "media/ACT-01-a-take.mp4",
+      "a_poster": "media/ACT-01-a-take.jpg",
+      "a_name": "ACT-01-a-video-v2",
+      "b": "media/ACT-01-b-take.mp4",
+      "b_poster": "media/ACT-01-b-take.jpg",
+      "b_name": "ACT-01-b-video-v2",
+      "comparison": "media/ACT-01-comparison.mp4"
+    },
+    {
+      "id": "ACT-02",
+      "title": "서운함: 유지하는 미소와 잠깐 무너지는 가면",
+      "kind": "direction_specificity",
+      "duration": 6,
+      "status": "개선 · 미소가 무너졌다 돌아오는 전환",
+      "note": "B는 미소를 유지하다 중반에 표정이 내려앉고 후반에 다시 미소를 회복합니다. A는 미소가 약해진 상태로 마무리됩니다. 얼굴을 크게 잡아 이전보다 전환을 읽기 쉽게 했습니다.",
+      "cast": [
+        "CLAIRE"
+      ],
+      "speech": [],
+      "a_label": "일반 지시",
+      "b_label": "구체적인 지시",
+      "a": "media/ACT-02-a-take.mp4",
+      "a_poster": "media/ACT-02-a-take.jpg",
+      "a_name": "ACT-02-a-video-v1",
+      "b": "media/ACT-02-b-take.mp4",
+      "b_poster": "media/ACT-02-b-take.jpg",
+      "b_name": "ACT-02-b-video-v1",
+      "comparison": "media/ACT-02-comparison.mp4"
+    },
+    {
+      "id": "ACT-03",
+      "title": "웃음 억제와 짧은 해방",
+      "kind": "direction_specificity",
+      "duration": 6,
+      "note": "이전 배치의 선택 영상을 유지했습니다. A는 후반에 넓게 웃고, B는 입술과 볼로 웃음을 억제한 뒤 작은 미소로 회복합니다. 이 장면만 실제 렌즈를 바라보는 설정입니다.",
+      "status": "차이가 뚜렷함 · 큰 웃음과 웃음 억제",
+      "cast": [
+        "CLAIRE"
+      ],
+      "speech": [],
+      "a_label": "일반 지시",
+      "b_label": "구체적인 지시",
+      "a": "media/ACT-03-a-video-v1.mp4",
+      "a_poster": "media/ACT-03-a-video-v1.jpg",
+      "a_name": "ACT-03-a-video-v1",
+      "b": "media/ACT-03-b-video-v1.mp4",
+      "b_poster": "media/ACT-03-b-video-v1.jpg",
+      "b_name": "ACT-03-b-video-v1",
+      "comparison": "media/ACT-03-comparison.mp4"
+    },
+    {
+      "id": "ACT-04",
+      "title": "같은 연기의 넓은 화면과 얼굴 크롭",
+      "kind": "local_analysis",
+      "source_id": "ACT-01",
+      "source": "media/ACT-01-b-take.mp4",
+      "crops": [
+        {
+          "role": "CLAIRE",
+          "src": "media/ACT-04-claire-crop.mp4",
+          "width": 400,
+          "height": 224,
+          "filter": "crop=400:224:166:102,setsar=1"
+        }
+      ],
+      "full": "media/ACT-04-full.mp4"
+    },
+    {
+      "id": "ACT-05",
+      "title": "2인 원테이크: 동시 반응과 시간차 반응",
+      "kind": "timing_contrast",
+      "duration": 8,
+      "status": "개선 · 같은 공간과 시간차 반응",
+      "note": "중앙 코너를 빼고 마주 보는 배치·연속된 테이블·선반을 공유합니다. B는 Erin이 먼저 웃고 Claire가 뒤늦게 풀리는 구간이 보입니다. A는 두 반응이 더 가깝게 묶입니다. 참조 방식 때문에 시작 구도와 손 위치에는 편차가 남습니다. 거의 무음인 A의 공개 소리는 GEO-01 A의 같은 작업 환경음을 사용했습니다.",
+      "cast": [
+        "CLAIRE",
+        "ERIN"
+      ],
+      "speech": [],
+      "a_label": "동시에 풀리는 긴장",
+      "b_label": "시간차로 풀리는 긴장",
+      "a": "media/ACT-05-a-take.mp4",
+      "a_poster": "media/ACT-05-a-take.jpg",
+      "a_name": "ACT-05-a-video-v1",
+      "b": "media/ACT-05-b-take.mp4",
+      "b_poster": "media/ACT-05-b-take.jpg",
+      "b_name": "ACT-05-b-video-v1",
+      "comparison": "media/ACT-05-comparison.mp4"
+    },
+    {
+      "id": "ACT-06",
+      "title": "어깨 너머: 한국어 화자와 영어권 청자",
+      "kind": "coverage_demo",
+      "duration": 8,
+      "status": "단일 커버리지 시연",
+      "note": "같은 공간에서 Claire의 한국어 “찾았어”를 말하는 샷과 Erin의 조용한 반응을 별도로 생성해 연결했습니다. 대응 어깨 너머 앵글의 좌우·좌석·시선 축을 유지합니다. 다른 반응 후보는 ASR이 서로 다른 문장으로 읽는 등 발성 여부가 불명확해 제외했고, 이 항목은 A/B 우열 비교가 아닌 공간·화자 관계를 확인하는 단일 시연으로 정리했습니다.",
+      "cast": [
+        "CLAIRE",
+        "ERIN"
+      ],
+      "speech": [
+        {
+          "speaker": "CLAIRE",
+          "language": "ko",
+          "text": "찾았어.",
+          "start": 0.8,
+          "end": 2
+        }
+      ],
+      "format": "single_demo",
+      "video": "media/ACT-06-b-take.mp4",
+      "video_poster": "media/ACT-06-b-take.jpg"
+    },
+    {
+      "id": "ACT-07",
+      "title": "어깨 너머: 한국어 질문과 영어 답변",
+      "kind": "direction_specificity",
+      "duration": 8,
+      "status": "개선 · 대응 OTS에서 한국어 → 영어",
+      "note": "같은 공간 마스터에서 Claire를 보는 어깨 너머 샷과 Erin을 보는 반대 샷을 파생했습니다. Claire의 “괜찮아?” 뒤 Erin의 “I'm fine.”을 각 언어로 확인했습니다. A/B 모두 대사는 맞으며, 이 항목은 이전 배치보다 공간과 관계를 명확하게 보여주는 커버리지 개선입니다.",
+      "cast": [
+        "CLAIRE",
+        "ERIN"
+      ],
+      "speech": [
+        {
+          "speaker": "CLAIRE",
+          "language": "ko",
+          "text": "괜찮아?",
+          "start": 0.8,
+          "end": 2
+        },
+        {
+          "speaker": "ERIN",
+          "language": "en",
+          "text": "I'm fine.",
+          "start": 3,
+          "end": 4.5
+        }
+      ],
+      "a_label": "일반 지시",
+      "b_label": "구체적인 지시",
+      "a": "media/ACT-07-a-take.mp4",
+      "a_poster": "media/ACT-07-a-take.jpg",
+      "a_name": "ACT-07-a-s1-video-v1",
+      "b": "media/ACT-07-b-take.mp4",
+      "b_poster": "media/ACT-07-b-take.jpg",
+      "b_name": "ACT-07-b-s1-video-v1",
+      "comparison": "media/ACT-07-comparison.mp4"
+    },
+    {
+      "id": "ACT-08",
+      "title": "같은 영어 대사, 다른 속마음",
+      "kind": "subtext_contrast",
+      "duration": 6,
+      "note": "이전 배치의 선택 영상을 유지했습니다. A는 편안한 미소, 수정한 B는 눈썹 수축·눈감음·입술 긴장이 보입니다. 같은 영어 대사지만 속마음이 다릅니다. B의 감정은 의도보다 강해 미세 연기의 우수성이나 A보다 낫다는 의미로 제시하지 않습니다.",
+      "status": "차이가 뚜렷함 · 안도와 불편한 속마음",
+      "cast": [
+        "ERIN"
+      ],
+      "speech": [
+        {
+          "speaker": "ERIN",
+          "language": "en",
+          "text": "I'm fine. Really.",
+          "start": 1,
+          "end": 3
+        }
+      ],
+      "a_label": "편안한 안도",
+      "b_label": "서운함을 숨김",
+      "a": "media/ACT-08-a-video-v1.mp4",
+      "a_poster": "media/ACT-08-a-video-v1.jpg",
+      "a_name": "ACT-08-a-video-v1",
+      "b": "media/ACT-08-b-video-v2.mp4",
+      "b_poster": "media/ACT-08-b-video-v2.jpg",
+      "b_name": "ACT-08-b-video-v2",
+      "comparison": "media/ACT-08-comparison.mp4"
+    },
+    {
+      "id": "ACT-09",
+      "title": "놀람: 원인을 듣고 한 번 반응한 뒤 회복",
+      "kind": "direction_specificity",
+      "duration": 6,
+      "status": "개선 · 큰 놀람과 한 번의 작은 반응",
+      "note": "A는 몸과 손이 크게 올라가고 B는 한 번의 짧은 반응 뒤 침착하게 회복합니다. 한국어 대사를 확인했습니다. 효과음은 지시한 약2초보다 빠르게 발생해 정확한 초 단위 타이밍의 통과본으로 제시하지 않습니다. 가짜 충격음을 덧붙여 시점을 고치지 않았습니다.",
+      "cast": [
+        "CLAIRE"
+      ],
+      "speech": [
+        {
+          "speaker": "CLAIRE",
+          "language": "ko",
+          "text": "깜짝이야.",
+          "start": 3.5,
+          "end": 4.5
+        }
+      ],
+      "a_label": "일반 지시",
+      "b_label": "구체적인 지시",
+      "a": "media/ACT-09-a-take.mp4",
+      "a_poster": "media/ACT-09-a-take.jpg",
+      "a_name": "ACT-09-a-video-v1",
+      "b": "media/ACT-09-b-take.mp4",
+      "b_poster": "media/ACT-09-b-take.jpg",
+      "b_name": "ACT-09-b-video-v1",
+      "comparison": "media/ACT-09-comparison.mp4"
+    },
+    {
+      "id": "ACT-10",
+      "title": "2인 원테이크의 두 얼굴 동기 관찰",
+      "kind": "local_analysis",
+      "source_id": "ACT-05",
+      "source": "media/ACT-05-b-take.mp4",
+      "crops": [
+        {
+          "role": "CLAIRE",
+          "src": "media/ACT-10-claire-crop.mp4",
+          "width": 320,
+          "height": 240,
+          "filter": "crop=320:240:32:42,setsar=1"
+        },
+        {
+          "role": "ERIN",
+          "src": "media/ACT-10-erin-crop.mp4",
+          "width": 320,
+          "height": 240,
+          "filter": "crop=320:240:512:36,setsar=1"
+        }
+      ]
+    },
+    {
+      "id": "ACT-11",
+      "title": "같은 한국어 대사, 안도와 단호한 경고",
+      "kind": "subtext_contrast",
+      "duration": 6,
+      "note": "이전 배치의 선택 영상을 유지했습니다. 같은 한국어 “이제 됐어”를 수정한 A/B 모두에서 확인했습니다. A는 긴장이 풀리며 웃고 B는 미소를 거두고 굳은 표정을 유지합니다. 말의 뜻을 바꾸는 표정·호흡·말투의 대비이며 B가 더 좋은 연기라는 의미가 아닙니다.",
+      "status": "차이가 뚜렷함 · 안도와 단호한 경고",
+      "cast": [
+        "CLAIRE"
+      ],
+      "speech": [
+        {
+          "speaker": "CLAIRE",
+          "language": "ko",
+          "text": "이제 됐어.",
+          "start": 1,
+          "end": 3
+        }
+      ],
+      "a_label": "긴장이 풀리는 안도",
+      "b_label": "단호한 경고",
+      "a": "media/ACT-11-a-video-v2.mp4",
+      "a_poster": "media/ACT-11-a-video-v2.jpg",
+      "a_name": "ACT-11-a-video-v2",
+      "b": "media/ACT-11-b-video-v1.mp4",
+      "b_poster": "media/ACT-11-b-video-v1.jpg",
+      "b_name": "ACT-11-b-video-v1",
+      "comparison": "media/ACT-11-comparison.mp4"
+    },
+    {
+      "id": "ACT-12",
+      "title": "작은 부탁과 다급한 호출: 발성·몸의 대비",
+      "kind": "subtext_contrast",
+      "duration": 6,
+      "status": "차이가 명확함 · 작은 부탁과 다급한 호출",
+      "note": "같은 영어 “Claire, listen.”을 확인했습니다. A는 편안한 작은 부탁, B는 준비 호흡·몸 기울임·눈썹 수축과 뚜렷한 입 움직임을 보입니다. 원음 평균 레벨 차이는 약0.8dB로 작아, 음량 차이만으로 효과를 주장하지 않습니다. 양쪽에 같은 음량 보정값을 적용했습니다.",
+      "cast": [
+        "ERIN"
+      ],
+      "speech": [
+        {
+          "speaker": "ERIN",
+          "language": "en",
+          "text": "Claire, listen.",
+          "start": 1,
+          "end": 3
+        }
+      ],
+      "a_label": "작은 부탁",
+      "b_label": "다급한 호출",
+      "a": "media/ACT-12-a-take.mp4",
+      "a_poster": "media/ACT-12-a-take.jpg",
+      "a_name": "ACT-12-a-video-v1",
+      "b": "media/ACT-12-b-take.mp4",
+      "b_poster": "media/ACT-12-b-take.jpg",
+      "b_name": "ACT-12-b-video-v1",
+      "comparison": "media/ACT-12-comparison.mp4"
+    },
+    {
+      "id": "GEO-01",
+      "title": "같은 공간을 확인하는 고정 구도와 횡이동",
+      "kind": "camera_contrast",
+      "duration": 8,
+      "status": "개선 · 고정 구도와 공간을 잇는 횡이동",
+      "note": "A는 대체로 고정된 구도, B는 가까운 테이블과 먼 선반이 다르게 이동하고 창 쪽이 더 드러납니다. 두 배우가 공유하는 공간을 보여주는 카메라 비교입니다. B는 카메라 영상 참조를 사용하므로 A와 시작 구도가 정확히 같지는 않습니다. 소리는 양쪽 모두 GEO-01 A의 환경음을 사용해 통일했습니다.",
+      "cast": [
+        "CLAIRE",
+        "ERIN"
+      ],
+      "speech": [],
+      "a_label": "고정 구도",
+      "b_label": "물리적 횡이동",
+      "a": "media/GEO-01-a-take.mp4",
+      "a_poster": "media/GEO-01-a-take.jpg",
+      "a_name": "GEO-01-a-video-v1",
+      "b": "media/GEO-01-b-take.mp4",
+      "b_poster": "media/GEO-01-b-take.jpg",
+      "b_name": "GEO-01-b-video-v1",
+      "comparison": "media/GEO-01-comparison.mp4"
+    }
+  ]
+}
