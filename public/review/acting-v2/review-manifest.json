@@ -94,8 +94,8 @@
       "title": "2인 원테이크: 동시 반응과 시간차 반응",
       "kind": "timing_contrast",
       "duration": 8,
-      "status": "개선 · 같은 공간과 시간차 반응",
-      "note": "중앙 코너를 빼고 마주 보는 배치·연속된 테이블·선반을 공유합니다. B는 Erin이 먼저 웃고 Claire가 뒤늦게 풀리는 구간이 보입니다. 참조 방식 때문에 시작 구도와 손 위치에는 편차가 남습니다. 2026-11-19 오디오 수정: 대사 없는 B의 불명확한 발성을 제거하고 A/B 모두 같은 작업 GEO-01 A의 환경음으로 통일했습니다. 영상 프레임·표정·타이밍은 보존했습니다.",
+      "status": "B 원음 포함 재생성 · 사용자 검토 대기",
+      "note": "2026-11-19 B의 영상과 고유 원음을 Tein으로 함께 재생성했습니다. Erin이 먼저 미소 짓고 Claire가 뒤늦게 풀리며, 소리가 있는 구간도 시간차로 나타납니다. A나 다른 테이크의 환경음·발성을 B에 덧씌우지 않았습니다. 거의 무음이던 카메라 영상 참조 결과 2개는 제외하고 검수 스틸 시작 프레임 방식으로 전환했습니다. 이 때문에 A와 카메라 경로·손 위치에도 편차가 있으며 하나의 변수만 바꾼 통제 비교는 아닙니다. 원음은 음량만 보정했습니다. 지시한 2초·4.5초를 정확히 지킨 결과로 표시하지 않으며 비언어 발성의 음색·명료도는 사용자 청취 확인 대기입니다.",
       "cast": [
         "CLAIRE",
         "ERIN"
@@ -106,11 +106,13 @@
       "a": "media/ACT-05-a-take.mp4",
       "a_poster": "media/ACT-05-a-take.jpg",
       "a_name": "ACT-05-a-video-v1",
-      "b": "media/ACT-05-b-take-audio-v2.mp4",
-      "b_poster": "media/ACT-05-b-take-audio-v2.jpg",
-      "b_name": "ACT-05-b-video-v1",
-      "comparison": "media/ACT-05-comparison-audio-v2.mp4",
-      "audio_revision": "v2"
+      "b": "media/ACT-05-b-native-v3.mp4",
+      "b_poster": "media/ACT-05-b-native-v3.jpg",
+      "b_name": "ACT-05-b-native-video-v3",
+      "comparison": "media/ACT-05-comparison-native-v3.mp4",
+      "audio_revision": "native-v3",
+      "native_audio": true,
+      "native_source_sha256": "b73761eeead78a270dcd80f13ec887880e7ab4c6012a8ef90e1ef48b56d9543f"
     },
     {
       "id": "ACT-06",
@@ -236,26 +238,26 @@
       "title": "2인 원테이크의 두 얼굴 동기 관찰",
       "kind": "local_analysis",
       "source_id": "ACT-05",
-      "source": "media/ACT-05-b-take-audio-v2.mp4",
+      "source": "media/ACT-05-b-native-v3.mp4",
       "crops": [
         {
           "role": "CLAIRE",
-          "src": "media/ACT-10-claire-crop-audio-v2.mp4",
+          "src": "media/ACT-10-claire-crop-native-v3.mp4",
           "width": 320,
           "height": 240,
-          "filter": "crop=320:240:32:42,setsar=1",
-          "audio_source": "media/ACT-05-b-take-audio-v2.mp4"
+          "filter": "crop=320:240:14:40,setsar=1",
+          "audio_source": "media/ACT-05-b-native-v3.mp4"
         },
         {
           "role": "ERIN",
-          "src": "media/ACT-10-erin-crop-audio-v2.mp4",
+          "src": "media/ACT-10-erin-crop-native-v3.mp4",
           "width": 320,
           "height": 240,
-          "filter": "crop=320:240:512:36,setsar=1",
-          "audio_source": "media/ACT-05-b-take-audio-v2.mp4"
+          "filter": "crop=320:240:514:34,setsar=1",
+          "audio_source": "media/ACT-05-b-native-v3.mp4"
         }
       ],
-      "audio_note": "ACT-05 B 수정본과 주 화면·두 크롭의 AAC 오디오가 동일합니다. 보조 크롭은 중복 소리를 막기 위해 기본 무음입니다."
+      "audio_note": "주 화면과 두 크롭은 새 ACT05 B 마스터의 동일한 AAC 원음을 공유합니다. 보조 화면만 중복 방지를 위해 기본 무음입니다."
     },
     {
       "id": "ACT-11",
@@ -337,5 +339,8 @@
       "b_name": "GEO-01-b-video-v1",
       "comparison": "media/GEO-01-comparison.mp4"
     }
-  ]
+  ],
+  "native_regeneration_cost_usd": 0.4792,
+  "native_regeneration_cap_usd": 0.5,
+  "native_regeneration_video_requests": 3
 }
