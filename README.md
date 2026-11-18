@@ -1,6 +1,6 @@
 # FRAME / NOTES
 
-An independent Korean directing guide and attributed PromptWise reference library, with new Claire educational examples in production.
+An independent Korean directing guide and attributed PromptWise reference library, with newly generated Claire educational examples published as 480p drafts.
 
 Site: https://elymas.github.io/promptwise-guide/
 
@@ -37,4 +37,4 @@ Original reference text: PromptWise (`https://promptwise-free.vercel.app/`). Ind
 
 ## Example production
 
-New examples feature the adult fictional Claire Yoon (27). Eight 6-second silent 16:9 examples are planned. The story example illustrates a midpoint performance, not an entire five-step story. Prior Fanvue videos are not reused. Generation and publication status must be recorded accurately in the media manifest.
+New examples feature the adult fictional Claire Yoon (27). Eight approximately 6-second silent 16:9 examples are published as 480p drafts, with per-clip observations. The story example illustrates a midpoint performance, not an entire five-step story. Prior Fanvue videos are not reused. Generation and publication status are recorded in the media manifest. The provider returns 864×496 H.264 drafts; public copies are fit and padded to 854×480 without stretching or adding audio. 720p final production remains subject to draft review and its separate budget.

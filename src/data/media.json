@@ -1,74 +1,82 @@
 {
   "depth": {
-    "status": "planned",
-    "video": null,
-    "poster": null,
-    "duration": 6,
-    "model": null,
-    "resolution": null,
-    "reviewed": false
+    "status": "draft",
+    "video": "media/claire/depth-draft-v2.mp4",
+    "poster": "media/claire/depth-poster.jpg",
+    "duration": 6.04,
+    "model": "Seedance 2 mini",
+    "resolution": "480p",
+    "reviewed": false,
+    "reviewNote": "전경·배경의 시차가 보이며, 첫 초안의 긴 눈 감음을 수정했습니다. 이동 거리와 방향의 정량적 재현은 검증하지 않았습니다."
   },
   "light": {
-    "status": "planned",
-    "video": null,
-    "poster": null,
-    "duration": 6,
-    "model": null,
-    "resolution": null,
-    "reviewed": false
+    "status": "draft",
+    "video": "media/claire/light-draft-v1.mp4",
+    "poster": "media/claire/light-poster.jpg",
+    "duration": 6.04,
+    "model": "Seedance 2 mini",
+    "resolution": "480p",
+    "reviewed": false,
+    "reviewNote": "창 쪽으로 얼굴을 돌리는 동작과 배경 램프 유지가 확인됩니다. 실제 회전 폭은 요청한 15도보다 큽니다."
   },
   "contact": {
-    "status": "planned",
-    "video": null,
-    "poster": null,
-    "duration": 6,
-    "model": null,
-    "resolution": null,
-    "reviewed": false
+    "status": "draft",
+    "video": "media/claire/contact-draft-v1.mp4",
+    "poster": "media/claire/contact-poster.jpg",
+    "duration": 6.04,
+    "model": "Seedance 2 mini",
+    "resolution": "480p",
+    "reviewed": false,
+    "reviewNote": "오른 검지로 누르고 놓는 동작과 왼손의 고정이 보입니다. 천의 미세한 눌림은 약해 본편 해상도에서 다시 확인해야 합니다."
   },
   "camera": {
-    "status": "planned",
-    "video": null,
-    "poster": null,
-    "duration": 6,
-    "model": null,
-    "resolution": null,
-    "reviewed": false
+    "status": "draft",
+    "video": "media/claire/camera-draft-v1.mp4",
+    "poster": "media/claire/camera-poster.jpg",
+    "duration": 6.04,
+    "model": "Seedance 2 mini",
+    "resolution": "480p",
+    "reviewed": false,
+    "reviewNote": "카메라의 오빗과 난간·도시의 시차가 보입니다. 회전 폭과 마지막 정지는 계획과 차이가 있습니다."
   },
   "performance": {
-    "status": "planned",
-    "video": null,
-    "poster": null,
-    "duration": 6,
-    "model": null,
-    "resolution": null,
-    "reviewed": false
+    "status": "draft",
+    "video": "media/claire/performance-draft-v1.mp4",
+    "poster": "media/claire/performance-poster.jpg",
+    "duration": 6.04,
+    "model": "Seedance 2 mini",
+    "resolution": "480p",
+    "reviewed": false,
+    "reviewNote": "단독 장면에서 렌즈 오른쪽의 상대를 듣는 시선, 쉼 뒤 입을 다문 미소가 보입니다. 실제 스틸의 시선 방향을 유지했습니다."
   },
   "identity": {
-    "status": "planned",
-    "video": null,
-    "poster": null,
-    "duration": 6,
-    "model": null,
-    "resolution": null,
-    "reviewed": false
+    "status": "draft",
+    "video": "media/claire/identity-draft-v1.mp4",
+    "poster": "media/claire/identity-poster.jpg",
+    "duration": 6.04,
+    "model": "Seedance 2 mini",
+    "resolution": "480p",
+    "reviewed": false,
+    "reviewNote": "한 번의 컷 뒤에도 얼굴·머리·셔츠가 이어집니다. 두 번째 앵글 변화는 요청한 15도보다 큽니다."
   },
   "continuity": {
-    "status": "planned",
-    "video": null,
-    "poster": null,
-    "duration": 6,
-    "model": null,
-    "resolution": null,
-    "reviewed": false
+    "status": "draft",
+    "video": "media/claire/continuity-draft-v2.mp4",
+    "poster": "media/claire/continuity-poster.jpg",
+    "duration": 6.04,
+    "model": "Seedance 2 mini",
+    "resolution": "480p",
+    "reviewed": false,
+    "reviewNote": "첫 초안의 컵 위치 점프를 수정했습니다. 컷 전에는 컵을 들고 유지하고, 컷 뒤에서 같은 오른손으로 내려놓습니다."
   },
   "story": {
-    "status": "planned",
-    "video": null,
-    "poster": null,
-    "duration": 6,
-    "model": null,
-    "resolution": null,
-    "reviewed": false
+    "status": "draft",
+    "video": "media/claire/story-draft-v1.mp4",
+    "poster": "media/claire/story-poster.jpg",
+    "duration": 6.04,
+    "model": "Seedance 2 mini",
+    "resolution": "480p",
+    "reviewed": false,
+    "reviewNote": "열린 봉투를 같은 오른손에 든 채 시선을 들고 표정이 바뀝니다. 숨을 들이쉴 때 입이 열리며, 전체 5단계 이야기를 시연하는 영상은 아닙니다."
   }
 }
