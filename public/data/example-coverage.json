@@ -12,7 +12,7 @@
     "ACT-05:b",
     "ACT-10"
   ],
-  "new_paid_generations": 16,
+  "new_paid_generations": 21,
   "examples": [
     {
       "id": "E01",
@@ -46,14 +46,14 @@
       "title": "랙 포커스",
       "format": "video_ab",
       "state": "needs_rework",
-      "label": "공간 비례 보완 필요",
+      "label": "비례 개선 · 초점 비교 보완 필요",
       "links": [
         {
-          "label": "이전 A/B · 재작업 대상",
-          "href": "review/optics-v1/#E02"
+          "label": "새 스틸·영상과 초점 실패 구간",
+          "href": "review/optics-e02-scale-result/"
         }
       ],
-      "note": "컵이 인물에 비해 크게 보이고 상판의 앞뒤 거리 단서가 부족하다는 피드백을 반영해 시작 스틸의 선택을 해제했습니다. 정상 컵 크기·테이블 경계·카메라 거리비를 새로 설계했습니다.",
+      "note": "새 공통 스틸에서 정상 컵 크기·공유 상판·머리 여백은 개선했습니다. A/B 영상은 얼굴 초점이 조기에 살아나고 컵의 흐림이 약해 비교 기준 미달입니다. 성공 예제로 확정하지 않았습니다.",
       "source_ids": [
         "PW-018-p12"
       ],
@@ -65,6 +65,10 @@
         {
           "label": "문제 분석·수정3D 배치·재작업안",
           "href": "review/optics-e02-scale/"
+        },
+        {
+          "label": "이전 영상 보관",
+          "href": "review/optics-v1/#E02"
         },
         {
           "label": "최초 제작안 보관",
@@ -605,12 +609,30 @@
     "failed_requests": 8,
     "failed_request_cost_usd": "0",
     "pending_requests": 0,
-    "status": "E02_scale_rework_required",
+    "status": "E02_scale_improved_focus_rework_required",
     "user_accepted": false,
     "archived_pair": "E02",
-    "new_scale_review_spend_usd": "0"
+    "new_scale_review_spend_usd": "0.3766"
   },
   "requires_rework": [
     "E02"
-  ]
+  ],
+  "repair_batch": {
+    "id": "E02-scale-20261119",
+    "provider": "Tein",
+    "approved_cap_usd": "0.40",
+    "actual_usd": "0.3766",
+    "remaining_usd": "0.0234",
+    "requests": 6,
+    "successful_images": 2,
+    "successful_videos": 3,
+    "failed_requests": 1,
+    "failed_request_cost_usd": "0",
+    "pending_requests": 0,
+    "funds_transferred": false,
+    "status": "scale_improved_focus_comparison_failed",
+    "comparison_ready": false,
+    "user_accepted": false,
+    "review_url": "review/optics-e02-scale-result/"
+  }
 }

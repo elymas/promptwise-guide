@@ -77,6 +77,16 @@
           }
         },
         "selected": {},
+        "active_override": {
+          "source_directory": "scale-review-2026-11-19",
+          "G3_sha256": "326345f98229d6e5032ad3fef07e0f72d45b337058389670b69c9c07ee3f24c2",
+          "public_href": "../optics-e02-scale-result/",
+          "actual_usd": "0.3766",
+          "approved_cap_usd": ".40",
+          "comparison_ready": false,
+          "status": "scale_improved_focus_comparison_failed",
+          "user_accepted": false
+        },
         "comparison_switch_seconds": 6.111979
       },
       "requests": [

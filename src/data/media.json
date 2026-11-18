@@ -16,12 +16,12 @@
     "cast": [
       "Claire"
     ],
-    "coverageScope": "E01 레이어 비교 · 랙 포커스·역광 비는 제작 예정",
+    "coverageScope": "E01 레이어 초안 · E02 비례 개선/초점 보완 · E03 비 조명 초안",
     "audioLabel": "생성 원음 · 환경음",
     "related": [
       {
-        "label": "랙 포커스 · 공간 비례 재검토",
-        "href": "review/optics-e02-scale/"
+        "label": "랙 포커스 · 비례 개선·초점 보완 기록",
+        "href": "review/optics-e02-scale-result/"
       },
       {
         "label": "역광의 비 · 소리 영상 A/B",

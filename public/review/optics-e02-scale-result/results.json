@@ -1,0 +1,501 @@
+{
+  "id": "E02-scale-20261119",
+  "provider": "Tein",
+  "api_host": "https://api.tein.ai",
+  "draft": true,
+  "user_accepted": false,
+  "actual_usd": "0.3766",
+  "approved_cap_usd": ".40",
+  "parent_actual_usd": "1.2209",
+  "funds_transferred": false,
+  "G2": {
+    "stage": "G2",
+    "user_accepted": false,
+    "selection": {
+      "file": "exports/stills/E02-scale-scene-image-v2.png",
+      "sha256": "9956685ca29f444ca9725b69f34be229d8565fb52e6f31ec9f339fc8d0e049c5",
+      "approved_for_draft": true
+    },
+    "observed_ko": "작고 보통 비례의 컵, 컵 접촉과 뒤 인물이 하나의 나무 상판으로 연결되고 상판 뒷변·물러나는 옆선이 읽힘. 머리 전체와 컵 전체가 보이며 실제 렌즈를 향한 얼굴. v2는 컵 테두리/손잡이 선명, 눈/얼굴/셔츠 흐림을 원본 확대에서 확인. 새 v1만 단독 참조해 초점층을 수정했다.",
+    "design_deviation_ko": "사진의 컵 몸통 높이는 온전한 머리 높이의 대략 1/3로 읽혀 G1의 50–65% 목표보다 작다. 앞 모서리가 모두 프레임 안에 있지는 않다. 정상 컵/인물 비례와 연속 상판의 자연스러움을 우선하여 초안 입력으로 선택한다. 85×60cm·거리·광학 수치를 실제 사진의 실측값으로 주장하지 않는다.",
+    "guide_mapping": [
+      {
+        "guide": "1.5 / 2.11 / 3.4",
+        "application": "스틸 먼저 확대 검수, 실패 초점층만 수정, 초점 대상 하나와 물리적으로 분리된 두 대상",
+        "evidence": [
+          "review/focus-still-compare.jpg",
+          "review/cup-v2-crop.png",
+          "review/scene-v2-view.jpg"
+        ]
+      },
+      {
+        "guide": "3.1 / 3.5 / QUALITY-STANDARD 공간 비례",
+        "application": "자연 재질·공유 상판 접촉·눈/입/헤어/귀걸이·손 중복 없음 확인. 실측 비례와 AI 출력을 구분함.",
+        "status": "G2_draft_pass"
+      }
+    ],
+    "human_audio_review": "not_applicable_still"
+  },
+  "G3": {
+    "ready_for_user_review": true,
+    "comparison_ready": false,
+    "user_accepted": false,
+    "G5_performed": false,
+    "status": "spatial_scale_improved_focus_comparison_failed",
+    "actual_paid_usd": "0.3766",
+    "selected": {
+      "a": {
+        "name": "E02-scale-a-video-v1",
+        "gain_db": 22.5,
+        "native_rms_dbfs": -51.45,
+        "native_peak_dbfs": -36.81,
+        "poster_time": 4,
+        "approved_for_comparison": false,
+        "purpose": "failure_review_only"
+      },
+      "b": {
+        "name": "E02-scale-b-video-v1",
+        "gain_db": 19.5,
+        "native_rms_dbfs": -48.49,
+        "native_peak_dbfs": -31.14,
+        "poster_time": 4,
+        "approved_for_comparison": false,
+        "purpose": "failure_review_only"
+      }
+    },
+    "labels_ko": {
+      "a": "컵 초점 유지 지시 · 기준 미달",
+      "b": "눈으로 초점 이동 지시 · 조기 전환"
+    },
+    "observation_ko": "새 스틸과 두 영상에서 정상적인 컵 크기와 연속 상판은 유지됩니다. 그러나 A는0.5초부터 얼굴이 선명해져 컵 초점 고정 지시를 지키지 못했습니다. B도 계획한2–3초보다 이르게 얼굴이 선명해지고 컵 테두리의 흐림이 약해, A/B의 극적인 초점 인계를 보여 주지 못했습니다. 위 두 편은 성공 예제가 아닌 실제 생성 결과 검토용입니다.",
+    "limitations_ko": "A/B 모두 광학 비교 기준 미달입니다. 정확한 전환 시점은0.5초 간격 프레임의 관찰 범위이며 실측 광학값이 아닙니다. 약한 프레임·자세 변화도 있어 통제된 실제 촬영 실험이 아닙니다. A의 추가v2는초점 유지 실패와 약2–6초 긴 눈 감음으로 제외했습니다. Bv2표준 얼굴 경로 시험은공급자가 face_detected로 거부했고 과금0입니다. 원인은확정되지 않았습니다. 추가 유료 요청은없으며720p본편으로 올리지 않았습니다.",
+    "audio_note_ko": "각 테이크가 생성한 고유 원음에 일정한 음량 보정만 적용했습니다(A +22.5dB / B +19.5dB). 원본 전체 구간의 오디오 에너지와 클리핑 없음은 기술적으로 확인했습니다. 소리의 자연스러움·명료도에 대한 실제 청취 승인은 사용자 검토 전입니다.",
+    "rejected": [
+      {
+        "name": "E02-scale-a-video-v2",
+        "reason_ko": "초점 고정 실패, 약2–6초 긴 눈 감음",
+        "paid_usd": "0.1026"
+      },
+      {
+        "name": "E02-scale-b-video-v2",
+        "reason_ko": "pass_faces:false documented standard route rejected face_detected; do not repeat",
+        "paid_usd": "0"
+      }
+    ],
+    "guide_mapping": [
+      {
+        "guide": "3.4 / G3",
+        "evidence": "review/grids/E02-scale-a-video-v1.jpg, E02-scale-b-video-v1.jpg",
+        "result": "focus_variable_failed"
+      },
+      {
+        "guide": "3.10 / G3",
+        "evidence": "review/grids/E02-scale-a-video-v2.jpg",
+        "result": "prolonged_eyes_closed_failed"
+      },
+      {
+        "guide": "QUALITY-STANDARD spatial scale / G2",
+        "evidence": "review/scene-v2-view.jpg",
+        "result": "natural_scale_improved_not_metric_match"
+      }
+    ],
+    "next_ko": "새 장면의 공간 비례는 유지한다. 다음 유료 요청 전 프롬프트 팀의 랙 포커스 결과·모델 지원 사례와 Tein 입력 경로를 비교하고, 성공 사례에 근거한 입력/모델 변경안을 먼저 만든다. 같은 Mini 지시 반복과720p확대는 진행하지 않는다."
+  },
+  "requests": [
+    {
+      "name": "E02-scale-scene-image-v1",
+      "stage": "image",
+      "status": "succeeded",
+      "actual_usd": "0.0344",
+      "selected": false,
+      "prompt": "A photographed live-action frame. Use reference image1 only for the same adult Korean woman’s face, black hair and bangs, earrings and blue-gray shirt; do not inherit its portrait crop or plain background. Natural skin and cloth at this distance, without reshaping, uniform pores or retouching.\n\nClaire sits on a chair just behind the far edge of an ordinary rectangular timber table in a quiet workshop. The table is about85cm wide and60cm deep, with a tabletop about74cm above the floor. Show its front corners, both receding side edges and the rear edge immediately in front of her torso so one continuous shared tabletop is unmistakable. A normal small cream ceramic cup, about9.5cm high and8cm across the rim, rests on the near-left part of this same table. The whole cup and handle are inside frame, with visible wood around the contact point. Its body is about half the height of Claire’s full visible head, not face-sized. Claire’s head, including the top of her hair, remains wholly inside the upper-right part of the frame. Her hands rest out of view.\n\nThe camera is outside the front edge, at about seated-eye height and far enough back for a moderate perspective: roughly1.8m to the cup and2.4m to Claire. A60mm lens look gives a medium view across the table, with the tabletop depth visible rather than filling the entire lower frame. Claire looks at the actual camera lens with relaxed closed lips. Focus sharply on the near cup rim and handle; Claire is softly defocused behind it while her identity and silhouette remain recognizable. One soft side window lights both subjects consistently. Quiet shelves behind her. No text, logos, steam, extra cups or oversized props.",
+      "parameters": {
+        "model": "seedream-5-5",
+        "mode": "image_to_image",
+        "resolution": "2K",
+        "aspect_ratio": "16:9",
+        "creative_mode": false
+      }
+    },
+    {
+      "name": "E02-scale-scene-image-v2",
+      "stage": "image",
+      "status": "succeeded",
+      "actual_usd": "0.0344",
+      "selected": true,
+      "prompt": "A photographed live-action frame, editing the supplied new workshop scene. Preserve the exact camera position, framing, woman’s identity, gaze, hair, earrings, blue-gray shirt, lighting, normal small cream cup and its handle, cup contact point, continuous timber tabletop and every spatial relationship. Preserve the entire visible head and cup.\n\nChange only the optical focus: the near cup rim and handle are the ONLY sharply resolved subject. The seated woman is on a distinctly out-of-focus plane behind the cup: her eyes, facial details, hair and shirt should be visibly soft, while her silhouette and identity remain recognizable. A shallow-focus cinema lens focused on the cup, not on the person. The tabletop near the cup remains readable; the distant tabletop and workshop fall off naturally in focus. No zoom, crop, object resizing, pose change, added objects, text, beauty retouching or lighting change.",
+      "parameters": {
+        "model": "seedream-5-5",
+        "mode": "image_to_image",
+        "resolution": "2K",
+        "aspect_ratio": "16:9",
+        "creative_mode": false
+      }
+    },
+    {
+      "name": "E02-scale-a-video-v1",
+      "stage": "video",
+      "status": "succeeded",
+      "actual_usd": "0.1026",
+      "selected": true,
+      "prompt": "One continuous six-second live-action shot starting at the supplied new photographic frame. Keep the normal cup scale, table geometry, contact point, face, camera framing, light and exposure unchanged. Claire keeps her gaze on the actual stationary camera lens with brief natural blinks and quiet nasal breathing; her head and chin keep the first-frame orientation, her lips relaxed, and she does not look down at the cup. The cup, chair and table remain still. The camera is physically locked, without push-in, zoom, cuts or scale changes. Native sound for this individual take: low workshop room tone and quiet breath across the full clip, without speech, music or a focus-motor effect.\n\nKeep only the foreground cup rim and handle sharply focused for the entire shot. The face behind stays softly defocused. No focus change.",
+      "parameters": {
+        "model": "seedance-2",
+        "quality": "mini",
+        "resolution": "480p",
+        "ratio": "16:9",
+        "duration": 6,
+        "generate_audio": true,
+        "creative_mode": false
+      }
+    },
+    {
+      "name": "E02-scale-b-video-v1",
+      "stage": "video",
+      "status": "succeeded",
+      "actual_usd": "0.1026",
+      "selected": true,
+      "prompt": "One continuous six-second live-action shot starting at the supplied new photographic frame. Keep the normal cup scale, table geometry, contact point, face, camera framing, light and exposure unchanged. Claire keeps her gaze on the actual stationary camera lens with brief natural blinks and quiet nasal breathing; her head and chin keep the first-frame orientation, her lips relaxed, and she does not look down at the cup. The cup, chair and table remain still. The camera is physically locked, without push-in, zoom, cuts or scale changes. Native sound for this individual take: low workshop room tone and quiet breath across the full clip, without speech, music or a focus-motor effect.\n\nHold the near cup focus for0–2s. During2–3s, make one smooth optical focus pull onto Claire’s eyes, allowing the cup to become soft. Hold eye focus for3–6s. No face morphing, object movement or camera movement.",
+      "parameters": {
+        "model": "seedance-2",
+        "quality": "mini",
+        "resolution": "480p",
+        "ratio": "16:9",
+        "duration": 6,
+        "generate_audio": true,
+        "creative_mode": false
+      }
+    },
+    {
+      "name": "E02-scale-b-video-v2",
+      "stage": "video",
+      "status": "failed",
+      "actual_usd": "0",
+      "selected": false,
+      "prompt": "Animate the supplied photographed frame as one continuous six-second locked-off optical rack-focus demonstration. Preserve the exact cup size, tabletop, seated woman, composition and lighting.\n\nFor the first TWO seconds, ONLY the near cream cup rim is in sharp focus. The entire woman behind it, especially her eyes and facial details, is STRONGLY OUT OF FOCUS, visibly indistinct soft shapes, exactly as in the supplied frame. At second2, slowly pull the lens focus AWAY FROM the cup TO the woman’s eyes, finishing at second3. For the final three seconds, ONLY her eyes are sharp; the entire foreground cup is now STRONGLY OUT OF FOCUS with a visibly diffuse rim and handle. This pronounced exchange of optical sharpness is the sole main event. Maintain one shallow focus plane, never both subjects sharp.\n\nThe camera stays in exactly the same place with identical framing; the objects do not move or resize. She keeps looking at the stationary lens with relaxed closed lips, natural brief blinks and quiet nasal breath. The native sound for this take is quiet workshop room tone and breath throughout, without dialogue, music or lens sound effects.",
+      "parameters": {
+        "model": "seedance-2",
+        "quality": "mini",
+        "resolution": "480p",
+        "ratio": "16:9",
+        "duration": 6,
+        "generate_audio": true,
+        "creative_mode": false
+      }
+    },
+    {
+      "name": "E02-scale-a-video-v2",
+      "stage": "video",
+      "status": "succeeded",
+      "actual_usd": "0.1026",
+      "selected": false,
+      "prompt": "A six-second photographed live-action shot of the small ceramic cup in the supplied frame. The cup rim and handle stay crisply IN FOCUS for the WHOLE six seconds. The seated woman BEHIND the cup stays STRONGLY OUT OF FOCUS for the WHOLE six seconds: her facial features, eyes, hair and shirt remain indistinct optical blur. Preserve exactly this foreground-focused shallow depth of field from the supplied frame. Never bring the woman into focus, never autofocus, never rack focus. Only the cup is sharp.\n\nKeep the camera position, framing, normal cup size, tabletop geometry, lighting and object contact unchanged. The woman’s silhouette remains still apart from a little natural breathing; she faces the stationary lens with closed lips. No head turn, object movement, camera move, crop or zoom. Native audio for this individual take: quiet continuous workshop room tone and soft nasal breathing, no speech, music or added focus-motor sound.",
+      "parameters": {
+        "model": "seedance-2",
+        "quality": "mini",
+        "resolution": "480p",
+        "ratio": "16:9",
+        "duration": 6,
+        "generate_audio": true,
+        "creative_mode": false
+      }
+    }
+  ],
+  "published": {
+    "a": {
+      "file": "media/E02-a.mp4",
+      "gain_db": 22.5,
+      "source_sha256": "c0bc50213bc667bf016fe2f0710ea099058bb535d912c1b78b46c5bf3372ee75",
+      "probe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "mime_codec_string": "avc1.64001f",
+            "width": 864,
+            "height": 496,
+            "coded_width": 864,
+            "coded_height": 496,
+            "has_b_frames": 2,
+            "pix_fmt": "yuv420p",
+            "level": 31,
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "24/1",
+            "avg_frame_rate": "24/1",
+            "time_base": "1/12288",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 74240,
+            "duration": "6.041667",
+            "bit_rate": "896389",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "145",
+            "extradata_size": 44,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler"
+            }
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_long_name": "AAC (Advanced Audio Coding)",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "codec_tag": "0x6134706d",
+            "mime_codec_string": "mp4a.40.2",
+            "sample_fmt": "fltp",
+            "sample_rate": "32000",
+            "channels": 2,
+            "channel_layout": "stereo",
+            "bits_per_sample": 0,
+            "initial_padding": 1024,
+            "id": "0x2",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/32000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 194560,
+            "duration": "6.080000",
+            "bit_rate": "177708",
+            "nb_frames": "191",
+            "extradata_size": 5,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "SoundHandler"
+            }
+          }
+        ],
+        "format": {
+          "nb_streams": 2,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "6.080000",
+          "size": "818851",
+          "bit_rate": "1077435",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "encoder": "Lavf63.1.102"
+          }
+        }
+      }
+    },
+    "b": {
+      "file": "media/E02-b.mp4",
+      "gain_db": 19.5,
+      "source_sha256": "06715fd802bdcad1068cff8851ba495d19e0347e24956d5ea2ace2ffbf9e6260",
+      "probe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "mime_codec_string": "avc1.64001f",
+            "width": 864,
+            "height": 496,
+            "coded_width": 864,
+            "coded_height": 496,
+            "has_b_frames": 2,
+            "pix_fmt": "yuv420p",
+            "level": 31,
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "24/1",
+            "avg_frame_rate": "24/1",
+            "time_base": "1/12288",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 74240,
+            "duration": "6.041667",
+            "bit_rate": "1037232",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "145",
+            "extradata_size": 44,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler"
+            }
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_long_name": "AAC (Advanced Audio Coding)",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "codec_tag": "0x6134706d",
+            "mime_codec_string": "mp4a.40.2",
+            "sample_fmt": "fltp",
+            "sample_rate": "32000",
+            "channels": 2,
+            "channel_layout": "stereo",
+            "bits_per_sample": 0,
+            "initial_padding": 1024,
+            "id": "0x2",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/32000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 194560,
+            "duration": "6.080000",
+            "bit_rate": "169176",
+            "nb_frames": "191",
+            "extradata_size": 5,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "SoundHandler"
+            }
+          }
+        ],
+        "format": {
+          "nb_streams": 2,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "6.080000",
+          "size": "918691",
+          "bit_rate": "1208803",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "encoder": "Lavf63.1.102"
+          }
+        }
+      }
+    }
+  },
+  "comparison": {
+    "file": "media/E02-comparison.mp4",
+    "switch_seconds": 6.111979,
+    "duration": 12.192
+  },
+  "files": {
+    "media/E02-a.jpg": "8bfb7ff569e737fe58b858d5a161ce1959e4130e30a7071ce1558fca6c1ab199",
+    "media/E02-a.mp4": "053add8a034111f92630fddfdfd9fab65bb4b6cefcd33ab9deee2853c21723dd",
+    "media/E02-a.vtt": "5808da8542668a09c8ba67ef3eabdd94f42faff8fe1cf586b85c70bb7dcb51d8",
+    "media/E02-b.jpg": "fdaba20fe80fa1a242ccf8ec6feccdf0dec191f3b8b8b5c67c3e23070825b898",
+    "media/E02-b.mp4": "6e9e44bc6b6222c7f1448b2381bf57a0637ba94ff69d19f1dba852712b2a8da5",
+    "media/E02-b.vtt": "5808da8542668a09c8ba67ef3eabdd94f42faff8fe1cf586b85c70bb7dcb51d8",
+    "media/E02-comparison.mp4": "25f75c1a6f256807c9562c4aeabb1d4376fb3f0a3b8a60301c4e25dca69ff038",
+    "media/E02-comparison.vtt": "5e5787e8bee50542cee8d72f597eb379ef1bdffe37e8da9305e37b1ec8b07771",
+    "media/a-cup.jpg": "5e91da928305c5418171460f5d58df5218a23c6d9b80793afffa75228c2a4511",
+    "media/a-eyes.jpg": "8d2e11e9606b53808e28a0811e66abfd68caad9a937ec9eda1f94acfa3a35de4",
+    "media/b-cup.jpg": "8546a7121803759624335a40f428eb57aecf9a1462f831e0d17a7e5b6483e6cd",
+    "media/b-eyes.jpg": "8b4c501f6e11dc7257fa998e14ce52dc333604a22354d295a23db7396a7a10b4",
+    "media/new-plate.jpg": "ef833df536bbf0e38b17c605f59dc0b8e1d941413cc84ea1b715fe8868de7edb",
+    "media/old-plate.jpg": "dbef4db38841ef56513a0c61c86dc3fbd2765df7cf23049e92d667e461ad3feb"
+  }
+}

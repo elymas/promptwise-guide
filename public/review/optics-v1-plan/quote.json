@@ -45,7 +45,7 @@
   "repairs": "Targeted revisions for E02/E03/E05 only inside the same cap; no fixed number guarantee, actual usage.cost reconciled per job",
   "quote_uncertainty": "Estimate includes recent extra-reference fee; actual API cost can differ. Keep reserved headroom and stop if next request would exceed cap.",
   "generation_spend_so_far_usd": "1.2209",
-  "status": "E02_scale_rework_required",
+  "status": "E02_scale_improved_focus_rework_required",
   "remaining_first_pass_estimate_usd": "0.6846",
   "current_cumulative_estimate_to_complete_first_pass_usd": "0.8736",
   "selected_stills": 4,
@@ -59,5 +59,15 @@
   "actual_results_url": "../optics-v1/",
   "requires_rework": [
     "E02"
-  ]
+  ],
+  "active_E02_override": {
+    "source_directory": "scale-review-2026-11-19",
+    "G3_sha256": "326345f98229d6e5032ad3fef07e0f72d45b337058389670b69c9c07ee3f24c2",
+    "public_href": "../optics-e02-scale-result/",
+    "actual_usd": "0.3766",
+    "approved_cap_usd": ".40",
+    "comparison_ready": false,
+    "status": "scale_improved_focus_comparison_failed",
+    "user_accepted": false
+  }
 }
