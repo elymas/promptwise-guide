@@ -94,8 +94,8 @@
       "title": "2인 원테이크: 동시 반응과 시간차 반응",
       "kind": "timing_contrast",
       "duration": 8,
-      "status": "B 원음 포함 재생성 · 사용자 검토 대기",
-      "note": "2026-11-19 B의 영상과 고유 원음을 Tein으로 함께 재생성했습니다. Erin이 먼저 미소 짓고 Claire가 뒤늦게 풀리며, 소리가 있는 구간도 시간차로 나타납니다. A나 다른 테이크의 환경음·발성을 B에 덧씌우지 않았습니다. 거의 무음이던 카메라 영상 참조 결과 2개는 제외하고 검수 스틸 시작 프레임 방식으로 전환했습니다. 이 때문에 A와 카메라 경로·손 위치에도 편차가 있으며 하나의 변수만 바꾼 통제 비교는 아닙니다. 원음은 음량만 보정했습니다. 지시한 2초·4.5초를 정확히 지킨 결과로 표시하지 않으며 비언어 발성의 음색·명료도는 사용자 청취 확인 대기입니다.",
+      "status": "사용자 확정 · B 고유 원음",
+      "note": "2026-11-19 B의 영상과 고유 원음을 Tein으로 함께 재생성했습니다. Erin이 먼저 미소 짓고 Claire가 뒤늦게 풀리며, 소리가 있는 구간도 시간차로 나타납니다. A나 다른 테이크의 환경음·발성을 B에 덧씌우지 않았습니다. 거의 무음이던 카메라 영상 참조 결과 2개는 제외하고 검수 스틸 시작 프레임 방식으로 전환했습니다. 이 때문에 A와 카메라 경로·손 위치에도 편차가 있으며 하나의 변수만 바꾼 통제 비교는 아닙니다. 원음은 음량만 보정했습니다. 지시한 2초·4.5초를 정확히 지킨 결과로 표시하지 않으며 2026-11-19 사용자가 ACT-05 B와 이를 공유하는 ACT-10 재생성본을 확정했습니다.",
       "cast": [
         "CLAIRE",
         "ERIN"
@@ -112,7 +112,12 @@
       "comparison": "media/ACT-05-comparison-native-v3.mp4",
       "audio_revision": "native-v3",
       "native_audio": true,
-      "native_source_sha256": "b73761eeead78a270dcd80f13ec887880e7ab4c6012a8ef90e1ef48b56d9543f"
+      "native_source_sha256": "b73761eeead78a270dcd80f13ec887880e7ab4c6012a8ef90e1ef48b56d9543f",
+      "approval": {
+        "scope": "variant_b",
+        "accepted_at": "2026-11-18T16:35:48.974944+00:00",
+        "user_message": "확정"
+      }
     },
     {
       "id": "ACT-06",
@@ -257,7 +262,13 @@
           "audio_source": "media/ACT-05-b-native-v3.mp4"
         }
       ],
-      "audio_note": "주 화면과 두 크롭은 새 ACT05 B 마스터의 동일한 AAC 원음을 공유합니다. 보조 화면만 중복 방지를 위해 기본 무음입니다."
+      "audio_note": "주 화면과 두 크롭은 새 ACT05 B 마스터의 동일한 AAC 원음을 공유합니다. 보조 화면만 중복 방지를 위해 기본 무음입니다.",
+      "approval": {
+        "scope": "shared_source_and_both_crops",
+        "accepted_at": "2026-11-18T16:35:48.974944+00:00",
+        "user_message": "확정"
+      },
+      "status": "사용자 확정 · B 원음과 동기 크롭"
     },
     {
       "id": "ACT-11",
@@ -342,5 +353,9 @@
   ],
   "native_regeneration_cost_usd": 0.4792,
   "native_regeneration_cap_usd": 0.5,
-  "native_regeneration_video_requests": 3
+  "native_regeneration_video_requests": 3,
+  "user_confirmed_examples": [
+    "ACT-05:b",
+    "ACT-10"
+  ]
 }

@@ -1,82 +1,297 @@
 {
   "depth": {
     "status": "draft",
-    "video": "media/claire/depth-draft-v2.mp4",
-    "poster": "media/claire/depth-poster.jpg",
-    "duration": 6.04,
-    "model": "Seedance 2 mini",
+    "statusLabel": "480p 초안 · 검토 중",
+    "video": "review/claire-v2/media/E01-b-mini-v1.mp4",
+    "poster": "review/claire-v2/media/E01-b-mini-v1.jpg",
+    "duration": 6.08,
+    "model": "Seedance 2 Mini",
     "resolution": "480p",
     "reviewed": false,
-    "reviewNote": "전경·배경의 시차가 보이며, 첫 초안의 긴 눈 감음을 수정했습니다. 이동 거리와 방향의 정량적 재현은 검증하지 않았습니다."
+    "studyLabel": "E01 B · 앞·중간·뒤 레이어",
+    "caption": "가까운 기둥 너머 Claire와 먼 선반을 함께 봅니다.",
+    "watchFor": "가까운 기둥이 먼저 화면 밖으로 빠지고 뒤 선반이 남는지 확인하세요.",
+    "reviewNote": "실제 렌즈를 향하는 시선을 확인한 새 파일럿입니다. A/B는 인물 위치·배경 배치에도 차이가 있어 이동 거리의 정량 재현을 뜻하지 않습니다.",
+    "reviewUrl": "review/claire-v2/#E01",
+    "cast": [
+      "Claire"
+    ],
+    "coverageScope": "E01 레이어 비교 · 랙 포커스·역광 비는 제작 예정",
+    "audioLabel": "생성 원음 · 환경음",
+    "related": [],
+    "archive": {
+      "status": "draft",
+      "video": "media/claire/depth-draft-v2.mp4",
+      "poster": "media/claire/depth-poster.jpg",
+      "duration": 6.04,
+      "model": "Seedance 2 mini",
+      "resolution": "480p",
+      "reviewed": false,
+      "reviewNote": "전경·배경의 시차가 보이며, 첫 초안의 긴 눈 감음을 수정했습니다. 이동 거리와 방향의 정량적 재현은 검증하지 않았습니다."
+    },
+    "description": "가까운 기둥 너머 Claire와 먼 선반을 함께 봅니다. 가까운 기둥이 먼저 화면 밖으로 빠지고 뒤 선반이 남는지 확인하세요.",
+    "captions": "media/captions/depth.vtt"
   },
   "light": {
     "status": "draft",
-    "video": "media/claire/light-draft-v1.mp4",
-    "poster": "media/claire/light-poster.jpg",
-    "duration": 6.04,
-    "model": "Seedance 2 mini",
+    "statusLabel": "480p 초안 · 검토 중",
+    "video": "review/claire-v2/media/E04-b-mini-v2.mp4",
+    "poster": "review/claire-v2/media/E04-b-mini-v2.jpg",
+    "duration": 6.08,
+    "model": "Seedance 2 Mini",
     "resolution": "480p",
     "reviewed": false,
-    "reviewNote": "창 쪽으로 얼굴을 돌리는 동작과 배경 램프 유지가 확인됩니다. 실제 회전 폭은 요청한 15도보다 큽니다."
+    "studyLabel": "E04 B · 빛의 방향",
+    "caption": "Claire 얼굴의 밝은 면과 반대편 그림자를 비교합니다.",
+    "watchFor": "얼굴 오른쪽의 밝은 면, 코·턱 그림자의 경계를 보세요.",
+    "reviewNote": "B는 빛의 방향과 함께 그림자 경도도 달라졌습니다. 하드·소프트 광원만 바꾼 별도 비교는 아직 없습니다.",
+    "reviewUrl": "review/claire-v2/#E04",
+    "cast": [
+      "Claire"
+    ],
+    "coverageScope": "E04 방향 비교 · E05 그림자 경도·E06 림 라이트는 제작 예정",
+    "audioLabel": "생성 원음 · 환경음",
+    "related": [],
+    "archive": {
+      "status": "draft",
+      "video": "media/claire/light-draft-v1.mp4",
+      "poster": "media/claire/light-poster.jpg",
+      "duration": 6.04,
+      "model": "Seedance 2 mini",
+      "resolution": "480p",
+      "reviewed": false,
+      "reviewNote": "창 쪽으로 얼굴을 돌리는 동작과 배경 램프 유지가 확인됩니다. 실제 회전 폭은 요청한 15도보다 큽니다."
+    },
+    "description": "Claire 얼굴의 밝은 면과 반대편 그림자를 비교합니다. 얼굴 오른쪽의 밝은 면, 코·턱 그림자의 경계를 보세요.",
+    "captions": "media/captions/light.vtt"
   },
   "contact": {
     "status": "draft",
-    "video": "media/claire/contact-draft-v1.mp4",
-    "poster": "media/claire/contact-poster.jpg",
-    "duration": 6.04,
-    "model": "Seedance 2 mini",
+    "statusLabel": "480p 초안 · 검토 중",
+    "video": "review/claire-v2/media/E07-b-physics-v1.mp4",
+    "poster": "review/claire-v2/media/E07-b-physics-v1.jpg",
+    "duration": 6.042,
+    "model": "Seedance 2.5",
     "resolution": "480p",
     "reviewed": false,
-    "reviewNote": "오른 검지로 누르고 놓는 동작과 왼손의 고정이 보입니다. 천의 미세한 눌림은 약해 본편 해상도에서 다시 확인해야 합니다."
+    "studyLabel": "E07 B · 착지와 물의 반응",
+    "caption": "발이 물에 닿는 순간의 반응을 관찰하는 예시입니다.",
+    "watchFor": "약 1–2초의 착지와 튀는 물방울이 같은 위치에서 시작하는지 보세요.",
+    "reviewNote": "B의 착지에서 물 반응이 커집니다. 뒤 발이 들리는 후속 자세는 검토가 남아 있으며 입김·눈물의 표면 반응을 시연한 영상은 아닙니다.",
+    "reviewUrl": "review/claire-v2/#E07",
+    "cast": [
+      "Claire"
+    ],
+    "coverageScope": "E07 물 접촉 비교 · E08 입김·E09 눈물은 제작 예정",
+    "audioLabel": "생성 원음 · 발소리와 물소리",
+    "related": [],
+    "archive": {
+      "status": "draft",
+      "video": "media/claire/contact-draft-v1.mp4",
+      "poster": "media/claire/contact-poster.jpg",
+      "duration": 6.04,
+      "model": "Seedance 2 mini",
+      "resolution": "480p",
+      "reviewed": false,
+      "reviewNote": "오른 검지로 누르고 놓는 동작과 왼손의 고정이 보입니다. 천의 미세한 눌림은 약해 본편 해상도에서 다시 확인해야 합니다."
+    },
+    "description": "발이 물에 닿는 순간의 반응을 관찰하는 예시입니다. 약 1–2초의 착지와 튀는 물방울이 같은 위치에서 시작하는지 보세요.",
+    "captions": "media/captions/contact.vtt"
   },
   "camera": {
     "status": "draft",
-    "video": "media/claire/camera-draft-v1.mp4",
-    "poster": "media/claire/camera-poster.jpg",
-    "duration": 6.04,
-    "model": "Seedance 2 mini",
+    "statusLabel": "480p 초안 · 검토 중",
+    "video": "review/acting-v2/media/GEO-01-b-take.mp4",
+    "poster": "review/acting-v2/media/GEO-01-b-take.jpg",
+    "duration": 8.0,
+    "model": "Seedance 2 Mini",
     "resolution": "480p",
     "reviewed": false,
-    "reviewNote": "카메라의 오빗과 난간·도시의 시차가 보입니다. 회전 폭과 마지막 정지는 계획과 차이가 있습니다."
+    "studyLabel": "GEO-01 B · 같은 공간을 잇는 횡이동",
+    "caption": "연속된 테이블과 선반을 배경으로 두 사람이 같은 공간에 있음을 봅니다.",
+    "watchFor": "테이블과 먼 선반이 서로 다른 속도로 움직이는지 확인하세요.",
+    "reviewNote": "카메라의 횡이동을 고정 구도와 비교한 초안입니다. B는 거의 무음이어서 비교용 소리에 GEO-01 A 환경음을 사용했습니다. 광학 줌·오빗·크레인 시연과 구분합니다.",
+    "reviewUrl": "review/acting-v2/#GEO-01",
+    "cast": [
+      "Claire",
+      "Erin"
+    ],
+    "coverageScope": "횡이동 비교 · E10 전진 돌리도 별도 파일럿으로 연결",
+    "audioLabel": "편집 환경음 · GEO-01 A 원음 공유",
+    "related": [
+      {
+        "label": "고정 구도와 전진 돌리 E10",
+        "href": "review/claire-v2/#E10"
+      }
+    ],
+    "archive": {
+      "status": "draft",
+      "video": "media/claire/camera-draft-v1.mp4",
+      "poster": "media/claire/camera-poster.jpg",
+      "duration": 6.04,
+      "model": "Seedance 2 mini",
+      "resolution": "480p",
+      "reviewed": false,
+      "reviewNote": "카메라의 오빗과 난간·도시의 시차가 보입니다. 회전 폭과 마지막 정지는 계획과 차이가 있습니다."
+    },
+    "description": "연속된 테이블과 선반을 배경으로 두 사람이 같은 공간에 있음을 봅니다. 테이블과 먼 선반이 서로 다른 속도로 움직이는지 확인하세요.",
+    "captions": "media/captions/camera.vtt"
   },
   "performance": {
-    "status": "draft",
-    "video": "media/claire/performance-draft-v1.mp4",
-    "poster": "media/claire/performance-poster.jpg",
-    "duration": 6.04,
-    "model": "Seedance 2 mini",
+    "status": "approved",
+    "statusLabel": "사용자 확정 · 480p",
+    "video": "review/acting-v2/media/ACT-05-b-native-v3.mp4",
+    "poster": "review/acting-v2/media/ACT-05-b-native-v3.jpg",
+    "duration": 8.096,
+    "model": "Seedance 2 Mini",
     "resolution": "480p",
-    "reviewed": false,
-    "reviewNote": "단독 장면에서 렌즈 오른쪽의 상대를 듣는 시선, 쉼 뒤 입을 다문 미소가 보입니다. 실제 스틸의 시선 방향을 유지했습니다."
+    "reviewed": true,
+    "studyLabel": "ACT-05 B · 시간차로 풀리는 긴장",
+    "caption": "Erin이 먼저 미소 짓고 Claire가 뒤늦게 풀리는 2인 원테이크입니다.",
+    "watchFor": "앞선 Erin의 표정과 뒤늦은 Claire의 표정·호흡을 함께 보세요.",
+    "reviewNote": "영상과 B 고유 원음을 함께 재생성한 확정 테이크입니다. 카메라·손 위치와 반응 시점에는 A와 편차가 있습니다. ACT-10은 같은 테이크의 두 얼굴을 동기 관찰합니다.",
+    "reviewUrl": "review/acting-v2/#ACT-05",
+    "cast": [
+      "Claire",
+      "Erin"
+    ],
+    "coverageScope": "ACT-05 B·ACT-10 확정 · 나머지 연기 예시는 검토 중",
+    "audioLabel": "B 고유 생성 원음 · 비언어 반응과 환경음",
+    "related": [
+      {
+        "label": "확정된 두 얼굴 동기 분석 ACT-10",
+        "href": "review/acting-v2/#ACT-10"
+      },
+      {
+        "label": "웃음을 참는 얼굴 ACT-03",
+        "href": "review/acting-v2/#ACT-03"
+      }
+    ],
+    "archive": {
+      "status": "draft",
+      "video": "media/claire/performance-draft-v1.mp4",
+      "poster": "media/claire/performance-poster.jpg",
+      "duration": 6.04,
+      "model": "Seedance 2 mini",
+      "resolution": "480p",
+      "reviewed": false,
+      "reviewNote": "단독 장면에서 렌즈 오른쪽의 상대를 듣는 시선, 쉼 뒤 입을 다문 미소가 보입니다. 실제 스틸의 시선 방향을 유지했습니다."
+    },
+    "description": "Erin이 먼저 미소 짓고 Claire가 뒤늦게 풀리는 2인 원테이크입니다. 앞선 Erin의 표정과 뒤늦은 Claire의 표정·호흡을 함께 보세요.",
+    "captions": "media/captions/performance.vtt"
   },
   "identity": {
     "status": "draft",
-    "video": "media/claire/identity-draft-v1.mp4",
-    "poster": "media/claire/identity-poster.jpg",
-    "duration": 6.04,
-    "model": "Seedance 2 mini",
+    "statusLabel": "480p 초안 · 검토 중",
+    "video": "review/acting-v2/media/ACT-01-b-take.mp4",
+    "poster": "review/acting-v2/media/ACT-01-b-take.jpg",
+    "duration": 6.08,
+    "model": "Seedance 2 Mini",
     "resolution": "480p",
     "reviewed": false,
-    "reviewNote": "한 번의 컷 뒤에도 얼굴·머리·셔츠가 이어집니다. 두 번째 앵글 변화는 요청한 15도보다 큽니다."
+    "studyLabel": "ACT-01 B · 얼굴 근접 관찰",
+    "caption": "Claire의 근접 샷을 얼굴·헤어·의상 대조용으로 연결했습니다.",
+    "watchFor": "눈·입 주변과 머리 모양, 같은 옷의 식별 특징을 원본 참조와 대조하세요.",
+    "reviewNote": "기존 연기 배치의 한 앵글을 활용한 관찰 자료입니다. 세 앵글의 동일 인물 A/B 실험이나 최종 신원·피부 검증을 완료한 영상은 아닙니다.",
+    "reviewUrl": "review/acting-v2/#ACT-01",
+    "cast": [
+      "Claire"
+    ],
+    "coverageScope": "E17 관련 자료만 있음 · 전용 다중 앵글 비교 미완료",
+    "audioLabel": "생성 원음 · 호흡과 환경음",
+    "related": [
+      {
+        "label": "참조 역할과 실제 입력 사례 E18",
+        "href": "examples/coverage/#reference-roles"
+      },
+      {
+        "label": "대응 어깨 너머 앵글 ACT-07",
+        "href": "review/acting-v2/#ACT-07"
+      }
+    ],
+    "archive": {
+      "status": "draft",
+      "video": "media/claire/identity-draft-v1.mp4",
+      "poster": "media/claire/identity-poster.jpg",
+      "duration": 6.04,
+      "model": "Seedance 2 mini",
+      "resolution": "480p",
+      "reviewed": false,
+      "reviewNote": "한 번의 컷 뒤에도 얼굴·머리·셔츠가 이어집니다. 두 번째 앵글 변화는 요청한 15도보다 큽니다."
+    },
+    "description": "Claire의 근접 샷을 얼굴·헤어·의상 대조용으로 연결했습니다. 눈·입 주변과 머리 모양, 같은 옷의 식별 특징을 원본 참조와 대조하세요.",
+    "captions": "media/captions/identity.vtt"
   },
   "continuity": {
     "status": "draft",
-    "video": "media/claire/continuity-draft-v2.mp4",
-    "poster": "media/claire/continuity-poster.jpg",
-    "duration": 6.04,
-    "model": "Seedance 2 mini",
+    "statusLabel": "480p 초안 · 검토 중",
+    "video": "review/acting-v2/media/ACT-07-b-take.mp4",
+    "poster": "review/acting-v2/media/ACT-07-b-take.jpg",
+    "duration": 8.021,
+    "model": "Seedance 2 Mini",
     "resolution": "480p",
     "reviewed": false,
-    "reviewNote": "첫 초안의 컵 위치 점프를 수정했습니다. 컷 전에는 컵을 들고 유지하고, 컷 뒤에서 같은 오른손으로 내려놓습니다."
+    "studyLabel": "ACT-07 B · 대화의 축과 대응 OTS",
+    "caption": "Claire의 한국어 질문과 Erin의 영어 답변을 대응 어깨 너머 샷으로 연결합니다.",
+    "watchFor": "Claire의 오른쪽 시선과 Erin의 왼쪽 시선이 서로 마주보는지 확인하세요.",
+    "reviewNote": "각 4초의 독립 샷을 하드 컷으로 이은 커버리지입니다. 대화 축을 설명하는 변형 예시이며 손·소품 인계 전용 A/B 비교는 아직 없습니다.",
+    "reviewUrl": "review/acting-v2/#ACT-07",
+    "cast": [
+      "Claire",
+      "Erin"
+    ],
+    "coverageScope": "E19 대화 축 변형 예시 · E20 손·소품·E21 인계는 미완료",
+    "audioLabel": "생성 원음 · Claire 한국어 / Erin 영어",
+    "related": [],
+    "archive": {
+      "status": "draft",
+      "video": "media/claire/continuity-draft-v2.mp4",
+      "poster": "media/claire/continuity-poster.jpg",
+      "duration": 6.04,
+      "model": "Seedance 2 mini",
+      "resolution": "480p",
+      "reviewed": false,
+      "reviewNote": "첫 초안의 컵 위치 점프를 수정했습니다. 컷 전에는 컵을 들고 유지하고, 컷 뒤에서 같은 오른손으로 내려놓습니다."
+    },
+    "description": "Claire의 한국어 질문과 Erin의 영어 답변을 대응 어깨 너머 샷으로 연결합니다. Claire의 오른쪽 시선과 Erin의 왼쪽 시선이 서로 마주보는지 확인하세요. 대사: Claire “괜찮아?” / Erin “I’m fine.”",
+    "captions": "media/captions/continuity.vtt"
   },
   "story": {
-    "status": "draft",
-    "video": "media/claire/story-draft-v1.mp4",
-    "poster": "media/claire/story-poster.jpg",
-    "duration": 6.04,
-    "model": "Seedance 2 mini",
-    "resolution": "480p",
+    "status": "planned",
+    "statusLabel": "구조 예시 제작 예정",
+    "video": null,
+    "poster": null,
+    "duration": 0,
+    "model": null,
+    "resolution": null,
     "reviewed": false,
-    "reviewNote": "열린 봉투를 같은 오른손에 든 채 시선을 들고 표정이 바뀝니다. 숨을 들이쉴 때 입이 열리며, 전체 5단계 이야기를 시연하는 영상은 아닙니다."
+    "studyLabel": "E22–E24 · 훅에서 결말까지",
+    "caption": "첫 화면에 문제를 보여 주고 마지막 소품으로 그 질문에 답하는 예시를 준비합니다.",
+    "watchFor": "같은 장면들을 어떻게 시작하고 끝내느냐에 따라 이야기가 읽히는 차이를 만들 계획입니다.",
+    "reviewNote": "기존 봉투 클립은 짧은 표정 전환 기록입니다. 문제 제시·인과 연결·결말 회수를 보여 주는 완성 사례로 표시하지 않습니다.",
+    "reviewUrl": "examples/coverage/#E22",
+    "cast": [
+      "Claire"
+    ],
+    "coverageScope": "E22·E24 영상 미제작 · E23은 해당 영상 제작 후 편집으로 시연",
+    "audioLabel": "새 구조 예시 미제작",
+    "related": [
+      {
+        "label": "제작 범위와 우선순위",
+        "href": "examples/coverage/#next-production"
+      }
+    ],
+    "archive": {
+      "status": "draft",
+      "video": "media/claire/story-draft-v1.mp4",
+      "poster": "media/claire/story-poster.jpg",
+      "duration": 6.04,
+      "model": "Seedance 2 mini",
+      "resolution": "480p",
+      "reviewed": false,
+      "reviewNote": "열린 봉투를 같은 오른손에 든 채 시선을 들고 표정이 바뀝니다. 숨을 들이쉴 때 입이 열리며, 전체 5단계 이야기를 시연하는 영상은 아닙니다."
+    },
+    "description": "첫 화면에 문제를 보여 주고 마지막 소품으로 그 질문에 답하는 예시를 준비합니다. 같은 장면들을 어떻게 시작하고 끝내느냐에 따라 이야기가 읽히는 차이를 만들 계획입니다.",
+    "captions": null
   }
 }
