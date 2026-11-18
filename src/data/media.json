@@ -20,11 +20,11 @@
     "audioLabel": "생성 원음 · 환경음",
     "related": [
       {
-        "label": "다음 제작안 · 랙 포커스",
+        "label": "제작안·진행 상태 · 랙 포커스",
         "href": "review/optics-v1-plan/#E02"
       },
       {
-        "label": "다음 제작안 · 역광 비",
+        "label": "제작안·진행 상태 · 역광 비",
         "href": "review/optics-v1-plan/#E03"
       }
     ],
@@ -62,7 +62,7 @@
     "audioLabel": "생성 원음 · 환경음",
     "related": [
       {
-        "label": "다음 제작안 · 하드/소프트 그림자",
+        "label": "제작안·진행 상태 · 하드/소프트 그림자",
         "href": "review/optics-v1-plan/#E05"
       }
     ],
