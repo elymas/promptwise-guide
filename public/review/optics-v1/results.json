@@ -1,0 +1,606 @@
+{
+  "provider": "Tein",
+  "api_host": "https://api.tein.ai",
+  "draft": true,
+  "user_accepted": false,
+  "actual_usd": "1.2209",
+  "approved_cap_usd": "1.25",
+  "input_stills": {
+    "E05-a": {
+      "display_file": "media/plate-E05-a.jpg",
+      "original_png_sha256": "f9d7829c9753415aa77ca30da1bcc9390ba78c53c9136832768a618f44ab5676",
+      "display_note": "Web JPEG of the selected input still, not the original PNG bytes."
+    },
+    "E02-scene": {
+      "display_file": "media/plate-E02-scene.jpg",
+      "original_png_sha256": "15584bc78ef5c36fc6f296c91897237a461b30795f6d943d54aeaadb28654829",
+      "display_note": "Web JPEG of the selected input still, not the original PNG bytes."
+    },
+    "E03-a": {
+      "display_file": "media/plate-E03-a.jpg",
+      "original_png_sha256": "80fa4b21fa23f9b484b670fbc24e8dab4e15650f30435c8d86f5bec4d4b23524",
+      "display_note": "Web JPEG of the selected input still, not the original PNG bytes."
+    },
+    "E03-b": {
+      "display_file": "media/plate-E03-b.jpg",
+      "original_png_sha256": "65225d2cdbc230d9f53aafb4fcf2fe597b39d691c4eb2174f343bdcd6b976be1",
+      "display_note": "Web JPEG of the selected input still, not the original PNG bytes."
+    },
+    "E05-b": {
+      "display_file": "media/plate-E05-b.jpg",
+      "original_png_sha256": "7d01659389139791bedae098acacaad83537276af57d145fba718fb6e96ab337",
+      "display_note": "Web JPEG of the selected input still, not the original PNG bytes."
+    }
+  },
+  "cases": [
+    {
+      "id": "E02",
+      "format": "video_ab",
+      "qc": {
+        "format": "video_ab",
+        "selected": {
+          "a": {
+            "name": "E02-a-video-v2",
+            "gain_db": 18.4,
+            "poster_time": 4,
+            "caption_ko": "생성 원음 · 무대사 지시",
+            "native_rms_dbfs": -47.42,
+            "native_peak_dbfs": -30.07,
+            "video_size": [
+              864,
+              496
+            ],
+            "format_duration": 6.08
+          },
+          "b": {
+            "name": "E02-b-video-v2",
+            "gain_db": 18.7,
+            "poster_time": 4,
+            "caption_ko": "생성 원음 · 무대사 지시",
+            "native_rms_dbfs": -47.67,
+            "native_peak_dbfs": -28.5,
+            "video_size": [
+              864,
+              496
+            ],
+            "format_duration": 6.08
+          }
+        },
+        "observation_ko": "A는 앞 컵의 테두리를 선명하게 유지합니다. B는 앞 컵이 흐려지고 뒤의 Claire 눈과 얼굴이 읽히는 초점 전환을 보여 줍니다. 두 영상은 같은 스틸에서 시작합니다. 초기 B의 긴 컵 시선 이탈을 보완한 테이크를 선택했습니다.",
+        "limitations_ko": "실제 B의 전환은 약1.5–2.5초에 나타나 계획의2–3초보다 빠릅니다. 초반 짧은 입·눈 움직임과 생성 편차가 남아 있어 광학 수치나 연기 완전 고정의 증거로 보지 않습니다. 포스터는4초의 실제 영상입니다.",
+        "strict_controlled_experiment": false,
+        "comparison_switch_seconds": 6.111979
+      },
+      "requests": [
+        {
+          "name": "E02-scene-image-v5",
+          "stage": "image",
+          "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nA fixed medium view across a quiet workshop tea counter. Claire sits on the right third, facing and looking at the actual camera lens, lips relaxed and closed, with both hands below frame. She wears her blue-gray shirt. One plain cream ceramic cup sits stationary in the lower-left foreground, roughly1m from the camera; its entire rim and handle remain inside frame with space below its base. Claire is about2.4m away. Eye-level camera with a slight downward framing bias,35mm lens look,16:9. Place the ONLY sharp focus plane on the foreground cup rim and handle: their ceramic edges are tack-sharp. Claire’s eyes, eyelashes and hair behind the cup are visibly and strongly defocused, with no sharp facial edges, while her overall silhouette is retained. This is foreground-object focus, not a sharp portrait. One soft window is the key, and distant shelves remain quiet shapes. The cup and Claire occupy different depth planes. No steam, pouring or extra objects.",
+          "job_id": "gen_426cd7a99cd66647e5f65691c9c25340",
+          "status": "succeeded",
+          "actual_usd": "0.063",
+          "selected": true,
+          "parameters": {
+            "model": "seedream-5-pro",
+            "mode": "image_to_image",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "creative_mode": false
+          },
+          "image_reference_count": 1,
+          "first_frame_input": false
+        },
+        {
+          "name": "E02-a-video-v2",
+          "stage": "video",
+          "prompt": "One continuous six-second photographic live-action shot beginning at the supplied first frame. Preserve the scene, identity, wardrobe, cup or umbrella geometry, framing, light and exposure except for the explicitly tested variable. The camera is physically locked: no dolly, pan, zoom, cuts, reframing or stabilization warp. Claire keeps both eyes oriented toward the actual stationary lens throughout the entire shot, with brief natural blinks and quiet nasal breathing; her head and chin keep the first-frame angle. She does not look down at the cup. Her lips remain relaxed and closed, with no speech or mouthing words. No music, text or added person.\n\nHold focus on the foreground cup rim and handle for all six seconds. Claire remains softly out of focus behind it. The cup and hands do not move. Maintain the original focus and depth relationships. Native sound recorded for this take: low workshop room tone and ordinary quiet breathing, no focus-motor cue or dramatic accent.",
+          "job_id": "gen_d682c512b2cc430ab53f1f4aabd392d1",
+          "status": "succeeded",
+          "actual_usd": "0.1026",
+          "selected": true,
+          "parameters": {
+            "model": "seedance-2",
+            "quality": "mini",
+            "resolution": "480p",
+            "ratio": "16:9",
+            "duration": 6,
+            "generate_audio": true,
+            "creative_mode": false
+          },
+          "image_reference_count": 0,
+          "first_frame_input": true
+        },
+        {
+          "name": "E02-b-video-v2",
+          "stage": "video",
+          "prompt": "One continuous six-second photographic live-action shot beginning at the supplied first frame. Preserve the scene, identity, wardrobe, cup or umbrella geometry, framing, light and exposure except for the explicitly tested variable. The camera is physically locked: no dolly, pan, zoom, cuts, reframing or stabilization warp. Claire keeps both eyes oriented toward the actual stationary lens throughout the entire shot, with brief natural blinks and quiet nasal breathing; her head and chin keep the first-frame angle. The focus pull belongs to the camera lens only: she does not look down at the cup or follow the focus with her gaze. Her lips remain relaxed and closed, with no speech or mouthing words. No music, text or added person.\n\nSeconds0–2: hold focus on the cup rim and handle, with Claire softly out of focus. Seconds2–3: make one smooth focus pull from the stationary cup to Claire’s eyes. Seconds3–6: hold her eyes and face sharp while the cup becomes soft; preserve her facial identity as it resolves. The change is optical focus only: no object moves, no face morph and no camera move. Native sound recorded for this take: low workshop room tone and ordinary quiet breathing, no focus-motor cue or dramatic accent.",
+          "job_id": "gen_528026dadd9fdee29d3a2da1dbbaa1fa",
+          "status": "succeeded",
+          "actual_usd": "0.1026",
+          "selected": true,
+          "parameters": {
+            "model": "seedance-2",
+            "quality": "mini",
+            "resolution": "480p",
+            "ratio": "16:9",
+            "duration": 6,
+            "generate_audio": true,
+            "creative_mode": false
+          },
+          "image_reference_count": 0,
+          "first_frame_input": true
+        },
+        {
+          "name": "E02-scene-image-v1",
+          "stage": "image",
+          "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nA fixed medium view across a quiet workshop tea counter. Claire sits on the right third, facing and looking at the actual camera lens, lips relaxed and closed, with both hands below frame. She wears her blue-gray shirt. One plain cream ceramic cup sits stationary in the lower-left foreground, roughly1m from the camera; its entire rim and handle remain inside frame with space below its base. Claire is about2.4m away. Eye-level camera with a slight downward framing bias,35mm lens look,16:9. The cup rim and handle are crisp; Claire is softly out of focus but her identity and head shape are still recognizable. One soft window is the key, and distant shelves remain quiet shapes. The cup and Claire occupy different depth planes. No steam, pouring or extra objects.",
+          "job_id": "gen_1a23a2c6c6012690d14c27decfd76dd8",
+          "status": "succeeded",
+          "actual_usd": "0.063",
+          "selected": false,
+          "parameters": {
+            "model": "seedream-5-pro",
+            "mode": "image_to_image",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "creative_mode": false
+          },
+          "image_reference_count": 1,
+          "first_frame_input": false
+        },
+        {
+          "name": "E02-scene-image-v2",
+          "stage": "image",
+          "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nA fixed medium view across a quiet workshop tea counter. Claire sits on the right third, facing and looking at the actual camera lens, lips relaxed and closed, with both hands below frame. She wears her blue-gray shirt. One plain cream ceramic cup sits stationary in the lower-left foreground, roughly1m from the camera; its entire rim and handle remain inside frame with space below its base. Claire is about2.4m away. Eye-level camera with a slight downward framing bias,35mm lens look,16:9. Reference image2 is the earlier scene layout, not its focus. Keep that layout and camera framing. Place the ONLY sharp focus plane on the foreground cup rim and handle: their ceramic edges are tack-sharp. Claire’s eyes, eyelashes and hair behind the cup are visibly and strongly defocused, with no sharp facial edges, while her overall silhouette is retained. This is foreground-object focus, not a sharp portrait. One soft window is the key, and distant shelves remain quiet shapes. The cup and Claire occupy different depth planes. No steam, pouring or extra objects.",
+          "job_id": "gen_ed22dab5431e953fdec929040575438d",
+          "status": "failed",
+          "actual_usd": "0",
+          "selected": false,
+          "parameters": {
+            "model": "seedream-5-pro",
+            "mode": "image_to_image",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "creative_mode": false
+          },
+          "image_reference_count": 2,
+          "first_frame_input": false
+        },
+        {
+          "name": "E02-scene-image-v3",
+          "stage": "image",
+          "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nA fixed medium view across a quiet workshop tea counter. Claire sits on the right third, facing and looking at the actual camera lens, lips relaxed and closed, with both hands below frame. She wears her blue-gray shirt. One plain cream ceramic cup sits stationary in the lower-left foreground, roughly1m from the camera; its entire rim and handle remain inside frame with space below its base. Claire is about2.4m away. Eye-level camera with a slight downward framing bias,35mm lens look,16:9. Reference image1 is the earlier full scene: preserve Claire’s existing face and the whole scene layout, not its focus. Keep that layout and camera framing. Place the ONLY sharp focus plane on the foreground cup rim and handle: their ceramic edges are tack-sharp. Claire’s eyes, eyelashes and hair behind the cup are visibly and strongly defocused, with no sharp facial edges, while her overall silhouette is retained. This is foreground-object focus, not a sharp portrait. One soft window is the key, and distant shelves remain quiet shapes. The cup and Claire occupy different depth planes. No steam, pouring or extra objects.",
+          "job_id": "gen_1f46a665f87f2109c8758d711a794d81",
+          "status": "failed",
+          "actual_usd": "0",
+          "selected": false,
+          "parameters": {
+            "model": "seedream-5-pro",
+            "mode": "image_to_image",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "creative_mode": false
+          },
+          "image_reference_count": 1,
+          "first_frame_input": false
+        },
+        {
+          "name": "E02-scene-image-v4",
+          "stage": "image",
+          "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nA fixed medium view across a quiet workshop tea counter. Claire sits on the right third, facing and looking at the actual camera lens, lips relaxed and closed, with both hands below frame. She wears her blue-gray shirt. One plain cream ceramic cup sits stationary in the lower-left foreground, roughly1m from the camera; its entire rim and handle remain inside frame with space below its base. Claire is about2.4m away. Eye-level camera with a slight downward framing bias,35mm lens look,16:9. Place the ONLY sharp focus plane on the foreground cup rim and handle: their ceramic edges are tack-sharp. Claire’s eyes, eyelashes and hair behind the cup are visibly and strongly defocused, with no sharp facial edges, while her overall silhouette is retained. This is foreground-object focus, not a sharp portrait. One soft window is the key, and distant shelves remain quiet shapes. The cup and Claire occupy different depth planes. No steam, pouring or extra objects.",
+          "job_id": "gen_e279a6d64c529cfd2fac7ffce02552b3",
+          "status": "failed",
+          "actual_usd": "0",
+          "selected": false,
+          "parameters": {
+            "model": "seedream-5-pro",
+            "mode": "image_to_image",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "creative_mode": false
+          },
+          "image_reference_count": 1,
+          "first_frame_input": false
+        },
+        {
+          "name": "E02-a-video-v1",
+          "stage": "video",
+          "prompt": "One continuous six-second photographic live-action shot beginning at the supplied first frame. Preserve the scene, identity, wardrobe, cup or umbrella geometry, framing, light and exposure except for the explicitly tested variable. The camera is physically locked: no dolly, pan, zoom, cuts, reframing or stabilization warp. Claire looks at the actual stationary lens, breathes naturally and makes brief natural blinks; no speech or mouthing words. No music, text or added person.\n\nHold focus on the foreground cup rim and handle for all six seconds. Claire remains softly out of focus behind it. The cup and hands do not move. Maintain the original focus and depth relationships. Native sound recorded for this take: low workshop room tone and ordinary quiet breathing, no focus-motor cue or dramatic accent.",
+          "job_id": "gen_71c91d456e6ef6fe8db3956dc07fd004",
+          "status": "succeeded",
+          "actual_usd": "0.1026",
+          "selected": false,
+          "parameters": {
+            "model": "seedance-2",
+            "quality": "mini",
+            "resolution": "480p",
+            "ratio": "16:9",
+            "duration": 6,
+            "generate_audio": true,
+            "creative_mode": false
+          },
+          "image_reference_count": 0,
+          "first_frame_input": true
+        },
+        {
+          "name": "E02-b-video-v1",
+          "stage": "video",
+          "prompt": "One continuous six-second photographic live-action shot beginning at the supplied first frame. Preserve the scene, identity, wardrobe, cup or umbrella geometry, framing, light and exposure except for the explicitly tested variable. The camera is physically locked: no dolly, pan, zoom, cuts, reframing or stabilization warp. Claire looks at the actual stationary lens, breathes naturally and makes brief natural blinks; no speech or mouthing words. No music, text or added person.\n\nSeconds0–2: hold focus on the cup rim and handle, with Claire softly out of focus. Seconds2–3: make one smooth focus pull from the stationary cup to Claire’s eyes. Seconds3–6: hold her eyes and face sharp while the cup becomes soft; preserve her facial identity as it resolves. The change is optical focus only: no object moves, no face morph and no camera move. Native sound recorded for this take: low workshop room tone and ordinary quiet breathing, no focus-motor cue or dramatic accent.",
+          "job_id": "gen_6e6898969cd8ab8f844b97e4a8d71525",
+          "status": "succeeded",
+          "actual_usd": "0.1026",
+          "selected": false,
+          "parameters": {
+            "model": "seedance-2",
+            "quality": "mini",
+            "resolution": "480p",
+            "ratio": "16:9",
+            "duration": 6,
+            "generate_audio": true,
+            "creative_mode": false
+          },
+          "image_reference_count": 0,
+          "first_frame_input": true
+        }
+      ]
+    },
+    {
+      "id": "E03",
+      "format": "video_ab",
+      "qc": {
+        "format": "video_ab",
+        "selected": {
+          "a": {
+            "name": "E03-a-video-v2",
+            "gain_db": 9.7,
+            "poster_time": 4,
+            "caption_ko": "생성 원음 · 무대사 지시",
+            "native_rms_dbfs": -38.7,
+            "native_peak_dbfs": -16.1,
+            "video_size": [
+              864,
+              496
+            ],
+            "format_duration": 6.08
+          },
+          "b": {
+            "name": "E03-b-video-v2",
+            "gain_db": 8.3,
+            "poster_time": 4,
+            "caption_ko": "생성 원음 · 무대사 지시",
+            "native_rms_dbfs": -37.34,
+            "native_peak_dbfs": -14.94,
+            "video_size": [
+              864,
+              496
+            ],
+            "format_duration": 6.08
+          }
+        },
+        "observation_ko": "A의 어두운 빗줄기는 헤지 앞에서 잘 보이지 않고, B에서는 밝은 역광의 빗줄기와 우산 가장자리가 분리됩니다. 각 테이크 고유 원음을 비슷한 청취 수준으로 맞췄으며 B를 더 크게 들리게 편집하지 않았습니다.",
+        "limitations_ko": "비의 양을 같게 지시했지만 실제 물방울 수·밀도의 동일성은 측정하지 않았습니다. 약한 프레임 후퇴와 자세 편차도 있어 조명 하나만 바꾼 실제 촬영 실험으로 해석하지 않습니다.",
+        "strict_controlled_experiment": false,
+        "comparison_switch_seconds": 6.111979
+      },
+      "requests": [
+        {
+          "name": "E03-a-image-v5",
+          "stage": "image",
+          "prompt": "Edit the supplied night-rain photograph. Preserve the exact woman, face, black umbrella, hand and umbrella-shaft geometry, dark-blue raincoat, pose, camera, hedge, paving and the SAME falling rain quantity and streak positions. Correct ONLY the rain illumination. Remove the off-screen source behind or above the rain and the bright white shaft of light in the left half. Illuminate that same rain band from beside the camera, pointing away from the camera toward the hedge, with no light shining toward the lens. The falling water is now difficult to see against the dark hedge: dark translucent streaks with restrained low gray highlights, not a bright white curtain. Keep the woman’s face at the same brightness under its separate faint soft fill, and keep the umbrella and background exposure unchanged. Rain continues to fall just as densely as before; its light reflection changes, not its amount. Maintain photographic water and wet fabric, without fog, a spotlight cone, new objects or a change of time of day.",
+          "job_id": "gen_836e6f1c67eecd8e83ac1a6f369c9082",
+          "status": "succeeded",
+          "actual_usd": "0.063",
+          "selected": true,
+          "parameters": {
+            "model": "seedream-5-pro",
+            "mode": "image_to_image",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "creative_mode": false
+          },
+          "image_reference_count": 1,
+          "first_frame_input": false
+        },
+        {
+          "name": "E03-b-image-v2",
+          "stage": "image",
+          "prompt": "Edit the supplied photograph. Preserve this exact woman, face, gaze, umbrella, right-hand grip, pose, raincoat, camera framing, hedge and paving. Change only the separate RAIN LIGHT. Position that same off-screen rain lamp behind the falling rain band and slightly to camera-left, shining through the water toward the camera, avoiding her face. The previously faint rain streaks now gleam as bright narrow white traces across the left half against the same dark hedge. Keep the rain quantity, trajectory and spacing the same: reveal existing falling water with backlight, without increasing the rainfall or adding a denser curtain. The umbrella edge may catch restrained water highlights, but her face stays at the same brightness from its independent faint soft fill. Maintain the same night exposure and natural photographic water. The lamp and light beam source remain outside the picture, without fog, lightning, new objects or a new pose.",
+          "job_id": "gen_1b428632e7e0b38853da7f3700322a85",
+          "status": "succeeded",
+          "actual_usd": "0.063",
+          "selected": true,
+          "parameters": {
+            "model": "seedream-5-pro",
+            "mode": "image_to_image",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "creative_mode": false
+          },
+          "image_reference_count": 1,
+          "first_frame_input": false
+        },
+        {
+          "name": "E03-a-video-v2",
+          "stage": "video",
+          "prompt": "One continuous six-second photographic live-action shot beginning at the supplied first frame. Preserve the scene, identity, wardrobe, cup or umbrella geometry, framing, light and exposure except for the explicitly tested variable. The camera is physically locked: no dolly, pan, zoom, cuts, reframing or stabilization warp. Claire maintains the first-frame lens gaze and head angle for all six seconds, with brief natural blinks and quiet nasal breathing. Her lips stay closed. The falling rain is the only large visible motion; her right hand keeps the umbrella steady. No music, text or added person.\n\nKeep the faint, low-contrast front-lit rain appearance from the first frame. Dark translucent streaks stay difficult to see against the hedge throughout; do not add a bright rain beam or brighten the streaks. Rain falls at ordinary real-time speed with a constant density; the umbrella stays at the same height and angle, held by the same right hand. Claire holds her gaze and posture with only normal breath and blinks. Keep the hedge dark and the constant face fill unchanged. Native sound for the full take: rain drumming on the umbrella and wet paving at a steady natural level; no dialogue, thunder or musical swell.",
+          "job_id": "gen_77db599bdd243e85d2fc777d8aca6e52",
+          "status": "succeeded",
+          "actual_usd": "0.1026",
+          "selected": true,
+          "parameters": {
+            "model": "seedance-2",
+            "quality": "mini",
+            "resolution": "480p",
+            "ratio": "16:9",
+            "duration": 6,
+            "generate_audio": true,
+            "creative_mode": false
+          },
+          "image_reference_count": 0,
+          "first_frame_input": true
+        },
+        {
+          "name": "E03-b-video-v2",
+          "stage": "video",
+          "prompt": "One continuous six-second photographic live-action shot beginning at the supplied first frame. Preserve the scene, identity, wardrobe, cup or umbrella geometry, framing, light and exposure except for the explicitly tested variable. The camera is physically locked: no dolly, pan, zoom, cuts, reframing or stabilization warp. Claire maintains the first-frame lens gaze and head angle for all six seconds, with brief natural blinks and quiet nasal breathing. Her lips stay closed. The falling rain is the only large visible motion; her right hand keeps the umbrella steady. No music, text or added person.\n\nKeep the bright narrow backlit rain streaks from the first frame, with the same face brightness and umbrella placement. Rain falls at ordinary real-time speed with a constant density; the umbrella stays at the same height and angle, held by the same right hand. The rain streaks remain bright against the dark hedge without adding drops or increasing the rainfall. Claire holds her gaze and posture with only normal breath and blinks. Keep the constant face fill unchanged. Native sound for the full take: rain drumming on the umbrella and wet paving at a steady natural level; no dialogue, thunder or musical swell.",
+          "job_id": "gen_7e8fe4718531ee17417c280340507a07",
+          "status": "succeeded",
+          "actual_usd": "0.1026",
+          "selected": true,
+          "parameters": {
+            "model": "seedance-2",
+            "quality": "mini",
+            "resolution": "480p",
+            "ratio": "16:9",
+            "duration": 6,
+            "generate_audio": true,
+            "creative_mode": false
+          },
+          "image_reference_count": 0,
+          "first_frame_input": true
+        },
+        {
+          "name": "E03-a-image-v1",
+          "stage": "image",
+          "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nA locked medium-wide night shot,45mm lens look, of Claire on the right third under one plain black umbrella on wet dark paving, with an unlit hedge behind. She wears a plain dark-blue raincoat; the right hand holds the single umbrella shaft just to the screen-left of her face, and the other arm rests at her side. Her face remains visible and she looks at the actual lens. A clear vertical band of rain occupies the left half and the space behind the umbrella. A constant faint soft light keeps her face readable. The separate rain-light, outside the frame on the camera side and to camera-left, shines into this band of rain. Its beam avoids her face. Front-lit rain is present but relatively subdued against the dark background. Wet ground, umbrella size, framing and natural droplet density must remain plausible. No cars, signs, lightning, fog or floating dust.",
+          "job_id": "gen_af7ce7d4baf425839606a977a5b1a68d",
+          "status": "succeeded",
+          "actual_usd": "0.063",
+          "selected": false,
+          "parameters": {
+            "model": "seedream-5-pro",
+            "mode": "image_to_image",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "creative_mode": false
+          },
+          "image_reference_count": 1,
+          "first_frame_input": false
+        },
+        {
+          "name": "E03-a-image-v2",
+          "stage": "image",
+          "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nA locked medium-wide night shot,45mm lens look, of Claire on the right third under one plain black umbrella on wet dark paving, with an unlit hedge behind. She wears a plain dark-blue raincoat; the right hand holds the single umbrella shaft just to the screen-left of her face, and the other arm rests at her side. Her face remains visible and she looks at the actual lens. A clear vertical band of rain occupies the left half and the space behind the umbrella. A constant faint soft light keeps her face readable. Reference image2 supplies the earlier scene layout only: retain Claire, umbrella, pose, camera and the same amount of rain. Correct only the rain-light direction and its visible effect. Put the separate rain-light on the camera side, beside the lens, facing away from the camera toward the hedge; keep it off her face. Rain remains dense but its translucent streaks are dark and low-contrast against the dark hedge, without bright white glints, a luminous rain curtain or any visible shaft of light. There is no light behind the rain band. The constant faint face fill remains unchanged. Wet ground, umbrella size, framing and natural droplet density must remain plausible. No cars, signs, lightning, fog or floating dust.",
+          "job_id": "gen_650b765d19fab7e276b5448e44a9e672",
+          "status": "failed",
+          "actual_usd": "0",
+          "selected": false,
+          "parameters": {
+            "model": "seedream-5-pro",
+            "mode": "image_to_image",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "creative_mode": false
+          },
+          "image_reference_count": 2,
+          "first_frame_input": false
+        },
+        {
+          "name": "E03-a-image-v3",
+          "stage": "image",
+          "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nA locked medium-wide night shot,45mm lens look, of Claire on the right third under one plain black umbrella on wet dark paving, with an unlit hedge behind. She wears a plain dark-blue raincoat; the right hand holds the single umbrella shaft just to the screen-left of her face, and the other arm rests at her side. Her face remains visible and she looks at the actual lens. A clear vertical band of rain occupies the left half and the space behind the umbrella. A constant faint soft light keeps her face readable. Reference image1 supplies the earlier full scene and Claire’s identity: retain Claire, umbrella, pose, camera and the same amount of rain. Correct only the rain-light direction and its visible effect. Put the separate rain-light on the camera side, beside the lens, facing away from the camera toward the hedge; keep it off her face. Rain remains dense but its translucent streaks are dark and low-contrast against the dark hedge, without bright white glints, a luminous rain curtain or any visible shaft of light. There is no light behind the rain band. The constant faint face fill remains unchanged. Wet ground, umbrella size, framing and natural droplet density must remain plausible. No cars, signs, lightning, fog or floating dust.",
+          "job_id": "gen_f45a0a2ad6cf6db7bf99558331999bbe",
+          "status": "failed",
+          "actual_usd": "0",
+          "selected": false,
+          "parameters": {
+            "model": "seedream-5-pro",
+            "mode": "image_to_image",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "creative_mode": false
+          },
+          "image_reference_count": 1,
+          "first_frame_input": false
+        },
+        {
+          "name": "E03-a-image-v4",
+          "stage": "image",
+          "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nA locked medium-wide night shot,45mm lens look, of Claire on the right third under one plain black umbrella on wet dark paving, with an unlit hedge behind. She wears a plain dark-blue raincoat; the right hand holds the single umbrella shaft just to the screen-left of her face, and the other arm rests at her side. Her face remains visible and she looks at the actual lens. A clear vertical band of rain occupies the left half and the space behind the umbrella. A constant faint soft light keeps her face readable. The separate rain-light is beside the lens on the camera side, pointing away from the camera into the hedge and avoiding her face. Its source remains off screen. Rain falls steadily throughout the left half, but its translucent streaks are dark and low-contrast, barely separating from the dark hedge. There is no source behind the rain band and no luminous rain curtain, white glinting rain or visible shaft of light. The faint face fill stays on her face only. Wet ground, umbrella size, framing and natural droplet density must remain plausible. No cars, signs, lightning, fog or floating dust.",
+          "job_id": "gen_1f48227bfadbedcf95b443687059352c",
+          "status": "succeeded",
+          "actual_usd": "0.063",
+          "selected": false,
+          "parameters": {
+            "model": "seedream-5-pro",
+            "mode": "image_to_image",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "creative_mode": false
+          },
+          "image_reference_count": 1,
+          "first_frame_input": false
+        }
+      ]
+    },
+    {
+      "id": "E05",
+      "format": "still_ab",
+      "qc": {
+        "format": "still_ab",
+        "observation_ko": "A의 또렷한 코·볼·턱 그림자 경계가 B에서는 넓고 점진적인 전이로 바뀝니다. 눈·머리·셔츠의 디테일은 남아 있습니다. 하드 라이트와 소프트 라이트는 장면에 따라 선택하는 서로 다른 표현입니다.",
+        "limitations_ko": "A는Seedream5Pro, B는같은A사진을Tein Seedream5.5로 편집했습니다. 밝기·색·프레이밍의 작은 차이가 있으며 실제 광원의 크기나 노출을 측정한 통제 실험은 아닙니다. 웹용 이미지에 블러나 밝기 보정을 적용하지 않았습니다.",
+        "strict_controlled_experiment": false
+      },
+      "requests": [
+        {
+          "name": "E05-a-image-v1",
+          "stage": "image",
+          "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nA fixed chest-up portrait of Claire wearing her blue-gray textured shirt against one matte neutral-gray wall. She faces the lens with a quiet neutral expression, shoulders natural and both hands outside frame.65mm portrait lens look; both eyes, lashes and collar texture stay sharp. A small undiffused source about45degrees to camera-left and30degrees above the eyes produces crisp nose and chin shadow edges. A low constant ambient fill retains detail on the shaded side. Neutral white balance, believable skin and no clipped highlights. This is deliberate hard light, not low-quality or overexposed lighting.",
+          "job_id": "gen_6001765b62065e172a0494085177e984",
+          "status": "succeeded",
+          "actual_usd": "0.063",
+          "selected": true,
+          "parameters": {
+            "model": "seedream-5-pro",
+            "mode": "image_to_image",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "creative_mode": false
+          },
+          "image_reference_count": 1,
+          "first_frame_input": false
+        },
+        {
+          "name": "E05-b-image-v6",
+          "stage": "image",
+          "prompt": "Relight this same photograph with very soft light. Keep the woman, her exact face, pose, blue-gray shirt, camera and neutral gray wall unchanged. Replace the hard key by a large diffused key from the same camera-left direction. Remove the sharp-edged nose shadow on her right cheek and turn it into a broad, gentle gradient. The chin shadow should also have a soft feathered edge. Keep the lit cheek at the original brightness and preserve the low fill on the shaded side. Keep her eyes, eyelashes, lips, hair and cloth texture sharp. Only the shadow edges soften; do not blur or retouch the woman. The wall remains the same neutral gray without a bright patch, window or visible light fixture.",
+          "job_id": "gen_c82d092c5d6d5adcd7749bb33e72baea",
+          "status": "succeeded",
+          "actual_usd": "0.0344",
+          "selected": true,
+          "parameters": {
+            "model": "seedream-5-5",
+            "mode": "image_to_image",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "creative_mode": false
+          },
+          "image_reference_count": 1,
+          "first_frame_input": false
+        },
+        {
+          "name": "E05-b-image-v1",
+          "stage": "image",
+          "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nReference image2 supplies the exact A portrait: keep the face, expression, head angle, framing, shirt, matte gray wall, white balance, ambient fill and sharp eye/collar detail. Keep the key source centre at the same45degree camera-left and30degree-high direction and the same distance, but make it a broad diffused source instead of a small undiffused source. The nose and chin shadows now have wide gradual boundaries. Match the brightness of the lit cheek to A; compensate source output only to match illumination. The face itself remains in focus. Do not simulate soft light by blurring skin or changing the camera.",
+          "job_id": "gen_9340caa6f83aaaddb7b1f3740726a3df",
+          "status": "failed",
+          "actual_usd": "0",
+          "selected": false,
+          "parameters": {
+            "model": "seedream-5-pro",
+            "mode": "image_to_image",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "creative_mode": false
+          },
+          "image_reference_count": 2,
+          "first_frame_input": false
+        },
+        {
+          "name": "E05-b-image-v2",
+          "stage": "image",
+          "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nReference image2 supplies the exact A portrait: keep the face, expression, head angle, framing, shirt, matte gray wall, white balance, ambient fill and sharp eye/collar detail. Keep the key source centre at the same45degree camera-left and30degree-high direction and the same distance, but make it a broad diffused source instead of a small undiffused source. The nose and chin shadows now have wide gradual boundaries. Match the brightness of the lit cheek to A; compensate source output only to match illumination. The face itself remains in focus. Do not simulate soft light by blurring skin or changing the camera.",
+          "job_id": "gen_adbc5cfc3824f969667bf5bb841c7bbd",
+          "status": "failed",
+          "actual_usd": "0",
+          "selected": false,
+          "parameters": {
+            "model": "seedream-5-pro",
+            "mode": "image_to_image",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "creative_mode": false
+          },
+          "image_reference_count": 2,
+          "first_frame_input": false
+        },
+        {
+          "name": "E05-b-image-v3",
+          "stage": "image",
+          "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nReference image2 supplies the exact A portrait: keep the face, expression, head angle, framing, shirt, matte gray wall, white balance, ambient fill and sharp eye/collar detail. Keep the key source centre at the same45degree camera-left and30degree-high direction and the same distance, but make it a broad diffused source instead of a small undiffused source. The nose and chin shadows now have wide gradual boundaries. Match the brightness of the lit cheek to A; compensate source output only to match illumination. The face itself remains in focus. Do not simulate soft light by blurring skin or changing the camera.",
+          "job_id": "gen_d4354f604db380d31cc48c0e0474396d",
+          "status": "failed",
+          "actual_usd": "0",
+          "selected": false,
+          "parameters": {
+            "model": "seedream-5-pro",
+            "mode": "image_to_image",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "creative_mode": false
+          },
+          "image_reference_count": 2,
+          "first_frame_input": false
+        },
+        {
+          "name": "E05-b-image-v4",
+          "stage": "image",
+          "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nReference image2 supplies the exact A portrait: keep the face, expression, head angle, framing, shirt, matte gray wall, white balance, ambient fill and sharp eye/collar detail. Keep the key source centre at the same45degree camera-left and30degree-high direction and the same distance, but make it a broad diffused source instead of a small undiffused source. The nose and chin shadows now have wide gradual boundaries. Match the brightness of the lit cheek to A; compensate source output only to match illumination. The face itself remains in focus. Do not simulate soft light by blurring skin or changing the camera.",
+          "job_id": "gen_b944cabd4239367bbc70d3d370259599",
+          "status": "succeeded",
+          "actual_usd": "0.0669",
+          "selected": false,
+          "parameters": {
+            "model": "seedream-5-pro",
+            "mode": "image_to_image",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "creative_mode": false
+          },
+          "image_reference_count": 2,
+          "first_frame_input": false
+        },
+        {
+          "name": "E05-b-image-v5",
+          "stage": "image",
+          "prompt": "Edit the supplied photograph, preserving this exact adult woman’s face, hair, earrings, blue-gray shirt, expression, frontal pose, camera framing and matte gray wall. Change only the light quality. Replace the tiny hard key with a very broad diffused source at the SAME camera-left position and distance. Its illuminated emitting area is now much larger than her head. The nose shadow and cheek shadow have wide, gradual transitions; the distinct dark triangular hard-edged patch on her right cheek becomes a gently shaded gradient. The chin shadow also has a broad feathered boundary. Match the lit left cheek brightness and neutral white balance to the input. Both eyes, eyelashes, lips, hair strands and shirt weave remain sharply resolved: soften SHADOW BOUNDARIES, not facial detail. Keep the low ambient fill. This is the same photographed portrait relit with a large diffuser, without skin smoothing, image blur, a new pose or a new camera view.",
+          "job_id": "gen_3637bbd5807a0107286e1e7cd8064196",
+          "status": "succeeded",
+          "actual_usd": "0.063",
+          "selected": false,
+          "parameters": {
+            "model": "seedream-5-pro",
+            "mode": "image_to_image",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "creative_mode": false
+          },
+          "image_reference_count": 1,
+          "first_frame_input": false
+        }
+      ]
+    }
+  ],
+  "files": {
+    "media/E02-a-cup.jpg": "6019731230c782cfa9f90bc4406ccbd619e8e009d914438d21c39f4485a6cf41",
+    "media/E02-a-eyes.jpg": "08c718bb73bd48077ec48165e4a571fc12e995343d5b29520f2ab2386b294c24",
+    "media/E02-a.jpg": "77dccdc0af769d4e7715bc2362d079f4e92618eb3ae9c1820ca985a1103dcdc9",
+    "media/E02-a.mp4": "eb92094c27aa955c6067161e456ca86c63aff43912f21a9fd07c9636adc5be8b",
+    "media/E02-a.vtt": "728bb824cf2b110fbbcd980d9b3fbc4707e5b583cf8fb68539ec51e91cc176f2",
+    "media/E02-b-cup.jpg": "18e132ed49126278ac96585885d10ee87b86bf700d57ad13f44b029492492835",
+    "media/E02-b-eyes.jpg": "85265b84f2e3ee5be61e52ff28812180d7b6d5866607897f0a20ef1c7cac9109",
+    "media/E02-b.jpg": "3d6009b2d4b257b86ccc12dea9c0a603cc72396400aa1c0131f9b1f205527d9a",
+    "media/E02-b.mp4": "493daa7b72c32df6152263e4c56778c7bdade9efd5ba45be4af80c3f63e8b42b",
+    "media/E02-b.vtt": "728bb824cf2b110fbbcd980d9b3fbc4707e5b583cf8fb68539ec51e91cc176f2",
+    "media/E02-comparison.mp4": "4c7f1d245436023552fe09a72d17fd8fce9c0da35dda02583c2af35593919e8f",
+    "media/E02-comparison.vtt": "feffe9ead51197f846783b9e149f05dc34ba67beb3804d7374630c0b9a39ffa1",
+    "media/E03-a.jpg": "24340641770a680c97bf7fab0f9631f3d774ef2096bf215a3eb7dad0b0e46c42",
+    "media/E03-a.mp4": "340e3587359e23af5df670beca91743d1884e826ac2ca64cdeaafd097736321f",
+    "media/E03-a.vtt": "728bb824cf2b110fbbcd980d9b3fbc4707e5b583cf8fb68539ec51e91cc176f2",
+    "media/E03-b.jpg": "0b4577ff6c960698a3a7ff27f027209d96867fe9a42c4a13903fcbccca50aff2",
+    "media/E03-b.mp4": "1166d378d92dcc0a33461d2544921d8abff756280a480b3c0ef4c8105db00ef6",
+    "media/E03-b.vtt": "728bb824cf2b110fbbcd980d9b3fbc4707e5b583cf8fb68539ec51e91cc176f2",
+    "media/E03-comparison.mp4": "2efd13c901656e9aea271e64e931edf6cf31ea0b7ddaa7464855ddfce8d6c0b3",
+    "media/E03-comparison.vtt": "ff6a12f8af826c817199bee4aadaf9d896800c8911bc344b12cb05c592d7df35",
+    "media/E05-a-shadow.jpg": "fe9dbe367d8f5bad4591e2b8093c0f39d983a41dd56e9e5f26b894c250b017b7",
+    "media/E05-a.jpg": "19f0cc86a2e22913c5b3c426579b059c638225521e66b5b63e66db1206a85c40",
+    "media/E05-b-shadow.jpg": "c0045ad722cf7a621f79eac25cce38ea328c11ec1279b7e72feb7a0961d4b3c5",
+    "media/E05-b.jpg": "86e340d8374cb502305f4dc1eab22246d869e6ef588d9afa1c0e883866357315",
+    "media/plate-E02-scene.jpg": "dbef4db38841ef56513a0c61c86dc3fbd2765df7cf23049e92d667e461ad3feb",
+    "media/plate-E03-a.jpg": "b6ee773543b7336467b8f4d1e131fd20f14d5aab8d0032921dac771906e071d6",
+    "media/plate-E03-b.jpg": "49665533e6c70fe7cdf4108b75a0390f6c7b6a2e005a793ed56a1bb3f9b13965",
+    "media/plate-E05-a.jpg": "df9b406d23686a2ea8614a569cae72ef03f906ca6e439866d90e93bdb73657cd",
+    "media/plate-E05-b.jpg": "2e868ec349164a2f3a5dc65c9a1cfedb7b98a6996cafd8aca1ee1c68178d98fb"
+  }
+}

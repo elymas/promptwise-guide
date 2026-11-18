@@ -1,17 +1,17 @@
 {
   "as_of": "2026-11-19",
   "counts": {
-    "available_draft": 4,
-    "available_adaptation": 2,
-    "workflow_documented": 1,
+    "available_draft": 7,
+    "planned": 8,
     "partial_related": 6,
-    "planned": 11
+    "available_adaptation": 2,
+    "workflow_documented": 1
   },
   "approval_scope": [
     "ACT-05:b",
     "ACT-10"
   ],
-  "new_paid_generations": 3,
+  "new_paid_generations": 16,
   "examples": [
     {
       "id": "E01",
@@ -44,10 +44,15 @@
       "topic": "depth",
       "title": "랙 포커스",
       "format": "video_ab",
-      "state": "planned",
-      "label": "스틸 보완 대기",
-      "links": [],
-      "note": "첫 스틸은 얼굴이 선명하고 컵이 흐려 제외했습니다. 초점 수정 요청은 Tein 서버 오류로 종료되어 영상 미제작입니다.",
+      "state": "available_draft",
+      "label": "전용 A/B · 검토 초안",
+      "links": [
+        {
+          "label": "실제 소리 영상 A/B",
+          "href": "review/optics-v1/#E02"
+        }
+      ],
+      "note": "같은 시작 스틸의 초점 A/B 초안입니다. B 전환은 계획보다 조금 빠르며 짧은 입·눈 움직임이 남아 있습니다.",
       "source_ids": [
         "PW-018-p12"
       ],
@@ -57,7 +62,7 @@
       "acceptance": "선명한 대상이 한 번 바뀌며 카메라는 고정",
       "planning_links": [
         {
-          "label": "제작안·진행 상태 (A/B 미완료)",
+          "label": "최초 제작안·3D 설계",
           "href": "review/optics-v1-plan/#E02"
         }
       ]
@@ -67,10 +72,15 @@
       "topic": "depth",
       "title": "역광으로 보이는 비",
       "format": "video_ab",
-      "state": "planned",
-      "label": "스틸 보완 대기",
-      "links": [],
-      "note": "첫 A 스틸은 비가 이미 밝아 비교 기준으로 제외했습니다. 빛 수정 요청이 Tein 서버 오류로 종료되어 영상 미제작입니다.",
+      "state": "available_draft",
+      "label": "전용 A/B · 검토 초안",
+      "links": [
+        {
+          "label": "실제 소리 영상 A/B",
+          "href": "review/optics-v1/#E03"
+        }
+      ],
+      "note": "비가 어두운 배경에서 드러나는 대비입니다. 실제 비 밀도 동일성은 미검증이며 약한 프레임 후퇴·자세 편차를 표시했습니다.",
       "source_ids": [
         "PW-025-p11",
         "PW-025-p13"
@@ -81,7 +91,7 @@
       "acceptance": "어두운 배경에 밝은 빗줄기·우산 가장자리의 물방울",
       "planning_links": [
         {
-          "label": "제작안·진행 상태 (A/B 미완료)",
+          "label": "최초 제작안·3D 설계",
           "href": "review/optics-v1-plan/#E03"
         }
       ]
@@ -115,10 +125,15 @@
       "topic": "light",
       "title": "하드·소프트 그림자",
       "format": "still_ab",
-      "state": "planned",
-      "label": "A스틸 검수 · B 대기",
-      "links": [],
-      "note": "하드 라이트 A 스틸은 검수 선택했습니다. 소프트 라이트 B 요청은 Tein 서버 오류로 종료되어 A/B 비교는 미완료입니다.",
+      "state": "available_draft",
+      "label": "전용 A/B · 검토 초안",
+      "links": [
+        {
+          "label": "실제 스틸 A/B",
+          "href": "review/optics-v1/#E05"
+        }
+      ],
+      "note": "코·볼·턱 그림자 경계를 스틸로 비교합니다. A는5Pro, B는같은A의5.5편집이며 밝기·색의 작은 차이도 있습니다.",
       "source_ids": [
         "PW-015-p8",
         "PW-015-p10"
@@ -129,7 +144,7 @@
       "acceptance": "코·턱 그림자의 경계, 어느 쪽이 우월하다는 주장이 아님",
       "planning_links": [
         {
-          "label": "제작안·진행 상태 (A/B 미완료)",
+          "label": "최초 제작안·3D 설계",
           "href": "review/optics-v1-plan/#E05"
         }
       ]
@@ -574,13 +589,18 @@
   },
   "generation_batch": {
     "id": "optics-v1",
+    "provider": "Tein",
     "approved_cap_usd": "1.25",
-    "actual_usd": "0.189",
-    "successful_images": 3,
-    "selected_images": 1,
-    "successful_videos": 0,
+    "actual_usd": "1.2209",
+    "remaining_usd": "0.0291",
+    "successful_images": 10,
+    "selected_images": 5,
+    "successful_videos": 6,
+    "selected_videos": 4,
     "failed_requests": 8,
     "failed_request_cost_usd": "0",
-    "status": "G2 incomplete; provider server_error observed; cause unknown"
+    "pending_requests": 0,
+    "status": "drafts_published_user_review_pending",
+    "user_accepted": false
   }
 }

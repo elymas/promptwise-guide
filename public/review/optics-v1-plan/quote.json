@@ -44,12 +44,17 @@
   "proposed_separate_cap_usd": "1.25",
   "repairs": "Targeted revisions for E02/E03/E05 only inside the same cap; no fixed number guarantee, actual usage.cost reconciled per job",
   "quote_uncertainty": "Estimate includes recent extra-reference fee; actual API cost can differ. Keep reserved headroom and stop if next request would exceed cap.",
-  "generation_spend_so_far_usd": "0.189",
-  "status": "G2_incomplete_provider_errors_observed",
+  "generation_spend_so_far_usd": "1.2209",
+  "status": "drafts_published_user_review_pending",
+  "remaining_first_pass_estimate_usd": "0.6846",
+  "current_cumulative_estimate_to_complete_first_pass_usd": "0.8736",
   "authorization_status": "approved",
   "approved_cap_usd": "1.25",
-  "submitted_requests": 11,
-  "succeeded_images": 3,
-  "succeeded_videos": 0,
-  "failed_requests": 8
+  "submitted_requests": 24,
+  "succeeded_images": 10,
+  "succeeded_videos": 6,
+  "failed_requests": 8,
+  "selected_stills": 5,
+  "selected_videos": 4,
+  "actual_results_url": "../optics-v1/"
 }
