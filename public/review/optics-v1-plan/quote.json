@@ -1,0 +1,49 @@
+{
+  "as_of": "2026-11-19",
+  "currency": "USD",
+  "image_unit_2k_usd": "0.063",
+  "additional_reference_unit_usd": "0.0039",
+  "additional_reference_basis": "Recent settled Tein image requests:2refs0.0669,3refs0.0708,4refs0.0747; live API docs confirm first reference free, live pricing table does not itemize the extra-image fee.",
+  "video_unit_480p_output_second_usd": "0.0177",
+  "rate_sources": [
+    "https://app.tein.ai/models/seedream-5-pro",
+    "https://app.tein.ai/models/seedance-2-mini"
+  ],
+  "live_browser_verified": true,
+  "image_rows": [
+    {
+      "id": "E02-scene",
+      "refs": 1,
+      "estimated_usd": "0.0630"
+    },
+    {
+      "id": "E03-a",
+      "refs": 1,
+      "estimated_usd": "0.0630"
+    },
+    {
+      "id": "E03-b",
+      "refs": 2,
+      "estimated_usd": "0.0669"
+    },
+    {
+      "id": "E05-a",
+      "refs": 1,
+      "estimated_usd": "0.0630"
+    },
+    {
+      "id": "E05-b",
+      "refs": 2,
+      "estimated_usd": "0.0669"
+    }
+  ],
+  "image_total_usd": "0.3228",
+  "video_seconds": 24,
+  "video_total_usd": "0.4248",
+  "first_pass_estimate_usd": "0.7476",
+  "proposed_separate_cap_usd": "1.25",
+  "repairs": "Targeted revisions for E02/E03/E05 only inside the same cap; no fixed number guarantee, actual usage.cost reconciled per job",
+  "quote_uncertainty": "Estimate includes recent extra-reference fee; actual API cost can differ. Keep reserved headroom and stop if next request would exceed cap.",
+  "generation_spend_so_far_usd": "0",
+  "status": "prepared_pending_new_batch_cap"
+}

@@ -1,0 +1,227 @@
+{
+  "id": "optics-examples-v1-20261119",
+  "date": "2026-11-19",
+  "provider": "Tein",
+  "model_image": "seedream-5-pro",
+  "image_resolution": "2K",
+  "model_video": "seedance-2",
+  "quality": "mini",
+  "video_resolution": "480p",
+  "duration_seconds": 6,
+  "input_mode": "first_frame",
+  "video_reference_inputs": 0,
+  "g1_renders_are_model_inputs": false,
+  "cases": [
+    {
+      "id": "E02",
+      "title_ko": "컵에서 눈으로 초점을 인계하다",
+      "format": "video_ab",
+      "source_ids": [
+        "PW-018-p12"
+      ],
+      "a_label": "컵에 초점 고정",
+      "b_label": "컵 → Claire 눈으로 초점 인계",
+      "variable": "초점 대상과 전환 시점",
+      "locks": [
+        "같은 시작 스틸",
+        "같은 카메라·구도·광원·노출",
+        "컵·배우·손 위치",
+        "같은 자연스러운 작은 호흡·깜빡임"
+      ],
+      "timing": [
+        "0–2초: A/B 모두 컵에 초점",
+        "2–3초: B만 눈으로 한 번 초점 이동",
+        "3–6초: A는 컵, B는 눈에 유지"
+      ],
+      "acceptance": [
+        "B에서 컵 선명도는 낮아지고 눈 선명도는 높아지며 A는 컵 초점을 유지",
+        "얼굴이 선명해지는 순간에도 참조 인물 유지",
+        "고정 배경의 위치가 프레임 폭의 약2% 이상 떠돌거나 줌·컷으로 차이를 만들면 보완",
+        "390px 화면에서도 초점 대상의 차이를 구별할 수 있음"
+      ],
+      "sound": "각 테이크 고유의 작업실 환경음·호흡. 대사·음악·강조 효과음 없음.",
+      "g1_note": "3D 대역의 초점 거리만 바꾼 설계도. 실제 Claire 영상이나 생성 모델의 랙 포커스 재현 검증이 아니다.",
+      "sources": [
+        {
+          "id": "PW-018-p12",
+          "source_url": "https://promptwise-free.vercel.app/18",
+          "sha256": "0a9ade440186869560a1eef9b6617980adee21d0ee22bb17d886d845b9690928"
+        }
+      ]
+    },
+    {
+      "id": "E03",
+      "title_ko": "같은 비를 역광으로 드러내다",
+      "format": "video_ab",
+      "source_ids": [
+        "PW-025-p11",
+        "PW-025-p13"
+      ],
+      "a_label": "카메라 쪽에서 비를 비춤",
+      "b_label": "비 뒤에서 카메라 쪽으로 비춤",
+      "variable": "비를 비추는 별도 광원의 위치·방향",
+      "locks": [
+        "같은 배우·우산·오른손 소유",
+        "고정 카메라·밤·어두운 배경·빗방울 밀도",
+        "일정한 약한 얼굴 보조광",
+        "같은 길이·실시간 낙하 속도"
+      ],
+      "timing": [
+        "0–6초: 같은 우산 자세와 빗줄기 밀도 유지",
+        "A/B는 조명 방향만 다르게 관찰"
+      ],
+      "acceptance": [
+        "B의 빗줄기가 어두운 배경에서 더 밝게 분리됨",
+        "B에만 비·물방울 수를 늘리거나 A를 저화질·무음으로 만들지 않음",
+        "얼굴 밝기·피부·의상·우산과 배경이 큰 폭으로 변하면 보완",
+        "우산·손·줄기와 빗소리가 자연스럽고 소리가 전 구간에 있음"
+      ],
+      "sound": "각 테이크 고유의 우산·바닥 빗소리. 같은 자연스러운 청취 수준, 대사·음악·천둥 없음.",
+      "g1_note": "입자 수·위치는 같은3D 도해이며 전방 산란을 단순화한 밝기 계산을 쓴다. 물방울의 정밀 광학 시뮬레이션이나 실사 결과가 아니다.",
+      "sources": [
+        {
+          "id": "PW-025-p11",
+          "source_url": "https://promptwise-free.vercel.app/25",
+          "sha256": "cb828e826fa4b7853ec4b908996b0cb14a73a9e77c3f6470458fee9ab57fbae1"
+        },
+        {
+          "id": "PW-025-p13",
+          "source_url": "https://promptwise-free.vercel.app/25",
+          "sha256": "94fbe5ad1a2d142cd48c86d8e4810ecf5be5a89892c8cbf2c5143ae6328e8e1b"
+        }
+      ]
+    },
+    {
+      "id": "E05",
+      "title_ko": "그림자 경계를 바꾸다",
+      "format": "still_ab",
+      "source_ids": [
+        "PW-015-p8",
+        "PW-015-p10"
+      ],
+      "a_label": "작은 광원 · 또렷한 경계",
+      "b_label": "넓은 확산광 · 완만한 경계",
+      "variable": "같은 방향·거리에서 본 광원의 상대 크기·확산",
+      "locks": [
+        "같은 얼굴·표정·셔츠·회색 벽",
+        "같은 카메라·초점·광원 중심 방향·거리",
+        "같은 화이트밸런스와 약한 보조광",
+        "밝은 볼의 밝기를 맞추는 노출 기준"
+      ],
+      "timing": [
+        "동일한 포즈의2K 스틸2장으로 먼저 비교",
+        "새 AI 영상이나 움직임·표정 변화는 추가하지 않음"
+      ],
+      "acceptance": [
+        "코·턱 그림자 가장자리만 또렷함/점진적 전이로 구별됨",
+        "B의 눈·속눈썹·셔츠는 A와 마찬가지로 선명",
+        "얼굴 밝기를 달리하거나 블러·피부 보정으로 부드러움을 만들지 않음",
+        "하드/소프트는 목적에 따른 선택이며 한 쪽의 우월성으로 표시하지 않음"
+      ],
+      "sound": "스틸 비교. 새 오디오 생성·가짜 영상 재생 없음.",
+      "g1_note": "같은3D 대역과 광원 중심을 고정하고, 광원 크기 변경과 밝기 맞춤 출력 보정으로 그림자 경계를 확인한 설계도. 실제 Claire 스틸은 생성 전이다.",
+      "sources": [
+        {
+          "id": "PW-015-p8",
+          "source_url": "https://promptwise-free.vercel.app/15",
+          "sha256": "1f0d0eeb186f832570f9aa59bff140445b7bf5eba0cf6daeb3fc951d5f7da3e5"
+        },
+        {
+          "id": "PW-015-p10",
+          "source_url": "https://promptwise-free.vercel.app/15",
+          "sha256": "0c9ccd507cfae903d5ec4d84ca149d78cb65e715f621874e7a9b285b20a1e366"
+        }
+      ]
+    }
+  ],
+  "image_requests": [
+    {
+      "id": "E02-scene",
+      "case": "E02",
+      "references": [
+        "CLAIRE identity"
+      ],
+      "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nA fixed medium view across a quiet workshop tea counter. Claire sits on the right third, facing and looking at the actual camera lens, lips relaxed and closed, with both hands below frame. She wears her blue-gray shirt. One plain cream ceramic cup sits stationary in the lower-left foreground, roughly1m from the camera; its entire rim and handle remain inside frame with space below its base. Claire is about2.4m away. Eye-level camera with a slight downward framing bias,35mm lens look,16:9. The cup rim and handle are crisp; Claire is softly out of focus but her identity and head shape are still recognizable. One soft window is the key, and distant shelves remain quiet shapes. The cup and Claire occupy different depth planes. No steam, pouring or extra objects."
+    },
+    {
+      "id": "E03-a",
+      "case": "E03",
+      "references": [
+        "CLAIRE identity"
+      ],
+      "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nA locked medium-wide night shot,45mm lens look, of Claire on the right third under one plain black umbrella on wet dark paving, with an unlit hedge behind. She wears a plain dark-blue raincoat; the right hand holds the single umbrella shaft just to the screen-left of her face, and the other arm rests at her side. Her face remains visible and she looks at the actual lens. A clear vertical band of rain occupies the left half and the space behind the umbrella. A constant faint soft light keeps her face readable. The separate rain-light, outside the frame on the camera side and to camera-left, shines into this band of rain. Its beam avoids her face. Front-lit rain is present but relatively subdued against the dark background. Wet ground, umbrella size, framing and natural droplet density must remain plausible. No cars, signs, lightning, fog or floating dust."
+    },
+    {
+      "id": "E03-b",
+      "case": "E03",
+      "references": [
+        "CLAIRE identity",
+        "reviewed E03-a scene"
+      ],
+      "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nReference image2 supplies the exact A scene: inherit the camera position, Claire and umbrella placement, pose, wardrobe, rain density, wet paving, dark hedge and constant faint face fill. Change only the separate rain-light direction. Move that same out-of-frame rain-light behind the rain band and slightly to camera-left, aiming toward the camera through the falling rain. Bright narrow rain streaks now stand out against the dark hedge; the umbrella edge catches restrained backlit droplets. Keep the face readable under the unchanged fill. Do not add more rain, change exposure or turn night into a different time of day. The light sources themselves stay outside frame."
+    },
+    {
+      "id": "E05-a",
+      "case": "E05",
+      "references": [
+        "CLAIRE identity"
+      ],
+      "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nA fixed chest-up portrait of Claire wearing her blue-gray textured shirt against one matte neutral-gray wall. She faces the lens with a quiet neutral expression, shoulders natural and both hands outside frame.65mm portrait lens look; both eyes, lashes and collar texture stay sharp. A small undiffused source about45degrees to camera-left and30degrees above the eyes produces crisp nose and chin shadow edges. A low constant ambient fill retains detail on the shaded side. Neutral white balance, believable skin and no clipped highlights. This is deliberate hard light, not low-quality or overexposed lighting."
+    },
+    {
+      "id": "E05-b",
+      "case": "E05",
+      "references": [
+        "CLAIRE identity",
+        "reviewed E05-a scene"
+      ],
+      "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nReference image2 supplies the exact A portrait: keep the face, expression, head angle, framing, shirt, matte gray wall, white balance, ambient fill and sharp eye/collar detail. Keep the key source centre at the same45degree camera-left and30degree-high direction and the same distance, but make it a broad diffused source instead of a small undiffused source. The nose and chin shadows now have wide gradual boundaries. Match the brightness of the lit cheek to A; compensate source output only to match illumination. The face itself remains in focus. Do not simulate soft light by blurring skin or changing the camera."
+    }
+  ],
+  "video_requests": [
+    {
+      "id": "E02-a",
+      "case": "E02",
+      "variant": "a",
+      "plate": "E02-scene",
+      "duration": 6,
+      "prompt": "One continuous six-second photographic live-action shot beginning at the supplied first frame. Preserve the scene, identity, wardrobe, cup or umbrella geometry, framing, light and exposure except for the explicitly tested variable. The camera is physically locked: no dolly, pan, zoom, cuts, reframing or stabilization warp. Claire looks at the actual stationary lens, breathes naturally and makes brief natural blinks; no speech or mouthing words. No music, text or added person.\n\nHold focus on the foreground cup rim and handle for all six seconds. Claire remains softly out of focus behind it. The cup and hands do not move. Maintain the original focus and depth relationships. Native sound recorded for this take: low workshop room tone and ordinary quiet breathing, no focus-motor cue or dramatic accent."
+    },
+    {
+      "id": "E02-b",
+      "case": "E02",
+      "variant": "b",
+      "plate": "E02-scene",
+      "duration": 6,
+      "prompt": "One continuous six-second photographic live-action shot beginning at the supplied first frame. Preserve the scene, identity, wardrobe, cup or umbrella geometry, framing, light and exposure except for the explicitly tested variable. The camera is physically locked: no dolly, pan, zoom, cuts, reframing or stabilization warp. Claire looks at the actual stationary lens, breathes naturally and makes brief natural blinks; no speech or mouthing words. No music, text or added person.\n\nSeconds0–2: hold focus on the cup rim and handle, with Claire softly out of focus. Seconds2–3: make one smooth focus pull from the stationary cup to Claire’s eyes. Seconds3–6: hold her eyes and face sharp while the cup becomes soft; preserve her facial identity as it resolves. The change is optical focus only: no object moves, no face morph and no camera move. Native sound recorded for this take: low workshop room tone and ordinary quiet breathing, no focus-motor cue or dramatic accent."
+    },
+    {
+      "id": "E03-a",
+      "case": "E03",
+      "variant": "a",
+      "plate": "E03-a",
+      "duration": 6,
+      "prompt": "One continuous six-second photographic live-action shot beginning at the supplied first frame. Preserve the scene, identity, wardrobe, cup or umbrella geometry, framing, light and exposure except for the explicitly tested variable. The camera is physically locked: no dolly, pan, zoom, cuts, reframing or stabilization warp. Claire looks at the actual stationary lens, breathes naturally and makes brief natural blinks; no speech or mouthing words. No music, text or added person.\n\nKeep the front-lit rain appearance from the image. Rain falls at ordinary real-time speed with a constant density; the umbrella stays at the same height and angle, held by the same right hand. Claire holds her gaze and posture with only normal breath and blinks. Keep the hedge dark and the constant face fill unchanged. Native sound for the full take: rain drumming on the umbrella and wet paving at a steady natural level; no dialogue, thunder or musical swell."
+    },
+    {
+      "id": "E03-b",
+      "case": "E03",
+      "variant": "b",
+      "plate": "E03-b",
+      "duration": 6,
+      "prompt": "One continuous six-second photographic live-action shot beginning at the supplied first frame. Preserve the scene, identity, wardrobe, cup or umbrella geometry, framing, light and exposure except for the explicitly tested variable. The camera is physically locked: no dolly, pan, zoom, cuts, reframing or stabilization warp. Claire looks at the actual stationary lens, breathes naturally and makes brief natural blinks; no speech or mouthing words. No music, text or added person.\n\nKeep the backlit rain appearance from the image. Rain falls at ordinary real-time speed with a constant density; the umbrella stays at the same height and angle, held by the same right hand. The rain streaks remain bright against the dark hedge without adding drops or increasing the rainfall. Claire holds her gaze and posture with only normal breath and blinks. Keep the constant face fill unchanged. Native sound for the full take: rain drumming on the umbrella and wet paving at a steady natural level; no dialogue, thunder or musical swell."
+    }
+  ],
+  "first_pass": {
+    "image_count": 5,
+    "video_count": 4,
+    "video_seconds": 24
+  },
+  "excludes": [
+    "720p/G5",
+    "separate paid TTS or SFX",
+    "top-up",
+    "unrelated examples",
+    "transfer of previous batch balances"
+  ]
+}

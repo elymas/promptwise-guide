@@ -18,7 +18,16 @@
     ],
     "coverageScope": "E01 레이어 비교 · 랙 포커스·역광 비는 제작 예정",
     "audioLabel": "생성 원음 · 환경음",
-    "related": [],
+    "related": [
+      {
+        "label": "다음 제작안 · 랙 포커스",
+        "href": "review/optics-v1-plan/#E02"
+      },
+      {
+        "label": "다음 제작안 · 역광 비",
+        "href": "review/optics-v1-plan/#E03"
+      }
+    ],
     "archive": {
       "status": "draft",
       "video": "media/claire/depth-draft-v2.mp4",
@@ -51,7 +60,12 @@
     ],
     "coverageScope": "E04 방향 비교 · E05 그림자 경도·E06 림 라이트는 제작 예정",
     "audioLabel": "생성 원음 · 환경음",
-    "related": [],
+    "related": [
+      {
+        "label": "다음 제작안 · 하드/소프트 그림자",
+        "href": "review/optics-v1-plan/#E05"
+      }
+    ],
     "archive": {
       "status": "draft",
       "video": "media/claire/light-draft-v1.mp4",
