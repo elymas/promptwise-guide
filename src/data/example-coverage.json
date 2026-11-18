@@ -1,7 +1,8 @@
 {
   "as_of": "2026-11-19",
   "counts": {
-    "available_draft": 7,
+    "available_draft": 6,
+    "needs_rework": 1,
     "planned": 8,
     "partial_related": 6,
     "available_adaptation": 2,
@@ -44,15 +45,15 @@
       "topic": "depth",
       "title": "랙 포커스",
       "format": "video_ab",
-      "state": "available_draft",
-      "label": "전용 A/B · 검토 초안",
+      "state": "needs_rework",
+      "label": "공간 비례 보완 필요",
       "links": [
         {
-          "label": "실제 소리 영상 A/B",
+          "label": "이전 A/B · 재작업 대상",
           "href": "review/optics-v1/#E02"
         }
       ],
-      "note": "같은 시작 스틸의 초점 A/B 초안입니다. B 전환은 계획보다 조금 빠르며 짧은 입·눈 움직임이 남아 있습니다.",
+      "note": "컵이 인물에 비해 크게 보이고 상판의 앞뒤 거리 단서가 부족하다는 피드백을 반영해 시작 스틸의 선택을 해제했습니다. 정상 컵 크기·테이블 경계·카메라 거리비를 새로 설계했습니다.",
       "source_ids": [
         "PW-018-p12"
       ],
@@ -62,7 +63,11 @@
       "acceptance": "선명한 대상이 한 번 바뀌며 카메라는 고정",
       "planning_links": [
         {
-          "label": "최초 제작안·3D 설계",
+          "label": "문제 분석·수정3D 배치·재작업안",
+          "href": "review/optics-e02-scale/"
+        },
+        {
+          "label": "최초 제작안 보관",
           "href": "review/optics-v1-plan/#E02"
         }
       ]
@@ -594,13 +599,18 @@
     "actual_usd": "1.2209",
     "remaining_usd": "0.0291",
     "successful_images": 10,
-    "selected_images": 5,
+    "selected_images": 4,
     "successful_videos": 6,
-    "selected_videos": 4,
+    "selected_videos": 2,
     "failed_requests": 8,
     "failed_request_cost_usd": "0",
     "pending_requests": 0,
-    "status": "drafts_published_user_review_pending",
-    "user_accepted": false
-  }
+    "status": "E02_scale_rework_required",
+    "user_accepted": false,
+    "archived_pair": "E02",
+    "new_scale_review_spend_usd": "0"
+  },
+  "requires_rework": [
+    "E02"
+  ]
 }

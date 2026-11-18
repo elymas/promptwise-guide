@@ -1,0 +1,94 @@
+{
+  "case": "E02",
+  "status": "layout_review_pending_paid_cap",
+  "user_feedback": "컵의 크기에 비해 테이블이 작게 읽혀 인물/컵 크기가 어색함",
+  "cause": "The authored distance ratio and weak tabletop depth cues magnify an ordinary cup without making the necessary shared space legible. Original generated scene is not metrically calibrated; do not infer real dimensions from it.",
+  "correction": {
+    "table_width_m": 0.85,
+    "table_depth_m": 0.6,
+    "tabletop_height_m": 0.74,
+    "cup_height_m": 0.095,
+    "cup_rim_diameter_m": 0.08,
+    "camera_to_cup_axial_m": 1.82,
+    "camera_to_head_axial_m": 2.43,
+    "lens_look_mm": 60,
+    "fstop_look": 1.4,
+    "head_height_proxy_m": 0.23,
+    "scale_acceptance": "Cup body should be about0.5–0.65 of visible full-head height, with normal cup proportions and both long side edges/back table edge readable. This is a design guide, not an anatomical measurement of Claire."
+  },
+  "locks": [
+    "one new shared photographic starting still",
+    "same camera/pose/table/cup/light in A and B",
+    "Claire looks at actual lens with natural blinks",
+    "A cup focus throughout; B pulls to eyes once",
+    "each take generates its own native sound"
+  ],
+  "do_not_use_as_scene_reference": "The flawed old E02 layout; use Claire identity only for the new still. Free3D diagrams remain design evidence and are never image/video model inputs.",
+  "provider": "Tein",
+  "image_model": "seedream-5-5",
+  "image_resolution": "2K",
+  "image_reference_count": 1,
+  "video_model": "seedance-2",
+  "video_quality": "mini",
+  "video_resolution": "480p",
+  "video_duration": 6,
+  "generate_audio": true,
+  "image_prompt": "A photographed live-action frame. Use reference image1 only for the same adult Korean woman’s face, black hair and bangs, earrings and blue-gray shirt; do not inherit its portrait crop or plain background. Natural skin and cloth at this distance, without reshaping, uniform pores or retouching.\n\nClaire sits on a chair just behind the far edge of an ordinary rectangular timber table in a quiet workshop. The table is about85cm wide and60cm deep, with a tabletop about74cm above the floor. Show its front corners, both receding side edges and the rear edge immediately in front of her torso so one continuous shared tabletop is unmistakable. A normal small cream ceramic cup, about9.5cm high and8cm across the rim, rests on the near-left part of this same table. The whole cup and handle are inside frame, with visible wood around the contact point. Its body is about half the height of Claire’s full visible head, not face-sized. Claire’s head, including the top of her hair, remains wholly inside the upper-right part of the frame. Her hands rest out of view.\n\nThe camera is outside the front edge, at about seated-eye height and far enough back for a moderate perspective: roughly1.8m to the cup and2.4m to Claire. A60mm lens look gives a medium view across the table, with the tabletop depth visible rather than filling the entire lower frame. Claire looks at the actual camera lens with relaxed closed lips. Focus sharply on the near cup rim and handle; Claire is softly defocused behind it while her identity and silhouette remain recognizable. One soft side window lights both subjects consistently. Quiet shelves behind her. No text, logos, steam, extra cups or oversized props.",
+  "video_prompt_common": "One continuous six-second live-action shot starting at the supplied new photographic frame. Keep the normal cup scale, table geometry, contact point, face, camera framing, light and exposure unchanged. Claire keeps her gaze on the actual stationary camera lens with brief natural blinks and quiet nasal breathing; her head and chin keep the first-frame orientation, her lips relaxed, and she does not look down at the cup. The cup, chair and table remain still. The camera is physically locked, without push-in, zoom, cuts or scale changes. Native sound for this individual take: low workshop room tone and quiet breath across the full clip, without speech, music or a focus-motor effect.",
+  "video_prompt_a": "Keep only the foreground cup rim and handle sharply focused for the entire shot. The face behind stays softly defocused. No focus change.",
+  "video_prompt_b": "Hold the near cup focus for0–2s. During2–3s, make one smooth optical focus pull onto Claire’s eyes, allowing the cup to become soft. Hold eye focus for3–6s. No face morphing, object movement or camera movement.",
+  "G2_requirements": [
+    "natural cup/person scale before checking focus",
+    "visible shared table contact and receding edges",
+    "full head and entire cup visible",
+    "no hands/props duplication",
+    "same identity, restrained real materials",
+    "390px scene still reads as an ordinary table"
+  ],
+  "budget": {
+    "currency": "USD",
+    "image_output_2k_usd": "0.028",
+    "input_image_conservative_allowance_usd": "0.028",
+    "image_estimate_conservative_usd": "0.056",
+    "video_per_output_second_estimate_usd": "0.0177",
+    "video_seconds": 12,
+    "video_estimate_usd": "0.2124",
+    "first_pass_conservative_usd": "0.2684",
+    "proposed_separate_cap_usd": "0.40",
+    "approved_cap_usd": null,
+    "generation_spend_usd": "0",
+    "existing_batch_spend_usd": "1.2209",
+    "existing_batch_cap_usd": "1.25",
+    "existing_balance_not_transferred": true,
+    "sources": [
+      "https://app.tein.ai/models/seedream-5-5",
+      "https://app.tein.ai/models/seedance-2-mini"
+    ],
+    "pricing_basis": "Existing session live API/Pricing verification and settled receipts.5.5 bills input images; reserve a full2K output-equivalent for the single input conservatively. Actual usage.cost governs."
+  },
+  "excludes": [
+    "other cases",
+    "720p/G5",
+    "paid TTS or music",
+    "top-up",
+    "automatic POST retries"
+  ],
+  "verified_previous_G1_dimensions_m": {
+    "counter": [
+      1.7000000476837158,
+      3.0,
+      0.10000000149011612
+    ],
+    "head proxy": [
+      0.339999794960022,
+      0.2599999010562897,
+      0.46000000834465027
+    ],
+    "stationary foreground cup": [
+      0.13600000739097595,
+      0.13600000739097595,
+      0.12999999523162842
+    ]
+  },
+  "G1_G2_matching_failed": "Old G1 uses a3m-deep counter and46cm head proxy; the actual still reads as a short table. This mismatch was not rejected before animation."
+}

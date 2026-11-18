@@ -45,16 +45,19 @@
   "repairs": "Targeted revisions for E02/E03/E05 only inside the same cap; no fixed number guarantee, actual usage.cost reconciled per job",
   "quote_uncertainty": "Estimate includes recent extra-reference fee; actual API cost can differ. Keep reserved headroom and stop if next request would exceed cap.",
   "generation_spend_so_far_usd": "1.2209",
-  "status": "drafts_published_user_review_pending",
+  "status": "E02_scale_rework_required",
   "remaining_first_pass_estimate_usd": "0.6846",
   "current_cumulative_estimate_to_complete_first_pass_usd": "0.8736",
+  "selected_stills": 4,
+  "selected_videos": 2,
   "authorization_status": "approved",
   "approved_cap_usd": "1.25",
   "submitted_requests": 24,
   "succeeded_images": 10,
   "succeeded_videos": 6,
   "failed_requests": 8,
-  "selected_stills": 5,
-  "selected_videos": 4,
-  "actual_results_url": "../optics-v1/"
+  "actual_results_url": "../optics-v1/",
+  "requires_rework": [
+    "E02"
+  ]
 }

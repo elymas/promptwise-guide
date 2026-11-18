@@ -9,26 +9,31 @@
     "E05-a": {
       "display_file": "media/plate-E05-a.jpg",
       "original_png_sha256": "f9d7829c9753415aa77ca30da1bcc9390ba78c53c9136832768a618f44ab5676",
+      "approved_for_draft": true,
       "display_note": "Web JPEG of the selected input still, not the original PNG bytes."
     },
     "E02-scene": {
       "display_file": "media/plate-E02-scene.jpg",
       "original_png_sha256": "15584bc78ef5c36fc6f296c91897237a461b30795f6d943d54aeaadb28654829",
+      "approved_for_draft": false,
       "display_note": "Web JPEG of the selected input still, not the original PNG bytes."
     },
     "E03-a": {
       "display_file": "media/plate-E03-a.jpg",
       "original_png_sha256": "80fa4b21fa23f9b484b670fbc24e8dab4e15650f30435c8d86f5bec4d4b23524",
+      "approved_for_draft": true,
       "display_note": "Web JPEG of the selected input still, not the original PNG bytes."
     },
     "E03-b": {
       "display_file": "media/plate-E03-b.jpg",
       "original_png_sha256": "65225d2cdbc230d9f53aafb4fcf2fe597b39d691c4eb2174f343bdcd6b976be1",
+      "approved_for_draft": true,
       "display_note": "Web JPEG of the selected input still, not the original PNG bytes."
     },
     "E05-b": {
       "display_file": "media/plate-E05-b.jpg",
       "original_png_sha256": "7d01659389139791bedae098acacaad83537276af57d145fba718fb6e96ab337",
+      "approved_for_draft": true,
       "display_note": "Web JPEG of the selected input still, not the original PNG bytes."
     }
   },
@@ -38,7 +43,12 @@
       "format": "video_ab",
       "qc": {
         "format": "video_ab",
-        "selected": {
+        "observation_ko": "현재 E02 초안은 컵이 인물의 얼굴에 비해 크게 보이고 테이블의 앞뒤 거리 단서가 부족해 재작업 대상입니다. 초점 변화와 별개로 공간 비례 기준을 통과하지 못한 것으로 재판정했습니다.",
+        "limitations_ko": "기존 영상은 검토 이력으로 보존합니다. 같은 구도를 확대·축소하는 대신 새 공통 스틸에서 정상 컵 크기·보이는 테이블 경계·카메라 거리비를 다시 잡습니다. 기존 시점·시선 검수는 공간 비례 통과를 뜻하지 않습니다.",
+        "strict_controlled_experiment": false,
+        "needs_rework": true,
+        "status": "spatial_scale_rework_required",
+        "archived_selected": {
           "a": {
             "name": "E02-a-video-v2",
             "gain_db": 18.4,
@@ -66,70 +76,10 @@
             "format_duration": 6.08
           }
         },
-        "observation_ko": "A는 앞 컵의 테두리를 선명하게 유지합니다. B는 앞 컵이 흐려지고 뒤의 Claire 눈과 얼굴이 읽히는 초점 전환을 보여 줍니다. 두 영상은 같은 스틸에서 시작합니다. 초기 B의 긴 컵 시선 이탈을 보완한 테이크를 선택했습니다.",
-        "limitations_ko": "실제 B의 전환은 약1.5–2.5초에 나타나 계획의2–3초보다 빠릅니다. 초반 짧은 입·눈 움직임과 생성 편차가 남아 있어 광학 수치나 연기 완전 고정의 증거로 보지 않습니다. 포스터는4초의 실제 영상입니다.",
-        "strict_controlled_experiment": false,
+        "selected": {},
         "comparison_switch_seconds": 6.111979
       },
       "requests": [
-        {
-          "name": "E02-scene-image-v5",
-          "stage": "image",
-          "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nA fixed medium view across a quiet workshop tea counter. Claire sits on the right third, facing and looking at the actual camera lens, lips relaxed and closed, with both hands below frame. She wears her blue-gray shirt. One plain cream ceramic cup sits stationary in the lower-left foreground, roughly1m from the camera; its entire rim and handle remain inside frame with space below its base. Claire is about2.4m away. Eye-level camera with a slight downward framing bias,35mm lens look,16:9. Place the ONLY sharp focus plane on the foreground cup rim and handle: their ceramic edges are tack-sharp. Claire’s eyes, eyelashes and hair behind the cup are visibly and strongly defocused, with no sharp facial edges, while her overall silhouette is retained. This is foreground-object focus, not a sharp portrait. One soft window is the key, and distant shelves remain quiet shapes. The cup and Claire occupy different depth planes. No steam, pouring or extra objects.",
-          "job_id": "gen_426cd7a99cd66647e5f65691c9c25340",
-          "status": "succeeded",
-          "actual_usd": "0.063",
-          "selected": true,
-          "parameters": {
-            "model": "seedream-5-pro",
-            "mode": "image_to_image",
-            "resolution": "2K",
-            "aspect_ratio": "16:9",
-            "creative_mode": false
-          },
-          "image_reference_count": 1,
-          "first_frame_input": false
-        },
-        {
-          "name": "E02-a-video-v2",
-          "stage": "video",
-          "prompt": "One continuous six-second photographic live-action shot beginning at the supplied first frame. Preserve the scene, identity, wardrobe, cup or umbrella geometry, framing, light and exposure except for the explicitly tested variable. The camera is physically locked: no dolly, pan, zoom, cuts, reframing or stabilization warp. Claire keeps both eyes oriented toward the actual stationary lens throughout the entire shot, with brief natural blinks and quiet nasal breathing; her head and chin keep the first-frame angle. She does not look down at the cup. Her lips remain relaxed and closed, with no speech or mouthing words. No music, text or added person.\n\nHold focus on the foreground cup rim and handle for all six seconds. Claire remains softly out of focus behind it. The cup and hands do not move. Maintain the original focus and depth relationships. Native sound recorded for this take: low workshop room tone and ordinary quiet breathing, no focus-motor cue or dramatic accent.",
-          "job_id": "gen_d682c512b2cc430ab53f1f4aabd392d1",
-          "status": "succeeded",
-          "actual_usd": "0.1026",
-          "selected": true,
-          "parameters": {
-            "model": "seedance-2",
-            "quality": "mini",
-            "resolution": "480p",
-            "ratio": "16:9",
-            "duration": 6,
-            "generate_audio": true,
-            "creative_mode": false
-          },
-          "image_reference_count": 0,
-          "first_frame_input": true
-        },
-        {
-          "name": "E02-b-video-v2",
-          "stage": "video",
-          "prompt": "One continuous six-second photographic live-action shot beginning at the supplied first frame. Preserve the scene, identity, wardrobe, cup or umbrella geometry, framing, light and exposure except for the explicitly tested variable. The camera is physically locked: no dolly, pan, zoom, cuts, reframing or stabilization warp. Claire keeps both eyes oriented toward the actual stationary lens throughout the entire shot, with brief natural blinks and quiet nasal breathing; her head and chin keep the first-frame angle. The focus pull belongs to the camera lens only: she does not look down at the cup or follow the focus with her gaze. Her lips remain relaxed and closed, with no speech or mouthing words. No music, text or added person.\n\nSeconds0–2: hold focus on the cup rim and handle, with Claire softly out of focus. Seconds2–3: make one smooth focus pull from the stationary cup to Claire’s eyes. Seconds3–6: hold her eyes and face sharp while the cup becomes soft; preserve her facial identity as it resolves. The change is optical focus only: no object moves, no face morph and no camera move. Native sound recorded for this take: low workshop room tone and ordinary quiet breathing, no focus-motor cue or dramatic accent.",
-          "job_id": "gen_528026dadd9fdee29d3a2da1dbbaa1fa",
-          "status": "succeeded",
-          "actual_usd": "0.1026",
-          "selected": true,
-          "parameters": {
-            "model": "seedance-2",
-            "quality": "mini",
-            "resolution": "480p",
-            "ratio": "16:9",
-            "duration": 6,
-            "generate_audio": true,
-            "creative_mode": false
-          },
-          "image_reference_count": 0,
-          "first_frame_input": true
-        },
         {
           "name": "E02-scene-image-v1",
           "stage": "image",
@@ -203,6 +153,24 @@
           "first_frame_input": false
         },
         {
+          "name": "E02-scene-image-v5",
+          "stage": "image",
+          "prompt": "A photographed live-action frame for a controlled lighting or focus study. Preserve the adult Korean woman in reference image1: the same face, age impression, black hair and bangs, earrings and recognizable proportions. Natural unretouched skin at this viewing distance, ordinary lip texture, stray hairs and believable cloth; no facial reshaping or artificial pore pattern. No readable text, logos or camera equipment in frame.\n\nA fixed medium view across a quiet workshop tea counter. Claire sits on the right third, facing and looking at the actual camera lens, lips relaxed and closed, with both hands below frame. She wears her blue-gray shirt. One plain cream ceramic cup sits stationary in the lower-left foreground, roughly1m from the camera; its entire rim and handle remain inside frame with space below its base. Claire is about2.4m away. Eye-level camera with a slight downward framing bias,35mm lens look,16:9. Place the ONLY sharp focus plane on the foreground cup rim and handle: their ceramic edges are tack-sharp. Claire’s eyes, eyelashes and hair behind the cup are visibly and strongly defocused, with no sharp facial edges, while her overall silhouette is retained. This is foreground-object focus, not a sharp portrait. One soft window is the key, and distant shelves remain quiet shapes. The cup and Claire occupy different depth planes. No steam, pouring or extra objects.",
+          "job_id": "gen_426cd7a99cd66647e5f65691c9c25340",
+          "status": "succeeded",
+          "actual_usd": "0.063",
+          "selected": false,
+          "parameters": {
+            "model": "seedream-5-pro",
+            "mode": "image_to_image",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "creative_mode": false
+          },
+          "image_reference_count": 1,
+          "first_frame_input": false
+        },
+        {
           "name": "E02-a-video-v1",
           "stage": "video",
           "prompt": "One continuous six-second photographic live-action shot beginning at the supplied first frame. Preserve the scene, identity, wardrobe, cup or umbrella geometry, framing, light and exposure except for the explicitly tested variable. The camera is physically locked: no dolly, pan, zoom, cuts, reframing or stabilization warp. Claire looks at the actual stationary lens, breathes naturally and makes brief natural blinks; no speech or mouthing words. No music, text or added person.\n\nHold focus on the foreground cup rim and handle for all six seconds. Claire remains softly out of focus behind it. The cup and hands do not move. Maintain the original focus and depth relationships. Native sound recorded for this take: low workshop room tone and ordinary quiet breathing, no focus-motor cue or dramatic accent.",
@@ -223,10 +191,50 @@
           "first_frame_input": true
         },
         {
+          "name": "E02-a-video-v2",
+          "stage": "video",
+          "prompt": "One continuous six-second photographic live-action shot beginning at the supplied first frame. Preserve the scene, identity, wardrobe, cup or umbrella geometry, framing, light and exposure except for the explicitly tested variable. The camera is physically locked: no dolly, pan, zoom, cuts, reframing or stabilization warp. Claire keeps both eyes oriented toward the actual stationary lens throughout the entire shot, with brief natural blinks and quiet nasal breathing; her head and chin keep the first-frame angle. She does not look down at the cup. Her lips remain relaxed and closed, with no speech or mouthing words. No music, text or added person.\n\nHold focus on the foreground cup rim and handle for all six seconds. Claire remains softly out of focus behind it. The cup and hands do not move. Maintain the original focus and depth relationships. Native sound recorded for this take: low workshop room tone and ordinary quiet breathing, no focus-motor cue or dramatic accent.",
+          "job_id": "gen_d682c512b2cc430ab53f1f4aabd392d1",
+          "status": "succeeded",
+          "actual_usd": "0.1026",
+          "selected": false,
+          "parameters": {
+            "model": "seedance-2",
+            "quality": "mini",
+            "resolution": "480p",
+            "ratio": "16:9",
+            "duration": 6,
+            "generate_audio": true,
+            "creative_mode": false
+          },
+          "image_reference_count": 0,
+          "first_frame_input": true
+        },
+        {
           "name": "E02-b-video-v1",
           "stage": "video",
           "prompt": "One continuous six-second photographic live-action shot beginning at the supplied first frame. Preserve the scene, identity, wardrobe, cup or umbrella geometry, framing, light and exposure except for the explicitly tested variable. The camera is physically locked: no dolly, pan, zoom, cuts, reframing or stabilization warp. Claire looks at the actual stationary lens, breathes naturally and makes brief natural blinks; no speech or mouthing words. No music, text or added person.\n\nSeconds0–2: hold focus on the cup rim and handle, with Claire softly out of focus. Seconds2–3: make one smooth focus pull from the stationary cup to Claire’s eyes. Seconds3–6: hold her eyes and face sharp while the cup becomes soft; preserve her facial identity as it resolves. The change is optical focus only: no object moves, no face morph and no camera move. Native sound recorded for this take: low workshop room tone and ordinary quiet breathing, no focus-motor cue or dramatic accent.",
           "job_id": "gen_6e6898969cd8ab8f844b97e4a8d71525",
+          "status": "succeeded",
+          "actual_usd": "0.1026",
+          "selected": false,
+          "parameters": {
+            "model": "seedance-2",
+            "quality": "mini",
+            "resolution": "480p",
+            "ratio": "16:9",
+            "duration": 6,
+            "generate_audio": true,
+            "creative_mode": false
+          },
+          "image_reference_count": 0,
+          "first_frame_input": true
+        },
+        {
+          "name": "E02-b-video-v2",
+          "stage": "video",
+          "prompt": "One continuous six-second photographic live-action shot beginning at the supplied first frame. Preserve the scene, identity, wardrobe, cup or umbrella geometry, framing, light and exposure except for the explicitly tested variable. The camera is physically locked: no dolly, pan, zoom, cuts, reframing or stabilization warp. Claire keeps both eyes oriented toward the actual stationary lens throughout the entire shot, with brief natural blinks and quiet nasal breathing; her head and chin keep the first-frame angle. The focus pull belongs to the camera lens only: she does not look down at the cup or follow the focus with her gaze. Her lips remain relaxed and closed, with no speech or mouthing words. No music, text or added person.\n\nSeconds0–2: hold focus on the cup rim and handle, with Claire softly out of focus. Seconds2–3: make one smooth focus pull from the stationary cup to Claire’s eyes. Seconds3–6: hold her eyes and face sharp while the cup becomes soft; preserve her facial identity as it resolves. The change is optical focus only: no object moves, no face morph and no camera move. Native sound recorded for this take: low workshop room tone and ordinary quiet breathing, no focus-motor cue or dramatic accent.",
+          "job_id": "gen_528026dadd9fdee29d3a2da1dbbaa1fa",
           "status": "succeeded",
           "actual_usd": "0.1026",
           "selected": false,
