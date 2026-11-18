@@ -1,0 +1,433 @@
+{
+  "status": "prepared_not_submitted",
+  "images": [
+    {
+      "id": "SPACE-MASTER",
+      "depends": [],
+      "references": [
+        "CLAIRE identity",
+        "ERIN identity",
+        "review/previz/master-start.png (geometry only)"
+      ],
+      "estimated_usd": "0.0708",
+      "prompt": "A photographic frame from a live-action short film, horizontal16:9. Natural unretouched skin and lip texture at the visible distance, individual hair strands, ordinary woven cloth and warm worn wood. One motivated soft window light from camera-left, stable neutral skin color. No beauty smoothing or readable text.\nCLAIRE is the27-year-old black-haired Korean woman, blue-grey opaque shirt, gold hoops; ERIN is the28-year-old auburn-haired woman with freckles, cream top and sage overshirt. Preserve both supplied identities and adult proportions, never merge them.\nOne unified ceramics workshop. A single long wooden workbench and its continuous front edge connect both people; one uninterrupted rear shelf runs behind both across a single rear wall. Wall corners and upright dividers remain outside the space between their faces. CLAIRE sits at the left end facing right toward ERIN; ERIN at the right end faces left toward CLAIRE. One stationary plain red envelope is at the shared center. Hands rest separately on each person's side, no handover. Camera positions all stay on the front side of their conversation axis.\nImage1 and2 define their respective identities only. Image3 is a faceless3D blocking study: inherit only furniture positions, camera and one-room geometry; replace every stand-in with the correct photographic adult. Eye-level35mm full-frame-equivalent lens look, medium two-shot, both faces and resting hands readable at similar distance. Leave adequate depth of field for both pairs of eyes and their mouths; shelves remain recognizable. Their attention is on the same envelope or real partner, never the lens. No central wall seam."
+    },
+    {
+      "id": "CLAIRE-MCU",
+      "depends": [
+        "SPACE-MASTER"
+      ],
+      "references": [
+        "approved SPACE-MASTER scene",
+        "CLAIRE identity",
+        "review/previz/claire-medium.png (geometry only)"
+      ],
+      "estimated_usd": "0.0708",
+      "prompt": "A photographic frame from a live-action short film, horizontal16:9. Natural unretouched skin and lip texture at the visible distance, individual hair strands, ordinary woven cloth and warm worn wood. One motivated soft window light from camera-left, stable neutral skin color. No beauty smoothing or readable text.\nThe first reference is the authoritative shared scene. Derive this camera view of the SAME workshop and same seats, wardrobe, shelf and red envelope. Other identity references define the respective faces; the final3D image defines geometry only, never material or facial appearance.\n50–65mm lens look, medium close-up with shoulders visible and a lower table edge; actual Erin just outside frame-right. Initial face composed with a hint of tension.\nOne unified ceramics workshop. A single long wooden workbench and its continuous front edge connect both people; one uninterrupted rear shelf runs behind both across a single rear wall. Wall corners and upright dividers remain outside the space between their faces. CLAIRE sits at the left end facing right toward ERIN; ERIN at the right end faces left toward CLAIRE. One stationary plain red envelope is at the shared center. Hands rest separately on each person's side, no handover. Camera positions all stay on the front side of their conversation axis."
+    },
+    {
+      "id": "CLAIRE-CU",
+      "depends": [
+        "SPACE-MASTER"
+      ],
+      "references": [
+        "approved SPACE-MASTER scene",
+        "CLAIRE identity",
+        "review/previz/claire-close.png (geometry only)"
+      ],
+      "estimated_usd": "0.0708",
+      "prompt": "A photographic frame from a live-action short film, horizontal16:9. Natural unretouched skin and lip texture at the visible distance, individual hair strands, ordinary woven cloth and warm worn wood. One motivated soft window light from camera-left, stable neutral skin color. No beauty smoothing or readable text.\nThe first reference is the authoritative shared scene. Derive this camera view of the SAME workshop and same seats, wardrobe, shelf and red envelope. Other identity references define the respective faces; the final3D image defines geometry only, never material or facial appearance.\n65mm lens look, face and upper shoulders fill the frame, eyes and lips sharp; actual Erin just outside frame-right. Initial courteous small closed-lip smile.\nOne unified ceramics workshop. A single long wooden workbench and its continuous front edge connect both people; one uninterrupted rear shelf runs behind both across a single rear wall. Wall corners and upright dividers remain outside the space between their faces. CLAIRE sits at the left end facing right toward ERIN; ERIN at the right end faces left toward CLAIRE. One stationary plain red envelope is at the shared center. Hands rest separately on each person's side, no handover. Camera positions all stay on the front side of their conversation axis."
+    },
+    {
+      "id": "ERIN-CU",
+      "depends": [
+        "SPACE-MASTER"
+      ],
+      "references": [
+        "approved SPACE-MASTER scene",
+        "ERIN identity",
+        "review/previz/erin-close.png (geometry only)"
+      ],
+      "estimated_usd": "0.0708",
+      "prompt": "A photographic frame from a live-action short film, horizontal16:9. Natural unretouched skin and lip texture at the visible distance, individual hair strands, ordinary woven cloth and warm worn wood. One motivated soft window light from camera-left, stable neutral skin color. No beauty smoothing or readable text.\nThe first reference is the authoritative shared scene. Derive this camera view of the SAME workshop and same seats, wardrobe, shelf and red envelope. Other identity references define the respective faces; the final3D image defines geometry only, never material or facial appearance.\n65mm lens look, close-up with eyes and lips fully readable; actual Claire just outside frame-left. Initial expression neutral, not smiling.\nOne unified ceramics workshop. A single long wooden workbench and its continuous front edge connect both people; one uninterrupted rear shelf runs behind both across a single rear wall. Wall corners and upright dividers remain outside the space between their faces. CLAIRE sits at the left end facing right toward ERIN; ERIN at the right end faces left toward CLAIRE. One stationary plain red envelope is at the shared center. Hands rest separately on each person's side, no handover. Camera positions all stay on the front side of their conversation axis."
+    },
+    {
+      "id": "OTS-CLAIRE",
+      "depends": [
+        "SPACE-MASTER"
+      ],
+      "references": [
+        "approved SPACE-MASTER scene",
+        "CLAIRE identity",
+        "ERIN identity",
+        "review/previz/ots-claire.png (geometry only)"
+      ],
+      "estimated_usd": "0.0747",
+      "prompt": "A photographic frame from a live-action short film, horizontal16:9. Natural unretouched skin and lip texture at the visible distance, individual hair strands, ordinary woven cloth and warm worn wood. One motivated soft window light from camera-left, stable neutral skin color. No beauty smoothing or readable text.\nThe first reference is the authoritative shared scene. Derive this camera view of the SAME workshop and same seats, wardrobe, shelf and red envelope. Other identity references define the respective faces; the final3D image defines geometry only, never material or facial appearance.\n50mm lens look, medium close-up on Claire. Erin's sage shoulder and back of auburn hair form a soft foreground on the right edge, approximately15–25percent of the width, without crossing Claire's face. Claire looks frame-right to her actual partner, not the lens.\nOne unified ceramics workshop. A single long wooden workbench and its continuous front edge connect both people; one uninterrupted rear shelf runs behind both across a single rear wall. Wall corners and upright dividers remain outside the space between their faces. CLAIRE sits at the left end facing right toward ERIN; ERIN at the right end faces left toward CLAIRE. One stationary plain red envelope is at the shared center. Hands rest separately on each person's side, no handover. Camera positions all stay on the front side of their conversation axis."
+    },
+    {
+      "id": "OTS-ERIN",
+      "depends": [
+        "SPACE-MASTER"
+      ],
+      "references": [
+        "approved SPACE-MASTER scene",
+        "CLAIRE identity",
+        "ERIN identity",
+        "review/previz/ots-erin.png (geometry only)"
+      ],
+      "estimated_usd": "0.0747",
+      "prompt": "A photographic frame from a live-action short film, horizontal16:9. Natural unretouched skin and lip texture at the visible distance, individual hair strands, ordinary woven cloth and warm worn wood. One motivated soft window light from camera-left, stable neutral skin color. No beauty smoothing or readable text.\nThe first reference is the authoritative shared scene. Derive this camera view of the SAME workshop and same seats, wardrobe, shelf and red envelope. Other identity references define the respective faces; the final3D image defines geometry only, never material or facial appearance.\n50mm lens look, medium close-up on Erin. Claire's blue-grey shoulder and black hair form a soft foreground on the left edge, approximately15–25percent of the width, without crossing Erin's face. Erin looks frame-left to her actual partner, not the lens.\nOne unified ceramics workshop. A single long wooden workbench and its continuous front edge connect both people; one uninterrupted rear shelf runs behind both across a single rear wall. Wall corners and upright dividers remain outside the space between their faces. CLAIRE sits at the left end facing right toward ERIN; ERIN at the right end faces left toward CLAIRE. One stationary plain red envelope is at the shared center. Hands rest separately on each person's side, no handover. Camera positions all stay on the front side of their conversation axis."
+    }
+  ],
+  "video_requests": [
+    {
+      "id": "ACT-01-a",
+      "card": "ACT-01",
+      "variant": "a",
+      "plate": "CLAIRE-MCU",
+      "duration": 6,
+      "input_mode": "first_frame",
+      "motion_reference": null,
+      "reference_duration": 0,
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, locked camera. At about1 second Claire looks down at the stationary returned letter, then toward her actual partner at frame-right. Sound: room tone and breath only.\n\nClaire feels relieved that the letter has been found but tries to remain composed."
+    },
+    {
+      "id": "ACT-01-b",
+      "card": "ACT-01",
+      "variant": "b",
+      "plate": "CLAIRE-MCU",
+      "duration": 6,
+      "input_mode": "first_frame",
+      "motion_reference": null,
+      "reference_duration": 0,
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, locked camera. At about1 second Claire looks down at the stationary returned letter, then toward her actual partner at frame-right. Sound: room tone and breath only.\n\nHold visible tension in her jaw and raised shoulders until noticing the letter. Then release one clearly visible longer exhale, let the shoulders drop slightly, and let a restrained smile arrive after that release. Settle on that new relaxed state for the final second. No tears or broad laughter."
+    },
+    {
+      "id": "ACT-02-a",
+      "card": "ACT-02",
+      "variant": "a",
+      "plate": "CLAIRE-CU",
+      "duration": 6,
+      "input_mode": "first_frame",
+      "motion_reference": null,
+      "reference_duration": 0,
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, locked close-up. Claire smiles courteously toward Erin at frame-right. A quiet chair scrape from that partner position is the cause at about1 second. Room tone and breath; no spoken words.\n\nClaire feels hurt that her friend is leaving but keeps smiling politely."
+    },
+    {
+      "id": "ACT-02-b",
+      "card": "ACT-02",
+      "variant": "b",
+      "plate": "CLAIRE-CU",
+      "duration": 6,
+      "input_mode": "first_frame",
+      "motion_reference": null,
+      "reference_duration": 0,
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, locked close-up. Claire smiles courteously toward Erin at frame-right. A quiet chair scrape from that partner position is the cause at about1 second. Room tone and breath; no spoken words.\n\nAfter the chair sound, hold the polite smile briefly, then let it disappear visibly for about a second: lips close and press lightly, mouth corners lower and the breath pauses. Only then recover the polite smile for her friend. Give the viewer one readable mask-slip and recovery, without crying, head shaking or a big grimace."
+    },
+    {
+      "id": "ACT-05-a",
+      "card": "ACT-05",
+      "variant": "a",
+      "plate": "SPACE-MASTER",
+      "duration": 8,
+      "input_mode": "reference_image_and_motion_video",
+      "motion_reference": "review/previz/shared-space-truck.mp4",
+      "reference_duration": 8,
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\nThe camera moves physically0.6m to the right over the full8seconds along the front side of the axis, using the supplied video for CAMERA PATH ONLY. Same fixed35mm lens look, no zoom, no cut or axis crossing. Both people remain visible and their faces readable. The tabletop and distant shelf show different parallax speeds. In both A/B use this exact same camera instruction. The letter stays still, hands remain separate. Room tone and breathing, no speech.\n\nBoth friends notice the envelope together at about2 seconds and share relieved smiles at the same time."
+    },
+    {
+      "id": "ACT-05-b",
+      "card": "ACT-05",
+      "variant": "b",
+      "plate": "SPACE-MASTER",
+      "duration": 8,
+      "input_mode": "reference_image_and_motion_video",
+      "motion_reference": "review/previz/shared-space-truck.mp4",
+      "reference_duration": 8,
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\nThe camera moves physically0.6m to the right over the full8seconds along the front side of the axis, using the supplied video for CAMERA PATH ONLY. Same fixed35mm lens look, no zoom, no cut or axis crossing. Both people remain visible and their faces readable. The tabletop and distant shelf show different parallax speeds. In both A/B use this exact same camera instruction. The letter stays still, hands remain separate. Room tone and breathing, no speech.\n\nErin notices first, exhales and smiles during seconds1–3. Claire remains visibly concerned and unsmiling through the first3seconds. Only after noticing Erin's reaction around4seconds does Claire relax and smile. Hold their staggered emotional states long enough to read, then settle together. No synchronized nods or extra dialogue."
+    },
+    {
+      "id": "ACT-06-a-s1",
+      "card": "ACT-06",
+      "variant": "a",
+      "part": 1,
+      "plate": "OTS-CLAIRE",
+      "duration": 4,
+      "input_mode": "first_frame",
+      "speech": [
+        {
+          "speaker": "CLAIRE",
+          "language": "ko",
+          "text": "찾았어."
+        }
+      ],
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n4 seconds, fixed50mm lens look at the reviewed OTS camera. Preserve the partner shoulder at the same frame edge and the same gaze axis; do not pan, zoom, cut or invent another room. CLAIRE says exactly once in Korean: \"찾았어.\". Her actual partner is silent. Quiet shared room tone, no music.\n\nPlay the speaking/listening beat naturally."
+    },
+    {
+      "id": "ACT-06-a-s2",
+      "card": "ACT-06",
+      "variant": "a",
+      "part": 2,
+      "plate": "OTS-ERIN",
+      "duration": 4,
+      "input_mode": "first_frame",
+      "speech": [],
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n4 seconds, fixed50mm lens look at the reviewed OTS camera. Preserve the partner shoulder at the same frame edge and the same gaze axis; do not pan, zoom, cut or invent another room. Erin does not speak. She listens and lets a relieved smile emerge after Claire's preceding line. Quiet shared room tone, no music.\n\nPlay the speaking/listening beat naturally."
+    },
+    {
+      "id": "ACT-06-b-s1",
+      "card": "ACT-06",
+      "variant": "b",
+      "part": 1,
+      "plate": "OTS-CLAIRE",
+      "duration": 4,
+      "input_mode": "first_frame",
+      "speech": [
+        {
+          "speaker": "CLAIRE",
+          "language": "ko",
+          "text": "찾았어."
+        }
+      ],
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n4 seconds, fixed50mm lens look at the reviewed OTS camera. Preserve the partner shoulder at the same frame edge and the same gaze axis; do not pan, zoom, cut or invent another room. CLAIRE says exactly once in Korean: \"찾았어.\". Her actual partner is silent. Quiet shared room tone, no music.\n\nKeep the quoted line short and clearly articulated, then close the lips and leave a quiet beat. Attend to the real foreground partner, never the camera."
+    },
+    {
+      "id": "ACT-06-b-s2",
+      "card": "ACT-06",
+      "variant": "b",
+      "part": 2,
+      "plate": "OTS-ERIN",
+      "duration": 4,
+      "input_mode": "first_frame",
+      "speech": [],
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n4 seconds, fixed50mm lens look at the reviewed OTS camera. Preserve the partner shoulder at the same frame edge and the same gaze axis; do not pan, zoom, cut or invent another room. Erin does not speak. She listens and lets a relieved smile emerge after Claire's preceding line. Quiet shared room tone, no music.\n\nBegin with a held, concerned look; then let a clearly visible relieved exhale and smile arrive, keeping the lips free of speech."
+    },
+    {
+      "id": "ACT-07-a-s1",
+      "card": "ACT-07",
+      "variant": "a",
+      "part": 1,
+      "plate": "OTS-CLAIRE",
+      "duration": 4,
+      "input_mode": "first_frame",
+      "speech": [
+        {
+          "speaker": "CLAIRE",
+          "language": "ko",
+          "text": "괜찮아?"
+        }
+      ],
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n4 seconds, fixed50mm lens look at the reviewed OTS camera. Preserve the partner shoulder at the same frame edge and the same gaze axis; do not pan, zoom, cut or invent another room. CLAIRE says exactly once in Korean: \"괜찮아?\". Her actual partner is silent. Quiet shared room tone, no music.\n\nPlay the speaking/listening beat naturally."
+    },
+    {
+      "id": "ACT-07-a-s2",
+      "card": "ACT-07",
+      "variant": "a",
+      "part": 2,
+      "plate": "OTS-ERIN",
+      "duration": 4,
+      "input_mode": "first_frame",
+      "speech": [
+        {
+          "speaker": "ERIN",
+          "language": "en",
+          "text": "I'm fine."
+        }
+      ],
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n4 seconds, fixed50mm lens look at the reviewed OTS camera. Preserve the partner shoulder at the same frame edge and the same gaze axis; do not pan, zoom, cut or invent another room. ERIN says exactly once in English: \"I'm fine.\". Her actual partner is silent. Quiet shared room tone, no music.\n\nPlay the speaking/listening beat naturally."
+    },
+    {
+      "id": "ACT-07-b-s1",
+      "card": "ACT-07",
+      "variant": "b",
+      "part": 1,
+      "plate": "OTS-CLAIRE",
+      "duration": 4,
+      "input_mode": "first_frame",
+      "speech": [
+        {
+          "speaker": "CLAIRE",
+          "language": "ko",
+          "text": "괜찮아?"
+        }
+      ],
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n4 seconds, fixed50mm lens look at the reviewed OTS camera. Preserve the partner shoulder at the same frame edge and the same gaze axis; do not pan, zoom, cut or invent another room. CLAIRE says exactly once in Korean: \"괜찮아?\". Her actual partner is silent. Quiet shared room tone, no music.\n\nKeep the quoted line short and clearly articulated, then close the lips and leave a quiet beat. Attend to the real foreground partner, never the camera."
+    },
+    {
+      "id": "ACT-07-b-s2",
+      "card": "ACT-07",
+      "variant": "b",
+      "part": 2,
+      "plate": "OTS-ERIN",
+      "duration": 4,
+      "input_mode": "first_frame",
+      "speech": [
+        {
+          "speaker": "ERIN",
+          "language": "en",
+          "text": "I'm fine."
+        }
+      ],
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n4 seconds, fixed50mm lens look at the reviewed OTS camera. Preserve the partner shoulder at the same frame edge and the same gaze axis; do not pan, zoom, cut or invent another room. ERIN says exactly once in English: \"I'm fine.\". Her actual partner is silent. Quiet shared room tone, no music.\n\nKeep the quoted line short and clearly articulated, then close the lips and leave a quiet beat. Attend to the real foreground partner, never the camera."
+    },
+    {
+      "id": "ACT-09-a",
+      "card": "ACT-09",
+      "variant": "a",
+      "plate": "CLAIRE-MCU",
+      "duration": 6,
+      "input_mode": "first_frame",
+      "motion_reference": null,
+      "reference_duration": 0,
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, locked camera. A single door slam occurs offscreen at frame-left around2seconds. Claire says exactly in Korean \"깜짝이야.\" around3.5–4.5seconds, then closes her lips. Same scene, no visible door or extra person.\n\nClaire is startled by the slam and then calms down."
+    },
+    {
+      "id": "ACT-09-b",
+      "card": "ACT-09",
+      "variant": "b",
+      "plate": "CLAIRE-MCU",
+      "duration": 6,
+      "input_mode": "first_frame",
+      "motion_reference": null,
+      "reference_duration": 0,
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, locked camera. A single door slam occurs offscreen at frame-left around2seconds. Claire says exactly in Korean \"깜짝이야.\" around3.5–4.5seconds, then closes her lips. Same scene, no visible door or extra person.\n\nBefore the audible impact she is composed. Only after its onset, one blink and small shoulder flinch occur, followed by a short inhalation. She regains composure, says the exact Korean line once and settles for the last second. No anticipation, repeated flinch or added interjection."
+    },
+    {
+      "id": "ACT-12-a",
+      "card": "ACT-12",
+      "variant": "a",
+      "plate": "ERIN-CU",
+      "duration": 6,
+      "input_mode": "first_frame",
+      "motion_reference": null,
+      "reference_duration": 0,
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, fixed close-up of Erin facing Claire just outside frame-left. Both versions say only the exact same English words once: \"Claire, listen.\" Quiet room tone, no music or extra words.\n\nA private, gentle request to her nearby friend. Say the line softly but fully voiced and clearly intelligible, with relaxed shoulders and minimal mouth movement, then listen."
+    },
+    {
+      "id": "ACT-12-b",
+      "card": "ACT-12",
+      "variant": "b",
+      "plate": "ERIN-CU",
+      "duration": 6,
+      "input_mode": "first_frame",
+      "motion_reference": null,
+      "reference_duration": 0,
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, fixed close-up of Erin facing Claire just outside frame-left. Both versions say only the exact same English words once: \"Claire, listen.\" Quiet room tone, no music or extra words.\n\nShe urgently needs to stop her friend from making a mistake. Straighten first, take one preparatory breath and project the exact English line firmly and clearly while leaning a few centimeters toward that actual partner; eyebrows draw inward briefly. Hold focused attention afterward. No smile, screaming, extra words or repeated call."
+    },
+    {
+      "id": "GEO-01-a",
+      "card": "GEO-01",
+      "variant": "a",
+      "plate": "SPACE-MASTER",
+      "duration": 8,
+      "input_mode": "first_frame",
+      "motion_reference": null,
+      "reference_duration": 0,
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n8 seconds. Both remain calmly attentive to each other, hands resting separately, one unbroken table and shelf. Sound is room tone and natural breath, no words.\n\nFixed35mm lens look, locked camera at the reviewed starting position. Both people stay visible."
+    },
+    {
+      "id": "GEO-01-b",
+      "card": "GEO-01",
+      "variant": "b",
+      "plate": "SPACE-MASTER",
+      "duration": 8,
+      "input_mode": "reference_image_and_motion_video",
+      "motion_reference": "review/previz/shared-space-truck.mp4",
+      "reference_duration": 8,
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n8 seconds. Both remain calmly attentive to each other, hands resting separately, one unbroken table and shelf. Sound is room tone and natural breath, no words.\n\nUse only the camera path from the supplied motion video: a0.6m rightward physical truck over8seconds, keeping both people framed. Fixed35mm lens look, no optical zoom and no axis crossing. The near table edge and far shelves shift at different rates."
+    }
+  ],
+  "sources": [
+    {
+      "id": "PW-002-p3",
+      "url": "https://promptwise-free.vercel.app/2",
+      "sha256": "5720ac9f75b6c043106630f161375a7fbb56ee40cd9f5a1729afd8d4683770ea"
+    },
+    {
+      "id": "PW-002-p4",
+      "url": "https://promptwise-free.vercel.app/2",
+      "sha256": "8433651f1a11e07bb099d3ccd2759b7a27bdcfd1e5840450206e664897b4c867"
+    },
+    {
+      "id": "PW-002-p5",
+      "url": "https://promptwise-free.vercel.app/2",
+      "sha256": "965ad919c151d6b65914cf365731d0e19a81e532d40173bd968af63f02373aac"
+    },
+    {
+      "id": "PW-002-p6",
+      "url": "https://promptwise-free.vercel.app/2",
+      "sha256": "eac11c5956ff1bb08f90aad58813985658dc0265101ca56cc74110fd5d6f40db"
+    },
+    {
+      "id": "PW-018-p4",
+      "url": "https://promptwise-free.vercel.app/18",
+      "sha256": "d052dd084315273254d93352bb0148bfd9f224d2d84f964a0588062a3540c4d6"
+    },
+    {
+      "id": "PW-018-p5",
+      "url": "https://promptwise-free.vercel.app/18",
+      "sha256": "fe09185d12e297de64f0426673f71688cb71ee183fb0c6f3928ec8262cf94f5c"
+    },
+    {
+      "id": "PW-018-p6",
+      "url": "https://promptwise-free.vercel.app/18",
+      "sha256": "f8701e67f7eb85faf2daf9b5179444d66f07c16fdb550b3f935f6f60fe398b97"
+    },
+    {
+      "id": "PW-018-p13",
+      "url": "https://promptwise-free.vercel.app/18",
+      "sha256": "170b0c1775d90b56c14a39f3add1a5f958aba1c6b8623f89e469470009e29bcb"
+    },
+    {
+      "id": "PW-032-p2",
+      "url": "https://promptwise-free.vercel.app/32",
+      "sha256": "bc3586b7671f3f87fd103a3306177752558b40084bd9f2a6e0b0a01c5d464dbe"
+    },
+    {
+      "id": "PW-032-p5",
+      "url": "https://promptwise-free.vercel.app/32",
+      "sha256": "af0735b7e7e38bfad48a9d44d695c20627254c23149119dd73b21015505f4029"
+    },
+    {
+      "id": "PW-034-p16",
+      "url": "https://promptwise-free.vercel.app/34",
+      "sha256": "d475d0dde816f52913b44b0e104b1958f5233cee54894679a559101a1b62c98e"
+    },
+    {
+      "id": "PW-052-p1",
+      "url": "https://promptwise-free.vercel.app/52",
+      "sha256": "e36a67251da9edf7ae9565881510b8c3ec1798432a60017308856b70d2d71750"
+    },
+    {
+      "id": "PW-052-p3",
+      "url": "https://promptwise-free.vercel.app/52",
+      "sha256": "ae7238f3e871dd9056d7cd7e71c17bda7093ebe694258b642b26e5496e86ba34"
+    },
+    {
+      "id": "PW-052-p6",
+      "url": "https://promptwise-free.vercel.app/52",
+      "sha256": "000bac6e8469bba07eaad00cdb90c06521aab55d0c1fd6c1fb57c4c2b2792487"
+    },
+    {
+      "id": "PW-052-p7",
+      "url": "https://promptwise-free.vercel.app/52",
+      "sha256": "301934c98da01340d1dd1a8d34943c474e544a64a88c95dc9407da74c173e8c4"
+    },
+    {
+      "id": "PW-052-p13",
+      "url": "https://promptwise-free.vercel.app/52",
+      "sha256": "b838d6c6378cc8c0166d6336c0295e8b96548240b0088a364bf66e1580b6c17d"
+    },
+    {
+      "id": "PW-052-p14",
+      "url": "https://promptwise-free.vercel.app/52",
+      "sha256": "1a84e56580b86d05f0f8dd995be7baffe8b24680fd90e6d387bb4906f19c2c0b"
+    },
+    {
+      "id": "PW-104-p5",
+      "url": "https://promptwise-free.vercel.app/104",
+      "sha256": "9e46792eb799b52d11102ac49154076fe1abb92b20c644fc5e7633d4ee9eba17"
+    }
+  ]
+}

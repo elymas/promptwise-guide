@@ -1,0 +1,15 @@
+{
+  "images_usd": "0.4326",
+  "direct_video_seconds": 88,
+  "direct_public_rate_usd": "0.0177",
+  "motion_output_seconds": 24,
+  "motion_input_seconds": 24,
+  "motion_conservative_rate_usd": "0.0110",
+  "first_pass_estimate_usd": "2.5182",
+  "proposed_cap_usd": 3,
+  "remaining_previous_acting_cap_usd": "0.0531",
+  "new_spend_so_far_usd": 0,
+  "authorization_status": "additional_budget_required_before_paid_requests",
+  "includes": "6 stills,20 video requests112 output seconds;7 acting A/B cards+1 camera card, local assembly and ACT04/10 analyses; targeted repairs only inside3USD",
+  "excludes": "720p/G5, paid TTS, top-up, unrelated pilot funds"
+}
