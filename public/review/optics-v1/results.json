@@ -79,13 +79,15 @@
         "selected": {},
         "active_override": {
           "source_directory": "scale-review-2026-11-19",
-          "G3_sha256": "326345f98229d6e5032ad3fef07e0f72d45b337058389670b69c9c07ee3f24c2",
+          "G3_sha256": "a6d34609f1d1204b5b7c18580f3c468cde32e4d6e65e092b2bdd3dd3e15358c6",
           "public_href": "../optics-e02-scale-result/",
           "actual_usd": "0.3766",
           "approved_cap_usd": ".40",
           "comparison_ready": false,
-          "status": "scale_improved_focus_comparison_failed",
-          "user_accepted": false
+          "status": "identity_and_focus_rejected",
+          "user_accepted": false,
+          "identity_verdict": "rejected_by_user",
+          "next_plan_href": "../optics-low-angle-plan/"
         },
         "comparison_switch_seconds": 6.111979
       },

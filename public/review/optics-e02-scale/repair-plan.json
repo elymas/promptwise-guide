@@ -1,6 +1,6 @@
 {
   "case": "E02",
-  "status": "scale_improved_focus_comparison_failed",
+  "status": "identity_and_focus_rejected",
   "user_feedback": "컵의 크기에 비해 테이블이 작게 읽혀 인물/컵 크기가 어색함",
   "cause": "The authored distance ratio and weak tabletop depth cues magnify an ordinary cup without making the necessary shared space legible. Original generated scene is not metrically calibrated; do not infer real dimensions from it.",
   "correction": {
@@ -93,5 +93,6 @@
   "G1_G2_matching_failed": "Old G1 uses a3m-deep counter and46cm head proxy; the actual still reads as a short table. This mismatch was not rejected before animation.",
   "authorization_status": "approved",
   "execution_actual_usd": "0.3766",
-  "actual_results_url": "../optics-e02-scale-result/"
+  "actual_results_url": "../optics-e02-scale-result/",
+  "next_plan_url": "../optics-low-angle-plan/"
 }

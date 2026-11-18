@@ -1,0 +1,77 @@
+{
+  "id": "E02-low-angle-two-tables-20261119",
+  "status": "free_G0_G1_review_only",
+  "user_request_ko": "같은 테이블 컵+인물 대신, 앞 테이블의 오브제 레벨 로우앵글에서 뒤 다른 테이블에 앉은 기존 Claire로 이동하는 샷 검토. 이전 인물 동일성 실패 반영.",
+  "provider_if_generated": "Tein",
+  "paid_requests_this_review": 0,
+  "generation_cost_usd": "0",
+  "identity": {
+    "primary_reference": "Locked Claire identity portrait (SHA256 below)",
+    "sha256": "301ce886477535e0ca88258c8c2761aedb64a4b87237c055244fc98c6835c591",
+    "accepted_scene_for_visual_crosscheck": "ACT05B/ACT10 Claire profile, already accepted; not a new face reference or recurring-voice approval",
+    "rejected_scene": "E02 scale repair image v1/v2 and all derived videos: never reuse as identity reference or generation first frame",
+    "gates": [
+      "Generate a sharp face/geometry proof before shallow-focus plates; compare face landmarks qualitatively against the locked portrait and accepted scene",
+      "Hair/clothes alone do not establish identity; user rejected old face, do not repeat that pass",
+      "Inspect actual low-angle start/end plate at native resolution before video; if face unreadable, identity is unverified",
+      "Do not use the neutral 3D stand-in as a face/appearance reference"
+    ]
+  },
+  "preferred_shot": {
+    "name": "low object-level diagonal reveal to seated Claire",
+    "object": "one ordinary unlabelled14cm matte ochre bud vase on near table",
+    "tables": "two distinct tables, rear staggered right with0.845m free floor gap; one shared workshop and continuous wall/window light",
+    "camera": "45mm look, height0.82m, one diagonal-right slide0.65m right+1.50m forward, no zoom, no rise, no orbit, no table penetration",
+    "timing": [
+      "0–1s hold near vase focus; rear Claire soft",
+      "1–4.5s one smooth diagonal slide, foreground vase/table leave left faster than rear table/person",
+      "1.5–3s one focus transfer toward eyes",
+      "4.5–6s hold the rear person and full head in clear view"
+    ],
+    "gaze": "Claire follows the actual moving lens with small eye movements, minimal head turn, brief blinks; no cup glance or long eyes closed",
+    "sound": "Each take native workshop room tone and quiet breathing; wordless. Korean only if Claire dialogue is later introduced.",
+    "classification": "camera reveal plus focus transfer; not a pure rack-focus A/B experiment"
+  },
+  "control_shot": {
+    "name": "same two-table low angle, stationary camera, object-to-eyes rack focus",
+    "reason": "If teaching E02 pure focus, keep camera fixed; same space can be used, but moving demonstration belongs with E01/E09 as related material",
+    "comparison_status": "A camera-still/focus-held baseline vs moving/focus-shift result changes two variables; label as directing choice, never controlled focus-only A/B"
+  },
+  "reference_roles_if_generated": {
+    "primary": "Locked Claire portrait owns face/hair/accessories/current shirt; do not inherit its background or portrait crop",
+    "sharp_end_plate": "First establish recognizably same Claire with matching room/geometry; then derive start plate rather than inheriting rejected face",
+    "video_mode": "Choose either first/last-frame endpoint conditioning OR reference_image + reference_video camera path; official API disallows mixing them in one request. Verify current availability/price before paid work.",
+    "3d": "Review/geometry evidence only. Camera-only reference is conditional and requires model support; neutral mannequin likeness must never transfer."
+  },
+  "sources": [
+    {
+      "id": "PW-002",
+      "applied": "three physical depth layers, diagonal blocking and parallax"
+    },
+    {
+      "id": "PW-018-p12",
+      "applied": "one sharp subject, explicit target/time; keep camera still for pure rack focus"
+    },
+    {
+      "id": "PW-032-p2",
+      "applied": "describe real camera translation and start/end positions, no zoom"
+    },
+    {
+      "id": "PW-034",
+      "applied": "map geography first; identity vs place/camera references each have one responsibility; regenerate failed layer"
+    }
+  ],
+  "acceptance": [
+    "Same Claire in sharp proof and final eye-focused frame; failed identity stops before video",
+    "Two distinct tabletop side edges, their own legs and the negative space between the staggered tables are legible at390px; same room continuous architecture. The floor gap is verified in top view, not claimed visible in every low-angle frame.",
+    "Foreground object exits left with stronger parallax than seated person; no zoom substitution",
+    "Camera remains at object level and outside both tables; no fly-through",
+    "No face warp, eye drift, prolonged blink, prop duplication or table merge",
+    "Focus change and camera reveal reported separately; never claim a controlled optics measurement"
+  ],
+  "financial_scope": "Current free review only. Previous repair spent0.3766/0.40, remaining0.0234 is not sufficient for a minimum paid video; no additional paid submission or fund transfer.",
+  "draft_prompts": {
+    "sharp_geography_identity_proof": "A photographed live-action frame, using reference image1 only for the established adult Claire face, age impression, hair, earrings and blue-gray shirt. Do not inherit the portrait crop or background. A low object-level camera looks through one quiet workshop: a normal14cm matte ochre bud vase rests on a separate small timber table in the near-left foreground; Claire sits at a SECOND table farther back and staggered to the right. Each table has its own edge and legs, with open space between them. One continuous wall, shelves and soft side-window light connect the room. The camera is about82cm high,45mm lens look, with a modest upward view of the seated person and her whole head inside frame. This is the sharp identity/geography PROOF: keep her eyes and facial features legible and both table boundaries readable. Hands rest out of view, lips closed, actual lens gaze, natural skin and cloth at this distance. No new person, facial reshaping, extra prop, merged table, text or logos. Identity is checked against the original reference before any shallow-focus derivative is accepted.",
+    "motion": "Animate the approved new two-table start frame as one continuous six-second live-action reveal, arriving at the supplied approved end frame. Keep the established Claire, wardrobe, room, normal vase size, both tables and window light.0–1s: hold the near vase sharp and the seated person behind soft.1–4.5s: the camera physically slides diagonally RIGHT and FORWARD along the clear aisle beside the near table, staying at the same low object-level height; no zoom, rise, orbit or cut. The nearby vase and its table pass out of frame to the left faster than the rear table and person.1.5–3s: transfer focus once to her eyes.4.5–6s: settle on the same Claire behind the second table, her whole head visible and eyes sharp. She follows the actual moving lens with small eye movements, a quiet breath and brief blinks; minimal head turn, no look down at the prop, no prolonged eyes closed. Generate this take’s own continuous workshop room tone and quiet breath; no dialogue, music or focus sound effect."
+  }
+}

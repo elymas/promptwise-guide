@@ -14,7 +14,8 @@
     "selection": {
       "file": "exports/stills/E02-scale-scene-image-v2.png",
       "sha256": "9956685ca29f444ca9725b69f34be229d8565fb52e6f31ec9f339fc8d0e049c5",
-      "approved_for_draft": true
+      "approved_for_draft": false,
+      "rejected_reason": "user_reported_identity_mismatch"
     },
     "observed_ko": "작고 보통 비례의 컵, 컵 접촉과 뒤 인물이 하나의 나무 상판으로 연결되고 상판 뒷변·물러나는 옆선이 읽힘. 머리 전체와 컵 전체가 보이며 실제 렌즈를 향한 얼굴. v2는 컵 테두리/손잡이 선명, 눈/얼굴/셔츠 흐림을 원본 확대에서 확인. 새 v1만 단독 참조해 초점층을 수정했다.",
     "design_deviation_ko": "사진의 컵 몸통 높이는 온전한 머리 높이의 대략 1/3로 읽혀 G1의 50–65% 목표보다 작다. 앞 모서리가 모두 프레임 안에 있지는 않다. 정상 컵/인물 비례와 연속 상판의 자연스러움을 우선하여 초안 입력으로 선택한다. 85×60cm·거리·광학 수치를 실제 사진의 실측값으로 주장하지 않는다.",
@@ -34,14 +35,22 @@
         "status": "G2_draft_pass"
       }
     ],
-    "human_audio_review": "not_applicable_still"
+    "human_audio_review": "not_applicable_still",
+    "previous_selection_status_before_user_feedback": {
+      "file": "exports/stills/E02-scale-scene-image-v2.png",
+      "sha256": "9956685ca29f444ca9725b69f34be229d8565fb52e6f31ec9f339fc8d0e049c5",
+      "approved_for_draft": true
+    },
+    "identity_verdict": "rejected_by_user",
+    "user_feedback_ko": "컵·인물 초점 관련 영상의 인물이 기존 Claire와 다름",
+    "previous_guide_verdict_revoked_ko": "의상/헤어의 유사성과 공간 개선이 얼굴 동일성을 보장하지 않는다. 이전 G2_draft_pass는 인물 동일성 기준으로 철회."
   },
   "G3": {
     "ready_for_user_review": true,
     "comparison_ready": false,
     "user_accepted": false,
     "G5_performed": false,
-    "status": "spatial_scale_improved_focus_comparison_failed",
+    "status": "identity_and_focus_rejected_new_low_angle_plan",
     "actual_paid_usd": "0.3766",
     "selected": {
       "a": {
@@ -67,7 +76,7 @@
       "a": "컵 초점 유지 지시 · 기준 미달",
       "b": "눈으로 초점 이동 지시 · 조기 전환"
     },
-    "observation_ko": "새 스틸과 두 영상에서 정상적인 컵 크기와 연속 상판은 유지됩니다. 그러나 A는0.5초부터 얼굴이 선명해져 컵 초점 고정 지시를 지키지 못했습니다. B도 계획한2–3초보다 이르게 얼굴이 선명해지고 컵 테두리의 흐림이 약해, A/B의 극적인 초점 인계를 보여 주지 못했습니다. 위 두 편은 성공 예제가 아닌 실제 생성 결과 검토용입니다.",
+    "observation_ko": "사용자 검토에서 인물이 기존 Claire와 다르다는 판정을 받았습니다. 새 스틸의 영상 입력 선택을 해제했습니다. 새 스틸과 두 영상에서 정상적인 컵 크기와 연속 상판은 유지됩니다. 그러나 A는0.5초부터 얼굴이 선명해져 컵 초점 고정 지시를 지키지 못했습니다. B도 계획한2–3초보다 이르게 얼굴이 선명해지고 컵 테두리의 흐림이 약해, A/B의 극적인 초점 인계를 보여 주지 못했습니다. 위 두 편은 성공 예제가 아닌 실제 생성 결과 검토용입니다.",
     "limitations_ko": "A/B 모두 광학 비교 기준 미달입니다. 정확한 전환 시점은0.5초 간격 프레임의 관찰 범위이며 실측 광학값이 아닙니다. 약한 프레임·자세 변화도 있어 통제된 실제 촬영 실험이 아닙니다. A의 추가v2는초점 유지 실패와 약2–6초 긴 눈 감음으로 제외했습니다. Bv2표준 얼굴 경로 시험은공급자가 face_detected로 거부했고 과금0입니다. 원인은확정되지 않았습니다. 추가 유료 요청은없으며720p본편으로 올리지 않았습니다.",
     "audio_note_ko": "각 테이크가 생성한 고유 원음에 일정한 음량 보정만 적용했습니다(A +22.5dB / B +19.5dB). 원본 전체 구간의 오디오 에너지와 클리핑 없음은 기술적으로 확인했습니다. 소리의 자연스러움·명료도에 대한 실제 청취 승인은 사용자 검토 전입니다.",
     "rejected": [
@@ -99,7 +108,9 @@
         "result": "natural_scale_improved_not_metric_match"
       }
     ],
-    "next_ko": "새 장면의 공간 비례는 유지한다. 다음 유료 요청 전 프롬프트 팀의 랙 포커스 결과·모델 지원 사례와 Tein 입력 경로를 비교하고, 성공 사례에 근거한 입력/모델 변경안을 먼저 만든다. 같은 Mini 지시 반복과720p확대는 진행하지 않는다."
+    "next_ko": "새 장면의 공간 비례는 유지한다. 다음 유료 요청 전 프롬프트 팀의 랙 포커스 결과·모델 지원 사례와 Tein 입력 경로를 비교하고, 성공 사례에 근거한 입력/모델 변경안을 먼저 만든다. 같은 Mini 지시 반복과720p확대는 진행하지 않는다.",
+    "identity_verdict": "rejected_by_user",
+    "next_plan_url": "../optics-low-angle-plan/"
   },
   "requests": [
     {
@@ -108,6 +119,7 @@
       "status": "succeeded",
       "actual_usd": "0.0344",
       "selected": false,
+      "review_source": false,
       "prompt": "A photographed live-action frame. Use reference image1 only for the same adult Korean woman’s face, black hair and bangs, earrings and blue-gray shirt; do not inherit its portrait crop or plain background. Natural skin and cloth at this distance, without reshaping, uniform pores or retouching.\n\nClaire sits on a chair just behind the far edge of an ordinary rectangular timber table in a quiet workshop. The table is about85cm wide and60cm deep, with a tabletop about74cm above the floor. Show its front corners, both receding side edges and the rear edge immediately in front of her torso so one continuous shared tabletop is unmistakable. A normal small cream ceramic cup, about9.5cm high and8cm across the rim, rests on the near-left part of this same table. The whole cup and handle are inside frame, with visible wood around the contact point. Its body is about half the height of Claire’s full visible head, not face-sized. Claire’s head, including the top of her hair, remains wholly inside the upper-right part of the frame. Her hands rest out of view.\n\nThe camera is outside the front edge, at about seated-eye height and far enough back for a moderate perspective: roughly1.8m to the cup and2.4m to Claire. A60mm lens look gives a medium view across the table, with the tabletop depth visible rather than filling the entire lower frame. Claire looks at the actual camera lens with relaxed closed lips. Focus sharply on the near cup rim and handle; Claire is softly defocused behind it while her identity and silhouette remain recognizable. One soft side window lights both subjects consistently. Quiet shelves behind her. No text, logos, steam, extra cups or oversized props.",
       "parameters": {
         "model": "seedream-5-5",
@@ -122,7 +134,8 @@
       "stage": "image",
       "status": "succeeded",
       "actual_usd": "0.0344",
-      "selected": true,
+      "selected": false,
+      "review_source": true,
       "prompt": "A photographed live-action frame, editing the supplied new workshop scene. Preserve the exact camera position, framing, woman’s identity, gaze, hair, earrings, blue-gray shirt, lighting, normal small cream cup and its handle, cup contact point, continuous timber tabletop and every spatial relationship. Preserve the entire visible head and cup.\n\nChange only the optical focus: the near cup rim and handle are the ONLY sharply resolved subject. The seated woman is on a distinctly out-of-focus plane behind the cup: her eyes, facial details, hair and shirt should be visibly soft, while her silhouette and identity remain recognizable. A shallow-focus cinema lens focused on the cup, not on the person. The tabletop near the cup remains readable; the distant tabletop and workshop fall off naturally in focus. No zoom, crop, object resizing, pose change, added objects, text, beauty retouching or lighting change.",
       "parameters": {
         "model": "seedream-5-5",
@@ -137,7 +150,8 @@
       "stage": "video",
       "status": "succeeded",
       "actual_usd": "0.1026",
-      "selected": true,
+      "selected": false,
+      "review_source": true,
       "prompt": "One continuous six-second live-action shot starting at the supplied new photographic frame. Keep the normal cup scale, table geometry, contact point, face, camera framing, light and exposure unchanged. Claire keeps her gaze on the actual stationary camera lens with brief natural blinks and quiet nasal breathing; her head and chin keep the first-frame orientation, her lips relaxed, and she does not look down at the cup. The cup, chair and table remain still. The camera is physically locked, without push-in, zoom, cuts or scale changes. Native sound for this individual take: low workshop room tone and quiet breath across the full clip, without speech, music or a focus-motor effect.\n\nKeep only the foreground cup rim and handle sharply focused for the entire shot. The face behind stays softly defocused. No focus change.",
       "parameters": {
         "model": "seedance-2",
@@ -154,7 +168,8 @@
       "stage": "video",
       "status": "succeeded",
       "actual_usd": "0.1026",
-      "selected": true,
+      "selected": false,
+      "review_source": true,
       "prompt": "One continuous six-second live-action shot starting at the supplied new photographic frame. Keep the normal cup scale, table geometry, contact point, face, camera framing, light and exposure unchanged. Claire keeps her gaze on the actual stationary camera lens with brief natural blinks and quiet nasal breathing; her head and chin keep the first-frame orientation, her lips relaxed, and she does not look down at the cup. The cup, chair and table remain still. The camera is physically locked, without push-in, zoom, cuts or scale changes. Native sound for this individual take: low workshop room tone and quiet breath across the full clip, without speech, music or a focus-motor effect.\n\nHold the near cup focus for0–2s. During2–3s, make one smooth optical focus pull onto Claire’s eyes, allowing the cup to become soft. Hold eye focus for3–6s. No face morphing, object movement or camera movement.",
       "parameters": {
         "model": "seedance-2",
@@ -172,6 +187,7 @@
       "status": "failed",
       "actual_usd": "0",
       "selected": false,
+      "review_source": false,
       "prompt": "Animate the supplied photographed frame as one continuous six-second locked-off optical rack-focus demonstration. Preserve the exact cup size, tabletop, seated woman, composition and lighting.\n\nFor the first TWO seconds, ONLY the near cream cup rim is in sharp focus. The entire woman behind it, especially her eyes and facial details, is STRONGLY OUT OF FOCUS, visibly indistinct soft shapes, exactly as in the supplied frame. At second2, slowly pull the lens focus AWAY FROM the cup TO the woman’s eyes, finishing at second3. For the final three seconds, ONLY her eyes are sharp; the entire foreground cup is now STRONGLY OUT OF FOCUS with a visibly diffuse rim and handle. This pronounced exchange of optical sharpness is the sole main event. Maintain one shallow focus plane, never both subjects sharp.\n\nThe camera stays in exactly the same place with identical framing; the objects do not move or resize. She keeps looking at the stationary lens with relaxed closed lips, natural brief blinks and quiet nasal breath. The native sound for this take is quiet workshop room tone and breath throughout, without dialogue, music or lens sound effects.",
       "parameters": {
         "model": "seedance-2",
@@ -189,6 +205,7 @@
       "status": "succeeded",
       "actual_usd": "0.1026",
       "selected": false,
+      "review_source": false,
       "prompt": "A six-second photographed live-action shot of the small ceramic cup in the supplied frame. The cup rim and handle stay crisply IN FOCUS for the WHOLE six seconds. The seated woman BEHIND the cup stays STRONGLY OUT OF FOCUS for the WHOLE six seconds: her facial features, eyes, hair and shirt remain indistinct optical blur. Preserve exactly this foreground-focused shallow depth of field from the supplied frame. Never bring the woman into focus, never autofocus, never rack focus. Only the cup is sharp.\n\nKeep the camera position, framing, normal cup size, tabletop geometry, lighting and object contact unchanged. The woman’s silhouette remains still apart from a little natural breathing; she faces the stationary lens with closed lips. No head turn, object movement, camera move, crop or zoom. Native audio for this individual take: quiet continuous workshop room tone and soft nasal breathing, no speech, music or added focus-motor sound.",
       "parameters": {
         "model": "seedance-2",
