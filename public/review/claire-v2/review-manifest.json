@@ -1,0 +1,45 @@
+{
+  "summary": "소리 포함 실사 A/B 파일럿 4쌍. 사용자 검토 전 480p 초안이며, 실제 차이와 한계는 각 카드에 표시했습니다. 환경음이 작은 영상은 재생용 음량만 보정했습니다.",
+  "pairs": [
+    {
+      "id": "E01",
+      "note": "B의 가까운 기둥이 빠르게 화면 밖으로 이동하며 뒤 선반이 남습니다. 얼굴은 대체로 렌즈를 향하고 자연스럽게 깜빡입니다. A/B의 인물 위치·배경 배치는 다르며, 지시한 이동 거리를 실측한 결과는 아닙니다.",
+      "status": "review_candidate",
+      "a": "media/E01-a-mini-v1.mp4",
+      "a_poster": "media/E01-a-mini-v1.jpg",
+      "b": "media/E01-b-mini-v1.mp4",
+      "b_poster": "media/E01-b-mini-v1.jpg",
+      "comparison": "media/E01-comparison.mp4"
+    },
+    {
+      "id": "E04",
+      "note": "B는 얼굴의 명암과 그림자가 뚜렷합니다. 턱 높이를 유지하는 영상으로 수정했습니다. B는 그림자 경도도 커져 광원 방향 하나만 바꾼 통제 실험은 아닙니다. 밝은 쪽은 실제 화면 오른쪽입니다.",
+      "status": "review_with_limitations",
+      "a": "media/E04-a-mini-v2.mp4",
+      "a_poster": "media/E04-a-mini-v2.jpg",
+      "b": "media/E04-b-mini-v2.mp4",
+      "b_poster": "media/E04-b-mini-v2.jpg",
+      "comparison": "media/E04-comparison.mp4"
+    },
+    {
+      "id": "E07",
+      "note": "양쪽 모두 Seedance 2.5 480p입니다. B의 약1–2초 착지에 물방울이 크게 튀고, A의 물 반응은 작습니다. 뒤 발이 들리는 후속 자세는 추가 검토가 필요합니다. 발소리·물소리도 각 생성 결과에 포함돼 있습니다.",
+      "status": "review_candidate",
+      "a": "media/E07-a-physics-v1.mp4",
+      "a_poster": "media/E07-a-physics-v1.jpg",
+      "b": "media/E07-b-physics-v1.mp4",
+      "b_poster": "media/E07-b-physics-v1.jpg",
+      "comparison": "media/E07-comparison.mp4"
+    },
+    {
+      "id": "E10",
+      "note": "고정 카메라와 전진 돌리를 비교합니다. 광학 줌은 문장과 3D 참조로도 확실히 분리되지 않아 이 항목을 단순화했습니다. 고정 구도도 유효한 연출이며, 이 결과를 줌/돌리 재현 성공으로 표시하지 않습니다.",
+      "status": "review_candidate",
+      "a": "media/E10-a-mini-static-v1.mp4",
+      "a_poster": "media/E10-a-mini-static-v1.jpg",
+      "b": "media/E10-b-mini-v2r1.mp4",
+      "b_poster": "media/E10-b-mini-v2r1.jpg",
+      "comparison": "media/E10-comparison.mp4"
+    }
+  ]
+}
