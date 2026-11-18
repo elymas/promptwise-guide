@@ -1,0 +1,19 @@
+{
+  "verified_at": "2026-11-18T09:08:18.985698+00:00",
+  "provider": "Tein",
+  "api_host": "https://api.tein.ai",
+  "generation_route": "/v1/generate",
+  "readback_route": "/v1/jobs/{id}",
+  "job_id": "gen_50739d6f4ae9ca87af7a487c57cac1f2",
+  "status": "succeeded",
+  "model": "seedance-2",
+  "quality": "mini",
+  "actual_usd": "0.1368",
+  "key_disclosed": false,
+  "fallback_provider": null,
+  "batch_usage_cost_usd": 2.9469,
+  "successful_images": 6,
+  "successful_video_requests": 23,
+  "selected_video_clips": 20,
+  "cap_usd": 3
+}
