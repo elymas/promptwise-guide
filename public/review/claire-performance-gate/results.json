@@ -1,0 +1,118 @@
+{
+  "id": "claire-performance-gate-2026-11-19",
+  "provider": "Tein",
+  "api_host": "https://api.tein.ai",
+  "model": "seedance-2-5",
+  "status": "fixed_performance_observed_identity_and_listening_pending",
+  "conclusion": "입·시선·깜빡임은 확인 · 얼굴 동일성 판정은 보류",
+  "summary": "이 고정 샷에서는 입 다묾과 짧은 깜빡임, 렌즈 쪽 응시가 관찰됐습니다. 원본과 눈·입 주변의 인상 차이가 남아 모든 관문을 통과한 결과로 표시하지 않습니다.",
+  "actual_usd": "0.4960",
+  "cap_usd": "0.60",
+  "remaining_usd": "0.1040",
+  "requests": 1,
+  "pending_requests": 0,
+  "width": 854,
+  "height": 480,
+  "duration_seconds": 4.064,
+  "video": "review/claire-performance-gate/media/CPG-static-v1.mp4",
+  "native_video": "review/claire-performance-gate/media/CPG-static-v1-native.mp4",
+  "poster": "review/claire-performance-gate/media/poster.jpg",
+  "captions": "review/claire-performance-gate/media/native-audio.vtt",
+  "identity_board": "review/claire-performance-gate/media/identity-board.jpg",
+  "frame_grid": "review/claire-performance-gate/media/frame-grid.jpg",
+  "blink_board": "review/claire-performance-gate/media/blink.jpg",
+  "grid_width": 1440,
+  "grid_height": 690,
+  "audio_gain_db": 18.5,
+  "audio_note": "이 테이크 고유 원음에 일정한 +18.5dB만 적용한 검토본. 생성 원본은 별도로 보존했습니다.",
+  "observations": [
+    {
+      "criterion": "입 다묾",
+      "status": "관찰 통과",
+      "note": "97개 원본 프레임의 추출본·시간순 보드에서 입 벌림이나 말하는 입 모양은 관찰되지 않았습니다. 입을 다문 상태가 끝까지 이어집니다."
+    },
+    {
+      "criterion": "시선과 고정 구도",
+      "status": "고정 샷에서 관찰",
+      "note": "큰 화면 밖 시선 이탈과 의도하지 않은 카메라 전진·컷은 보이지 않았습니다. 카메라가 움직이지 않으므로 이동 렌즈 추적 능력을 확인한 결과는 아닙니다."
+    },
+    {
+      "criterion": "짧은 깜빡임",
+      "status": "실제 프레임 확인",
+      "note": "약3.46–3.63초 프레임에서 눈이 완전히 감겼고, 약3.75초에 다시 렌즈 쪽 응시로 돌아옵니다. 완전히 감긴 프레임은5개(약0.21초)이며 긴 눈감음으로 이어지지 않았습니다."
+    },
+    {
+      "criterion": "Claire 동일성",
+      "status": "판정 보류",
+      "note": "헤어·귀걸이·셔츠와 얼굴의 시간적 안정성은 유지됩니다. 다만 원본과 대조하면 눈·입 주변과 턱의 인상 차이가 남아 보입니다. 조명·각도·480p 영향과 인물 차이를 분리할 수 없어 동일성 통과로 확정하지 않습니다."
+    },
+    {
+      "criterion": "얼굴 초점과 샷 크기",
+      "status": "부분 확인",
+      "note": "한 번의 초점 교환 없이 얼굴이 읽히는 상태와 전체 머리 구도가 유지됩니다. 실제 결과는 요청한 근접 구도보다 넓은 상반신 미디엄에 가깝고,480p 얼굴 세부 질감은 본편 검수 수준이 아닙니다."
+    },
+    {
+      "criterion": "테이크 고유 원음",
+      "status": "기술 검사 완료 · 청취 판정 전",
+      "note": "소리 크기가 작아 이 테이크의 원음만 +18.5dB 일정 보정했습니다. 다른 환경음·음악·TTS는 넣지 않았습니다. 영상 스트림 동일·오디오 상관0.99993·클리핑0을 확인했으며, 실제 소리의 자연스러움에 대한 청취 판정은 남아 있습니다."
+    }
+  ],
+  "limitations": [
+    "새 영상과 기존6초 Mini 이동 초안은 모델·길이·구도·프롬프트가 다릅니다. 이1편으로 모델만의 성능 차이나 우열을 결론 내리지 않습니다.",
+    "고정 샷의 응시 검사입니다. E13 이동 렌즈 추적 A/B와 E02 고정 카메라 랙 포커스 A/B는 미완료입니다.",
+    "원본 신원 기준과 결과를 별도로 대조해야 합니다. 새 종료 스틸과 닮았다는 이유만으로 동일성을 통과시키지 않습니다.",
+    "사용자 최종 확정과720p/1080p 본편 검수는 아직입니다. 이번 잔여0.1040은 추가1편의 생성 허용이 아닙니다."
+  ],
+  "next_action": "우선 대조 보드의 원본·결과 얼굴을 검토합니다. 동일성을 정리한 뒤 이동 렌즈 추적을 별도 기획·견적하며, 이번에는 추가 유료 요청을 제출하지 않습니다.",
+  "prompt": "One continuous four-second live-action shot. @Image1 owns the established adult Claire identity, face proportions, age impression, hair, earrings and shirt. @Image2 supplies only the workshop, side-window light, seated posture and low camera framing; preserve the identity of @Image1 where they differ.\n\nLOCKED CAMERA for the entire take, matching @Image2 as a medium close shot with the entire head inside frame. Keep her eyes sharply focused from the first frame to the last; no focus transfer, push, pan, zoom or cut.\n\nClaire is quietly listening to the person exactly behind the lens, staying present and attentive. Her face points toward the lens and her eyes stay engaged with that actual lens. She breathes gently through her nose with her lips resting together, without talking or miming speech. One ordinary brief blink may occur; her eyes reopen promptly to the same lens. Her shoulders settle almost imperceptibly with the breath. Both hands stay in her lap below the frame and do not enter it. Her settled listening state continues through the final second; do not add a surprised reaction or a smile to end the take.\n\nKeep the same room, soft side-window lighting, natural visible skin and cloth texture at this distance, and steady background. Record this take's own quiet workshop room tone and subtle breath, no dialogue, music or added effect. Preserve the same Claire, closed resting lips and sharp eyes throughout.",
+  "user_accepted": false,
+  "G5_performed": false,
+  "parameters": {
+    "model": "seedance-2-5",
+    "omni_reference_task_type": "reference",
+    "duration": 4,
+    "resolution": "480p",
+    "ratio": "16:9",
+    "generate_audio": true,
+    "pass_faces": true,
+    "bitrate_mode": "high",
+    "output_format": "mp4",
+    "priority": false,
+    "creative_mode": false,
+    "watermark": false,
+    "draft": false
+  },
+  "reference_roles": [
+    {
+      "role": "identity_authority",
+      "source_sha256": "301ce886477535e0ca88258c8c2761aedb64a4b87237c055244fc98c6835c591"
+    },
+    {
+      "role": "provisional_scene_and_framing_not_identity_authority",
+      "source_sha256": "c2ed170abcba45a5a1298a10c6cc4d286d083d0092c9a569f1822e664cb9fa86"
+    }
+  ],
+  "source_video_sha256": "a2f161d200ebe4ccd6af5facb1424634ce85eefb76c59bacbe3b4e7242dd6f7f",
+  "audio_preservation": {
+    "gain_db": 18.5,
+    "source_sha256": "a2f161d200ebe4ccd6af5facb1424634ce85eefb76c59bacbe3b4e7242dd6f7f",
+    "published_sha256": "0b85dd09c2911ff58c95865261c7a684dab96f4a10b32213f5e470bf8fde0023",
+    "video_elementary_stream_identical": true,
+    "audio_correlation": 0.9999339655486785,
+    "published_rms_dbfs": -29.045738792260522,
+    "published_peak_dbfs": -14.33598579028898,
+    "clipped_sample_fraction": 0.0,
+    "audio_replaced": false,
+    "human_listening_verdict": "pending; metrics do not establish perceived quality"
+  },
+  "media": {
+    "identity-board.jpg": "5c7f6d1694f801dba5b65e3c8a414a153a1ca11a3c4ce3c3d540581c9225f56f",
+    "CPG-static-v1-native.mp4": "a2f161d200ebe4ccd6af5facb1424634ce85eefb76c59bacbe3b4e7242dd6f7f",
+    "poster.jpg": "535eddeb8e8eaec9b39744925a8db9f0e298ac73bb57391539882b1cbfee3a21",
+    "blink.jpg": "6b8e8e44a578ab6a6c7cd6ebd04a5e73db3aabc7763ad14503e1c2252e9420ef",
+    "frame-grid.jpg": "9fd303d979116a0e8808ed66c9cf970f7bd1ed64d78c343320a9a359716081fe",
+    "CPG-static-v1.mp4": "0b85dd09c2911ff58c95865261c7a684dab96f4a10b32213f5e470bf8fde0023",
+    "native-audio.vtt": "a9480b30fb0ee0656e48ab245ef359ad0599f96d3df3ce3e6bf56eaa8d23e29a"
+  },
+  "previous_funds_transferred": false
+}
