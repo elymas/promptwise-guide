@@ -1,0 +1,68 @@
+{
+  "provider": "Tein",
+  "original_take": "ACT-06",
+  "original_prompt_file": "review/acting-v2/prompts.json",
+  "original_prompt_id": "ACT-06",
+  "resolution": {
+    "width": 854,
+    "height": 480
+  },
+  "fps": 24,
+  "frame_count": 192,
+  "audio_packet_sha256": "d18cb1dcb02b39ab15fedad350b75fd5a19537117b1d1433f576f62b2c760a0f",
+  "edit_coordinates": "[left, top, width, height] in source pixels",
+  "edit_ranges": "Display frames numbered from 1, inclusive; times relative to the first video frame",
+  "opening": {
+    "frames": [
+      1,
+      36
+    ],
+    "time_seconds": [
+      0,
+      1.5
+    ],
+    "crop": [
+      252,
+      278,
+      356,
+      200
+    ]
+  },
+  "closing": {
+    "frames": [
+      157,
+      192
+    ],
+    "time_seconds": [
+      6.5,
+      8
+    ],
+    "crop": [
+      300,
+      278,
+      356,
+      200
+    ]
+  },
+  "versions": {
+    "E22-A": "original",
+    "E22-B": "opening",
+    "E24-A": "opening",
+    "E24-B": "opening_and_ending"
+  },
+  "files": {
+    "original": {
+      "path": "review/acting-v2/media/ACT-06-b-take.mp4",
+      "sha256": "ff10589e28c183690083307d3f19a6405e97c09e71a31a23b5ab436fa617af46"
+    },
+    "opening": {
+      "path": "review/story-envelope/media/envelope-opening.mp4",
+      "sha256": "6a11383daccfd0bfd836ac88bf58e5efc87fbc8786738c8fddfff02e4cf1daa8"
+    },
+    "opening_and_ending": {
+      "path": "review/story-envelope/media/envelope-opening-and-ending.mp4",
+      "sha256": "cf7151ab6397c154245bad01360c3386c57eb617b11f0e5a38d6d96cfc86036d"
+    }
+  },
+  "new_paid_requests": 0
+}

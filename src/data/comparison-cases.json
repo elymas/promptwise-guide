@@ -689,5 +689,66 @@
         "prompt": "Exactly two shots, with one hard cut at 3 seconds. SHOT 1, 0.0-3.0 seconds: locked medium view. Claire holds the single ivory mug completely motionless at the same height as the first frame, well above the tabletop. The right hand grips its single handle, and the left hand rests on the table. The mug does NOT lower or touch the table anywhere in shot 1. SHOT 2, 3.0-6.0 seconds: hard cut to a closer view on the same side of the action axis. The first frame after the cut shows the same mug still suspended at the same height in the same right hand. Only AFTER the cut, from 3.2 to 4.8 seconds, the right hand lowers the mug in one continuous movement onto the table. From 4.8 to 5.5 seconds the right fingers release the handle; hold to the end. The left hand never moves. Same face, blue-grey shirt, ivory mug, handle and walnut table throughout. One mug, two hands, no hand swap, no liquid. Silent, no text, captions or logos."
       }
     ]
+  },
+  {
+    "id": "E22",
+    "topic": "story",
+    "still": false,
+    "review": "review/story-envelope/",
+    "title": "첫 화면에서 빨간 봉투를 먼저 읽게 하기",
+    "change": "같은 ACT-06에서 A는 얼굴이 보이는 원본으로 열고, B는 첫 1.50초를 빨간 봉투와 손의 인서트로 엽니다.",
+    "watch": "0초에 먼저 들어오는 대상과 “찾았어”가 가리키는 물건을 보세요.",
+    "note": "A에도 봉투가 보입니다. B는 첫 화면에서 봉투의 화면 내 크기를 약 2.4배로 키웠습니다. 원본의 대사와 음성 데이터를 그대로 사용했습니다.",
+    "a": {
+      "video": "review/acting-v2/media/ACT-06-b-take.mp4",
+      "poster": "review/story-envelope/media/wide-opening.jpg",
+      "resolution": "854×480"
+    },
+    "b": {
+      "video": "review/story-envelope/media/envelope-opening.mp4",
+      "poster": "review/story-envelope/media/insert-opening.jpg",
+      "resolution": "854×480"
+    },
+    "sources": [
+      "PW-106-p1",
+      "PW-106-p9"
+    ],
+    "inputs": [
+      {
+        "label": "B에 적용한 편집 지시",
+        "prompt": "ACT-06 원본의 첫 36프레임을 x252, y278에서 356×200으로 크롭해 봉투와 손을 강조한다. 37번째 프레임부터 원본 구도를 유지한다. 음성 데이터와 길이는 그대로 둔다."
+      }
+    ]
+  },
+  {
+    "id": "E24",
+    "topic": "story",
+    "still": false,
+    "review": "review/story-envelope/",
+    "title": "처음 보여 준 빨간 봉투로 끝내기",
+    "change": "두 버전은 같은 봉투 인서트로 시작합니다. A는 Erin의 표정으로, B는 마지막 1.50초에 같은 빨간 봉투로 마무리합니다.",
+    "watch": "6.50초 이후 인물과 봉투 중 어느 쪽이 끝에 남는지 보세요. 카드 미리보기는 7초입니다.",
+    "note": "B의 마지막 화면은 첫 장면의 단서를 회수합니다. 봉투는 같은 테이블에 놓여 있고 손으로 건네지 않습니다. 두 편집의 원음 데이터는 같습니다.",
+    "a": {
+      "video": "review/story-envelope/media/envelope-opening.mp4",
+      "poster": "review/story-envelope/media/wide-ending.jpg",
+      "resolution": "854×480"
+    },
+    "b": {
+      "video": "review/story-envelope/media/envelope-opening-and-ending.mp4",
+      "poster": "review/story-envelope/media/insert-ending.jpg",
+      "resolution": "854×480"
+    },
+    "sources": [
+      "PW-106-p5",
+      "PW-106-p9",
+      "PW-106-p10"
+    ],
+    "inputs": [
+      {
+        "label": "B에 적용한 편집 지시",
+        "prompt": "ACT-06의 공통 오프닝을 유지한다. 157번째 프레임부터 마지막까지 x300, y278에서 356×200으로 크롭해 빨간 봉투로 끝낸다. 음성 데이터와 길이는 그대로 둔다."
+      }
+    ]
   }
 ]

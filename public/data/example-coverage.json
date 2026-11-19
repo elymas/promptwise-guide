@@ -3,9 +3,9 @@
   "counts": {
     "available_draft": 7,
     "needs_rework": 2,
-    "planned": 5,
+    "planned": 3,
     "partial_related": 6,
-    "available_adaptation": 2,
+    "available_adaptation": 4,
     "workflow_documented": 2
   },
   "approval_scope": [
@@ -582,10 +582,19 @@
       "topic": "story",
       "title": "문제부터 보이는 첫 화면",
       "format": "video_ab",
-      "state": "planned",
-      "label": "미제작",
-      "links": [],
-      "note": "기존 자료만으로 이 계획의 차이를 보여 줄 수 없어 전용 제작이 필요합니다.",
+      "state": "available_adaptation",
+      "label": "소리 있는 편집 A/B 공개 · 봉투 장면",
+      "links": [
+        {
+          "label": "빨간 봉투 편집 비교",
+          "href": "examples/#compare-E22"
+        },
+        {
+          "label": "원본과 프레임 기록",
+          "href": "review/story-envelope/"
+        }
+      ],
+      "note": "같은 ACT-06 영상과 음성으로 첫 화면의 봉투 가독성을 비교합니다. 악보가 젖는 문제를 첫 화면에 보여 주는 장면은 별도 제작안입니다.",
       "source_ids": [
         "PW-106-p1",
         "PW-106-p9"
@@ -626,10 +635,19 @@
       "topic": "story",
       "title": "첫 소품을 마지막에 회수",
       "format": "video_ab",
-      "state": "planned",
-      "label": "미제작",
-      "links": [],
-      "note": "기존 자료만으로 이 계획의 차이를 보여 줄 수 없어 전용 제작이 필요합니다.",
+      "state": "available_adaptation",
+      "label": "소리 있는 편집 A/B 공개 · 봉투 장면",
+      "links": [
+        {
+          "label": "빨간 봉투 편집 비교",
+          "href": "examples/#compare-E24"
+        },
+        {
+          "label": "원본과 프레임 기록",
+          "href": "review/story-envelope/"
+        }
+      ],
+      "note": "같은 오프닝과 Erin의 반응 뒤 마지막 1.50초만 바꿔 봉투의 시각적 회수를 비교합니다. 악보를 구하는 이야기의 결말은 별도 제작안입니다.",
       "source_ids": [
         "PW-106-p5",
         "PW-106-p9",

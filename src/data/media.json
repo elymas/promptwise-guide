@@ -322,12 +322,16 @@
       "Claire",
       "Erin"
     ],
-    "coverageScope": "E23 편집 A/B 공개 · E22 첫 화면과 E24 소품 회수는 제작 예정",
+    "coverageScope": "E22 첫 화면 · E23 인과 · E24 소품 회수 편집 A/B 공개",
     "audioLabel": "ACT-09 B 원음 · 한국어 대사",
     "related": [
       {
         "label": "A/B 나란히 보기",
         "href": "examples/#compare-E23"
+      },
+      {
+        "label": "빨간 봉투 · 첫 화면과 마지막 화면 편집 비교",
+        "href": "review/story-envelope/"
       }
     ],
     "archive": {
