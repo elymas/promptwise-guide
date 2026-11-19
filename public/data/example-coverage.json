@@ -361,8 +361,12 @@
       "title": "직접 응시와 렌즈 추적",
       "format": "video_ab",
       "state": "partial_related",
-      "label": "관련 자료 있음 · 전용 비교 미완료",
+      "label": "실제 이동 클립 시선 검수 · 전용 A/B 제작 전",
       "links": [
+        {
+          "label": "이동 원본의 1.5·3·4.5초 시선 대조",
+          "href": "review/gaze-tracking/"
+        },
         {
           "label": "새4초 얼굴·시선 검사 · 동일성 보류",
           "href": "review/claire-performance-gate/"
@@ -372,13 +376,13 @@
           "href": "review/claire-v2/#E01"
         }
       ],
-      "note": "Tein Seedance2.5 고정4초1편에서 입 다묾·렌즈 쪽 응시·짧은 깜빡임을 관찰했습니다. 원본과 눈·입·턱 인상 차이가 남아 동일성은 보류하며, 실제 청취 판정도 남았습니다. 이동 렌즈 추적 전용 A/B는 미완료입니다.",
+      "note": "두 테이블 이동 초안은 1.5초와 3초에 시선이 화면 왼쪽으로 향하고 4.5초에 렌즈 쪽으로 돌아옵니다. 고정 샷과 동일 조건의 결과는 아니며, 같은 옆 이동을 사용한 시선 추적 A/B 제작은 남아 있습니다.",
       "source_ids": [
         "PW-051-p3"
       ],
       "priority": 1,
-      "variant_a": "look at camera라는 기본 지시",
-      "variant_b": "카메라 전진 중 실제 렌즈를 눈으로 추적, 자연스러운 깜빡임",
+      "variant_a": "같은 옆 이동 중 시작 위치의 고정 표시를 계속 봄",
+      "variant_b": "같은 옆 이동 중 실제 렌즈 중심을 따라봄",
       "acceptance": "화면 밖 시선 이탈 없이 렌즈와 눈의 관계 유지",
       "planning_links": [
         {

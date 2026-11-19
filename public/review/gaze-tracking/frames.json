@@ -1,0 +1,80 @@
+{
+  "provider": "Tein",
+  "fps": 24,
+  "linear_gaze_target_verified": false,
+  "new_requests": 0,
+  "sources": {
+    "moving": {
+      "path": "review/optics-low-angle-result/media/low-angle-motion.mp4",
+      "sha256": "081b8ea0d9c2ac1b94585207b5233743c4a167d7cd6914353ff3a0e771ff1859",
+      "resolution": [
+        864,
+        496
+      ],
+      "model": "Seedance 2 Mini",
+      "crop": [
+        290,
+        18,
+        400,
+        320
+      ]
+    },
+    "fixed": {
+      "path": "review/claire-performance-gate/media/CPG-static-v1.mp4",
+      "sha256": "0b85dd09c2911ff58c95865261c7a684dab96f4a10b32213f5e470bf8fde0023",
+      "resolution": [
+        854,
+        480
+      ],
+      "model": "Seedance 2.5",
+      "crop": [
+        290,
+        12,
+        400,
+        320
+      ]
+    }
+  },
+  "frames": [
+    {
+      "source": "moving",
+      "n": 36,
+      "t": 1.5,
+      "note": "영상 왼쪽을 바라보고 입술 사이가 벌어짐",
+      "frame": {
+        "path": "review/gaze-tracking/media/moving-36.jpg",
+        "sha256": "08de7b4043cf09b0638295d0e42d60a7e753256e5413bd27b9a931d3d015bb18"
+      }
+    },
+    {
+      "source": "moving",
+      "n": 72,
+      "t": 3.0,
+      "note": "시선이 영상 왼쪽으로 유지되고 입술 사이에 틈이 보임",
+      "frame": {
+        "path": "review/gaze-tracking/media/moving-72.jpg",
+        "sha256": "0364176e87536fecd9c49c879a67fa85aae034ce4d46458f712350f6356885d7"
+      }
+    },
+    {
+      "source": "moving",
+      "n": 108,
+      "t": 4.5,
+      "note": "눈이 렌즈 쪽을 향하고 입술이 닫힘",
+      "frame": {
+        "path": "review/gaze-tracking/media/moving-108.jpg",
+        "sha256": "01b83e0b68b1164baa0316bcb5496aabeaad2f41b1c852f0268a62d6bd57525c"
+      }
+    },
+    {
+      "source": "fixed",
+      "n": 36,
+      "t": 1.5,
+      "note": "고정 카메라를 바라보며 입술이 닫혀 있음",
+      "frame": {
+        "path": "review/gaze-tracking/media/fixed-36.jpg",
+        "sha256": "61a00fe28abc112b60c2c55d39973e014a3abb043b9e208f80febd006515c357"
+      }
+    }
+  ]
+}

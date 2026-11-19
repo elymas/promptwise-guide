@@ -198,6 +198,10 @@
     "audioLabel": "B 고유 생성 원음 · 비언어 반응과 환경음",
     "related": [
       {
+        "label": "이동 중 렌즈 응시 · E13 시점별 검수",
+        "href": "review/gaze-tracking/"
+      },
+      {
         "label": "충격음과 눈 감김 · E14 원음 시간축",
         "href": "review/impact-and-reaction/"
       },
