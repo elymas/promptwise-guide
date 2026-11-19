@@ -58,12 +58,42 @@
     },
     {
       "source": "moving",
+      "n": 96,
+      "t": 4.0,
+      "note": "눈이 정면에 가까워지고 입술 사이의 틈이 줄어듦",
+      "frame": {
+        "path": "review/gaze-tracking/media/moving-96.jpg",
+        "sha256": "40f6f0551c0df33cdcb3704776853ce8a7f8d6291396fe1a8a5e8a1d9f448f80"
+      }
+    },
+    {
+      "source": "moving",
       "n": 108,
       "t": 4.5,
       "note": "눈이 렌즈 쪽을 향하고 입술이 닫힘",
       "frame": {
         "path": "review/gaze-tracking/media/moving-108.jpg",
         "sha256": "01b83e0b68b1164baa0316bcb5496aabeaad2f41b1c852f0268a62d6bd57525c"
+      }
+    },
+    {
+      "source": "moving",
+      "n": 120,
+      "t": 5.0,
+      "note": "눈꺼풀이 닫혀 있는 프레임",
+      "frame": {
+        "path": "review/gaze-tracking/media/moving-120.jpg",
+        "sha256": "84eb3fd608163351f3b01403ecf1ed613b9db2f84b0d0f430d6e6fbb1406fc0a"
+      }
+    },
+    {
+      "source": "moving",
+      "n": 132,
+      "t": 5.5,
+      "note": "눈을 다시 뜨고 렌즈 쪽을 보는 듯하며 입은 닫힘",
+      "frame": {
+        "path": "review/gaze-tracking/media/moving-132.jpg",
+        "sha256": "2231a23db4de4acf07ca9f0df52da0fde679905f3eb90ba9aec31d08833cba8c"
       }
     },
     {
