@@ -198,6 +198,10 @@
     "audioLabel": "B 고유 생성 원음 · 비언어 반응과 환경음",
     "related": [
       {
+        "label": "충격음과 눈 감김 · E14 원음 시간축",
+        "href": "review/impact-and-reaction/"
+      },
+      {
         "label": "확정된 두 얼굴 동기 분석 ACT-10",
         "href": "review/acting-v2/#ACT-10"
       },
