@@ -1,0 +1,722 @@
+{
+  "provider": "Tein API",
+  "cost": "1.4603",
+  "cap": "1.75",
+  "remaining": "0.2897",
+  "requests": 9,
+  "pairs": [
+    {
+      "id": "E06",
+      "title": "림 라이트로 머리와 어깨 분리",
+      "observation": "B의 머리와 어깨에 밝은 윤곽이 시작부터 끝까지 보입니다. 두 테이크의 벽과 얼굴 배치는 대체로 유지되며, 입이 잠시 벌어지고 깜빡이는 시점과 얼굴 하이라이트에는 편차가 있습니다.",
+      "verdict": "윤곽 차이가 또렷한 비교 초안.",
+      "card": true,
+      "grid": "review/comparison-batch/media/E06-detail.jpg",
+      "inputs": [
+        {
+          "name": "rim-plate-a",
+          "prompt": "A realistic live-action frame. Preserve the exact adult Claire shown in the reference, including the shape and spacing of her eyes, nose, lips and jaw, her bangs, tied hair, small gold earrings and blue-gray collared shirt. A locked eye-height medium close-up, seated quietly, head entirely in frame, facing directly forward. Dark matte charcoal wall behind her. A large dim window camera left shapes her near cheek, with a soft shadow on the far cheek. The background stays dark and the shadow-side edge of her dark hair is barely distinct from it. Natural pores, individual hairs, woven fabric and neutral white balance. Simple portrait composition, hands below frame.",
+          "parameters": {
+            "model": "gpt-image-2",
+            "endpoint": "flat",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "image_quality": "High",
+            "input_fidelity": "high",
+            "n": 1,
+            "output_format": "png",
+            "background": "opaque"
+          },
+          "status": "succeeded",
+          "reference_sha256": [
+            "301ce886477535e0ca88258c8c2761aedb64a4b87237c055244fc98c6835c591"
+          ]
+        },
+        {
+          "name": "rim-plate-b",
+          "prompt": "Make an edit of the supplied portrait. Keep the exact same woman, facial geometry, gaze, pose, camera angle, framing, hair, shirt, wall, side-window key, skin exposure and white balance. The sole change is a narrow light from behind camera right. It lifts only the edge of her dark hair and far shoulder into a thin clear rim against the dark wall. The cheeks retain their existing exposure and shadow. Keep the background dark and the rim on physical hair strands and the shoulder edge.",
+          "parameters": {
+            "model": "gpt-image-2",
+            "endpoint": "flat",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "image_quality": "High",
+            "input_fidelity": "high",
+            "n": 1,
+            "output_format": "png",
+            "background": "opaque"
+          },
+          "status": "succeeded",
+          "reference_sha256": [
+            "aa271ac2b654f62a49f39995b5dbc868177241afda6331b753688815f6797ca6"
+          ]
+        },
+        {
+          "name": "E06-A",
+          "prompt": "One continuous four-second scene. @Image1 fixes the exact adult Claire face, camera, composition and lighting. Locked camera, one woman, sharp eyes, stable skin texture. She listens quietly, with lips together, soft breathing and a short natural blink. Hands stay below frame. Keep the same window key, wall and overall exposure. Record this take’s low workshop room tone and breathing. No music or dialogue. Keep the side-window key on her face and let her dark hair meet the dark wall. Hold the framing to the end.",
+          "parameters": {
+            "model": "seedance-2",
+            "quality": "mini",
+            "duration": 4,
+            "resolution": "480p",
+            "ratio": "16:9",
+            "generate_audio": true,
+            "pass_faces": true,
+            "creative_mode": false,
+            "priority": false,
+            "watermark": false
+          },
+          "status": "succeeded",
+          "reference_sha256": [
+            "aa271ac2b654f62a49f39995b5dbc868177241afda6331b753688815f6797ca6"
+          ]
+        },
+        {
+          "name": "E06-B",
+          "prompt": "One continuous four-second scene. @Image1 fixes the exact adult Claire face, camera, composition and lighting. Locked camera, one woman, sharp eyes, stable skin texture. She listens quietly, with lips together, soft breathing and a short natural blink. Hands stay below frame. Keep the same window key, wall and overall exposure. Record this take’s low workshop room tone and breathing. No music or dialogue. A narrow light behind her catches only the outer edge of her hair and shoulder, which stays distinct from the dark wall. Hold the framing to the end.",
+          "parameters": {
+            "model": "seedance-2",
+            "quality": "mini",
+            "duration": 4,
+            "resolution": "480p",
+            "ratio": "16:9",
+            "generate_audio": true,
+            "pass_faces": true,
+            "creative_mode": false,
+            "priority": false,
+            "watermark": false
+          },
+          "status": "succeeded",
+          "reference_sha256": [
+            "037af52b5d9a8fae8eef92cb929ef5883725bfbdf03611b8f02660b395dca890"
+          ]
+        }
+      ],
+      "takes": [
+        {
+          "name": "E06-A",
+          "actual_usd": "0.0712",
+          "source_sha256": "62b1122a20316f37bfebb3b85d6f26659a4d5448fe3ac9fe6726464e9a2ed9e4",
+          "width": 864,
+          "height": 496,
+          "duration": "4.096000",
+          "native_audio": {
+            "rms_dbfs": -44.94,
+            "peak_dbfs": -22.12,
+            "clipped_sample_fraction": 0.0,
+            "quarter_second_rms": [
+              {
+                "start": 0.0,
+                "dbfs": -48.23
+              },
+              {
+                "start": 0.25,
+                "dbfs": -46.61
+              },
+              {
+                "start": 0.5,
+                "dbfs": -45.16
+              },
+              {
+                "start": 0.75,
+                "dbfs": -43.2
+              },
+              {
+                "start": 1.0,
+                "dbfs": -44.87
+              },
+              {
+                "start": 1.25,
+                "dbfs": -45.8
+              },
+              {
+                "start": 1.5,
+                "dbfs": -46.61
+              },
+              {
+                "start": 1.75,
+                "dbfs": -46.15
+              },
+              {
+                "start": 2.0,
+                "dbfs": -41.86
+              },
+              {
+                "start": 2.25,
+                "dbfs": -43.13
+              },
+              {
+                "start": 2.5,
+                "dbfs": -45.2
+              },
+              {
+                "start": 2.75,
+                "dbfs": -45.74
+              },
+              {
+                "start": 3.0,
+                "dbfs": -46.03
+              },
+              {
+                "start": 3.25,
+                "dbfs": -46.45
+              },
+              {
+                "start": 3.5,
+                "dbfs": -46.16
+              },
+              {
+                "start": 3.75,
+                "dbfs": -44.79
+              }
+            ]
+          },
+          "gain_db": 14.9,
+          "audio_replaced": false,
+          "playback_peak": 0.43814486265182495,
+          "playback_sha256": "e1add2768a592dcb1691d7795329af5c56e91550d98ce690782658d207184bf2"
+        },
+        {
+          "name": "E06-B",
+          "actual_usd": "0.0712",
+          "source_sha256": "f2728ff4111972bca382068d9a7173364bf611b6c913df483d9fca67788641c7",
+          "width": 864,
+          "height": 496,
+          "duration": "4.096000",
+          "native_audio": {
+            "rms_dbfs": -46.24,
+            "peak_dbfs": -31.5,
+            "clipped_sample_fraction": 0.0,
+            "quarter_second_rms": [
+              {
+                "start": 0.0,
+                "dbfs": -51.94
+              },
+              {
+                "start": 0.25,
+                "dbfs": -49.12
+              },
+              {
+                "start": 0.5,
+                "dbfs": -47.35
+              },
+              {
+                "start": 0.75,
+                "dbfs": -45.12
+              },
+              {
+                "start": 1.0,
+                "dbfs": -46.44
+              },
+              {
+                "start": 1.25,
+                "dbfs": -46.52
+              },
+              {
+                "start": 1.5,
+                "dbfs": -46.59
+              },
+              {
+                "start": 1.75,
+                "dbfs": -46.9
+              },
+              {
+                "start": 2.0,
+                "dbfs": -47.02
+              },
+              {
+                "start": 2.25,
+                "dbfs": -46.74
+              },
+              {
+                "start": 2.5,
+                "dbfs": -45.09
+              },
+              {
+                "start": 2.75,
+                "dbfs": -44.06
+              },
+              {
+                "start": 3.0,
+                "dbfs": -44.56
+              },
+              {
+                "start": 3.25,
+                "dbfs": -46.01
+              },
+              {
+                "start": 3.5,
+                "dbfs": -46.65
+              },
+              {
+                "start": 3.75,
+                "dbfs": -45.54
+              }
+            ]
+          },
+          "gain_db": 14.9,
+          "audio_replaced": false,
+          "playback_peak": 0.14802415668964386,
+          "playback_sha256": "a448bef424a9227d6de9e1332c1b711812ebddf670e09fc1dffb83f12523c9d3"
+        }
+      ]
+    },
+    {
+      "id": "E08",
+      "title": "입김과 유리 표면의 변화",
+      "observation": "A의 입김은 흐릿하고 넓게 보입니다. B에서는 약 2초에 흰 타원이 뚜렷하게 나타나지만 불투명하고 경계가 균일해 자연스러운 결로로 읽히기 어렵습니다. 다음 판단 기준은 반사가 조금씩 흐려지는 투명한 결로와 불규칙하게 사라지는 가장자리입니다.",
+      "verdict": "차이는 뚜렷하지만 사실감 재작업 필요.",
+      "card": true,
+      "grid": "review/comparison-batch/media/E08-detail.jpg",
+      "inputs": [
+        {
+          "name": "breath-plate",
+          "prompt": "A realistic locked side-profile close shot of the reference Claire beside a vertical cold clear window. The same adult face, bangs, tied hair, gold earrings, and blue-gray shirt. Her mouth faces the pane from a few centimeters away, with her head in profile on frame left, the glass plane visible from a slight oblique angle and the area directly ahead of her lips clearly framed on the right. A dark, readable exterior and faint reflected side light make the surface legible. The glass is initially clear and dry. Her lips are gently together as she is about to breathe out. The face and near glass are readable. Hands remain out of frame. Natural skin, real cloth, quiet cold morning.",
+          "parameters": {
+            "model": "gpt-image-2",
+            "endpoint": "flat",
+            "resolution": "2K",
+            "aspect_ratio": "16:9",
+            "image_quality": "High",
+            "input_fidelity": "high",
+            "n": 1,
+            "output_format": "png",
+            "background": "opaque"
+          },
+          "status": "succeeded",
+          "reference_sha256": [
+            "301ce886477535e0ca88258c8c2761aedb64a4b87237c055244fc98c6835c591"
+          ]
+        },
+        {
+          "name": "E08-A",
+          "prompt": "One continuous four-second live-action close shot. @Image1 supplies Claire, the initial clear glass, the framing and the window light. Lock the camera and focus on the near glass and adjacent profile. Claire stays close to the glass. Hands out of frame and head steady. At one second she exhales gently through softly parted lips once toward the cold glass, then lets her lips rest together again. Record this take’s quiet room tone and soft exhalation with no music or dialogue. The camera holds the same composition through the end of the breath.",
+          "parameters": {
+            "model": "seedance-2-5",
+            "duration": 4,
+            "resolution": "480p",
+            "ratio": "16:9",
+            "generate_audio": true,
+            "pass_faces": true,
+            "creative_mode": false,
+            "priority": false,
+            "watermark": false,
+            "omni_reference_task_type": "reference",
+            "draft": false
+          },
+          "status": "succeeded",
+          "reference_sha256": [
+            "1f8978f60017b3b16f590946d7b4f94cd2b2b406d81090d2e072669c4fb852ce"
+          ]
+        },
+        {
+          "name": "E08-B",
+          "prompt": "One continuous four-second live-action close shot. @Image1 supplies Claire, the initial clear glass, the framing and the window light. Lock the camera and focus on the near glass and adjacent profile. Claire stays close to the glass. Hands out of frame and head steady. At one second she exhales gently through softly parted lips once toward the cold glass, then lets her lips rest together again. Record this take’s quiet room tone and soft exhalation with no music or dialogue. A small patch of condensation blooms on the glass directly in front of her lips just after the breath reaches it, then thins at its edges. The rest of the glass remains clear. Keep the patch on the glass plane and preserve the visible facial profile.",
+          "parameters": {
+            "model": "seedance-2-5",
+            "duration": 4,
+            "resolution": "480p",
+            "ratio": "16:9",
+            "generate_audio": true,
+            "pass_faces": true,
+            "creative_mode": false,
+            "priority": false,
+            "watermark": false,
+            "omni_reference_task_type": "reference",
+            "draft": false
+          },
+          "status": "succeeded",
+          "reference_sha256": [
+            "1f8978f60017b3b16f590946d7b4f94cd2b2b406d81090d2e072669c4fb852ce"
+          ]
+        }
+      ],
+      "takes": [
+        {
+          "name": "E08-A",
+          "actual_usd": "0.5192",
+          "source_sha256": "ef570f95c396952307c43550c53201acecf58948d29e7f4a9544223720022ba3",
+          "width": 854,
+          "height": 480,
+          "duration": "4.064000",
+          "native_audio": {
+            "rms_dbfs": -41.63,
+            "peak_dbfs": -27.28,
+            "clipped_sample_fraction": 0.0,
+            "quarter_second_rms": [
+              {
+                "start": 0.0,
+                "dbfs": -40.09
+              },
+              {
+                "start": 0.25,
+                "dbfs": -41.13
+              },
+              {
+                "start": 0.5,
+                "dbfs": -40.92
+              },
+              {
+                "start": 0.75,
+                "dbfs": -41.11
+              },
+              {
+                "start": 1.0,
+                "dbfs": -39.68
+              },
+              {
+                "start": 1.25,
+                "dbfs": -40.08
+              },
+              {
+                "start": 1.5,
+                "dbfs": -40.64
+              },
+              {
+                "start": 1.75,
+                "dbfs": -42.04
+              },
+              {
+                "start": 2.0,
+                "dbfs": -42.89
+              },
+              {
+                "start": 2.25,
+                "dbfs": -43.17
+              },
+              {
+                "start": 2.5,
+                "dbfs": -43.9
+              },
+              {
+                "start": 2.75,
+                "dbfs": -43.87
+              },
+              {
+                "start": 3.0,
+                "dbfs": -43.3
+              },
+              {
+                "start": 3.25,
+                "dbfs": -43.19
+              },
+              {
+                "start": 3.5,
+                "dbfs": -43.64
+              },
+              {
+                "start": 3.75,
+                "dbfs": -39.77
+              }
+            ]
+          },
+          "gain_db": 11.0,
+          "audio_replaced": false,
+          "playback_peak": 0.17346704006195068,
+          "playback_sha256": "4773fe58e9880cb4eeaf68aa809bed2974883c451df5e33c0814ef91e29be0b0"
+        },
+        {
+          "name": "E08-B",
+          "actual_usd": "0.5192",
+          "source_sha256": "440e83f98c3eb2f5df2edadcfee7d67df40d9fb2a7e132abc6a2a72caf4b80d3",
+          "width": 854,
+          "height": 480,
+          "duration": "4.064000",
+          "native_audio": {
+            "rms_dbfs": -41.02,
+            "peak_dbfs": -24.78,
+            "clipped_sample_fraction": 0.0,
+            "quarter_second_rms": [
+              {
+                "start": 0.0,
+                "dbfs": -39.06
+              },
+              {
+                "start": 0.25,
+                "dbfs": -40.96
+              },
+              {
+                "start": 0.5,
+                "dbfs": -41.04
+              },
+              {
+                "start": 0.75,
+                "dbfs": -41.71
+              },
+              {
+                "start": 1.0,
+                "dbfs": -40.22
+              },
+              {
+                "start": 1.25,
+                "dbfs": -40.75
+              },
+              {
+                "start": 1.5,
+                "dbfs": -38.1
+              },
+              {
+                "start": 1.75,
+                "dbfs": -39.62
+              },
+              {
+                "start": 2.0,
+                "dbfs": -42.04
+              },
+              {
+                "start": 2.25,
+                "dbfs": -41.93
+              },
+              {
+                "start": 2.5,
+                "dbfs": -42.59
+              },
+              {
+                "start": 2.75,
+                "dbfs": -44.29
+              },
+              {
+                "start": 3.0,
+                "dbfs": -42.64
+              },
+              {
+                "start": 3.25,
+                "dbfs": -42.99
+              },
+              {
+                "start": 3.5,
+                "dbfs": -42.8
+              },
+              {
+                "start": 3.75,
+                "dbfs": -39.62
+              }
+            ]
+          },
+          "gain_db": 11.0,
+          "audio_replaced": false,
+          "playback_peak": 0.21520961821079254,
+          "playback_sha256": "85f72c23550914367415d26817d3ff0fdbe6a9fa968fb474eef3d8bea825aa73"
+        }
+      ]
+    },
+    {
+      "id": "FACS",
+      "title": "미소가 볼과 눈가에 닿는 순간",
+      "observation": "약 2.5초에 B의 볼과 눈가가 A보다 크게 움직입니다. A에서도 볼이 움직이고 B는 1초 부근에 입이 잠시 벌어집니다. 약 3초 B의 눈감김도 보여, AU의 동작과 타이밍은 부분 재현입니다.",
+      "verdict": "차이가 보이는 비교 초안.",
+      "card": true,
+      "grid": "review/comparison-batch/media/FACS-detail.jpg",
+      "inputs": [
+        {
+          "name": "FACS-A",
+          "prompt": "One continuous four-second realistic locked close-up. @Image1 fixes the same adult Claire, her face, framing, outfit and window light. She looks at the same person just beside the lens. During the first second, the faint smile in the reference settles to relaxed lips together. Both hands stay below frame, with natural blinking and breathing. Keep the face shape and skin texture consistent. This take has its own quiet interior room tone and subtle breath with no speech or music. At one second both corners of her closed lips lift slightly (AU12). Her cheeks stay relaxed and outer eye corners stay smooth. Hold briefly, then ease back toward the starting expression from three seconds.",
+          "parameters": {
+            "model": "seedance-2",
+            "quality": "mini",
+            "duration": 4,
+            "resolution": "480p",
+            "ratio": "16:9",
+            "generate_audio": true,
+            "pass_faces": true,
+            "creative_mode": false,
+            "priority": false,
+            "watermark": false
+          },
+          "status": "succeeded",
+          "reference_sha256": [
+            "bef2d33b2e07f9a0b220725c3b20540ca1b59bd29c87f76e7fbc0e45f4ff2ceb"
+          ]
+        },
+        {
+          "name": "FACS-B",
+          "prompt": "One continuous four-second realistic locked close-up. @Image1 fixes the same adult Claire, her face, framing, outfit and window light. She looks at the same person just beside the lens. During the first second, the faint smile in the reference settles to relaxed lips together. Both hands stay below frame, with natural blinking and breathing. Keep the face shape and skin texture consistent. This take has its own quiet interior room tone and subtle breath with no speech or music. At one second her cheeks rise and faint creases appear at the outer eye corners (AU6). Half a second later both corners of her closed lips follow (AU12). Hold briefly, then ease back toward the starting expression from three seconds.",
+          "parameters": {
+            "model": "seedance-2",
+            "quality": "mini",
+            "duration": 4,
+            "resolution": "480p",
+            "ratio": "16:9",
+            "generate_audio": true,
+            "pass_faces": true,
+            "creative_mode": false,
+            "priority": false,
+            "watermark": false
+          },
+          "status": "succeeded",
+          "reference_sha256": [
+            "bef2d33b2e07f9a0b220725c3b20540ca1b59bd29c87f76e7fbc0e45f4ff2ceb"
+          ]
+        }
+      ],
+      "takes": [
+        {
+          "name": "FACS-A",
+          "actual_usd": "0.0712",
+          "source_sha256": "02e9f0bbeb89d1d3ef0b92cdbca02a5d41b7fb93cf123a614980ce48fee1a2d6",
+          "width": 864,
+          "height": 496,
+          "duration": "4.096000",
+          "native_audio": {
+            "rms_dbfs": -53.35,
+            "peak_dbfs": -36.85,
+            "clipped_sample_fraction": 0.0,
+            "quarter_second_rms": [
+              {
+                "start": 0.0,
+                "dbfs": -55.66
+              },
+              {
+                "start": 0.25,
+                "dbfs": -53.86
+              },
+              {
+                "start": 0.5,
+                "dbfs": -53.07
+              },
+              {
+                "start": 0.75,
+                "dbfs": -52.95
+              },
+              {
+                "start": 1.0,
+                "dbfs": -53.9
+              },
+              {
+                "start": 1.25,
+                "dbfs": -53.99
+              },
+              {
+                "start": 1.5,
+                "dbfs": -53.51
+              },
+              {
+                "start": 1.75,
+                "dbfs": -53.42
+              },
+              {
+                "start": 2.0,
+                "dbfs": -53.84
+              },
+              {
+                "start": 2.25,
+                "dbfs": -53.07
+              },
+              {
+                "start": 2.5,
+                "dbfs": -53.58
+              },
+              {
+                "start": 2.75,
+                "dbfs": -52.17
+              },
+              {
+                "start": 3.0,
+                "dbfs": -53.3
+              },
+              {
+                "start": 3.25,
+                "dbfs": -53.69
+              },
+              {
+                "start": 3.5,
+                "dbfs": -52.66
+              },
+              {
+                "start": 3.75,
+                "dbfs": -52.49
+              }
+            ]
+          },
+          "gain_db": 17.8,
+          "audio_replaced": false,
+          "playback_peak": 0.11261475831270218,
+          "playback_sha256": "e64ab76185e3c8397522c0b84970ae951643bd33727a3335a89186edd2f61e3c"
+        },
+        {
+          "name": "FACS-B",
+          "actual_usd": "0.0712",
+          "source_sha256": "6732ad9cf6d3edd6b3776f7d50217da1b177c479b9e620d7f16d505b97233e56",
+          "width": 864,
+          "height": 496,
+          "duration": "4.096000",
+          "native_audio": {
+            "rms_dbfs": -47.77,
+            "peak_dbfs": -23.42,
+            "clipped_sample_fraction": 0.0,
+            "quarter_second_rms": [
+              {
+                "start": 0.0,
+                "dbfs": -53.61
+              },
+              {
+                "start": 0.25,
+                "dbfs": -50.81
+              },
+              {
+                "start": 0.5,
+                "dbfs": -43.88
+              },
+              {
+                "start": 0.75,
+                "dbfs": -45.57
+              },
+              {
+                "start": 1.0,
+                "dbfs": -49.65
+              },
+              {
+                "start": 1.25,
+                "dbfs": -50.73
+              },
+              {
+                "start": 1.5,
+                "dbfs": -50.22
+              },
+              {
+                "start": 1.75,
+                "dbfs": -50.01
+              },
+              {
+                "start": 2.0,
+                "dbfs": -44.68
+              },
+              {
+                "start": 2.25,
+                "dbfs": -43.03
+              },
+              {
+                "start": 2.5,
+                "dbfs": -47.92
+              },
+              {
+                "start": 2.75,
+                "dbfs": -50.47
+              },
+              {
+                "start": 3.0,
+                "dbfs": -50.68
+              },
+              {
+                "start": 3.25,
+                "dbfs": -49.98
+              },
+              {
+                "start": 3.5,
+                "dbfs": -50.36
+              },
+              {
+                "start": 3.75,
+                "dbfs": -49.27
+              }
+            ]
+          },
+          "gain_db": 17.8,
+          "audio_replaced": false,
+          "playback_peak": 0.6120702028274536,
+          "playback_sha256": "c9de5656bcc9db800c97bf4289d207ba53906f9a6c3a711a07cf093fe27d610b"
+        }
+      ]
+    }
+  ]
+}

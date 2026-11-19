@@ -1,9 +1,9 @@
 {
   "as_of": "2026-11-19",
   "counts": {
-    "available_draft": 6,
-    "needs_rework": 1,
-    "planned": 8,
+    "available_draft": 7,
+    "needs_rework": 2,
+    "planned": 6,
     "partial_related": 6,
     "available_adaptation": 2,
     "workflow_documented": 1
@@ -12,7 +12,7 @@
     "ACT-05:b",
     "ACT-10"
   ],
-  "new_paid_generations": 28,
+  "new_paid_generations": 37,
   "examples": [
     {
       "id": "E01",
@@ -167,10 +167,15 @@
       "topic": "light",
       "title": "림 라이트 추가",
       "format": "video_ab",
-      "state": "planned",
-      "label": "미제작",
-      "links": [],
-      "note": "기존 자료만으로 이 계획의 차이를 보여 줄 수 없어 전용 제작이 필요합니다.",
+      "state": "available_draft",
+      "label": "영상 A/B 초안 · 윤곽 차이 관찰",
+      "links": [
+        {
+          "label": "실제 A/B와 입력문",
+          "href": "review/comparison-batch/#E06"
+        }
+      ],
+      "note": "B의 머리와 어깨가 어두운 배경에서 분리됩니다. 입과 깜빡임, 얼굴 밝기의 작은 편차는 남아 있습니다.",
       "source_ids": [
         "PW-029-p17",
         "PW-015-p6"
@@ -210,10 +215,15 @@
       "topic": "contact",
       "title": "입김의 표면 반응",
       "format": "video_ab",
-      "state": "planned",
-      "label": "미제작",
-      "links": [],
-      "note": "기존 자료만으로 이 계획의 차이를 보여 줄 수 없어 전용 제작이 필요합니다.",
+      "state": "needs_rework",
+      "label": "영상 A/B 초안 · 결로의 사실감 재작업",
+      "links": [
+        {
+          "label": "실제 A/B와 입력문",
+          "href": "review/comparison-batch/#E08"
+        }
+      ],
+      "note": "B에서 약 2초에 흰 타원이 뚜렷하게 나타납니다. 불투명도와 경계가 균일해 자연스러운 유리 결로로 읽히기 어렵습니다.",
       "source_ids": [
         "PW-087-p4"
       ],
@@ -642,7 +652,8 @@
     "new_scale_review_spend_usd": "0.3766"
   },
   "requires_rework": [
-    "E02"
+    "E02",
+    "E08"
   ],
   "repair_batch": {
     "id": "E02-scale-20261119",
@@ -712,5 +723,17 @@
     "G5_performed": false,
     "moving_lens_tracking_ab_completed": false,
     "previous_funds_transferred": false
+  },
+  "comparison_batch": {
+    "review_url": "review/comparison-batch/",
+    "provider": "Tein API",
+    "paid_requests": 9,
+    "videos": 6,
+    "stills": 3,
+    "actual_usd": "1.4603",
+    "approved_cap_usd": "1.75",
+    "pending_requests": 0,
+    "added_study": "FACS",
+    "final_hd_completed": false
   }
 }

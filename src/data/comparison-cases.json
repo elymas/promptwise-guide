@@ -240,5 +240,71 @@
       "PW-052-p2",
       "PW-052-p4"
     ]
+  },
+  {
+    "id": "E06",
+    "topic": "light",
+    "title": "림 라이트로 머리와 어깨 분리",
+    "change": "창 쪽 주광을 유지하고 B에 뒤쪽의 좁은 빛을 추가했습니다.",
+    "watch": "어두운 벽과 맞닿는 화면 오른쪽 머리와 어깨의 경계를 보세요.",
+    "note": "윤곽 차이가 또렷한 비교 초안. B의 머리와 어깨에 밝은 윤곽이 시작부터 끝까지 보입니다. 두 테이크의 벽과 얼굴 배치는 대체로 유지되며, 입이 잠시 벌어지고 깜빡이는 시점과 얼굴 하이라이트에는 편차가 있습니다.",
+    "still": false,
+    "a": {
+      "video": "review/comparison-batch/media/E06-A.mp4",
+      "poster": "review/comparison-batch/media/E06-A.jpg"
+    },
+    "b": {
+      "video": "review/comparison-batch/media/E06-B.mp4",
+      "poster": "review/comparison-batch/media/E06-B.jpg"
+    },
+    "review": "review/comparison-batch/#E06",
+    "sources": [
+      "PW-029-p13",
+      "PW-029-p17"
+    ]
+  },
+  {
+    "id": "E08",
+    "topic": "contact",
+    "title": "입김과 유리 표면의 변화",
+    "change": "B에만 숨이 닿은 위치의 유리 표면이 국소적으로 흐려졌다가 옅어지는 과정까지 지시했습니다.",
+    "watch": "2–3초에 입 앞 유리의 반사와 흐려지는 부분을 보세요.",
+    "note": "차이는 뚜렷하지만 사실감 재작업 필요. A의 입김은 흐릿하고 넓게 보입니다. B에서는 약 2초에 흰 타원이 뚜렷하게 나타나지만 불투명하고 경계가 균일해 자연스러운 결로로 읽히기 어렵습니다. 다음 판단 기준은 반사가 조금씩 흐려지는 투명한 결로와 불규칙하게 사라지는 가장자리입니다.",
+    "still": false,
+    "a": {
+      "video": "review/comparison-batch/media/E08-A.mp4",
+      "poster": "review/comparison-batch/media/E08-A.jpg"
+    },
+    "b": {
+      "video": "review/comparison-batch/media/E08-B.mp4",
+      "poster": "review/comparison-batch/media/E08-B.jpg"
+    },
+    "review": "review/comparison-batch/#E08",
+    "sources": [
+      "PW-087-p4"
+    ]
+  },
+  {
+    "id": "FACS",
+    "topic": "performance",
+    "title": "미소가 볼과 눈가에 닿는 순간",
+    "change": "A는 입꼬리 위주의 미소, B는 볼과 눈가에서 시작해 입꼬리로 이어지는 미소를 지시했습니다.",
+    "watch": "약 2.5초에 볼과 눈가의 움직임을 나란히 보세요.",
+    "note": "차이가 보이는 비교 초안. 약 2.5초에 B의 볼과 눈가가 A보다 크게 움직입니다. A에서도 볼이 움직이고 B는 1초 부근에 입이 잠시 벌어집니다. 약 3초 B의 눈감김도 보여, AU의 동작과 타이밍은 부분 재현입니다.",
+    "still": false,
+    "a": {
+      "video": "review/comparison-batch/media/FACS-A.mp4",
+      "poster": "review/comparison-batch/media/FACS-A.jpg"
+    },
+    "b": {
+      "video": "review/comparison-batch/media/FACS-B.mp4",
+      "poster": "review/comparison-batch/media/FACS-B.jpg"
+    },
+    "review": "review/comparison-batch/#FACS",
+    "sources": [
+      "PW-107-p1",
+      "PW-107-p8",
+      "PW-107-p11"
+    ]
   }
 ]

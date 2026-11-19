@@ -58,12 +58,16 @@
     "cast": [
       "Claire"
     ],
-    "coverageScope": "E04 방향 비교 초안 · E05 그림자 경도 스틸 A/B 초안 · E06 림 라이트 미제작",
+    "coverageScope": "E04 방향 비교 · E05 그림자 경도 스틸 A/B · E06 림 라이트 영상 A/B",
     "audioLabel": "생성 원음 · 환경음",
     "related": [
       {
         "label": "하드/소프트 그림자 · 스틸 A/B",
         "href": "review/optics-v1/#E05"
+      },
+      {
+        "label": "림 라이트 A/B · 머리와 어깨 윤곽",
+        "href": "examples/#compare-E06"
       }
     ],
     "archive": {
@@ -96,9 +100,14 @@
     "cast": [
       "Claire"
     ],
-    "coverageScope": "E07 물 접촉 비교 · E08 입김·E09 눈물은 제작 예정",
+    "coverageScope": "E07 물 접촉 · E08 입김 영상 A/B 검토 · E09 눈물 미제작",
     "audioLabel": "생성 원음 · 발소리와 물소리",
-    "related": [],
+    "related": [
+      {
+        "label": "입김 A/B · 결로 사실감 검토",
+        "href": "examples/#compare-E08"
+      }
+    ],
     "archive": {
       "status": "draft",
       "video": "media/claire/contact-draft-v1.mp4",
@@ -187,6 +196,10 @@
       {
         "label": "4초 입·응시 검사 · 동일성 보류",
         "href": "review/claire-performance-gate/"
+      },
+      {
+        "label": "PW-107 미소 A/B · 볼과 눈가",
+        "href": "examples/#compare-FACS"
       }
     ],
     "archive": {
