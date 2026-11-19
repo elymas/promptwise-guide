@@ -814,5 +814,40 @@
         "prompt": "Use case: photorealistic-natural. Create a wide 16:9 three-panel photographic character reference sheet for the single fictional adult character Claire, produced for a Korean filmmaking guide. Image 1 is the authoritative identity and wardrobe reference: preserve the almond-shaped eyes and lid line, facial proportions, natural skin texture, chin, nose and lips, near-black straight hair with bangs and low ponytail, small gold hoops and slate blue-gray soft cotton button-front shirt. Image 2 is supplemental only for the low ponytail, shirt, and body silhouette of the black-haired woman on the LEFT. Disregard the other person, scene, objects, pose and lighting in image 2.\n\nExactly three equal-width adjacent panels in one horizontal row with boundaries at exactly one-third and two-thirds of the canvas width. Use the same matte neutral mid-gray studio backdrop, soft even white light, balanced exposure with natural texture, no props and no readable text or graphics. LEFT panel: photo of head and shoulders facing directly forward at eye level, both eyes visible with calm neutral expression, shoulders down, no beauty retouch, the same face as image 1. Include crown and a little space around hair. CENTER panel: full body front view, neutral symmetric upright stance with both arms loose at sides, fingers relaxed and legs straight, both feet flat, entire head and shoes visible with margin. RIGHT panel: full body rear view of literally the same person rotated 180 degrees, same stance, body proportions, size, shoulder height and floor level as center panel; low ponytail and back of the same shirt clearly visible. Full-body costume: that slate blue-gray long sleeve shirt untucked, straight charcoal work trousers, low matte black lace-up shoes, both views identical. Make the two standing figures head-to-toe with the same scale and matching horizontal head and floor lines. Use soft subtle contact shadows, realistic seams, no monochrome stylization. Preserve the clean gray gap between the panels, with subjects fully inside their own panel. No words, numbers, borders, logo or watermark. Do not blur or mask any face in this sheet."
       }
     ]
+  },
+  {
+    "id": "E14",
+    "topic": "performance",
+    "title": "충격음과 눈 감김의 순서",
+    "change": "A는 놀라고 진정하라는 지시, B는 충격음 이후 한 번의 눈 감김과 어깨 반응을 지시합니다.",
+    "watch": "A 약 0.34초, B 약 0.89초의 충격음 부근과 이후 눈 감김을 비교하세요.",
+    "note": "두 편 모두 충격음 뒤에 눈 감김이 보입니다. 효과음은 두 편에서 약 2초 지시보다 먼저 발생했습니다. 각 테이크의 생성 원음을 그대로 재생합니다.",
+    "still": false,
+    "a": {
+      "video": "review/acting-v2/media/ACT-09-a-take.mp4",
+      "poster": "review/acting-v2/media/ACT-09-a-take.jpg",
+      "resolution": "854×480"
+    },
+    "b": {
+      "video": "review/acting-v2/media/ACT-09-b-take.mp4",
+      "poster": "review/acting-v2/media/ACT-09-b-take.jpg",
+      "resolution": "854×480"
+    },
+    "review": "review/impact-and-reaction/",
+    "sources": [
+      "PW-104-p4",
+      "PW-034-p8",
+      "PW-034-p10"
+    ],
+    "inputs": [
+      {
+        "label": "A · 실제 Tein 입력문",
+        "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, locked camera. A single door slam occurs offscreen at frame-left around2seconds. Claire says exactly in Korean \"깜짝이야.\" around3.5–4.5seconds, then closes her lips. Same scene, no visible door or extra person.\n\nClaire is startled by the slam and then calms down."
+      },
+      {
+        "label": "B · 실제 Tein 입력문",
+        "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, locked camera. A single door slam occurs offscreen at frame-left around2seconds. Claire says exactly in Korean \"깜짝이야.\" around3.5–4.5seconds, then closes her lips. Same scene, no visible door or extra person.\n\nBefore the audible impact she is composed. Only after its onset, one blink and small shoulder flinch occur, followed by a short inhalation. She regains composure, says the exact Korean line once and settles for the last second. No anticipation, repeated flinch or added interjection."
+      }
+    ]
   }
 ]

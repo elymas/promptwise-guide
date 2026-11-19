@@ -1,0 +1,178 @@
+{
+  "shot": "ACT-09",
+  "provider": "Tein",
+  "duration_seconds": 6.041667,
+  "resolution": [
+    854,
+    480
+  ],
+  "fps": 24,
+  "crop": [
+    12,
+    8,
+    390,
+    370
+  ],
+  "source_ids": [
+    "PW-104-p4",
+    "PW-034-p8",
+    "PW-034-p10"
+  ],
+  "plot_seconds": 1.6,
+  "peak_window_seconds": [
+    0,
+    2
+  ],
+  "peak_bin_seconds": 0.01,
+  "waveform_bin_seconds": 0.04,
+  "audio_decode": "ffmpeg, mono 48 kHz signed PCM; no edits to published audio",
+  "new_tein_requests": 0,
+  "takes": [
+    {
+      "variant": "A",
+      "title": "일반 지시",
+      "video": "review/acting-v2/media/ACT-09-a-take.mp4",
+      "poster": "review/acting-v2/media/ACT-09-a-take.jpg",
+      "video_sha256": "34ef78131aa1a84aa5d3a3925fe0901bf8f9288d73de35c3fd2ae478479790fd",
+      "peak_seconds": 0.34,
+      "waveform": [
+        0.001497,
+        0.002569,
+        0.002159,
+        0.00317,
+        0.002532,
+        0.111558,
+        0.169844,
+        0.173519,
+        0.173802,
+        0.142348,
+        0.121225,
+        0.096562,
+        0.078581,
+        0.064472,
+        0.055335,
+        0.042822,
+        0.041124,
+        0.042142,
+        0.034694,
+        0.026173,
+        0.022683,
+        0.015629,
+        0.012726,
+        0.010294,
+        0.00836,
+        0.006977,
+        0.005156,
+        0.004909,
+        0.003711,
+        0.004045,
+        0.002658,
+        0.003231,
+        0.002574,
+        0.002444,
+        0.002223,
+        0.002218,
+        0.002439,
+        0.002129,
+        0.0026,
+        0.002875
+      ],
+      "frames": [
+        {
+          "index": 8,
+          "time_seconds": 0.3333333333333333,
+          "observation": "충격음이 큰 시점에 눈이 열려 있음",
+          "path": "review/impact-and-reaction/media/A-8.jpg",
+          "sha256": "2b054563bf4960679e1b59022f889244277448e19362ea8efc9a54fa396b6799"
+        },
+        {
+          "index": 12,
+          "time_seconds": 0.5,
+          "observation": "눈이 닫힘",
+          "path": "review/impact-and-reaction/media/A-12.jpg",
+          "sha256": "2020d964c158b72cb16f46b8a13b2a24d0c5b89d35ed9f591a87bf2b5eb12107"
+        },
+        {
+          "index": 16,
+          "time_seconds": 0.6666666666666666,
+          "observation": "입이 열리고 상체가 반응함",
+          "path": "review/impact-and-reaction/media/A-16.jpg",
+          "sha256": "720bca214c7cdc094dab95500c1b0cd19298bd7a3af0445b36abe44285243f63"
+        }
+      ]
+    },
+    {
+      "variant": "B",
+      "title": "소리 뒤 한 번의 반응을 지정",
+      "video": "review/acting-v2/media/ACT-09-b-take.mp4",
+      "poster": "review/acting-v2/media/ACT-09-b-take.jpg",
+      "video_sha256": "569eed823a0c717dd332ccdac990e34a9878927cbae442bfda10bc0dcd9b2230",
+      "peak_seconds": 0.89,
+      "waveform": [
+        0.001868,
+        0.001358,
+        0.001688,
+        0.002271,
+        0.003243,
+        0.002969,
+        0.003024,
+        0.002395,
+        0.00241,
+        0.003754,
+        0.002479,
+        0.003605,
+        0.003149,
+        0.00337,
+        0.00366,
+        0.002361,
+        0.002717,
+        0.002844,
+        0.002238,
+        0.030643,
+        0.138072,
+        0.152325,
+        0.1401,
+        0.108618,
+        0.089119,
+        0.062219,
+        0.042763,
+        0.033168,
+        0.024805,
+        0.021265,
+        0.04217,
+        0.076291,
+        0.103415,
+        0.110533,
+        0.072938,
+        0.035017,
+        0.01376,
+        0.010642,
+        0.006595,
+        0.004258
+      ],
+      "frames": [
+        {
+          "index": 21,
+          "time_seconds": 0.875,
+          "observation": "충격음이 큰 시점에 눈이 열려 있음",
+          "path": "review/impact-and-reaction/media/B-21.jpg",
+          "sha256": "601e377853ec284da724fea4cee5cc6e614d598e2b74bb6a9c1fa25fa38a74a5"
+        },
+        {
+          "index": 27,
+          "time_seconds": 1.125,
+          "observation": "눈을 감고 입이 열림",
+          "path": "review/impact-and-reaction/media/B-27.jpg",
+          "sha256": "77de419aad18a1ac42def7a491ca6a3bedc23fa8a0f44d0a4d0f289bf11cfc31"
+        },
+        {
+          "index": 30,
+          "time_seconds": 1.25,
+          "observation": "눈을 뜨고 반응이 이어짐",
+          "path": "review/impact-and-reaction/media/B-30.jpg",
+          "sha256": "15fecf7ade46c1b94943c3862f287b5d3bdf19400210391ddbacc38218d21894"
+        }
+      ]
+    }
+  ]
+}
