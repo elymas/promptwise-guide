@@ -1,0 +1,11 @@
+{
+  "provider": "Tein",
+  "model": "Seedance 2.5",
+  "status": "unsubmitted",
+  "duration_seconds": 4,
+  "common": "Locked four-second 100 mm macro close-up on Claire's left eye from the supplied opening frame. Preserve framing, gaze, age impression, lashes, bangs, skin, and the existing left window catchlight. Keep the cheek and lower lid in useful focus. A single continuous shot with no zoom or cut. Quiet wordless performance, no dialogue or music. Use native audio for this take: low room air and one subtle breath.",
+  "variants": {
+    "A": "Her eye wells up and one tear runs down the cheek.",
+    "B": "From 0.0 to 0.8 seconds the cheek stays dry and the gaze steady. From 0.8 to 1.8 seconds one transparent bead builds on the lower lid below the outer iris as the lid barely quivers. Hold that bead attached to the lash line for one brief beat, then let it spill down the cheek under gravity between 2.0 and 3.2 seconds. The trail remains connected to the lower lid and the small tip stays on the cheek for the final beat. Only this one tear. No second bead appearing mid-cheek, disappearing trail, opaque stripe or fused eyelashes."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "provider": "ChatGPT built-in image generation",
+  "source_ids": [
+    "PW-103-p1",
+    "PW-103-p8"
+  ],
+  "face_reference": {
+    "path": "media/claire-reference.png",
+    "sha256": "301ce886477535e0ca88258c8c2761aedb64a4b87237c055244fc98c6835c591"
+  },
+  "stills": [
+    {
+      "path": "review/tear-path/media/opening.webp",
+      "role": "common_first_frame",
+      "width": 1672,
+      "height": 941,
+      "sha256": "9a07e96707305fb0904d8f6a7d65272883f0089443a5450cd53427c2c00edac8",
+      "source_png_sha256": "3b6030b842f6a5be98fc70573b0a401608c53f316748baa7b200468693464fe4"
+    },
+    {
+      "path": "review/tear-path/media/ending-target.webp",
+      "role": "review_target",
+      "width": 1672,
+      "height": 941,
+      "sha256": "1b7d8a0f92c6ac47b9a5512a781643667f58075494ed5287e8f7633d140bf7f2",
+      "source_png_sha256": "ea391df9312d53ab461bc7aba85a221e991d58ca02fdfa3591018a3d9e6429fc"
+    }
+  ],
+  "prompt_file": "review/tear-path/still-prompts.json",
+  "video_status": "unsubmitted",
+  "new_tein_requests": 0,
+  "end_and_start_pixel_matched": false
+}

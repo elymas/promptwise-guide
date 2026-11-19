@@ -1,0 +1,59 @@
+---
+import Base from '../../layouts/Base.astro';
+import { path } from '../../data/topics';
+import manifest from '../../../public/review/tear-path/manifest.json';
+import prompts from '../../../public/review/tear-path/still-prompts.json';
+import plan from '../../../public/review/tear-path/video-plan.json';
+const [opening, target] = manifest.stills;
+const frames = [
+  { ...opening, title: '공통 시작 스틸', note: '눈 가장자리에 원래의 물기가 있고 볼에는 흐른 자국이 없습니다.' },
+  { ...target, title: '종료 시 검수 기준', note: '아랫눈꺼풀에서 볼로 얇은 물기가 이어지고, 볼 위에 작은 투명 방울이 남습니다.' },
+];
+---
+<Base title="눈물의 시작점과 경로 — FRAME / NOTES" description="같은 Claire 클로즈업에서 눈물의 시작점과 흐른 자국을 정한 E09 영상 제작안입니다.">
+  <section class="shell page-heading">
+    <h1>아랫눈꺼풀에서<br />볼까지 이어지는 눈물</h1>
+    <p>Claire의 왼쪽 눈을 100mm 매크로 구도로 잡았습니다. 두 스틸에서 눈꺼풀 바로 아래와 볼 위 물방울의 끝을 대조하세요. 두 장은 영상의 촬영 기준이며, 눈물이 움직이는 비교 영상의 제작은 남아 있습니다.</p>
+  </section>
+  <section class="shell stills" aria-label="눈물의 시작과 종료 스틸">
+    {frames.map(frame => <figure>
+      <img src={path(frame.path)} width={frame.width} height={frame.height} alt={frame.note} />
+      <figcaption><strong>{frame.title}</strong><br />{frame.note}</figcaption>
+      <a class="text-link" href={path(frame.path)}>1672 × 941 원본 크기로 보기 ↗</a>
+    </figure>)}
+  </section>
+  <section class="shell coverage-section">
+    <h2>볼 위에서 생기기 전에 눈꺼풀에 고이게 하기</h2>
+    <p>Tein에서 두 4초 영상에 같은 시작 스틸과 조명·카메라·소리 지시를 사용합니다. A에는 한 방울이 흐른다고만 쓰고, B에는 아랫눈꺼풀에 맺히고 불어났다 한 번 넘치는 순서를 씁니다.</p>
+    <ol class="beats">
+      <li><strong>0–0.8초</strong> · 볼은 마른 상태로 유지합니다.</li>
+      <li><strong>0.8–1.8초</strong> · 홍채 바깥쪽 아래에 투명한 한 방울이 맺혀 커집니다.</li>
+      <li><strong>2–3.2초</strong> · 방울이 눈꺼풀을 넘어 아래로 흐릅니다.</li>
+      <li><strong>마지막</strong> · 끝 방울이 볼에 남고 물기가 눈꺼풀까지 이어집니다.</li>
+    </ol>
+    <p>종료 스틸은 결과를 눈으로 대조하는 데 사용합니다. 이미지 편집 과정에서 피부와 속눈썹의 세부 픽셀도 일부 달라졌습니다. 영상에서는 방울이 볼 중간에 갑자기 생기거나 위로 흐르는지, 속눈썹이 뭉개지는지, 소리와 구도가 자연스럽게 이어지는지를 별도로 검사합니다.</p>
+  </section>
+  <section class="shell coverage-section">
+    <h2>스틸 생성 입력문과 영상 제작안</h2>
+    <p>스틸은 ChatGPT 내장 이미지 생성 도구로 만들었습니다. Tein 영상 입력문은 제출 전입니다.</p>
+    <details><summary>스틸 생성·편집에 사용한 입력문</summary><h3>시작 스틸</h3><pre>{prompts.opening}</pre><h3>종료 스틸</h3><pre>{prompts.ending}</pre></details>
+    <details><summary>아직 제출하지 않은 Tein A/B 입력문</summary><h3>공통</h3><pre>{plan.common}</pre><h3>A · 결과만 지정</h3><pre>{plan.variants.A}</pre><h3>B · 진행 순서 지정</h3><pre>{plan.variants.B}</pre></details>
+    <div class="study-links">
+      <a class="text-link" href={path('review/tear-path/manifest.json')} download>스틸과 원본의 파일 검증 기록 ↗</a>
+      <a class="text-link" href={path('prompts/?page=PW-103#PW-103-p1')}>PW-103 눈물 매크로 촬영 지시 ↗</a>
+      <a class="text-link" href={path('examples/coverage/#E09')}>E09 제작 현황 ↗</a>
+    </div>
+  </section>
+</Base>
+<style>
+  .stills { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
+  figure { margin: 0; }
+  img { display: block; width: 100%; height: auto; }
+  figcaption { margin-block: .7rem; color: var(--muted); font-size: .9rem; }
+  figcaption strong { color: var(--ink); }
+  .beats li { margin-block: .6rem; }
+  details { margin-block: .8rem; }
+  summary { cursor: pointer; }
+  pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+  @media (max-width: 640px) { .stills { grid-template-columns: 1fr; } }
+</style>

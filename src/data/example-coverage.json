@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-19",
+  "as_of": "2026-11-20",
   "counts": {
     "available_draft": 8,
     "needs_rework": 2,
@@ -239,9 +239,9 @@
       "title": "눈물이 흐르는 순서",
       "format": "video_ab",
       "state": "planned",
-      "label": "미제작",
+      "label": "공통 시작·종료 기준 스틸 공개 · 영상 제작 전",
       "links": [],
-      "note": "기존 자료만으로 이 계획의 차이를 보여 줄 수 없어 전용 제작이 필요합니다.",
+      "note": "원본 Claire를 기준으로 눈꺼풀과 볼이 보이는 1672×941 매크로 스틸 두 장을 제작했습니다. Tein A/B는 같은 시작 스틸을 사용하고, 종료 스틸은 결과 검수에만 사용합니다.",
       "source_ids": [
         "PW-103-p1",
         "PW-103-p8"
@@ -250,7 +250,12 @@
       "variant_a": "슬픈 눈의 근접",
       "variant_b": "아랫눈꺼풀에 고임→커짐→볼로 넘침 명시",
       "acceptance": "생성 위치·이동·끝 상태의 연결; 480p 미세 질감 판정 보류",
-      "planning_links": []
+      "planning_links": [
+        {
+          "label": "시작·종료 스틸과 실제 이미지 입력문",
+          "href": "review/tear-path/"
+        }
+      ]
     },
     {
       "id": "E10",
