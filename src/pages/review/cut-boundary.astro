@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import {path} from '../../data/topics';
+import umbrella from '../../../public/review/cut-boundary/umbrella.json';
 const folder = 'review/cut-boundary/';
 const cuts = [
   { id: 'A', title: 'A · 머그가 다시 들리는 컷', before: '2.75초 · 머그가 테이블에 닿음', after: '2.79초 · 컷 뒤 머그가 다시 들림' },
@@ -31,10 +32,39 @@ const cuts = [
       <a class="text-link" href={path('prompts/?page=PW-108#PW-108-p2')}>소품 연속성 원문 ↗</a>
     </div>
   </section>
+  <section class="shell coverage-section umbrella" id="umbrella-opening">
+    <h2>빨간 우산을 내려놓는 장면</h2>
+    <p>두 테이크의 공통 시작 스틸입니다. 왼쪽에 검은 손잡이, 오른쪽에 우산 끝이 보입니다. Claire의 오른손은 접힌 천을 받치고 왼손은 상판 위에 있습니다. 컷 전후에는 이 그립과 우산 아래의 간격을 확인합니다.</p>
+    <figure>
+      <a href={path(umbrella.image.path)} aria-label="빨간 우산 시작 스틸 원본 크기로 열기">
+        <img src={path(umbrella.image.path)} width={umbrella.image.width} height={umbrella.image.height} loading="lazy" alt="Claire가 오른손으로 접힌 빨간 우산을 상판 위에 수평으로 들고 내려다보는 작업실 장면" />
+      </a>
+      <figcaption>공통 시작 스틸 후보 · {umbrella.image.width} × {umbrella.image.height} · ChatGPT 이미지 생성</figcaption>
+    </figure>
+    <p>Tein으로 1080p 6초 두 편을 제작할 계획입니다. A는 컷 전에 우산을 내리기 시작하고, B는 컷 양옆에서 같은 높이와 손잡이 방향을 유지한 뒤 내려놓습니다. 우산이 상판에 닿을 때 각 테이크의 접촉음이 한 번 들리는지 확인합니다.</p>
+    <details>
+      <summary>스틸 생성 입력문과 영상 제작안</summary>
+      <h3>스틸 생성에 사용한 입력문</h3>
+      <pre lang="en">{umbrella.image_prompt}</pre>
+      <h3>영상 요청 초안 · 공통 지시</h3>
+      <pre lang="en">{umbrella.video_plan.common_prompt}</pre>
+      {umbrella.video_plan.directions.map(take => <div>
+        <h3>{take.label} · 바뀐 지시</h3>
+        <pre lang="en">{take.prompt}</pre>
+      </div>)}
+    </details>
+    <div class="study-links">
+      <a class="text-link" href={path(umbrella.reference.path)}>Claire 원본 정면 ↗</a>
+      <a class="text-link" href={path(umbrella.scene_reference.path)}>작업실 구도 참조 ↗</a>
+      <a class="text-link" href={path(folder+'umbrella.json')}>이미지 출처와 해시 ↗</a>
+    </div>
+  </section>
 </Base>
 <style>
   .frames { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .9rem; }
   figure { margin: 0; }
   img { display: block; width: 100%; height: auto; }
   figcaption { margin-top: .55rem; font-size: .85rem; }
+  .umbrella summary { cursor: pointer; }
+  .umbrella pre { white-space: pre-wrap; overflow-wrap: anywhere; }
 </style>
