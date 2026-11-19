@@ -418,7 +418,7 @@
       "state": "planned",
       "label": "참조 팩 준비 · 전용 시트 미완료",
       "links": [],
-      "note": "기존 원본 정면·확정 장면 측면·새 종료 구도 후보를 출처/역할별로 정리했습니다. 앞·뒤 전신과 동일 비율의 전용 시트는 미완료이므로 미제작 집계를 유지합니다.",
+      "note": "원본 정면·확정 장면 측면·새 종료 구도 후보의 역할과 앞·뒤 전신 시트 제작 기준을 정리했습니다. 같은 의상과 비율의 전용 시트가 필요합니다.",
       "source_ids": [
         "PW-016-p1",
         "PW-016-p2"
@@ -429,8 +429,8 @@
       "acceptance": "참조 자산의 정보 차이; 영상 모델 성능 비교로 표시하지 않음",
       "planning_links": [
         {
-          "label": "Claire 참조 팩 · 확정 범위와 후보 구분",
-          "href": "review/claire-reference-pack/"
+          "label": "Claire 참조 팩 · 전신 시트 제작 기준",
+          "href": "review/claire-reference-pack/#E16-sheet"
         }
       ]
     },
@@ -440,8 +440,12 @@
       "title": "실사 다중 앵글의 동일 인물",
       "format": "video_ab",
       "state": "partial_related",
-      "label": "관련 자료 있음 · 전용 비교 미완료",
+      "label": "실제 3개 앵글 관찰 · 전용 A/B 미완료",
       "links": [
+        {
+          "label": "Claire 원본과 실제 3개 앵글 대조",
+          "href": "review/claire-angles/"
+        },
         {
           "label": "얼굴 근접 ACT-01",
           "href": "review/acting-v2/#ACT-01"
@@ -451,7 +455,7 @@
           "href": "review/acting-v2/#ACT-07"
         }
       ],
-      "note": "기존 근접·OTS 자료에 원본 정면/확정 장면 측면/새 종료 후보의 대조 팩을 추가했습니다. 후보를 확정 신원 자료로 승격하지 않았으며, 검증한 정면·사선·좌우 측면 세트와 전용 영상 A/B는 미완료입니다.",
+      "note": "원본 정면과 Tein ACT-01 B, ACT-07 B, ACT-05 B의 1초 프레임을 공개했습니다. 앞머리·귀걸이·셔츠를 관찰할 수 있으며 반대편 측면과 동일 조건 전용 영상 A/B는 후속 검수입니다.",
       "source_ids": [
         "PW-016-p1",
         "PW-017-p13"

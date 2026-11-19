@@ -1,0 +1,55 @@
+{
+  "provider": "Tein",
+  "reference": {
+    "path": "media/claire-reference.png",
+    "width": 782,
+    "height": 782,
+    "sha256": "301ce886477535e0ca88258c8c2761aedb64a4b87237c055244fc98c6835c591"
+  },
+  "frame_method": "ffmpeg -ss 1.000 -i INPUT -frames:v 1 -q:v 2 OUTPUT",
+  "new_paid_requests": 0,
+  "takes": [
+    {
+      "id": "ACT-01",
+      "angle": "클로즈업",
+      "observation": "Claire가 편지를 내려다볼 때 앞머리, 입매, 작은 링 귀걸이가 보입니다. 눈을 내리깔아 원본의 정면 눈매와 직접 대조하기 어렵습니다.",
+      "video": "review/acting-v2/media/ACT-01-b-take.mp4",
+      "video_sha256": "65fbb4a2318016dbc38ce70b0c905295003b369c542e48af4989143b78b2bdfa",
+      "frame": "review/claire-angles/media/ACT-01-b-take.jpg",
+      "frame_sha256": "92c863290e7fac2c4ba811df191e17b21574a989a1742ca86cb0631fb47d02ea",
+      "width": 854,
+      "height": 480,
+      "time_seconds": 1.0,
+      "variant": "B",
+      "prompt_url": "review/acting-v2/#ACT-01"
+    },
+    {
+      "id": "ACT-07",
+      "angle": "Erin 어깨 너머",
+      "observation": "Claire의 얼굴과 셔츠가 왼쪽에 보이고 Erin의 어깨가 오른쪽 전경에 들어옵니다. Claire는 입을 열고 상대를 봅니다.",
+      "video": "review/acting-v2/media/ACT-07-b-take.mp4",
+      "video_sha256": "a59a52ad7cc02ee14afa6974b2b49344794350501a1c49083ad250c093b897cc",
+      "frame": "review/claire-angles/media/ACT-07-b-take.jpg",
+      "frame_sha256": "d64c5cb115f4db1d1a75ea5248e91cd69066e2a296877b245ac9292fa5655116",
+      "width": 854,
+      "height": 480,
+      "time_seconds": 1.0,
+      "variant": "B",
+      "prompt_url": "review/acting-v2/#ACT-07"
+    },
+    {
+      "id": "ACT-05",
+      "angle": "두 사람이 마주 본 측면",
+      "observation": "왼쪽 Claire의 옆얼굴과 묶은 머리, 링 귀걸이가 보입니다. 오른쪽 Erin과 같은 테이블을 공유하는 구도도 확인할 수 있습니다.",
+      "video": "review/acting-v2/media/ACT-05-b-native-v3.mp4",
+      "video_sha256": "90f8763f1f2f9268c930674d1a5325234d9b387bcecf9cecbe96c76777d43105",
+      "frame": "review/claire-angles/media/ACT-05-b-native-v3.jpg",
+      "frame_sha256": "2e0f189e407c91c928ce47254c414884f5413d170385cd399c067878e48ada7f",
+      "width": 854,
+      "height": 480,
+      "time_seconds": 1.0,
+      "variant": "B",
+      "prompt_url": "review/claire-angles/ACT-05-b-v3.prompt.txt"
+    }
+  ]
+}

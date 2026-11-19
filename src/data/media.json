@@ -232,9 +232,13 @@
     "cast": [
       "Claire"
     ],
-    "coverageScope": "E17 관련 자료만 있음 · 전용 다중 앵글 비교 미완료",
+    "coverageScope": "E17 실제 3개 앵글 관찰 · 전용 비교 미완료",
     "audioLabel": "생성 원음 · 호흡과 환경음",
     "related": [
+      {
+        "label": "원본 정면과 실제 3개 앵글 대조",
+        "href": "review/claire-angles/"
+      },
       {
         "label": "Claire 참조 팩 · 원본과 후보 구분",
         "href": "review/claire-reference-pack/"
