@@ -554,11 +554,11 @@
       "label": "작업 과정 설명 완료",
       "links": [
         {
-          "label": "실제 참조→입력 슬롯→결과",
-          "href": "examples/coverage/#reference-roles"
+          "label": "실제 업로드·요청 필드·결과 프레임",
+          "href": "review/reference-roles/"
         }
       ],
-      "note": "기존 입력 참조와 제출 슬롯을 설명합니다. 새 생성 성능 A/B를 주장하지 않습니다.",
+      "note": "같은 장면 사진이 ACT-05 B에서는 first_frame, GEO-01 B에서는 reference_image에 들어갔습니다. 3D 영상은 GEO-01 B의 카메라 경로에 사용했습니다. 업로드 해시, 실제 입력문과 공개 결과를 연결했습니다.",
       "source_ids": [
         "PW-017-p13",
         "PW-104-p4"

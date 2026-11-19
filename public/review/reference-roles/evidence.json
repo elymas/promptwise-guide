@@ -1,0 +1,90 @@
+{
+  "source_ids": [
+    "PW-017-p13",
+    "PW-104-p4"
+  ],
+  "model_provider": "Tein",
+  "shared_still": {
+    "path": "media/examples/space-master-reference.jpg",
+    "width": 1280,
+    "height": 714,
+    "display_sha256": "d4677de420d9bfdff0a6d12eabc10220fbc24593c9761875da19af0d20e1c169",
+    "upload_sha256": "6802818d6a3723a59cf55cb6c73b9810f165aa13896da946a8a9acb360d691c3",
+    "source_sha256": "69c470cdda30418a508e93c186447ee6ac46c4515c7d3809e80b7e126f3190f1"
+  },
+  "motion_reference": {
+    "path": "review/acting-v2-plan/media/shared-space-truck.mp4",
+    "poster": "review/acting-v2-plan/media/shared-space-truck.jpg",
+    "width": 960,
+    "height": 540,
+    "display_sha256": "d5a33a7bc1d1659661613e7fa3d7c25c83b99f151a14f94f03bfed10a45ca469",
+    "audio": false,
+    "upload_sha256": "57ae5c2196f6327a6b62ca004f218234f1d78903afed611913a5f9dce2522829"
+  },
+  "workflows": [
+    {
+      "id": "act05",
+      "request_input_fields": {
+        "first_frame": {
+          "asset": "shared_still",
+          "upload_sha256": "6802818d6a3723a59cf55cb6c73b9810f165aa13896da946a8a9acb360d691c3"
+        }
+      },
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nSOUND RECORDED WITH THIS PERFORMANCE: record a continuous eight-second production soundtrack with quiet workshop air audible throughout. At second2, Erin gives one clearly audible warm nonverbal chuckle, timed to her smile and small chest movement; Claire is still tense and quiet. At second4.5, Claire sees Erin smiling and gives one clearly audible relieved outward breath as her shoulders lower and her smile arrives. These are two distinct, separated vocal events from the pictured women, recorded at normal conversational audibility above the low room sound. Keep the intervening and final room sound continuous through second8. Wordless human reactions only: no dialogue, whispering, music or background speakers. \n\nThe camera moves physically0.6m to the right over the full8seconds along the front side of the axis, Same fixed35mm lens look, no zoom, no cut or axis crossing. Both people remain visible and their faces readable. The tabletop and distant shelf show different parallax speeds. In both A/B use this exact same camera instruction. The letter stays still, hands remain separate. The sound follows the staggered breaths and chuckle described above, with no spoken words.\n\nErin notices first, exhales and smiles during seconds1–3. Claire remains visibly concerned and unsmiling through the first3seconds. Only after noticing Erin's reaction around4seconds does Claire relax and smile. Hold their staggered emotional states long enough to read, then settle together. No synchronized nods or extra dialogue.\nSTART FRAME: the supplied photographic frame is the literal starting image. Preserve its two actors, connected table, shelf, wardrobe and letter while executing the camera and staggered reactions described above.",
+      "video": "review/acting-v2/media/ACT-05-b-native-v3.mp4",
+      "video_sha256": "90f8763f1f2f9268c930674d1a5325234d9b387bcecf9cecbe96c76777d43105",
+      "width": 854,
+      "height": 480,
+      "audio": "이 테이크의 생성 원음 · 사용자 확정",
+      "result": "review/acting-v2/#ACT-05",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "path": "review/reference-roles/media/act05-0.jpg",
+          "sha256": "fb5d34eb7cad5cb011ee8be80dc6bb6225d4d67972ad79ed3e38bc166428ca90",
+          "observation": "두 인물이 같은 테이블을 사이에 두고 마주 봅니다."
+        },
+        {
+          "seconds": 4.5,
+          "path": "review/reference-roles/media/act05-4-5.jpg",
+          "sha256": "3c8a8551e1d8fe2b35aa6fb4449d26308489503de028cadcf2a41f6469de9094",
+          "observation": "Erin이 미소 짓고 Claire가 상대를 바라봅니다."
+        }
+      ]
+    },
+    {
+      "id": "geo",
+      "request_input_fields": {
+        "reference_image": {
+          "asset": "shared_still",
+          "upload_sha256": "6802818d6a3723a59cf55cb6c73b9810f165aa13896da946a8a9acb360d691c3"
+        },
+        "reference_video": {
+          "asset": "motion_reference",
+          "upload_sha256": "57ae5c2196f6327a6b62ca004f218234f1d78903afed611913a5f9dce2522829"
+        }
+      },
+      "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n8 seconds. Both remain calmly attentive to each other, hands resting separately, one unbroken table and shelf. Sound is room tone and natural breath, no words.\n\nUse only the camera path from the supplied motion video: a0.6m rightward physical truck over8seconds, keeping both people framed. Fixed35mm lens look, no optical zoom and no axis crossing. The near table edge and far shelves shift at different rates.\nREFERENCE ROLES: the image supplies the photographic actors, room, wardrobe, hands and letter. The faceless3D video supplies ONLY the camera path and timing. Never copy its mannequin appearance, nose markers, flat materials or studio shading.",
+      "video": "review/acting-v2/media/GEO-01-b-take.mp4",
+      "video_sha256": "51e1fe4295f8045c959d15cac9464d8603c129c28554bc63dc964dabec88e64b",
+      "width": 854,
+      "height": 480,
+      "audio": "GEO-01 A의 작업실 환경음 사용",
+      "result": "review/acting-v2/#GEO-01",
+      "samples": [
+        {
+          "seconds": 0.0,
+          "path": "review/reference-roles/media/geo-0.jpg",
+          "sha256": "5464705425d768c194c83e3d6078ed32c32899a119a23d86bf02c5083e8ec415",
+          "observation": "두 인물과 테이블, 선반이 함께 보입니다."
+        },
+        {
+          "seconds": 4.5,
+          "path": "review/reference-roles/media/geo-4-5.jpg",
+          "sha256": "e7f181235b80acc00a56211db2f16a502e26949d1d0dc9365f80db4982126378",
+          "observation": "왼쪽 창이 더 드러나며 가까운 테이블 가장자리와 뒤 선반이 다르게 이동합니다."
+        }
+      ]
+    }
+  ]
+}
