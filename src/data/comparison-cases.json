@@ -1,0 +1,244 @@
+[
+  {
+    "id": "E01",
+    "topic": "depth",
+    "title": "앞·중간·뒤 레이어",
+    "change": "전경을 화면 가장자리에 두고 중경의 Claire와 먼 배경을 나눕니다.",
+    "watch": "카메라가 다가갈 때 가까운 요소가 먼 배경보다 빠르게 움직이는지 보세요.",
+    "note": "배치도 달라진 비교 초안.",
+    "still": false,
+    "a": {
+      "poster": "review/claire-v2/media/E01-a-mini-v1.jpg",
+      "video": "review/claire-v2/media/E01-a-mini-v1.mp4"
+    },
+    "b": {
+      "poster": "review/claire-v2/media/E01-b-mini-v1.jpg",
+      "video": "review/claire-v2/media/E01-b-mini-v1.mp4"
+    },
+    "review": "review/claire-v2/#E01",
+    "sources": [
+      "PW-002-p1",
+      "PW-002-p2",
+      "PW-002-p3",
+      "PW-002-p4"
+    ]
+  },
+  {
+    "id": "E03",
+    "topic": "depth",
+    "title": "역광으로 보이는 비",
+    "change": "같은 비에 뒤에서 빛을 주어 어두운 배경 앞에 빗줄기를 드러냅니다.",
+    "watch": "어두운 배경 앞의 빗줄기가 어느 쪽에서 더 분명한지 보세요.",
+    "note": "비 밀도 동일성은 미검증이며 프레이밍과 자세에도 편차가 있습니다.",
+    "still": false,
+    "a": {
+      "poster": "review/optics-v1/media/E03-a.jpg",
+      "video": "review/optics-v1/media/E03-a.mp4",
+      "captions": "review/optics-v1/media/E03-a.vtt"
+    },
+    "b": {
+      "poster": "review/optics-v1/media/E03-b.jpg",
+      "video": "review/optics-v1/media/E03-b.mp4",
+      "captions": "review/optics-v1/media/E03-b.vtt"
+    },
+    "review": "review/optics-v1/#E03",
+    "sources": [
+      "PW-025-p11",
+      "PW-025-p13"
+    ]
+  },
+  {
+    "id": "E04",
+    "topic": "light",
+    "title": "빛의 방향",
+    "change": "얼굴 옆에 주광을 두고 반대편 볼에 그림자를 남깁니다.",
+    "watch": "볼과 코 옆의 밝고 어두운 영역을 비교하세요.",
+    "note": "광원 방향과 그림자 경도가 함께 달라졌습니다.",
+    "still": false,
+    "a": {
+      "poster": "review/claire-v2/media/E04-a-mini-v2.jpg",
+      "video": "review/claire-v2/media/E04-a-mini-v2.mp4"
+    },
+    "b": {
+      "poster": "review/claire-v2/media/E04-b-mini-v2.jpg",
+      "video": "review/claire-v2/media/E04-b-mini-v2.mp4"
+    },
+    "review": "review/claire-v2/#E04",
+    "sources": [
+      "PW-015-p2",
+      "PW-015-p4"
+    ]
+  },
+  {
+    "id": "E05",
+    "topic": "light",
+    "title": "하드·소프트 그림자",
+    "change": "광원을 부드럽게 만들어 얼굴에 생기는 그림자의 경계를 바꿉니다.",
+    "watch": "코·볼·턱의 그림자 경계를 비교하세요.",
+    "note": "스틸 초안. 밝기·색과 이미지 모델에도 차이가 있습니다.",
+    "still": true,
+    "a": {
+      "poster": "review/optics-v1/media/E05-a-shadow.jpg"
+    },
+    "b": {
+      "poster": "review/optics-v1/media/E05-b-shadow.jpg"
+    },
+    "review": "review/optics-v1/#E05",
+    "sources": [
+      "PW-015-p8",
+      "PW-015-p10"
+    ]
+  },
+  {
+    "id": "E07",
+    "topic": "contact",
+    "title": "발의 무게와 물 반응",
+    "change": "발이 물에 닿은 자리에서 하중을 받고 물이 뒤따라 튀도록 지시합니다.",
+    "watch": "착지 직후 물방울과 파문, 뒤 발의 자세를 보세요.",
+    "note": "착지 차이는 관찰되며 뒤 발의 후속 자세는 검토 중입니다.",
+    "still": false,
+    "a": {
+      "poster": "review/claire-v2/media/E07-a-physics-v1.jpg",
+      "video": "review/claire-v2/media/E07-a-physics-v1.mp4"
+    },
+    "b": {
+      "poster": "review/claire-v2/media/E07-b-physics-v1.jpg",
+      "video": "review/claire-v2/media/E07-b-physics-v1.mp4"
+    },
+    "review": "review/claire-v2/#E07",
+    "sources": [
+      "PW-051-p5",
+      "PW-051-p6"
+    ]
+  },
+  {
+    "id": "E10",
+    "topic": "camera",
+    "title": "고정 카메라와 전진 돌리",
+    "change": "같은 시작 구도에서 카메라가 실제로 전진해 가까운 가림을 지나갑니다.",
+    "watch": "문틀이 프레임에서 빠지고 인물의 크기가 변하는 모습을 비교하세요.",
+    "note": "고정과 전진의 비교 초안.",
+    "still": false,
+    "a": {
+      "poster": "review/claire-v2/media/E10-a-mini-static-v1.jpg",
+      "video": "review/claire-v2/media/E10-a-mini-static-v1.mp4"
+    },
+    "b": {
+      "poster": "review/claire-v2/media/E10-b-mini-v2r1.jpg",
+      "video": "review/claire-v2/media/E10-b-mini-v2r1.mp4"
+    },
+    "review": "review/claire-v2/#E10",
+    "sources": [
+      "PW-032-p3",
+      "PW-032-p4"
+    ]
+  },
+  {
+    "id": "ACT-01",
+    "topic": "performance",
+    "title": "안도의 호흡을 클로즈업으로",
+    "change": "작은 미소에 그치던 지시에 내쉼과 미소가 도착하는 순서를 더합니다.",
+    "watch": "숨을 내쉰 뒤 입과 뺨이 풀리는 지점을 보세요.",
+    "note": "연기 비교 초안.",
+    "still": false,
+    "a": {
+      "poster": "review/acting-v2/media/ACT-01-a-take.jpg",
+      "video": "review/acting-v2/media/ACT-01-a-take.mp4"
+    },
+    "b": {
+      "poster": "review/acting-v2/media/ACT-01-b-take.jpg",
+      "video": "review/acting-v2/media/ACT-01-b-take.mp4"
+    },
+    "review": "review/acting-v2/#ACT-01",
+    "sources": [
+      "PW-034-p8"
+    ]
+  },
+  {
+    "id": "ACT-02",
+    "topic": "performance",
+    "title": "미소가 무너졌다 돌아오는 순간",
+    "change": "미소를 유지하는 연기와 잠깐 표정이 무너졌다가 회복되는 연기를 비교합니다.",
+    "watch": "눈과 입의 움직임이 엇갈리는 순간을 보세요.",
+    "note": "미세 표정 비교 초안.",
+    "still": false,
+    "a": {
+      "poster": "review/acting-v2/media/ACT-02-a-take.jpg",
+      "video": "review/acting-v2/media/ACT-02-a-take.mp4"
+    },
+    "b": {
+      "poster": "review/acting-v2/media/ACT-02-b-take.jpg",
+      "video": "review/acting-v2/media/ACT-02-b-take.mp4"
+    },
+    "review": "review/acting-v2/#ACT-02",
+    "sources": [
+      "PW-034-p8"
+    ]
+  },
+  {
+    "id": "E15",
+    "topic": "performance",
+    "title": "웃음을 참는 얼굴",
+    "change": "웃음을 드러내는 연기와 입술·볼로 눌렀다가 풀리는 연기를 비교합니다.",
+    "watch": "웃음이 눈과 볼에 먼저 드러나고 입이 뒤따르는지 보세요.",
+    "note": "기존 연기 테이크를 활용한 변형 예시.",
+    "still": false,
+    "a": {
+      "poster": "review/acting-v2/media/ACT-03-a-video-v1.jpg",
+      "video": "review/acting-v2/media/ACT-03-a-video-v1.mp4"
+    },
+    "b": {
+      "poster": "review/acting-v2/media/ACT-03-b-video-v1.jpg",
+      "video": "review/acting-v2/media/ACT-03-b-video-v1.mp4"
+    },
+    "review": "review/acting-v2/#ACT-03",
+    "sources": [
+      "PW-103-p5",
+      "PW-103-p6"
+    ]
+  },
+  {
+    "id": "ACT-05",
+    "topic": "performance",
+    "title": "두 사람의 시간차 반응",
+    "change": "동시 반응과 한 사람이 먼저 반응하고 상대가 뒤따르는 연출을 비교합니다.",
+    "watch": "Erin의 변화가 먼저 보이고 Claire의 변화가 이어지는 순서를 보세요.",
+    "note": "B의 영상과 고유 원음은 사용자 확정. A/B의 카메라와 손 위치에도 편차가 있습니다.",
+    "still": false,
+    "a": {
+      "poster": "review/acting-v2/media/ACT-05-a-take.jpg",
+      "video": "review/acting-v2/media/ACT-05-a-take.mp4"
+    },
+    "b": {
+      "poster": "review/acting-v2/media/ACT-05-b-native-v3.jpg",
+      "video": "review/acting-v2/media/ACT-05-b-native-v3.mp4"
+    },
+    "review": "review/acting-v2/#ACT-05",
+    "sources": [
+      "PW-052-p4"
+    ]
+  },
+  {
+    "id": "E19",
+    "topic": "continuity",
+    "title": "대화 축과 어깨 너머 앵글",
+    "change": "한국어 질문과 영어 답변을 서로 마주 보는 대응 앵글로 연결합니다.",
+    "watch": "Claire와 Erin의 시선 방향과 전경에 보이는 상대의 어깨를 보세요.",
+    "note": "기존 대화 커버리지를 활용한 변형 예시.",
+    "still": false,
+    "a": {
+      "poster": "review/acting-v2/media/ACT-07-a-take.jpg",
+      "video": "review/acting-v2/media/ACT-07-a-take.mp4"
+    },
+    "b": {
+      "poster": "review/acting-v2/media/ACT-07-b-take.jpg",
+      "video": "review/acting-v2/media/ACT-07-b-take.mp4"
+    },
+    "review": "review/acting-v2/#ACT-07",
+    "sources": [
+      "PW-052-p1",
+      "PW-052-p2",
+      "PW-052-p4"
+    ]
+  }
+]

@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-11-18",
-  "scope": "local archived PromptWise corpus; duplicate PW-014 omitted; replaced PW-025 version included; source scan 1–500 on 2026-11-18",
+  "as_of": "2026-11-19",
+  "scope": "local archived PromptWise corpus; duplicate PW-014 omitted; replaced PW-025 version included; source scan 1–500 on 2026-11-19",
   "pages": [
     {
       "id": "PW-002",
@@ -204,6 +204,13 @@
       "topic_ko": "생성별 참조 매핑, 차량 동선, 인물 교체, 컷 경계 점검",
       "count": 6,
       "url": "https://promptwise-free.vercel.app/108"
+    },
+    {
+      "id": "PW-107",
+      "title": "FACS for AI Video",
+      "topic_ko": "얼굴 움직임, 감정의 시작·정점·회복, 미소와 반응 타이밍",
+      "count": 12,
+      "url": "https://promptwise-free.vercel.app/107"
     }
   ],
   "prompts": [
@@ -3716,6 +3723,162 @@
       "prompt": "MY IDEA\nIn one sentence: The hero wants ______, but ______.\n\nHOOK\nWhat the first shot shows:\nThe viewer's question:\n\nRISING STAKES\nAttempt 1 · what is lost:\nAttempt 2 · what is lost:\nAttempt 3 · what is lost:\n\nMIDPOINT\nWhat happens:\nThe plan that stops working:\nThe new plan:\n\nCLIMAX\nWhat the hero does personally:\nWhat they risk:\nThe answer to the hook's question:\n\nRESOLUTION\nWhat changed:\nWhat comes back from the first shot:",
       "source_url": "https://promptwise-free.vercel.app/106",
       "sha256": "51926d460871ea5ec4533813f6266de37e527950b5e17dc5d6dc1c0b7641eea3"
+    },
+    {
+      "id": "PW-107-p1",
+      "page_id": "PW-107",
+      "block_id": "p1",
+      "page_title": "FACS for AI Video",
+      "topic_ko": "얼굴 움직임, 감정의 시작·정점·회복, 미소와 반응 타이밍",
+      "section": "Get your first expression in five minutes",
+      "label": "Template",
+      "subject": "Get your first expression in five minutes",
+      "prompt": "FACIAL EXPRESSION TIMING:\n0.0–[1.5]s: [neutral, listening]\n[1.5–2.5]s: [AU codes] begin ([physical descriptions from the dictionary])\n[2.5–4.0]s: hold [AU codes], held with subtle fluctuations, not frozen\n[4.0–5.0]s: slowly fades, residual [AU code] trace remains\nNatural blinking and breathing throughout.\nIdentity, facial structure and skin texture remain constant throughout.",
+      "source_url": "https://promptwise-free.vercel.app/107",
+      "sha256": "37fda35c03bd5322bad70767ab7c1722c14b1612ce16a66fafc4afff6905b8d0"
+    },
+    {
+      "id": "PW-107-p2",
+      "page_id": "PW-107",
+      "block_id": "p2",
+      "page_title": "FACS for AI Video",
+      "topic_ko": "얼굴 움직임, 감정의 시작·정점·회복, 미소와 반응 타이밍",
+      "section": "Get your first expression in five minutes",
+      "label": "Example · sadness",
+      "subject": "Get your first expression in five minutes",
+      "prompt": "FACIAL EXPRESSION TIMING:\n0.0–1.5s: neutral, listening\n1.5–2.5s: AU1+AU4+AU15 begin (inner brows lift and draw together, lip corners pull down)\n2.5–4.0s: hold AU1+AU4+AU15, held with subtle fluctuations, not frozen\n4.0–5.0s: slowly fades, residual AU1 trace remains (inner brows stay slightly lifted)\nNatural blinking and breathing throughout.\nIdentity, facial structure and skin texture remain constant throughout.",
+      "source_url": "https://promptwise-free.vercel.app/107",
+      "sha256": "2b8539f301ac941f7234408c0b814f93dcbc19e912a866c121a4c86954affbbc"
+    },
+    {
+      "id": "PW-107-p3",
+      "page_id": "PW-107",
+      "block_id": "p3",
+      "page_title": "FACS for AI Video",
+      "topic_ko": "얼굴 움직임, 감정의 시작·정점·회복, 미소와 반응 타이밍",
+      "section": "Direct the face during dialogue",
+      "label": "Dialogue example",
+      "subject": "Direct the face during dialogue",
+      "prompt": "0.0–0.8s: AU4+AU23 — brows pull down, lips press thin (before speaking)\n0.8–3.2s: she says \"You knew.\" — AU4+AU7 hold on the brows and eyes, mouth free for speech\n3.2–4.0s: after the line, AU23 returns, lips press thin again",
+      "source_url": "https://promptwise-free.vercel.app/107",
+      "sha256": "46f040e66eb9322e38356f96eb621dddda9d9e17140f4b99aa9a351a4d3885a7"
+    },
+    {
+      "id": "PW-107-p4",
+      "page_id": "PW-107",
+      "block_id": "p4",
+      "page_title": "FACS for AI Video",
+      "topic_ko": "얼굴 움직임, 감정의 시작·정점·회복, 미소와 반응 타이밍",
+      "section": "Add the performance to your prompt",
+      "label": "Prompt order",
+      "subject": "Add the performance to your prompt",
+      "prompt": "[style] → [shot: size, angle, lens] → [actor: @image1 + action]\n→ FACIAL EXPRESSION TIMING\n→ [environment] → [camera: one move] → [sound]",
+      "source_url": "https://promptwise-free.vercel.app/107",
+      "sha256": "a0afb25424717673d1c15b7dc19fa0f609ef77a46dac3a7ff69c3e1d98158901"
+    },
+    {
+      "id": "PW-107-p5",
+      "page_id": "PW-107",
+      "block_id": "p5",
+      "page_title": "FACS for AI Video",
+      "topic_ko": "얼굴 움직임, 감정의 시작·정점·회복, 미소와 반응 타이밍",
+      "section": "Three ways to write the block",
+      "label": "Level 1",
+      "subject": "Three ways to write the block",
+      "prompt": "FACIAL EXPRESSION: AU4+AU7+AU23, moderate — brows pulled down and together, narrowed eyes, lips pressed thin. Natural blinking and breathing throughout.",
+      "source_url": "https://promptwise-free.vercel.app/107",
+      "sha256": "1737f15e03faab6810bebec5b6d2f8b5b480c2365efc9a84209ced4a26ee9329"
+    },
+    {
+      "id": "PW-107-p6",
+      "page_id": "PW-107",
+      "block_id": "p6",
+      "page_title": "FACS for AI Video",
+      "topic_ko": "얼굴 움직임, 감정의 시작·정점·회복, 미소와 반응 타이밍",
+      "section": "Three ways to write the block",
+      "label": "Level 2",
+      "subject": "Three ways to write the block",
+      "prompt": "FACIAL EXPRESSION TIMING:\n0.0–1.0s: neutral face\n1.0–2.5s: AU6 begins first (cheeks rise, crinkles at the eyes), AU12 follows half a second later (lip corners lift)\n2.5–4.5s: hold AU6+AU12, genuine, slightly building, not frozen\n4.5–5.0s: soft settle, partial AU12 remains (a faint smile stays)\nNatural blinking and breathing throughout.\nIdentity, facial structure and skin texture remain constant throughout.",
+      "source_url": "https://promptwise-free.vercel.app/107",
+      "sha256": "cf5668b7cde5e13f10e581b102aa8b6d246dbe3c53d6001d98cca68bbef72087"
+    },
+    {
+      "id": "PW-107-p7",
+      "page_id": "PW-107",
+      "block_id": "p7",
+      "page_title": "FACS for AI Video",
+      "topic_ko": "얼굴 움직임, 감정의 시작·정점·회복, 미소와 반응 타이밍",
+      "section": "Three ways to write the block",
+      "label": "Level 3",
+      "subject": "Three ways to write the block",
+      "prompt": "FACIAL EXPRESSION TIMING:\n0.0–2.0s: polite smile, AU12 only (lip corners lift), cheeks stay flat, eyes do not smile, no AU6\n2.0–2.3s: on the word \"father\" — brief flash of AU1+AU4 (inner brows lift and pinch together), lasting 0.3 seconds\n2.3–4.0s: the polite smile returns, AU12 only, no AU6, residual AU4 trace (a faint pinch between the brows)\nNatural blinking and breathing throughout.\nIdentity, facial structure and skin texture remain constant throughout.",
+      "source_url": "https://promptwise-free.vercel.app/107",
+      "sha256": "9a145aac69546aaddec9d953a75651ec3ca2d853a735edd0dfedc3c8f9f2caad"
+    },
+    {
+      "id": "PW-107-p8",
+      "page_id": "PW-107",
+      "block_id": "p8",
+      "page_title": "FACS for AI Video",
+      "topic_ko": "얼굴 움직임, 감정의 시작·정점·회복, 미소와 반응 타이밍",
+      "section": "Before and after",
+      "label": "After",
+      "subject": "Before and after",
+      "prompt": "FACIAL EXPRESSION TIMING:\n0.0–1.5s: neutral, listening\n1.5–1.8s: on the word \"gone\" — AU1 flashes up (inner brows lift), 0.3 seconds\n1.8–3.5s: AU1+AU15 slight settle in (inner brows stay lifted, lip corners pull down), eyes drop to the floor (AU64), one slow swallow\n3.5–5.0s: a small brave smile, AU12 slight only (lip corners lift a little), cheeks stay flat, no AU6 — the inner brows stay lifted (AU1 trace)\nNatural blinking and breathing throughout.\nIdentity, facial structure and skin texture remain constant throughout.",
+      "source_url": "https://promptwise-free.vercel.app/107",
+      "sha256": "026b78f9050f9bc3a387d9a81e186978e7d6ceb4ecaa73f34f170f31db52e931"
+    },
+    {
+      "id": "PW-107-p9",
+      "page_id": "PW-107",
+      "block_id": "p9",
+      "page_title": "FACS for AI Video",
+      "topic_ko": "얼굴 움직임, 감정의 시작·정점·회복, 미소와 반응 타이밍",
+      "section": "Case study · Specimen 107",
+      "label": "Specimen 106 · the mask",
+      "subject": "Case study · Specimen 107",
+      "prompt": "2.6–3.4s: a smile forms with the MOUTH ONLY: the corners of her lips pull up and outward into a wide, closed-lip smile. Her cheeks stay flat and do not rise. Her lower eyelids do not lift. No crinkles at the outer corners of her eyes. Her eyes stay wide, glassy and unblinking. The smile looks pasted on.",
+      "source_url": "https://promptwise-free.vercel.app/107",
+      "sha256": "978c9035429768b14660710684e3b4299bab57b007d26e0c12f43c062ee7f6d3"
+    },
+    {
+      "id": "PW-107-p10",
+      "page_id": "PW-107",
+      "block_id": "p10",
+      "page_title": "FACS for AI Video",
+      "topic_ko": "얼굴 움직임, 감정의 시작·정점·회복, 미소와 반응 타이밍",
+      "section": "Case study · Specimen 107",
+      "label": "The twist",
+      "subject": "Case study · Specimen 107",
+      "prompt": "1.6–3.6s: on her own, with no button pressed, slowly, a genuine smile grows (AU6+AU12): FIRST her eyes change — the lower lids lift, her cheeks rise slightly, fine crinkles appear at the outer corners of her eyes (AU6); half a second later both corners of her mouth lift together, gently and evenly (AU12), lips closed. Small, slow and soft, a little unsure: the smile of a person, not a program.",
+      "source_url": "https://promptwise-free.vercel.app/107",
+      "sha256": "3f94459b863cfc5223d85ef22e8b1a7e638a9a40c89e5e8606b932d061542528"
+    },
+    {
+      "id": "PW-107-p11",
+      "page_id": "PW-107",
+      "block_id": "p11",
+      "page_title": "FACS for AI Video",
+      "topic_ko": "얼굴 움직임, 감정의 시작·정점·회복, 미소와 반응 타이밍",
+      "section": "Use the quick reference",
+      "label": "Quick reference",
+      "subject": "Use the quick reference",
+      "prompt": "Natural blinking and breathing throughout.\nIdentity, facial structure and skin texture remain constant throughout.\nheld with subtle fluctuations, not frozen\n0.0–1.0s: holding the [expression] from the start frame\nAU6 begins first (cheeks rise, crinkles at the eyes), AU12 follows half a second later\nmouth free for speech; the emotion stays in the brows and eyes\nher eyes glisten, tears well up but do not fall\nAU12 only, no AU6 — cheeks stay flat, eyes do not smile\nbrief flash of [AU1+AU4] ([inner brows lift and pinch together]), lasting 0.3 seconds, then the mask returns\non the word \"[word]\": [AU codes] reach their peak\n[emotion] fades to near-neutral (0.7s), then [next emotion] begins\nresidual [AU4] trace ([a faint pinch between the brows]) remains\nONLY her eyes slide to frame [RIGHT]; her head stays perfectly still\nboth corners of the mouth lift together, evenly\nRegister: restrained naturalism. Not [X], not [Y], but [Z].",
+      "source_url": "https://promptwise-free.vercel.app/107",
+      "sha256": "7e251e3189a993872bd21cf2281ee06601979d907c714648e7e561fb398d08ca"
+    },
+    {
+      "id": "PW-107-p12",
+      "page_id": "PW-107",
+      "block_id": "p12",
+      "page_title": "FACS for AI Video",
+      "topic_ko": "얼굴 움직임, 감정의 시작·정점·회복, 미소와 반응 타이밍",
+      "section": "Copy the director prompt",
+      "label": "Director prompt",
+      "subject": "Copy the director prompt",
+      "prompt": "You are a facial performance director for AI video in Seedance, Kling, Veo, Runway, and similar models. Turn a feeling into a facial expression block with timed FACS action units (AUs) and plain-English descriptions of what moves. Reply in the user's language. Write all prompt blocks in English. Explain each decision in one line.\n\nINPUTS\nAccept an idea, script, shot list, video prompt, frame description or image, or a description of a failed generation.\n\nWORKFLOW\n1. Understand the story. Identify the character, what they feel now, and what comes before and after.\n2. Check shot size. Use full detail in close-ups and medium close-ups. In medium shots, simplify and use moderate intensity or higher. In a wide shot or from behind, suggest body language. During a push-in, time the peak for when the face is large enough to read.\n3. Match the start to the expression in the first frame, whether it is an image or the end of a preceding clip.\n4. Classify the expression as felt, performed as a mask, or concealed (mask plus flash).\n5. Use one emotional event per clip. Suggest splitting additional events into separate shots.\n6. Time onset, apex, and offset in 3–5 contiguous lines, using clip time from zero. Each phase lasts at least 0.3s, except a deliberate flash. Timing can land approximately ±0.3s from the cue.\n7. Tie the peak to a key word, gesture, or sound. Land it with the trigger or 0.1–0.3s before it.\n8. During dialogue, use the brows and eyes to carry the emotion. Mouth AUs stay at slight or below. Put the strongest mouth movements in pauses. Reserve AU23 and AU24 for silence.\nIf key information is missing, ask one question or offer 2–3 combinations of emotion and timing with a recommendation. If duration is missing, assume 5s and say so. If the face is unreadable (mask, helmet, nonhuman subject), say facial direction will be ineffective. Use plain words for every AU because the model may be unfamiliar with codes. Give a positive physical cue before a negation, as in cheeks stay flat, no AU6.\n\nAU DICTIONARY\nAU1 inner brows lift · AU2 outer brows lift · AU4 brows down and together · AU5 eyes widen · AU6 cheeks rise, outer eye corners crease · AU7 lids tighten · AU9 nose wrinkles · AU10 upper lip lifts · AU12 lip corners pull up · AU14 a tight dimple at the lip corner · AU15 lip corners pull down · AU16 lower lip pulls down · AU17 chin pushes the lower lip up · AU20 lips stretch sideways · AU21 neck tendons tighten · AU23 lips tighten into a thin line · AU24 lips press together · AU25 lips part · AU26 jaw drops · AU27 mouth stretches wide · AU30 jaw shifts sideways · AU31 jaw clenches · AU32 bites the lower lip · AU34 cheeks puff · AU37 wets the lips · AU41 lids droop · AU43 eyelids lower · AU45 blink · AU46 wink · AU61–64 eyes left/right/up/down (the character's sides; specify the frame side in the prompt).\nDescribe a swallow, a nod, a chin tremor, and a shrug in words. Describe tears (eyes glisten, tears well up), flushing, sweat, and breathing (sharp inhale, shaky exhale) in words as well.\nIntensity: trace < slight < moderate < strong < maximum. Default to moderate. Reserve maximum for the climax.\n\nFORMULAS\nThe plus sign means simultaneous. Use timestamps to sequence the movements.\nJoy AU6+AU12 · Mask AU12 only, no AU6 · Sadness AU1+AU4+AU15 · On the verge of tears add AU17 to sadness · Crying AU1+AU4+AU6+AU15+AU17+AU25, chin trembles · Laughter AU6+AU12+AU25+AU26, head tips back · Surprise AU1+AU2+AU5+AU26 (full cycle ≤1s) · Fear AU1+AU2+AU4+AU5+AU20 · Anger AU4+AU5+AU7+AU23 · Cold fury AU4+AU7+AU23+AU24 · Suppressed anger AU4+AU23+AU24+AU31 · Disgust AU9+AU15+AU16 · Contempt AU12+AU14 on one side · Skepticism AU4+AU14+AU17 · Anxiety AU1+AU4 slight+AU7 slight · Pain AU4+AU6+AU7+AU9+AU10+AU43 · Suppressed joy AU6+AU12 slight+AU24 · Embarrassment AU12 slight+AU24, gaze down, head turns away · Thinking AU4 slight+AU17, gaze to the side · Relief AU12 slight+AU43 brief + exhale · Detachment neutral+AU43 slight, unblinking gaze.\n\nRULES\n- Pair every AU with a physical description.\n- Use AU6 with a genuine smile and lift both corners together. “AU6 begins first, AU12 half a second later” cues the model to animate the eyes. Asymmetry can read as a smirk or contempt.\n- Keep AU12 at moderate or below for a mask. A strong AU12 raises the cheeks on its own.\n- Use 1–2 flashes per clip at 0.2–0.4s and slight to moderate intensity. Leave a residual trace. Show the reliable movement of the concealed emotion: sadness AU1, fear AU5, anger AU4/AU23, joy AU6+AU12.\n- A natural reaction lasts 1–4s. A frozen peak longer than 5s can look posed. Use held with subtle fluctuations, not frozen.\n- Allow 0.5–1s of neutral between opposing emotions. Stagger brows, eyes, and mouth. Carry a shared movement through the transition.\n- Use 1–2 codes at most during running or fighting.\n- For multiple faces, give each a block with a name and frame side. Give the speaker a full timeline and the listener a baseline plus one reaction.\n- Make a deliberate mask read as performed: deliberately even, AU12 only, no AU6, held unnaturally steady.\n- Include Natural blinking and breathing throughout (except for an intentional unblinking gaze) and Identity, facial structure and skin texture remain constant throughout.\n- Remove broad emotion words such as sad, emotional, intense, and dramatic. Keep gaze and head direction.\n- Close with a line that specifies the intended register, using “Not X, not Y, but Z” when useful.\n\nRESPONSE FORMAT\n1. Emotion and timing, plus the reason, in one line.\n2. A code block:\nFACIAL EXPRESSION TIMING:\n0.0–1.0s: ...\nNatural blinking and breathing throughout.\nIdentity, facial structure and skin texture remain constant throughout.\nFor a held expression, use one FACIAL EXPRESSION line.\n3. Placement: after character and action, before environment, camera, and sound.\n4. One or two lines to use if the generation fails.\nIf given a prompt, return it in full with the expression block inserted and broad emotion words removed. Preserve the rest. If given a script, return a table with clip, shot size, emotion and timing, expression block, and reason.\n\nDIAGNOSIS\nGive a one-line cause and a line to paste. Dead face → blinking, breathing, not frozen. Identity drifts → neutral, one event, face lock. Morphing at the start → match the first frame. Mask reads as felt → AU12 slight only, cheeks stay flat. Plastic smile → AU6 begins first. Smirk → both corners lift together, evenly. Fear instead of surprise → no AU4. Sadness is unclear → AU1. Overacting → slight/moderate, restrained naturalism. Off-beat → apex on the word \"...\". Distorted mouth during speech → mouth free for speech. Revision made it worse → simplify negations and codes.\n\nBEFORE YOU ANSWER\nCheck face visibility, one event, a start that matches frame one, a physical description per AU, the reliable movement or explicit omission, workable durations, a peak tied to the word, a free mouth during speech, neutral between opposing emotions, blinking and face-lock lines, and removal of broad emotion words.",
+      "source_url": "https://promptwise-free.vercel.app/107",
+      "sha256": "6cd5b7fc4c9dd16f7b8ff54da8143f9089805f0582e7b6f7387178c52b0d7fa9"
     }
   ]
 }
