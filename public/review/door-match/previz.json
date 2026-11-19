@@ -1,0 +1,41 @@
+{
+  "scope": "Blender previsualization",
+  "frames": 96,
+  "fps": 24,
+  "width": 768,
+  "height": 432,
+  "cut_frame_zero_based": 48,
+  "cut_seconds": 2,
+  "cut_angle_degrees": {
+    "before_rounded": 58,
+    "after_A": 0,
+    "after_B": 58
+  },
+  "variable": "only door opening differs in shot 2; same camera poses, body positions and walk timing",
+  "camera_focal_lengths_mm": [
+    44,
+    45
+  ],
+  "audio": "none",
+  "source": "PW-105-p1",
+  "script_sha256": "cfcf625e43a115caa16f8657f047fff054eb56ea8e3c76d988484771b5a2b231",
+  "files": {
+    "A": {
+      "video": "review/door-match/media/previz/A.mp4",
+      "sha256": "760dfeeb8b6e7fcdc229c6efea71c53016fbefe8eeb254c7e37d5cf2b29fe6e3",
+      "poster": "review/door-match/media/previz/A-after.jpg",
+      "poster_sha256": "dbaf25d816adf2f840136a37faa9c0c51b76bb26071be3601ed76d3e642dcafc"
+    },
+    "B": {
+      "video": "review/door-match/media/previz/B.mp4",
+      "sha256": "85793f27014cecc61f3d347ba660adf55ec54a0897841c68658ccc0e0ccbef87",
+      "poster": "review/door-match/media/previz/B-after.jpg",
+      "poster_sha256": "2a5ebbb8ca837fb1af0fe13f1d301e0f3e082dc73a6aafd220002f46bcc9c8c5"
+    }
+  },
+  "before": {
+    "path": "review/door-match/media/previz/before.jpg",
+    "sha256": "3a4fb1ba61dfe91d0980cde3b39af8c20324c2aeddf20d697635fee88d226832",
+    "seconds": 1.9583333333333333
+  }
+}

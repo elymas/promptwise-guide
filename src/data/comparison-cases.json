@@ -772,6 +772,47 @@
     ]
   },
   {
+    "id": "E21",
+    "topic": "continuity",
+    "title": "컷 직후 닫혀 버린 문과 열린 채 이어지는 문",
+    "change": "Blender의 같은 장면에서 앞 샷과 컷 시각을 공유합니다. A는 컷 직후 문 각도를 0도로 되돌리고, B는 약 58도를 이어받습니다.",
+    "watch": "2.00초 컷에서 오른쪽 문틈과 파란 복도 바닥이 사라지는지 확인하세요. 미리보기는 컷 직후입니다.",
+    "note": "무음 3D 프리비즈. 인물 모형의 자세·이동과 두 카메라 앵글은 A/B에서 같습니다. 실사 영상의 얼굴·손잡이·발과 원음은 Tein에서 검수합니다.",
+    "still": false,
+    "a": {
+      "video": "review/door-match/media/previz/A.mp4",
+      "audio": "silent",
+      "poster": "review/door-match/media/previz/A-after.jpg",
+      "resolution": "768×432"
+    },
+    "b": {
+      "video": "review/door-match/media/previz/B.mp4",
+      "audio": "silent",
+      "poster": "review/door-match/media/previz/B-after.jpg",
+      "resolution": "768×432"
+    },
+    "review": "review/door-match/#door-previz",
+    "sources": [
+      "PW-105-p1",
+      "PW-105-p2",
+      "PW-108-p3"
+    ],
+    "inputs": [
+      {
+        "label": "공통 · Blender 적용값",
+        "prompt": "24fps. 프레임 48인 2.00초에서 44mm 구도에서 45mm 구도로 컷. 컷 직전 문 각도는 약 58도. 인물 모형은 컷 뒤 같은 길을 걸어 통과."
+      },
+      {
+        "label": "A · Blender 적용값",
+        "prompt": "컷 직후 문 각도를 0도로 되돌린 뒤 82도까지 다시 연다."
+      },
+      {
+        "label": "B · Blender 적용값",
+        "prompt": "컷 직후 문 각도를 58도로 유지한 뒤 82도까지 이어서 연다."
+      }
+    ]
+  },
+  {
     "id": "E22",
     "topic": "story",
     "dialogue": ["Claire · 한국어 · “찾았어.”"],
