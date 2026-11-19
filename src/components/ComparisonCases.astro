@@ -7,12 +7,23 @@ interface Props { topic: string }
 const {topic} = Astro.props;
 const items = cases.filter(item => item.topic === topic);
 const availableBlocks = new Set(catalog.prompts.map(prompt => prompt.id));
+const views = [
+  { value: 'a', label: 'A' },
+  { value: 'b', label: 'B' },
+  { value: 'both', label: '두 영상 보기' },
+];
 ---
 {items.length > 0 && <section class="comparison-cases" aria-label="프롬프트 전후 비교">
   <h3>프롬프트 전후 비교</h3>
   {items.map(item => <details id={`compare-${item.id}`}>
     <summary>{item.title}</summary>
-    <div class="takes">
+    {item.a.video && item.b.video && <div class="comparison-controls" hidden>
+      <div class="view-options" role="group" aria-label="A/B 화면 선택">
+        {views.map(view => <button type="button" data-view={view.value} aria-controls={`takes-${item.id}`} aria-pressed={view.value === 'both'}>{view.label}</button>)}
+      </div>
+      <p>A와 B를 바꾸면 같은 재생 시각에서 멈춥니다.</p>
+    </div>}
+    <div id={`takes-${item.id}`} class="takes">
       {[item.a, item.b].map((take, i) => <figure>
         <figcaption>{i === 0 ? 'A · 기준 장면' : 'B · 비교 장면'} · {take.resolution}</figcaption>
         {take.video ? <video controls playsinline preload="none" poster={path(take.poster)} aria-label={`${item.title} ${i === 0 ? 'A' : 'B'}`}>
@@ -38,12 +49,71 @@ const availableBlocks = new Set(catalog.prompts.map(prompt => prompt.id));
     </div>
   </details>)}
 </section>}
+<script>
+  const narrow = matchMedia('(max-width: 520px)');
+
+  document.querySelectorAll<HTMLElement>('.comparison-controls').forEach(controls => {
+    const options = controls.querySelectorAll<HTMLButtonElement>('[data-view]');
+    const card = controls.closest('details');
+    const takes = card?.querySelector<HTMLElement>('.takes');
+    if (!takes) return;
+
+    const figures = [...takes.querySelectorAll('figure')];
+    const [a, b] = figures.map(figure => figure.querySelector('video'));
+    if (!a || !b) return;
+
+    let currentVideo: HTMLVideoElement | undefined;
+    let userSelected = false;
+    const select = (view: string) => {
+      const target = view === 'a' ? a : view === 'b' ? b : undefined;
+      const time = currentVideo?.currentTime ?? 0;
+      if (!a.paused) a.pause();
+      if (!b.paused) b.pause();
+
+      takes.classList.toggle('single-take', !!target);
+      figures[0].hidden = target === b;
+      figures[1].hidden = target === a;
+      options.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.view === view)));
+
+      if (target && currentVideo && currentVideo !== target && target.currentTime !== time) {
+        if (time > 0 && target.readyState === HTMLMediaElement.HAVE_NOTHING) {
+          target.preload = 'metadata';
+        }
+        target.currentTime = Number.isFinite(target.duration) ? Math.min(time, target.duration) : time;
+      }
+      if (target) currentVideo = target;
+    };
+    const applyDefault = () => {
+      if (!userSelected) select(narrow.matches ? 'a' : 'both');
+    };
+
+    for (const video of [a, b]) {
+      video.addEventListener('play', () => { currentVideo = video; });
+      video.addEventListener('seeking', () => {
+        if (!video.closest('figure')?.hidden) currentVideo = video;
+      });
+    }
+    options.forEach(button => button.addEventListener('click', () => {
+      userSelected = true;
+      select(button.dataset.view || 'both');
+    }));
+    narrow.addEventListener('change', applyDefault);
+    applyDefault();
+    controls.hidden = false;
+  });
+</script>
 <style>
   .comparison-cases { margin-top: 2rem; }
   h3 { font-size: 1.1rem; margin-bottom: .8rem; }
   details { border-top: 1px solid currentColor; padding: .8rem 0; scroll-margin-top: 6rem; }
   summary { cursor: pointer; }
+  .comparison-controls { margin-top: 1rem; }
+  .view-options { display: flex; flex-wrap: wrap; gap: .35rem; }
+  .view-options button { min-width: 44px; min-height: 44px; padding: .35rem .7rem; border: 1px solid var(--line); color: var(--ink); background: var(--surface); cursor: pointer; }
+  .view-options button[aria-pressed='true'] { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .comparison-controls p { margin: .35rem 0 0; color: var(--muted); font-size: .82rem; }
   .takes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; margin-top: 1rem; }
+  .takes.single-take { grid-template-columns: 1fr; }
   figure { margin: 0; min-width: 0; }
   figcaption { margin-bottom: .35rem; font-size: .8rem; }
   video, img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #10120f; }
