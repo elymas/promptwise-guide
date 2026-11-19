@@ -184,7 +184,12 @@
       "variant_a": "주광만 사용",
       "variant_b": "같은 주광에 뒤쪽 윤곽광만 추가",
       "acceptance": "어두운 배경에서 머리·코트 윤곽 분리",
-      "planning_links": []
+      "planning_links": [
+        {
+          "label": "1080p 후보 · 기존 프레임과 검수 기준",
+          "href": "review/hd-candidates/#E06"
+        }
+      ]
     },
     {
       "id": "E07",
@@ -208,7 +213,12 @@
       "variant_a": "젖은 돌에 한 걸음",
       "variant_b": "뒤꿈치 접촉→밑창 압력→체중 이동→물 반응 명시",
       "acceptance": "지면 접촉·중심 이동·그 순간의 물 튀김",
-      "planning_links": []
+      "planning_links": [
+        {
+          "label": "1080p 후보 · 기존 프레임과 검수 기준",
+          "href": "review/hd-candidates/#E07"
+        }
+      ]
     },
     {
       "id": "E08",

@@ -1,0 +1,58 @@
+{
+  "cases": [
+    {
+      "id": "E06",
+      "title": "림 라이트 · 머리와 어깨 분리",
+      "time_seconds": 2.0,
+      "width": 864,
+      "height": 496,
+      "reference": "review/comparison-batch/#E06",
+      "observation": "B에서 머리 오른쪽과 어깨의 가장자리가 어두운 벽에서 분리됩니다. A와 B의 시작 스틸은 각각 따로 생성됐습니다.",
+      "check": "1080p에서 얼굴 밝기와 시선은 유지하고 윤곽 빛만 읽히는지, 두 테이크의 원음에 과장된 호흡이나 잡음이 없는지 확인합니다.",
+      "takes": [
+        {
+          "variant": "A",
+          "video": "review/comparison-batch/media/E06-A.mp4",
+          "video_sha256": "e1add2768a592dcb1691d7795329af5c56e91550d98ce690782658d207184bf2",
+          "frame": "review/hd-candidates/media/E06-A.jpg",
+          "frame_sha256": "0b42bacf051c220de37f6f16a9b6d8c4b7f52775f5c617baf50626951df2ea6f"
+        },
+        {
+          "variant": "B",
+          "video": "review/comparison-batch/media/E06-B.mp4",
+          "video_sha256": "a448bef424a9227d6de9e1332c1b711812ebddf670e09fc1dffb83f12523c9d3",
+          "frame": "review/hd-candidates/media/E06-B.jpg",
+          "frame_sha256": "ca78207e2d367646b82ecb154b27afd0a831cdc22bc749d072e1e1a816e02153"
+        }
+      ]
+    },
+    {
+      "id": "E07",
+      "title": "착지 · 물이 움직이는 순간",
+      "time_seconds": 1.3333,
+      "width": 854,
+      "height": 480,
+      "reference": "review/claire-v2/#E07",
+      "observation": "같은 시점에 B는 부츠의 접촉점 주위로 물이 크게 들립니다. A의 튐은 작습니다. 기존 B의 끝에서 뒷발이 들리는 편차가 남았습니다.",
+      "check": "1080p에서는 물이 먼저 솟거나 부츠가 미끄러지지 않는지, 발소리와 접촉이 일치하고 두 번째 걸음 없이 멈추는지 확인합니다.",
+      "takes": [
+        {
+          "variant": "A",
+          "video": "review/claire-v2/media/E07-a-physics-v1.mp4",
+          "video_sha256": "eac572fa60f5135e8e37f79b7d2a7c4e223a42f3d13702cb40967fcbb8ebf2bd",
+          "frame": "review/hd-candidates/media/E07-A.jpg",
+          "frame_sha256": "7bc06d0dea5a617937b8c6b859c697459006bb6aa2ca8ac1ce32d5e09bc5677d"
+        },
+        {
+          "variant": "B",
+          "video": "review/claire-v2/media/E07-b-physics-v1.mp4",
+          "video_sha256": "6c757af11e4a72891aceff575379f1136de9868ee3f9671c12c26d6e9807a7b8",
+          "frame": "review/hd-candidates/media/E07-B.jpg",
+          "frame_sha256": "1ecb4a07104cc19c7a72ef750df63bba10e8b28fcee81f4a5886819b200689d2"
+        }
+      ]
+    }
+  ],
+  "provider": "Tein",
+  "hd_status": "unsubmitted"
+}
