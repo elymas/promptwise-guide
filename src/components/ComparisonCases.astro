@@ -7,6 +7,12 @@ interface Props { topic: string }
 const {topic} = Astro.props;
 const items = cases.filter(item => item.topic === topic);
 const availableBlocks = new Set(catalog.prompts.map(prompt => prompt.id));
+const audioLabels: Readonly<Record<string, string>> = {
+  native: '테이크의 생성 원음',
+  'edited-original': '생성 원음 사용 · 편집본',
+  reference: '다른 영상의 환경음',
+  silent: '무음',
+};
 const views = [
   { value: 'a', label: 'A' },
   { value: 'b', label: 'B' },
@@ -25,7 +31,10 @@ const views = [
     </div>}
     <div id={`takes-${item.id}`} class="takes">
       {[item.a, item.b].map((take, i) => <figure>
-        <figcaption>{i === 0 ? 'A · 기준 장면' : 'B · 비교 장면'} · {take.resolution}</figcaption>
+        <figcaption>
+          {i === 0 ? 'A · 기준 장면' : 'B · 비교 장면'} · {take.resolution}
+          {take.audio && <span class="audio-label">{audioLabels[take.audio]}</span>}
+        </figcaption>
         {take.video ? <video controls playsinline preload="none" poster={path(take.poster)} aria-label={`${item.title} ${i === 0 ? 'A' : 'B'}`}>
           <source src={path(take.video)} type="video/mp4" />
           {take.captions && <track kind="captions" src={path(take.captions)} srclang="ko" label="한국어 소리 설명" />}
@@ -35,6 +44,7 @@ const views = [
     <dl>
       <dt>비교한 연출 지시</dt><dd>{item.change}</dd>
       <dt>볼 지점</dt><dd>{item.watch}</dd>
+      {item.dialogue && <><dt>확인한 대사</dt><dd><ul class="dialogue">{item.dialogue.map(line => <li>{line}</li>)}</ul></dd></>}
       <dt>검수 메모</dt><dd>{item.note}</dd>
     </dl>
     {item.inputs?.length > 0 && <details class="comparison-inputs">
@@ -116,11 +126,13 @@ const views = [
   .takes.single-take { grid-template-columns: 1fr; }
   figure { margin: 0; min-width: 0; }
   figcaption { margin-bottom: .35rem; font-size: .8rem; }
+  .audio-label { display: block; color: var(--muted); }
   video, img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #10120f; }
   img { aspect-ratio: auto; }
   dl { margin: 1rem 0; font-size: .88rem; }
   dt { font-weight: 700; margin-top: .6rem; }
   dd { margin: .2rem 0 0; }
+  .dialogue { margin: 0; padding: 0; list-style: none; }
   .comparison-inputs { margin-bottom: .9rem; }
   .comparison-inputs h4 { margin: .75rem 0 .3rem; }
   pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: .82rem; }
