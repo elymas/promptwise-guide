@@ -1,0 +1,94 @@
+{
+  "image": {
+    "path": "review/story-envelope/media/insert-hd-start-v1.webp",
+    "sha256": "b49cf6299cbf7a13fe040b3841a9db554432e84a92f522d4a26a91ef24635c76",
+    "source_png_sha256": "bf43e4cd1836ed819a5e6f1c945ad07f73123e4656fc87a038311a4fd9dd39b9",
+    "width": 1672,
+    "height": 941
+  },
+  "insert_prompt": "Use case: photorealistic-natural. Generate a new landscape 16:9 opening frame intended as a matching native close-up insert for this established workshop scene. Reference 1 is the hero prop, table, light and composition guide: keep exactly one brick red, matte unmarked paper envelope with the shallow closed triangular flap line visible, lying flat across the same long plank worktable with no lifted edges. Center its whole outline, left and right tips visible. Reference 2 is texture and wardrobe continuity only: the person to screen-left wears the slate-blue cuff, and the person to screen-right has the sage cotton sleeve and cream top. Make a stable low three-quarter close shot, camera on the same side of the table and more carefully framed than a crop: the envelope spans about 40–45 percent of the frame width, between resting hands at the outside lower edges, with no face or heads in frame. Keep hands away from the envelope and avoid extra fingers. Preserve the real wood seams, daylight diagonal falloff and natural material texture. Sharp stationary envelope and immediate wood, gently soft ceramics beyond. One envelope, no addressing, writing, logo, overlays, decoration, or extra props.",
+  "image_provider": "ChatGPT built-in image generation",
+  "references": [
+    {
+      "path": "review/story-envelope/media/insert-opening.jpg",
+      "sha256": "717dd4ce64f70dcca67b06fa4a5ccfb848066af53f0c55e78b03c52ead2b28a5"
+    },
+    {
+      "path": "review/story-envelope/media/insert-ending.jpg",
+      "sha256": "33334681d0bc36345569146ff16b37a2bba775d520cc4d9084767757f5fb6ffc"
+    }
+  ],
+  "legacy_audio_packet_sha256": "d18cb1dcb02b39ab15fedad350b75fd5a19537117b1d1433f576f62b2c760a0f",
+  "edit": {
+    "timeline_seconds": 8,
+    "base": [
+      {
+        "shot": "claire",
+        "time": [
+          0,
+          4
+        ]
+      },
+      {
+        "shot": "erin",
+        "time": [
+          4,
+          8
+        ]
+      }
+    ],
+    "opening": {
+      "timeline": [
+        0,
+        1.5
+      ],
+      "insert": [
+        0,
+        1.5
+      ]
+    },
+    "closing": {
+      "timeline": [
+        6.5,
+        8
+      ],
+      "insert": [
+        2.5,
+        4
+      ]
+    },
+    "versions": {
+      "E22-A": [],
+      "E22-B": [
+        "opening"
+      ],
+      "E24-A": [
+        "opening"
+      ],
+      "E24-B": [
+        "opening",
+        "closing"
+      ]
+    },
+    "audio": "Use the identical continuous audio from the two native character shots in all four versions. Archive the separately generated native insert audio. Insert overlays change the picture only and make no visible impact or speech to synchronize."
+  },
+  "video_provider": "Tein",
+  "video_status": "unsubmitted",
+  "shots": [
+    {
+      "role": "claire",
+      "prompt": "Four seconds, continuous photoreal locked over-the-shoulder shot from this exact workshop frame. Keep Claire on the same seat and Erin's shoulder at the same edge, a continuous single table and shelf, and the one brick-red closed envelope lying at the same table seam. Preserve Claire's straight dark fringe, blue-grey shirt, adult face and natural skin. Claire looks toward Erin and says exactly once in Korean: “찾았어.” Use clear conversational Korean and a short ordinary breath before the line. Erin listens without speaking or mouthing words. No other words. Keep the closed paper envelope, their hands and chairs stationary. Native quiet workshop air and the recorded Korean line only; no music or paper rustle. Hold the same camera, eye line and exposure through the end.",
+      "duration_seconds": 4
+    },
+    {
+      "role": "erin",
+      "prompt": "Four seconds, continuous photoreal locked reverse over-the-shoulder shot from this exact workshop frame, same side of the dialogue axis. Erin keeps the same seat, looking toward Claire, whose blue-grey shoulder remains at frame-left. One brick-red closed envelope stays flat at the same table seam. Erin's concern relaxes into a small closed-mouth smile, then rests. Neither woman speaks, whispers, laughs or mouths words. Preserve their established faces, matching sleeves, window light and everyday cotton and wood detail. Natural quiet breathing and this take's own room tone; no line, music or paper movement. No cut, zoom or extra person.",
+      "duration_seconds": 4
+    },
+    {
+      "role": "insert",
+      "prompt": "Four seconds, continuous photoreal locked close view from this exact source still. The one brick-red matte paper envelope lies closed and flat at the same seam throughout. Claire's blue-grey sleeve stays on the left and Erin's sage sleeve at the right. The hands remain resting clear of the envelope, with no handoff, tap or opening. Keep focus on the flap line and paper edge, daylight direction, soft background and natural wood detail. No face, camera motion, text, dialogue, music or conspicuous new sound. Generate only subtle native workshop air.",
+      "duration_seconds": 4
+    }
+  ]
+}
