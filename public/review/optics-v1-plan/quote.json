@@ -45,7 +45,7 @@
   "repairs": "Targeted revisions for E02/E03/E05 only inside the same cap; no fixed number guarantee, actual usage.cost reconciled per job",
   "quote_uncertainty": "Estimate includes recent extra-reference fee; actual API cost can differ. Keep reserved headroom and stop if next request would exceed cap.",
   "generation_spend_so_far_usd": "1.2209",
-  "status": "E02_identity_and_focus_rejected",
+  "status": "new_low_angle_camera_draft_published",
   "remaining_first_pass_estimate_usd": "0.6846",
   "current_cumulative_estimate_to_complete_first_pass_usd": "0.8736",
   "selected_stills": 4,
@@ -71,5 +71,14 @@
     "user_accepted": false,
     "identity_verdict": "rejected_by_user",
     "next_plan_href": "../optics-low-angle-plan/"
+  },
+  "new_direction_result": {
+    "source_directory": "low-angle-two-tables-2026-11-19",
+    "G3_sha256": "a024e7b5ea3ed882bd12a10a4fcfc4ea3832822e52efc1c2dd09c9a169d4b845",
+    "public_href": "../optics-low-angle-result/",
+    "actual_usd": "0.3880",
+    "cap_usd": "0.40",
+    "status": "conditional_camera_reveal_draft_performance_gaps_disclosed",
+    "user_accepted": false
   }
 }

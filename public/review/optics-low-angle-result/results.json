@@ -1,0 +1,370 @@
+{
+  "provider": "Tein",
+  "api_host": "https://api.tein.ai",
+  "user_accepted": false,
+  "G5_performed": false,
+  "actual_usd": "0.3880",
+  "approved_cap_usd": "0.40",
+  "parent_funds_transferred": false,
+  "G2": {
+    "user_accepted": false,
+    "selections": {
+      "proof": {
+        "file": "exports/stills/LA-proof-v2.png",
+        "sha256": "58d3e5c696f75d5b5a520685568a2226093cec685df94e904c20ee407f99896d",
+        "approved_for_draft": true,
+        "identity_status": "sharp_face_reviewed",
+        "review_ko": "원래Claire참조와선명한얼굴을확대대조했다. 눈/코/입/턱과성인인상·앞머리/귀걸이를같이확인한검토후보이며자동동일인판정이나사용자확정은아님. 앞/뒤별도상판과다리,실제빈공간이보여geometry초안통과.",
+        "deviation_ko": "도해보다몸이넓게보이고손이무릎위에보인다. 자연스러운두손상태를검토한뒤고정하며,계획의cm/렌즈를실측으로주장하지않는다.",
+        "face_crop_box_pixels": [
+          1830,
+          220,
+          2160,
+          660
+        ]
+      },
+      "start": {
+        "file": "exports/stills/LA-start-v1.png",
+        "sha256": "36813cbe2cd6793c086ee2e61fae18f0faf32052af772c6d9bd17087e0b4bfdc",
+        "approved_for_draft": true,
+        "identity_status": "inherited_from_reviewed_sharp_proof",
+        "review_ko": "proofv2의같은두상판/다리/빈공간/인물배치가유지되고앞빈도자기오브제는선명,뒤얼굴은명확히흐림. 흐린얼굴로새동일성판정하지않고선명한proof의참조계보로상속."
+      },
+      "end": {
+        "file": "exports/stills/LA-end-v1.png",
+        "sha256": "c2ed170abcba45a5a1298a10c6cc4d286d083d0092c9a569f1822e664cb9fa86",
+        "approved_for_draft": true,
+        "identity_status": "sharp_face_reviewed",
+        "review_ko": "원래Claire와선명한눈/코/입/턱·성인인상·헤어/귀걸이를다시대조한검토후보. 온전한머리/셔츠가유지되고앞테이블은왼쪽밖,뒤테이블에앉은중근경. 창빛/선반의공간연결확인. 자동동일인판정이나사용자확정아님."
+      }
+    },
+    "rejected": {
+      "LA-proof-v1": "인물대조는가능하지만테이블모서리가붙어보이고원하지않은꽃이추가되어공간/소품보완."
+    },
+    "rule": "The blurred start inherits identity from this sharp proof; the sharp end must be checked against the original again.",
+    "continuity_limits_ko": "새앵글은생성한파생사진이며실제3D카메라/렌즈의측정재현은아니다. 끝얼굴이원래참조와이어지는지를원본확대에서검토한후보로공개하고사용자최종동일성판정을남긴다.",
+    "latest_video_inputs": {
+      "identity": "original locked Claire portrait",
+      "scene": "proof",
+      "ending_angle": "end",
+      "start_plate": "archived_v1_input_not_used_in_v2"
+    }
+  },
+  "G3": {
+    "ready_for_user_review": true,
+    "publishable_draft": true,
+    "conditional_draft": true,
+    "user_accepted": false,
+    "G5_performed": false,
+    "status": "conditional_camera_reveal_draft_performance_gaps_disclosed",
+    "selection": {
+      "name": "LA-motion-v2",
+      "input_mode": "reference_image",
+      "gain_db": 15.9,
+      "poster_time": 5.5
+    },
+    "observation_ko": "앞 테이블의 오브제와 뒤 테이블 인물이 분리되어 보입니다. 카메라가 접근할 때 앞 테이블·오브제가 먼저 왼쪽으로 빠지고 뒤 인물은 더 크게 남아, 두 거리층의 이동 차이를 보여 줍니다. 후반4–6초는 보완 전보다 닫힌 입과 차분한 눈 모양에 가까워져 원래 Claire·종료 스틸에 대조하기 좋은 구간입니다. 사용자 최종 동일성 판정은 남아 있습니다.",
+    "limitations_ko": "검토 초안의 남은 편차: 약1.5–3.5초에 입이 잠시 벌어지고, 이동 중 시선이 렌즈를 즉시 따라오지 않는 구간이 있습니다. 인물은 초반부터 읽혀 계획한1.5–3초의 순수한 초점 교환이 강하게 분리되지는 않습니다. 정확한 카메라 높이·거리·렌즈를 측정한 결과가 아니며, 카메라 이동과 초점이 함께 바뀌는 연출입니다. 이 편차를 숨기기 위해 얼굴 교체·프레임 고정·블러 합성으로 수정하지 않았습니다.",
+    "audio_note_ko": "이 테이크가 생성한 고유 원음에 일정한 +15.9dB 음량 보정만 적용했습니다. 전 구간 오디오 에너지와 클리핑 없음은 기술적으로 확인했습니다. 실제 소리의 자연스러움·명료도에 대한 청취 확인은 사용자 검토 전입니다.",
+    "acceptance": {
+      "two_separate_tables": "draft_pass",
+      "foreground_parallax_and_approach": "draft_pass",
+      "full_head_visible": "draft_pass",
+      "same_Claire": "qualitative_candidate_user_verdict_pending",
+      "gaze_entire_take": "partial_lag_during_move",
+      "closed_lips_entire_take": "partial_gap_1.5_to3.5",
+      "focus_only_control": "not_performed_combined_camera_reveal",
+      "native_audio": "technical_presence_pass_human_listening_pending"
+    },
+    "archived_videos": [
+      {
+        "name": "LA-motion-v1",
+        "gain_db": 23.3,
+        "reason_ko": "첫/끝 프레임 방식의 첫 결과입니다. 두 테이블·이동은 보이나 후반 얼굴 인상·입·시선이 선명한 종료 스틸에서 벗어나 현재 선택에서 제외했습니다."
+      }
+    ],
+    "guide_mapping": [
+      {
+        "guide": "PW-002/PW-034 geography and parallax",
+        "result": "두상판/다리/빈공간과전경의더빠른왼쪽이동관찰"
+      },
+      {
+        "guide": "PW-034 reference roles and identity",
+        "result": "v2는원래Claire+선명한공간+종료구도3참조. 실제video얼굴은사용자판정전인검토후보"
+      },
+      {
+        "guide": "QUALITY-STANDARD gaze/performance",
+        "result": "중반입/시선편차공개,전구간통과라고기록하지않음"
+      }
+    ]
+  },
+  "requests": [
+    {
+      "name": "LA-proof-v1",
+      "stage": "image",
+      "status": "succeeded",
+      "actual_usd": "0.0457",
+      "selected_for_review": false,
+      "prompt": "A photographed live-action frame, using reference image1 only for the established adult Claire face, age impression, hair, earrings and blue-gray shirt. Do not inherit the portrait crop or background. A low object-level camera looks through one quiet workshop: a normal14cm matte ochre bud vase rests on a separate small timber table in the near-left foreground; Claire sits at a SECOND table farther back and staggered to the right. Each table has its own edge and legs, with open space between them. One continuous wall, shelves and soft side-window light connect the room. The camera is about82cm high,45mm lens look, with a modest upward view of the seated person and her whole head inside frame. This is the sharp identity/geography PROOF: keep her eyes and facial features legible and both table boundaries readable. Hands rest out of view, lips closed, actual lens gaze, natural skin and cloth at this distance. No new person, facial reshaping, extra prop, merged table, text or logos. Identity is checked against the original reference before any shallow-focus derivative is accepted.\n\nThis sharp proof must depict EXACTLY the adult Claire from image1, preserving her particular eyes, nose, lips, jaw and adult age impression; do not replace her with a generic person with similar bangs. Same natural broad shoulder proportions, without facial beautification or age change. The whole head and the near vase are inside frame. Leave a clear lateral gap between the two staggered tables, with each table’s own outer edge and legs visible. Her relaxed face points toward the actual low camera lens. This is a new photographed workshop scene, not a portrait pasted onto a background.",
+      "parameters": {
+        "model": "gpt-image-2",
+        "endpoint": "flat",
+        "resolution": "2K",
+        "aspect_ratio": "16:9",
+        "image_quality": "High",
+        "input_fidelity": "high"
+      },
+      "image_input_count": 1,
+      "reference_image_count": 0,
+      "first_frame": false,
+      "last_frame": false
+    },
+    {
+      "name": "LA-proof-v2",
+      "stage": "image",
+      "status": "succeeded",
+      "actual_usd": "0.0457",
+      "selected_for_review": true,
+      "prompt": "A photographed live-action scene edit. Image1 establishes the newly reviewed Claire face, blue-gray shirt, window light and workshop materials. Image2 is the original Claire identity portrait: preserve her specific eyes, nose, mouth, jaw and adult impression; do not inherit its portrait framing/background.\n\nFix the spatial layout so the two tables are unmistakably SEPARATE. Pull the camera view back to a wider low object-level view of the same room, with a45mm lens look at about82cm height. Claire now appears smaller in the upper-right background, her whole head around ONE FIFTH of the image height, facing the actual lens with closed relaxed lips. Keep her face SHARP for identity inspection. She sits behind her own rear table.\n\nThe small60cm-square NEAR table occupies only the LEFT THIRD of frame and ends well before the center. One normal14cm ochre vase sits on it, with its whole base and rim visible. Remove the unwanted flowers/branches: the vase is empty. The REAR table sits about one metre farther back, staggered right, occupying the RIGHT half. Leave a broad, clearly visible OPEN GAP between the right edge of the near table and the left edge of the rear table, with their separate legs and the shared floor visible through it. No touching, overlapping or connected tabletops, no continuous counter.\n\nMaintain the same one continuous workshop wall, window and shelving so the furniture belongs to one room. Both table boundaries and the woman’s eyes remain legible and sharp in this spatial proof. Preserve identity, natural skin/cloth, light direction and exposure. No added people, text or logos.",
+      "parameters": {
+        "model": "gpt-image-2",
+        "endpoint": "flat",
+        "resolution": "2K",
+        "aspect_ratio": "16:9",
+        "image_quality": "High",
+        "input_fidelity": "high"
+      },
+      "image_input_count": 2,
+      "reference_image_count": 0,
+      "first_frame": false,
+      "last_frame": false
+    },
+    {
+      "name": "LA-end-v1",
+      "stage": "image",
+      "status": "succeeded",
+      "actual_usd": "0.0457",
+      "selected_for_review": true,
+      "prompt": "A photographed live-action derived view. Image1 supplies the reviewed two-table workshop, the same Claire, shirt, vase, furniture and soft window light. Image2 supplies the original established Claire face/identity only; do not inherit image2 portrait crop/background. Preserve Claire’s particular eyes, nose, lips, jaw and adult impression. Move only the viewpoint along the open space to the RIGHT of the near-left table, about65cm right and150cm forward, keeping the camera about82cm high and the same45mm lens look. Now see a closer medium view of Claire behind the REAR table, whole head including hair inside frame, relaxed shoulders and closed lips. She faces and looks at this actual low camera lens without tilting her head back. The near vase and its table have passed out of view LEFT; the rear table remains directly in front of her. Her eyes and facial details are sharply focused; the room behind is softly defocused. Preserve table positions, workshop architecture, light direction/exposure and natural skin/cloth. No facial reshaping, extra person, table merging, text or logos.",
+      "parameters": {
+        "model": "gpt-image-2",
+        "endpoint": "flat",
+        "resolution": "2K",
+        "aspect_ratio": "16:9",
+        "image_quality": "High",
+        "input_fidelity": "high"
+      },
+      "image_input_count": 2,
+      "reference_image_count": 0,
+      "first_frame": false,
+      "last_frame": false
+    },
+    {
+      "name": "LA-start-v1",
+      "stage": "image",
+      "status": "succeeded",
+      "actual_usd": "0.0457",
+      "selected_for_review": true,
+      "prompt": "A photographed live-action focus-only edit of the reviewed sharp workshop scene in image1. Image1 owns the exact camera position, framing, woman’s identity, pose, two separate tables, vase position/contact, architecture and window light. Keep every object and the full head and vase in exactly their original place and size. Change ONLY optical focus to the near vase: its rim/body are sharply resolved, while the seated woman on the second table plane behind becomes visibly out of focus with soft facial details. Preserve her recognizable silhouette and the identity already verified in the sharp source; do not redesign her face. The two tabletop edges and intervening space remain recognizable. No zoom, crop, lighting change, new objects or text.",
+      "parameters": {
+        "model": "gpt-image-2",
+        "endpoint": "flat",
+        "resolution": "2K",
+        "aspect_ratio": "16:9",
+        "image_quality": "High",
+        "input_fidelity": "high"
+      },
+      "image_input_count": 1,
+      "reference_image_count": 0,
+      "first_frame": false,
+      "last_frame": false
+    },
+    {
+      "name": "LA-motion-v1",
+      "stage": "video",
+      "status": "succeeded",
+      "actual_usd": "0.1026",
+      "selected_for_review": false,
+      "prompt": "Animate the approved new two-table start frame as one continuous six-second live-action reveal, arriving at the supplied approved end frame. Keep the established Claire, wardrobe, room, normal vase size, both tables and window light.0–1s: hold the near vase sharp and the seated person behind soft.1–4.5s: the camera physically slides diagonally RIGHT and FORWARD along the clear aisle beside the near table, staying at the same low object-level height; no zoom, rise, orbit or cut. The nearby vase and its table pass out of frame to the left faster than the rear table and person.1.5–3s: transfer focus once to her eyes.4.5–6s: settle on the same Claire behind the second table, her whole head visible and eyes sharp. She follows the actual moving lens with small eye movements, a quiet breath and brief blinks; minimal head turn, no look down at the prop, no prolonged eyes closed. Generate this take’s own continuous workshop room tone and quiet breath; no dialogue, music or focus sound effect.",
+      "parameters": {
+        "model": "seedance-2",
+        "resolution": "480p",
+        "ratio": "16:9",
+        "quality": "mini",
+        "duration": 6,
+        "generate_audio": true,
+        "pass_faces": true
+      },
+      "image_input_count": 0,
+      "reference_image_count": 0,
+      "first_frame": true,
+      "last_frame": true
+    },
+    {
+      "name": "LA-motion-v2",
+      "stage": "video",
+      "status": "succeeded",
+      "actual_usd": "0.1026",
+      "selected_for_review": true,
+      "prompt": "One continuous six-second photographed live-action reveal.\n\nREFERENCE ROLES: Image1 is the ORIGINAL Claire and owns her exact identity, adult age impression, eyes, nose, mouth, jaw, hair and earrings. Image2 owns the newly reviewed workshop, two SEPARATE staggered tables, small empty ochre vase, wardrobe and opening view. Image3 owns the same Claire’s face in the closer final angle, closed lips and relaxed expression, in the same room. Preserve this specific woman throughout; do not redesign her face as the camera approaches.\n\nA single slow diagonal-right and forward camera slide along the clear aisle beside the near-left table, at low object-level height throughout, ending on Claire behind the rear table.0–1s hold the opening view with the near vase sharp.1–4.5s physically translate right and forward; the near vase/table pass out of frame LEFT faster than the rear person and furniture. During1.5–3s, transfer focus once toward her eyes.4.5–6s hold the closer medium view suggested by image3, whole head visible, eyes sharp, same facial proportions and calm expression. No zoom, cut, dissolve, camera rise, facial morph or object sliding.\n\nClaire calmly meets the ACTUAL moving lens with only small eye corrections. Her head keeps its reference orientation, eyes remain naturally relaxed rather than widening, lips stay softly CLOSED throughout, with brief ordinary blinks and gentle nasal breathing. No surprised reaction, mouthing words, head turn or glance away. Generate this take’s own continuous quiet workshop room tone and breath; no speech, music or lens-motor effect.",
+      "parameters": {
+        "model": "seedance-2",
+        "resolution": "480p",
+        "ratio": "16:9",
+        "quality": "mini",
+        "duration": 6,
+        "generate_audio": true,
+        "pass_faces": true
+      },
+      "image_input_count": 0,
+      "reference_image_count": 3,
+      "first_frame": false,
+      "last_frame": false
+    }
+  ],
+  "published_video_probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.64001f",
+        "width": 864,
+        "height": 496,
+        "coded_width": 864,
+        "coded_height": 496,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 31,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/12288",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 74240,
+        "duration": "6.041667",
+        "bit_rate": "1818274",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "145",
+        "extradata_size": 44,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "mime_codec_string": "mp4a.40.2",
+        "sample_fmt": "fltp",
+        "sample_rate": "32000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 1024,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/32000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 194560,
+        "duration": "6.080000",
+        "bit_rate": "165624",
+        "nb_frames": "191",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler"
+        }
+      }
+    ],
+    "format": {
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "6.080000",
+      "size": "1505826",
+      "bit_rate": "1981350",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf63.1.102"
+      }
+    }
+  },
+  "files": {
+    "media/LA-motion-v1.jpg": "f777e9b1f0884199a11c47f0d87fe3d2630ddb23b66b742f84f1ff22f73779b7",
+    "media/LA-motion-v1.mp4": "63346dcbfc5c4232df286334e6cd502f84ff147a99c8e34fab8ee924832bbb2b",
+    "media/arrival.jpg": "4bc9af8cfb5e0706942bc96530020f6b78d21cd969c82ef6435c1e28ba2c7758",
+    "media/end.jpg": "e17814c7b45314fe3d3967a5c6a4d96e592fbae66a4fe68862f763da26ca11a1",
+    "media/identity-original.jpg": "34e113b258a0b5bf3dd56b9e1d7531aa91cf41abe6103b982bbda34a6f3e3eec",
+    "media/low-angle-motion.mp4": "081b8ea0d9c2ac1b94585207b5233743c4a167d7cd6914353ff3a0e771ff1859",
+    "media/low-angle-motion.vtt": "0a95f39b7d7a57a072893be70578f96fd74ba6d64e1919b8ba65bbc2a26424ad",
+    "media/opening.jpg": "4c197211479c1811ff799bc879b12d56c1b4e12c2d77a57125cd09a4b7447f9c",
+    "media/poster.jpg": "4bc9af8cfb5e0706942bc96530020f6b78d21cd969c82ef6435c1e28ba2c7758",
+    "media/proof.jpg": "8f311b50e0c869e49fe10d9f50e7dfe5fdd6aa7032f13c57b4721695f59c4c2b",
+    "media/start.jpg": "39985b5cd822c70e18d12db92055396a3045a974fefe0f1ea85579b6858704b2"
+  }
+}

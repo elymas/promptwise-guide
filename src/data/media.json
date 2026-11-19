@@ -16,12 +16,12 @@
     "cast": [
       "Claire"
     ],
-    "coverageScope": "E01 레이어 초안 · E02 인물/구도 재설계 · E03 비 조명 초안",
+    "coverageScope": "E01 레이어 초안 · E02 이동 실사/연기·초점 보완 · E03 비 조명 초안",
     "audioLabel": "생성 원음 · 환경음",
     "related": [
       {
-        "label": "랙 포커스 · 두 테이블 로우앵글 재설계",
-        "href": "review/optics-low-angle-plan/"
+        "label": "두 테이블 로우앵글 · 실사 이동 초안",
+        "href": "review/optics-low-angle-result/"
       },
       {
         "label": "역광의 비 · 소리 영상 A/B",

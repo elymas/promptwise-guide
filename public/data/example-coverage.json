@@ -12,7 +12,7 @@
     "ACT-05:b",
     "ACT-10"
   ],
-  "new_paid_generations": 21,
+  "new_paid_generations": 27,
   "examples": [
     {
       "id": "E01",
@@ -46,14 +46,14 @@
       "title": "랙 포커스",
       "format": "video_ab",
       "state": "needs_rework",
-      "label": "인물·초점 재설계",
+      "label": "이동 실사 초안 · 연기·초점 보완",
       "links": [
         {
-          "label": "새 두 테이블·로우앵글 이동안",
-          "href": "review/optics-low-angle-plan/"
+          "label": "새 실제 영상·참조·남은 편차",
+          "href": "review/optics-low-angle-result/"
         }
       ],
-      "note": "사용자가 인물이 기존 Claire와 다르다고 판정해 새 스틸의 영상 입력 선택도 해제했습니다. 앞 테이블의 오브제 높이에서 뒤 다른 테이블의 인물로 이동하는 새3D 배치를 검토 중입니다. 실제 Claire 생성·인물 동일성·초점 성공은 아직입니다. 이동 연출과 순수 초점 비교를 구분합니다.",
+      "note": "새 두 테이블 로우앵글 이동 초안을 공개했습니다. 전경 오브제가 먼저 빠지는 시차와 후반 인물 접근을 볼 수 있습니다. 중반 입 벌림·시선 지연, 강하게 분리되지 않은 초점 교환은 보완 범위로 남겼습니다. 사용자 얼굴 동일성·원음 청취 확정 전이며, 고정 카메라 순수 초점 A/B와 구분합니다.",
       "source_ids": [
         "PW-018-p12"
       ],
@@ -62,6 +62,10 @@
       "variant_b": "2초에는 앞 찻잔, 3초부터 뒤 Claire 눈으로 초점 이동",
       "acceptance": "선명한 대상이 한 번 바뀌며 카메라는 고정",
       "planning_links": [
+        {
+          "label": "승인한3D 배치·이동 프리비즈",
+          "href": "review/optics-low-angle-plan/"
+        },
         {
           "label": "인물·초점 미달 영상 보관",
           "href": "review/optics-e02-scale-result/"
@@ -637,11 +641,21 @@
     "identity_verdict": "rejected_by_user"
   },
   "new_direction": {
-    "status": "G0_G1_review_only",
-    "provider_if_generated": "Tein",
-    "paid_requests": 0,
-    "generation_cost_usd": "0",
-    "review_url": "review/optics-low-angle-plan/",
-    "identity_selection_revoked": true
+    "status": "conditional_camera_reveal_draft_performance_gaps_disclosed",
+    "provider": "Tein",
+    "paid_requests": 6,
+    "generation_cost_usd": "0.3880",
+    "approved_cap_usd": "0.40",
+    "remaining_usd": "0.0120",
+    "pending_requests": 0,
+    "review_url": "review/optics-low-angle-result/",
+    "plan_url": "review/optics-low-angle-plan/",
+    "selected_video": "LA-motion-v2",
+    "input_mode": "reference_image",
+    "input_reference_count": 3,
+    "actual_video_available": true,
+    "pure_fixed_focus_comparison_completed": false,
+    "user_accepted": false,
+    "G5_performed": false
   }
 }
