@@ -16,11 +16,11 @@
     "cast": [
       "Claire"
     ],
-    "coverageScope": "E01 레이어 초안 · E02 이동 실사/연기·초점 보완 · E03 비 조명 초안",
+    "coverageScope": "E01 레이어·E03 비 조명 초안 · E02 고정 카메라 초점 A/B 미완료",
     "audioLabel": "생성 원음 · 환경음",
     "related": [
       {
-        "label": "두 테이블 로우앵글 · 실사 이동 초안",
+        "label": "E10 관련 · 두 테이블 이동 초안",
         "href": "review/optics-low-angle-result/"
       },
       {
@@ -53,12 +53,12 @@
     "studyLabel": "E04 B · 빛의 방향",
     "caption": "Claire 얼굴의 밝은 면과 반대편 그림자를 비교합니다.",
     "watchFor": "얼굴 오른쪽의 밝은 면, 코·턱 그림자의 경계를 보세요.",
-    "reviewNote": "B는 빛의 방향과 함께 그림자 경도도 달라졌습니다. 하드·소프트 광원만 바꾼 별도 비교는 아직 없습니다.",
+    "reviewNote": "대표 E04 B는 빛의 방향과 함께 그림자 경도도 달라졌습니다. 별도 E05에서는 코·볼·턱 그림자 경계를 스틸로 비교하며, 밝기·색·이미지 모델의 작은 차이도 공개했습니다.",
     "reviewUrl": "review/claire-v2/#E04",
     "cast": [
       "Claire"
     ],
-    "coverageScope": "E04 방향 비교 · E05 그림자 경도·E06 림 라이트는 제작 예정",
+    "coverageScope": "E04 방향 비교 초안 · E05 그림자 경도 스틸 A/B 초안 · E06 림 라이트 미제작",
     "audioLabel": "생성 원음 · 환경음",
     "related": [
       {
@@ -130,12 +130,16 @@
       "Claire",
       "Erin"
     ],
-    "coverageScope": "횡이동 비교 · E10 전진 돌리도 별도 파일럿으로 연결",
+    "coverageScope": "GEO-01 횡이동·E10 전진 돌리 초안 · E11 오빗·E12 상승 전용 비교 미완료",
     "audioLabel": "편집 환경음 · GEO-01 A 원음 공유",
     "related": [
       {
         "label": "고정 구도와 전진 돌리 E10",
         "href": "review/claire-v2/#E10"
+      },
+      {
+        "label": "두 테이블 이동 · 시차 보조 예시",
+        "href": "review/optics-low-angle-result/"
       }
     ],
     "archive": {
@@ -179,6 +183,10 @@
       {
         "label": "웃음을 참는 얼굴 ACT-03",
         "href": "review/acting-v2/#ACT-03"
+      },
+      {
+        "label": "4초 입·응시 검사 · 동일성 보류",
+        "href": "review/claire-performance-gate/"
       }
     ],
     "archive": {
@@ -214,6 +222,10 @@
     "coverageScope": "E17 관련 자료만 있음 · 전용 다중 앵글 비교 미완료",
     "audioLabel": "생성 원음 · 호흡과 환경음",
     "related": [
+      {
+        "label": "Claire 참조 팩 · 원본과 후보 구분",
+        "href": "review/claire-reference-pack/"
+      },
       {
         "label": "참조 역할과 실제 입력 사례 E18",
         "href": "examples/coverage/#reference-roles"
