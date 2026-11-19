@@ -611,8 +611,12 @@
       "title": "클립 경계 인계",
       "format": "video_ab",
       "state": "partial_related",
-      "label": "관련 자료 있음 · 전용 비교 미완료",
+      "label": "문 상태 인계 스틸 공개 · 전용 영상 제작 전",
       "links": [
+        {
+          "label": "컷 전후 문틈과 진행 방향 · 기준 스틸",
+          "href": "review/door-match/"
+        },
         {
           "label": "머그 v1·v2의 컷 양옆 비교",
           "href": "review/cut-boundary/"
@@ -622,7 +626,7 @@
           "href": "examples/#archive-continuity"
         }
       ],
-      "note": "실제 두 프레임에서 오른손과 머그의 들고 있는 상태가 이어지는지 볼 수 있습니다. 문·진행 방향 인계는 전용 비교를 준비 중입니다.",
+      "note": "컷 직전 공통 스틸과 컷 직후 문틈이 사라지는 경우·이어지는 경우의 스틸을 공개했습니다. 실제 두 샷의 인계와 소리는 Tein 제작 후 검수합니다.",
       "source_ids": [
         "PW-105-p1",
         "PW-105-p2",

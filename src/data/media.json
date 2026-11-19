@@ -319,6 +319,10 @@
     "audioLabel": "생성 원음 · Claire 한국어 / Erin 영어",
     "related": [
       {
+        "label": "컷 전후 열린 문틈 · E21 기준 스틸",
+        "href": "review/door-match/"
+      },
+      {
         "label": "머그 높이와 오른손 · 컷 양옆 프레임",
         "href": "review/cut-boundary/"
       }

@@ -1,0 +1,59 @@
+{
+  "provider": "ChatGPT built-in image generation",
+  "sources": [
+    "PW-105-p1",
+    "PW-105-p2",
+    "PW-108-p3"
+  ],
+  "stills": [
+    {
+      "id": "shot-1-start",
+      "title": "공통 첫 샷의 닫힌 문",
+      "path": "review/door-match/media/shot-1-start.webp",
+      "width": 1672,
+      "height": 941,
+      "sha256": "7ff41b8f217456e4020cec7ecc8d2b58bfa1bd2f7111922d6d0f64bd0c267e14",
+      "source_png_sha256": "b445a759f00fdfe10fe68c483bdff9c973d967f25b414b1110c20debcf7d0e12"
+    },
+    {
+      "id": "shot-1-end",
+      "title": "컷 직전의 열린 문틈",
+      "path": "review/door-match/media/shot-1-end.webp",
+      "width": 1672,
+      "height": 941,
+      "sha256": "addcd94eb3271cf8fdcae53dcb7251f3fef87990a02d4b10883bdc9733aa2dba",
+      "source_png_sha256": "ee113c8e7bcc87bcdc6bd4144f557eb44152e25e046ea237b5213e55800f56b3"
+    },
+    {
+      "id": "shot-2-match",
+      "title": "컷 직후의 열린 문틈",
+      "path": "review/door-match/media/shot-2-match.webp",
+      "width": 1672,
+      "height": 941,
+      "sha256": "b7928d63f026935f54ccae2088535c97d0b4eeac332aebce052bf32ec88ca0a1",
+      "source_png_sha256": "d7a9a66f669678e42aebb84c41749fe857663f2e11b5b44b5e0fe19f3634a6ae"
+    },
+    {
+      "id": "shot-2-jump",
+      "title": "문틈이 사라지는 예시 · 팔 비율도 불일치",
+      "path": "review/door-match/media/shot-2-jump.webp",
+      "width": 1672,
+      "height": 941,
+      "sha256": "68657c7020f36eb60ab7ac959acf926819616a8fc18670cbe1a6adda8441febb",
+      "source_png_sha256": "cbd3e4339a6fa72309917f5aea24faee083619bac42ec0f354f47af7c77534ab"
+    }
+  ],
+  "references": [
+    {
+      "path": "media/claire-reference.png",
+      "sha256": "301ce886477535e0ca88258c8c2761aedb64a4b87237c055244fc98c6835c591"
+    },
+    {
+      "path": "review/claire-character-sheet/media/claire-sheet-v1.webp",
+      "sha256": "913272151c471d369f8987c1e4aeb5130aab28a1fe1228d228c65c175c87c35f"
+    }
+  ],
+  "role": "cut-state still study",
+  "new_tein_requests": 0,
+  "video_status": "unsubmitted"
+}
