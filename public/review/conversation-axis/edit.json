@@ -1,0 +1,45 @@
+{
+  "provider": "Tein",
+  "source_id": "ACT-07 B",
+  "fps": 24,
+  "width": 854,
+  "height": 480,
+  "total_frames": 192,
+  "cut_frame_index": 96,
+  "cut_pts": 4.021322,
+  "first_video_frame_pts": 0.021322,
+  "edit": "hflip=enable='gte(n,96)'",
+  "source": {
+    "path": "review/acting-v2/media/ACT-07-b-take.mp4",
+    "sha256": "a59a52ad7cc02ee14afa6974b2b49344794350501a1c49083ad250c093b897cc"
+  },
+  "edited": {
+    "path": "review/conversation-axis/media/reversed-second-shot.mp4",
+    "sha256": "97b8995788320772c0b30a7522b64e787f028de6485cdea2adcabe32289d4355"
+  },
+  "audio_packet_sha256": "454ba9ac411fe0ed139c543c8702764ee5cf91532371aacb6b775a2850bdfe70",
+  "frames": [
+    {
+      "id": "before",
+      "index": 95,
+      "pts": 3.979655,
+      "path": "review/conversation-axis/media/before.jpg",
+      "sha256": "b25ae3de97d6bef4f71730e17e815c28a3cd37925a199b71eab0617426d9be39"
+    },
+    {
+      "id": "matched",
+      "index": 96,
+      "pts": 4.021322,
+      "path": "review/conversation-axis/media/matched.jpg",
+      "sha256": "21f8c2a751e25c47715d40a4ad5101a41e9aaf8c43174de64b0ecc0aef1e03b4"
+    },
+    {
+      "id": "reversed",
+      "index": 96,
+      "pts": 4.021322,
+      "path": "review/conversation-axis/media/reversed.jpg",
+      "sha256": "25ad514bd1149814bc04ed6c2eada6e3a703ac0e08149c713c8c62bf87d5c6a5"
+    }
+  ],
+  "new_tein_requests": 0
+}

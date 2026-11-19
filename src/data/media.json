@@ -323,6 +323,10 @@
         "href": "review/door-match/"
       },
       {
+        "label": "대화 축 · E19 화면 방향 A/B",
+        "href": "review/conversation-axis/"
+      },
+      {
         "label": "머그 높이와 오른손 · 컷 양옆 프레임",
         "href": "review/cut-boundary/"
       }
