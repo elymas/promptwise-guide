@@ -661,5 +661,33 @@
         "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, locked camera. A single door slam occurs offscreen at frame-left around2seconds. Claire says exactly in Korean \"깜짝이야.\" around3.5–4.5seconds, then closes her lips. Same scene, no visible door or extra person.\n\nBefore the audible impact she is composed. Only after its onset, one blink and small shoulder flinch occur, followed by a short inhalation. She regains composure, says the exact Korean line once and settles for the last second. No anticipation, repeated flinch or added interjection."
       }
     ]
+  },
+  {
+    "id": "E20",
+    "topic": "continuity",
+    "title": "컷 전후 머그의 높이와 오른손",
+    "change": "보완 입력은 첫 샷에서 머그를 든 채 멈추고, 컷 직후에도 같은 오른손과 높이에서 시작하도록 지정했습니다.",
+    "watch": "좌측은 컷 직전, 우측은 직후입니다. A의 2.75→2.79초와 B의 2.50→2.54초에서 컵 밑면과 테이블 사이의 틈을 보세요.",
+    "note": "머그를 사용한 기존 무음 제작본의 프레임 증거입니다. B는 오른손과 들고 있는 상태가 이어집니다. 빨간 우산과 문·진행 방향의 전용 영상은 기획 중입니다.",
+    "still": true,
+    "a": {
+      "poster": "review/cut-boundary/media/A.jpg",
+      "resolution": "1728×496"
+    },
+    "b": {
+      "poster": "review/cut-boundary/media/B.jpg",
+      "resolution": "1728×496"
+    },
+    "review": "review/cut-boundary/",
+    "sources": [
+      "PW-108-p2",
+      "PW-104-p4"
+    ],
+    "inputs": [
+      {
+        "label": "B · 실제 보완 입력문",
+        "prompt": "Exactly two shots, with one hard cut at 3 seconds. SHOT 1, 0.0-3.0 seconds: locked medium view. Claire holds the single ivory mug completely motionless at the same height as the first frame, well above the tabletop. The right hand grips its single handle, and the left hand rests on the table. The mug does NOT lower or touch the table anywhere in shot 1. SHOT 2, 3.0-6.0 seconds: hard cut to a closer view on the same side of the action axis. The first frame after the cut shows the same mug still suspended at the same height in the same right hand. Only AFTER the cut, from 3.2 to 4.8 seconds, the right hand lowers the mug in one continuous movement onto the table. From 4.8 to 5.5 seconds the right fingers release the handle; hold to the end. The left hand never moves. Same face, blue-grey shirt, ivory mug, handle and walnut table throughout. One mug, two hands, no hand swap, no liquid. Silent, no text, captions or logos."
+      }
+    ]
   }
 ]

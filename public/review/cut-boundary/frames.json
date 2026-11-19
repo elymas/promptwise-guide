@@ -1,0 +1,40 @@
+{
+  "fps": 24,
+  "versions": [
+    {
+      "variant": "A",
+      "source": "continuity-v1.mp4",
+      "source_sha256": "07288f1eaf628170ce74bf030ac203320fc46b74bbcfaa3dd3d8e04f0a086519",
+      "frames": [
+        {
+          "file": "media/A-before.jpg",
+          "frame_zero_based": 66,
+          "seconds": 2.75
+        },
+        {
+          "file": "media/A-after.jpg",
+          "frame_zero_based": 67,
+          "seconds": 2.7917
+        }
+      ]
+    },
+    {
+      "variant": "B",
+      "source": "continuity-v2.mp4",
+      "source_sha256": "514c6aad63512b18142bcdf86e87bf26ac6d834bbf446dee8b5c6b03f2789395",
+      "frames": [
+        {
+          "file": "media/B-before.jpg",
+          "frame_zero_based": 60,
+          "seconds": 2.5
+        },
+        {
+          "file": "media/B-after.jpg",
+          "frame_zero_based": 61,
+          "seconds": 2.5417
+        }
+      ]
+    }
+  ],
+  "generation_cost_usd": "0.00"
+}

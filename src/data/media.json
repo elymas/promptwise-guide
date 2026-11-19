@@ -279,9 +279,14 @@
       "Claire",
       "Erin"
     ],
-    "coverageScope": "E19 대화 축 변형 예시 · E20 손·소품·E21 인계는 미완료",
+    "coverageScope": "E19 대화 축 변형 예시 · E20·E21 머그 컷 경계 검토 자료",
     "audioLabel": "생성 원음 · Claire 한국어 / Erin 영어",
-    "related": [],
+    "related": [
+      {
+        "label": "머그 높이와 오른손 · 컷 양옆 프레임",
+        "href": "review/cut-boundary/"
+      }
+    ],
     "archive": {
       "status": "draft",
       "video": "media/claire/continuity-draft-v2.mp4",

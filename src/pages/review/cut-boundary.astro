@@ -1,0 +1,40 @@
+---
+import Base from '../../layouts/Base.astro';
+import {path} from '../../data/topics';
+const folder = 'review/cut-boundary/';
+const cuts = [
+  { id: 'A', title: 'A · 머그가 다시 들리는 컷', before: '2.75초 · 머그가 테이블에 닿음', after: '2.79초 · 컷 뒤 머그가 다시 들림' },
+  { id: 'B', title: 'B · 같은 손에서 동작을 이어 가는 컷', before: '2.50초 · 오른손으로 든 상태', after: '2.54초 · 오른손으로 든 상태에서 시작' },
+];
+---
+<Base title="컷 양옆의 머그와 오른손 — FRAME / NOTES" description="Claire가 머그를 내려놓는 장면에서 컷 바로 전후의 프레임을 대조합니다.">
+  <section class="shell page-heading">
+    <h1>컷이 바뀌어도,<br />머그는 같은 순간에.</h1>
+    <p>두 사람이 같은 영상을 봐도 컷 경계는 너무 빨리 지나갈 수 있습니다. 두 제작본의 컷 직전·직후 프레임을 뽑아 머그 밑면과 테이블 사이의 틈을 비교했습니다.</p>
+    <a class="text-link" href={path('examples/#compare-E20')}>비교 카드와 실제 보완 입력문 ↗</a>
+  </section>
+  {cuts.map(take => <section class="shell coverage-section">
+    <h2>{take.title}</h2>
+    <div class="frames">
+      {[['before', take.before], ['after', take.after]].map(([frame, description]) =>
+        <figure><img src={path(`${folder}media/${take.id}-${frame}.jpg`)} alt={description} width="864" height="496" loading="lazy" /><figcaption>{description}</figcaption></figure>
+      )}
+    </div>
+  </section>)}
+  <section class="shell coverage-section">
+    <h2>앞 샷의 마지막 동작을 다음 샷에 넘기기</h2>
+    <p>A는 컷 전에 머그를 내려놨다가 다음 앵글에서 다시 들어 올린 상태로 시작합니다. B는 오른손으로 머그를 든 상태에서 앵글을 바꾸고 그다음 내려놓습니다. B에서도 손과 컵의 픽셀 위치는 앵글과 프레이밍에 따라 달라집니다.</p>
+    <p>실제 컷은 A 2.79초, B 2.54초에 일어났습니다. B의 요청 시간은 3초였습니다. 이 자료의 검수 범위는 컵의 접촉 상태와 오른손입니다. E20의 빨간 우산과 E21의 문 열림·진행 방향은 전용 비교로 제작할 항목입니다.</p>
+    <div class="study-links">
+      <a class="text-link" href={path(folder+'frames.json')} download>컷 시각과 원본 기록 ↗</a>
+      <a class="text-link" href={path('examples/#archive-continuity')}>기존 B 무음 영상 ↗</a>
+      <a class="text-link" href={path('prompts/?page=PW-108#PW-108-p2')}>소품 연속성 원문 ↗</a>
+    </div>
+  </section>
+</Base>
+<style>
+  .frames { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .9rem; }
+  figure { margin: 0; }
+  img { display: block; width: 100%; height: auto; }
+  figcaption { margin-top: .55rem; font-size: .85rem; }
+</style>
