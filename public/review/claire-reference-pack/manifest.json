@@ -1,0 +1,68 @@
+{
+  "id": "claire-reference-pack-2026-11-19",
+  "as_of": "2026-11-19",
+  "new_paid_requests": 0,
+  "generation_cost_usd": "0",
+  "complete_character_sheet": false,
+  "multi_angle_identity_verified": false,
+  "assets": [
+    {
+      "id": "canonical-front",
+      "label": "원본 정면 · 신원 기준",
+      "status": "canonical_identity",
+      "role": "primary_identity",
+      "generation_input_candidate": true,
+      "note": "원래 Claire의 얼굴·성인 인상·헤어·귀걸이·셔츠를 정하는 기준.",
+      "width": 782,
+      "height": 782,
+      "sha256": "301ce886477535e0ca88258c8c2761aedb64a4b87237c055244fc98c6835c591",
+      "pack_file": "canonical-front.png",
+      "display_file": "review/claire-reference-pack/media/canonical-front.jpg",
+      "display_sha256": "deffe3abdefa94dcdb297705d5bc6b9abe4365a7d54967707dcad8e032eeac66"
+    },
+    {
+      "id": "accepted-profile",
+      "label": "확정 장면의 측면 · 대조용",
+      "status": "accepted_scene_crop",
+      "role": "inspection_only",
+      "generation_input_candidate": false,
+      "note": "확정 ACT-05 B/ACT-10 장면의 320×240 크롭. 정밀 측면 시트나 고해상도 생성 참조로 쓰지 않음.",
+      "width": 320,
+      "height": 240,
+      "sha256": "62ee07a0ba6c6a4a29cc484907b613d183b0885774e07cb44be411c157efaee8",
+      "pack_file": "accepted-profile.jpg",
+      "display_file": "review/claire-reference-pack/media/accepted-profile.jpg",
+      "display_sha256": "c1a1fd80637e5b80d5fa2f4ad40bcdaa71d9d09d921674ccb290bc31512227c7"
+    },
+    {
+      "id": "draft-end",
+      "label": "새 종료 스틸 · 검토 후보",
+      "status": "candidate_not_user_accepted",
+      "role": "scene_and_framing_candidate",
+      "generation_input_candidate": true,
+      "note": "공간·빛·종료 구도 후보. 신원 기준을 덮어쓰지 않으며 최종 동일성 판정은 미완료.",
+      "width": 2720,
+      "height": 1536,
+      "sha256": "c2ed170abcba45a5a1298a10c6cc4d286d083d0092c9a569f1822e664cb9fa86",
+      "pack_file": "draft-end.png",
+      "display_file": "review/claire-reference-pack/media/draft-end.jpg",
+      "display_sha256": "87a0a428b1f1ed0462ece090afe74c65b364cf826f2abe2c9f7bb887d63fa1b9"
+    }
+  ],
+  "missing": [
+    "검증한 정면·사선·좌우 측면 세트",
+    "같은 의상의 앞·뒤 전신과 비율 기준",
+    "다중 앵글 전용 영상 A/B"
+  ],
+  "excluded": [
+    {
+      "file": "lock6-L1-profile-clean.png",
+      "reason": "옛 스타일의 별도 근접 초상. 현재 셔츠·묶은 머리 기준의 측면이 아니므로 이번 생성 참조에서 제외."
+    },
+    {
+      "file": "optics-e02-scale-result",
+      "reason": "사용자가 인물 동일성 문제를 지적해 철회한 얼굴·파생 영상."
+    }
+  ],
+  "rule": "검토 보드는 설명용 조립물이며 모델 입력으로 쓰지 않는다. 각 원본 파일의 역할을 개별 지정한다."
+}

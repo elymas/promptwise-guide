@@ -366,5 +366,10 @@
     "media/poster.jpg": "4bc9af8cfb5e0706942bc96530020f6b78d21cd969c82ef6435c1e28ba2c7758",
     "media/proof.jpg": "8f311b50e0c869e49fe10d9f50e7dfe5fdd6aa7032f13c57b4721695f59c4c2b",
     "media/start.jpg": "39985b5cd822c70e18d12db92055396a3045a974fefe0f1ea85579b6858704b2"
+  },
+  "classification": {
+    "primary_example": "E10",
+    "E02_fixed_focus_complete": false,
+    "controlled_camera_ab": false
   }
 }
