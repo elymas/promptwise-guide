@@ -666,17 +666,19 @@
     "id": "E20",
     "topic": "continuity",
     "title": "컷 전후 머그의 높이와 오른손",
-    "change": "보완 입력은 첫 샷에서 머그를 든 채 멈추고, 컷 직후에도 같은 오른손과 높이에서 시작하도록 지정했습니다.",
-    "watch": "좌측은 컷 직전, 우측은 직후입니다. A의 2.75→2.79초와 B의 2.50→2.54초에서 컵 밑면과 테이블 사이의 틈을 보세요.",
-    "note": "머그를 사용한 기존 무음 제작본의 프레임 증거입니다. B는 오른손과 들고 있는 상태가 이어집니다. 빨간 우산과 문·진행 방향의 전용 영상은 기획 중입니다.",
-    "still": true,
+    "change": "A는 앞 샷에서 머그를 내리기 시작하도록 지시했습니다. B는 컷 직후까지 같은 오른손과 높이로 유지한 뒤 내리도록 바꿨습니다.",
+    "watch": "두 영상의 2.00초에 앵글이 바뀝니다. 컷 직전·직후에 머그 밑면과 테이블 사이의 틈을 보세요.",
+    "note": "A는 머그가 테이블에 닿은 뒤 다음 앵글에서 다시 들려 있습니다. B는 머그를 든 자세로 컷을 넘긴 뒤 내려놓습니다. 기존 무음 제작본을 컷 기준으로 맞춘 발췌이며, 빨간 우산의 원음 A/B는 제작 전입니다.",
+    "still": false,
     "a": {
-      "poster": "review/cut-boundary/media/A.jpg",
-      "resolution": "1728×496"
+      "video": "review/cut-boundary/media/A-aligned.mp4",
+      "poster": "review/cut-boundary/media/A-opening.jpg",
+      "resolution": "864×496"
     },
     "b": {
-      "poster": "review/cut-boundary/media/B.jpg",
-      "resolution": "1728×496"
+      "video": "review/cut-boundary/media/B-aligned.mp4",
+      "poster": "review/cut-boundary/media/B-opening.jpg",
+      "resolution": "864×496"
     },
     "review": "review/cut-boundary/",
     "sources": [
@@ -684,6 +686,10 @@
       "PW-104-p4"
     ],
     "inputs": [
+      {
+        "label": "A · 기존 샷 계획의 입력문",
+        "prompt": "A six-second continuity demonstration with one hard cut at three seconds. Zero to three seconds: the right hand holds the single ivory mug with its handle facing her right, then lowers it halfway. At the cut change only to a closer camera angle on the same side of the action axis. Three to five seconds: the same right hand continues lowering the same mug and sets it upright on the walnut table. The left hand stays on the table. Five to six seconds: release the handle and hold. No hand swap, duplicated mug or disappearing handle. Preserve the person, outfit, objects and lighting established in the first frame. No readable text, captions, logos or music. Silent."
+      },
       {
         "label": "B · 실제 보완 입력문",
         "prompt": "Exactly two shots, with one hard cut at 3 seconds. SHOT 1, 0.0-3.0 seconds: locked medium view. Claire holds the single ivory mug completely motionless at the same height as the first frame, well above the tabletop. The right hand grips its single handle, and the left hand rests on the table. The mug does NOT lower or touch the table anywhere in shot 1. SHOT 2, 3.0-6.0 seconds: hard cut to a closer view on the same side of the action axis. The first frame after the cut shows the same mug still suspended at the same height in the same right hand. Only AFTER the cut, from 3.2 to 4.8 seconds, the right hand lowers the mug in one continuous movement onto the table. From 4.8 to 5.5 seconds the right fingers release the handle; hold to the end. The left hand never moves. Same face, blue-grey shirt, ivory mug, handle and walnut table throughout. One mug, two hands, no hand swap, no liquid. Silent, no text, captions or logos."

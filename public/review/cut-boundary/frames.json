@@ -16,7 +16,13 @@
           "frame_zero_based": 67,
           "seconds": 2.7917
         }
-      ]
+      ],
+      "aligned": {
+        "file": "media/A-aligned.mp4",
+        "sha256": "bf0f113c2a0172a193b193c6e5c50acc846fa4e3d32cf382b2597e2937a39c69",
+        "source_first_frame_zero_based": 19,
+        "source_end_frame_exclusive": 139
+      }
     },
     {
       "variant": "B",
@@ -33,8 +39,23 @@
           "frame_zero_based": 61,
           "seconds": 2.5417
         }
-      ]
+      ],
+      "aligned": {
+        "file": "media/B-aligned.mp4",
+        "sha256": "57c80e110106955fbc58cb903cf72064e0c2488c8fd50127c80a63c809221716",
+        "source_first_frame_zero_based": 13,
+        "source_end_frame_exclusive": 133
+      }
     }
   ],
-  "generation_cost_usd": "0.00"
+  "generation_cost_usd": "0.00",
+  "comparison": {
+    "duration_seconds": 5,
+    "cut_seconds": 2,
+    "cut_frame_zero_based": 48,
+    "width": 864,
+    "height": 496,
+    "audio": "none_in_either_source",
+    "edit": "trim from original frame and re-encode for web playback"
+  }
 }

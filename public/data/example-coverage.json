@@ -591,10 +591,10 @@
       "title": "컷 전후 손·소품 상태",
       "format": "video_ab",
       "state": "partial_related",
-      "label": "머그 컷 경계 실증 · 우산 A/B 미완료",
+      "label": "머그 컷을 맞춘 영상 A/B · 우산 원음 A/B 제작 전",
       "links": [
         {
-          "label": "머그 v1·v2의 컷 양옆 비교",
+          "label": "머그 v1·v2의 컷 양옆 프레임과 발췌 기록",
           "href": "review/cut-boundary/"
         },
         {
@@ -602,7 +602,7 @@
           "href": "examples/#archive-continuity"
         }
       ],
-      "note": "기존 머그 v1/v2의 컷 양옆 프레임을 비교했습니다. 접촉 상태의 점프는 줄었고 오른손은 유지됩니다. 빨간 우산의 전용 A/B는 제작 예정입니다.",
+      "note": "기존 머그 v1/v2 무음 영상을 컷이 2.00초에 오도록 발췌했습니다. A는 컷 뒤 머그가 다시 들리고, B는 오른손으로 든 자세를 이어 갑니다. 빨간 우산의 원음 A/B는 제작 전입니다.",
       "source_ids": [
         "PW-108-p2",
         "PW-104-p4"
