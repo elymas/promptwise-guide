@@ -1,0 +1,58 @@
+---
+import Base from '../../layouts/Base.astro';
+import { path } from '../../data/topics';
+import evidence from '../../../public/review/dolly-depth/frames.json';
+const [a, b] = evidence.takes;
+---
+<Base title="고정 카메라와 전진 돌리의 전경 — FRAME / NOTES" description="같은 작업실 이미지에서 출발한 두 영상의 문틀과 얼굴 크기를 세 시점에서 비교합니다.">
+  <section class="shell page-heading">
+    <h1>문틀은 밀리고<br />Claire는 가까워진다</h1>
+    <p>왼쪽 앞 문틀과 Claire 뒤의 먼 문틀을 함께 보세요. A는 화면 배치가 대체로 유지되고, B는 가까운 문틀이 왼쪽 가장자리로 밀리며 Claire의 얼굴이 커집니다.</p>
+    <a class="text-link" href={path('examples/#compare-E10')}>6초 영상 A/B와 실제 입력문 ↗</a>
+  </section>
+  {a.frames.map((frame, i) => <section class="shell coverage-section">
+    <h2>{frame.seconds.toFixed(2)}초</h2>
+    <div class="frames">
+      {[{take: a, sample: frame}, {take: b, sample: b.frames[i]}].map(({take, sample}) => (
+        <figure>
+          <img src={path(sample.path)} width={evidence.resolution[0]} height={evidence.resolution[1]} loading="lazy" alt={sample.note} />
+          <figcaption><strong>{take.variant}</strong> · {sample.note}</figcaption>
+        </figure>
+      ))}
+    </div>
+  </section>)}
+  <section class="shell coverage-section" id="e10-hd-plan">
+    <h2>1080p에서 같은 첫 프레임으로 비교</h2>
+    <p>5.50초의 얼굴 폭은 시작 대비 A {a.face_width_ratio.toFixed(2)}배, B {b.face_width_ratio.toFixed(2)}배입니다. 자동 얼굴 경계 상자를 사용한 화면 크기 추정입니다. A는 작업실 이미지를 첫 프레임으로 고정했고, B는 같은 이미지와 별도의 카메라 경로를 참조했습니다. 첫 화면의 얼굴 크기에도 차이가 있습니다.</p>
+    <figure class="opening">
+      <a href={path(evidence.start.path)} aria-label="공통 시작 이미지 확대">
+        <img src={path(evidence.start.path)} width={evidence.start.width} height={evidence.start.height} loading="lazy" alt="차분하게 서 있는 Claire와 깊이가 다른 두 문틀이 보이는 작업실" />
+      </a>
+      <figcaption>1080p A/B에 사용할 공통 시작 이미지 · 원본 {evidence.start.source_width} × {evidence.start.source_height}</figcaption>
+    </figure>
+    <p>두 편 모두 이 이미지를 첫 프레임으로 사용합니다. A는 카메라를 고정하고 B는 같은 화각에서 약 0.8m 전진하도록 지시합니다. Claire의 시선이 렌즈를 따라가며 발은 제자리에 있는지, 문틀 두 개가 서로 다르게 움직이는지, 각 테이크의 빗소리와 환경음이 자연스럽게 이어지는지 확인할 계획입니다.</p>
+    <details>
+      <summary>Tein 1080p 영상 입력안</summary>
+      <h3>공통 지시</h3>
+      <pre lang="en">{evidence.video_plan.common}</pre>
+      <h3>A · 고정</h3>
+      <pre lang="en">{evidence.video_plan.variants.A}</pre>
+      <h3>B · 전진</h3>
+      <pre lang="en">{evidence.video_plan.variants.B}</pre>
+    </details>
+    <div class="study-links">
+      <a class="text-link" href={path('media/claire-reference.png')}>Claire 원본 정면 ↗</a>
+      <a class="text-link" href={path('review/dolly-depth/frames.json')} download>시각·얼굴 폭·출처 해시 ↗</a>
+      <a class="text-link" href={path('prompts/?page=PW-032#PW-032-p4')}>전진 돌리 원문 ↗</a>
+    </div>
+  </section>
+</Base>
+<style>
+  .frames { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .65rem; }
+  figure { margin: 0; }
+  img { display: block; width: 100%; height: auto; }
+  figcaption { margin-top: .5rem; font-size: .82rem; color: var(--muted); }
+  .opening { margin-block: 1rem; }
+  summary { cursor: pointer; }
+  pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+</style>

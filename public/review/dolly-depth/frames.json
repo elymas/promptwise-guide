@@ -1,0 +1,96 @@
+{
+  "source_ids": [
+    "PW-032-p3",
+    "PW-032-p4"
+  ],
+  "resolution": [
+    854,
+    480
+  ],
+  "provider": "Tein",
+  "reference_shared": true,
+  "input_mode_shared": false,
+  "reference_sha256": "0fe7f9e7b89339006d4b8965e3be71b5f90996e45464024b7aebaa8806962416",
+  "face_width_method": "Apple Vision VNDetectFaceRectanglesRequest, normalized box width; approximate screen scale only",
+  "takes": [
+    {
+      "variant": "A",
+      "video": "review/claire-v2/media/E10-a-mini-static-v1.mp4",
+      "video_sha256": "1c5dec116b86340ab57a715a1c045870472e16cf8875a3e96615c79dbd188913",
+      "input_mode": "first_frame",
+      "frames": [
+        {
+          "seconds": 0,
+          "path": "review/dolly-depth/media/A-0.jpg",
+          "sha256": "5c4666900a53952a35a29adef05235447d33949367e773d64b6cf2cdef78b389",
+          "face_width_percent": 9.06,
+          "note": "처음 구도"
+        },
+        {
+          "seconds": 2.5,
+          "path": "review/dolly-depth/media/A-2-5.jpg",
+          "sha256": "5bb3c763a3b1c6b7054e38ff79e392c1be1dd0032cce3aec9750d141996119da",
+          "face_width_percent": 9.01,
+          "note": "문틀 위치와 얼굴 크기가 대체로 유지됩니다."
+        },
+        {
+          "seconds": 5.5,
+          "path": "review/dolly-depth/media/A-5-5.jpg",
+          "sha256": "269f7dcac9b8e6f61f598abdf663ce851942877fa3d0b48bb331ce5c50979659",
+          "face_width_percent": 8.93,
+          "note": "처음 구도와 비슷한 크기로 끝납니다."
+        }
+      ],
+      "face_width_ratio": 0.99
+    },
+    {
+      "variant": "B",
+      "video": "review/claire-v2/media/E10-b-mini-v2r1.mp4",
+      "video_sha256": "e37a78f2dce4050dffc99d3dbc42efa6777d1e035ab232c5fea5041b19cbf214",
+      "input_mode": "reference_image and reference_video",
+      "frames": [
+        {
+          "seconds": 0,
+          "path": "review/dolly-depth/media/B-0.jpg",
+          "sha256": "b952e01ba591f2146493bb0f6265b155193d71ea2ddee0124a2ebb4e7adab425",
+          "face_width_percent": 7.92,
+          "note": "처음 구도"
+        },
+        {
+          "seconds": 2.5,
+          "path": "review/dolly-depth/media/B-2-5.jpg",
+          "sha256": "fcf77da325fd67a128e8b62542d2717ea61d549bbe7e22fdcbee83402e453d8d",
+          "face_width_percent": 10.96,
+          "note": "앞 문틀이 왼쪽 가장자리 쪽으로 밀리고 얼굴이 커집니다."
+        },
+        {
+          "seconds": 5.5,
+          "path": "review/dolly-depth/media/B-5-5.jpg",
+          "sha256": "d32aaab0ab406e63aa555cbd9e15dc2ab0c1403f05d4e1ddf8a27444b09ff6ac",
+          "face_width_percent": 17.08,
+          "note": "왼쪽 앞 문틀이 프레임 가장자리에 남고 얼굴이 크게 보입니다."
+        }
+      ],
+      "face_width_ratio": 2.16
+    }
+  ],
+  "video_plan": {
+    "provider": "Tein",
+    "resolution": "1080p",
+    "seconds": 4,
+    "status": "unsubmitted",
+    "common": "One continuous four-second photoreal workshop shot. Use the shared first frame for Claire, face, age, costume, geometry of the two doorways, shelving and fixed lighting. Keep the original lens field of view, camera height, eye focus, exposure and lighting. Claire stands on her mark, legs and shoulders stay in place, arms rest, lips together. Her eyes follow the physical lens naturally, with soft breathing and a brief natural blink. Maintain realistic hair, skin, cloth and wood at each distance. Keep the same door surfaces and handles, no sudden geometry or identity changes, no cut. This shot has no dialogue. Generate this take's own quiet rain outside and subtle workshop air without music, camera motor, footsteps or a whoosh.",
+    "variants": {
+      "A": "Lock the camera at its opening position for the full shot. Preserve the framing and screen positions of the nearer doorway, farther opening and shelves. Finish on the opening camera view.",
+      "B": "Hold still until 0.5 seconds. Move the physical camera forward on a straight rail at the same height and fixed focal length, advancing approximately 0.8 m from 0.5 to 3.3 seconds; decelerate gently and hold through the end. The nearer doorway slides outward toward the frame edge faster than the farther opening. The far shelves remain behind Claire as she becomes larger in frame. Keep her feet planted and her gaze at the advancing lens. No digital crop, zoom, pan, tilt or sideways camera path."
+    }
+  },
+  "start": {
+    "path": "review/dolly-depth/media/shared-start.webp",
+    "width": 1440,
+    "height": 804,
+    "sha256": "dd99f13bf1ecc6b51d37ed8afd08cc2deaf8c0afb7650af410a63dee0ecf0827",
+    "source_width": 2752,
+    "source_height": 1536
+  }
+}

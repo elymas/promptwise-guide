@@ -250,9 +250,9 @@
     "id": "E10",
     "topic": "camera",
     "title": "고정 카메라와 전진 돌리",
-    "change": "같은 시작 구도에서 카메라가 실제로 전진해 가까운 가림을 지나갑니다.",
-    "watch": "문틀이 프레임에서 빠지고 인물의 크기가 변하는 모습을 비교하세요.",
-    "note": "고정과 전진의 비교 초안.",
+    "change": "A는 작업실 이미지를 첫 프레임으로 고정합니다. B는 같은 이미지와 3D 카메라 경로를 참조해 전진하도록 지시했습니다.",
+    "watch": "2.50~5.50초에 B의 왼쪽 앞 문틀이 가장자리로 밀리고 Claire의 얼굴이 커지는 모습을 보세요.",
+    "note": "B의 얼굴 폭은 5.50초에 시작 대비 약 2.16배입니다. 두 편은 입력 방식과 첫 화면의 얼굴 크기에 차이가 있습니다. 1080p 후보는 같은 첫 프레임 방식을 사용합니다.",
     "still": false,
     "a": {
       "poster": "review/claire-v2/media/E10-a-mini-static-v1.jpg",
@@ -266,7 +266,7 @@
       "audio": "native",
       "resolution": "854×480"
     },
-    "review": "review/claire-v2/#E10",
+    "review": "review/dolly-depth/",
     "sources": [
       "PW-032-p3",
       "PW-032-p4"
