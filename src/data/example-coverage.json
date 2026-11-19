@@ -46,22 +46,26 @@
       "title": "랙 포커스",
       "format": "video_ab",
       "state": "needs_rework",
-      "label": "미완료 · 고정 카메라 초점 A/B 필요",
+      "label": "고정 구도의 시작·종료 후보 확보 · 영상 검증 전",
       "links": [
         {
           "label": "E10으로 분류한 이동 초안 · 초점 비교 아님",
           "href": "review/optics-low-angle-result/"
         }
       ],
-      "note": "기존 컵·인물 비례와 동일성 문제 후 다른 테이블의 로우앵글 이동 영상을 만들었습니다. 해당 영상은 E10의 보조 예시로 분류했습니다. 카메라 이동과 초점이 함께 바뀌므로 E02의 고정 카메라 순수 랙 포커스 A/B는 미완료입니다. 검증한 Claire 참조를 먼저 정리한 뒤 같은 배치에서 초점만 바꾸는 비교가 필요합니다.",
+      "note": "두 테이블 로우앵글 이동 영상은 E10에서 볼 수 있습니다. 새 E02 시작·종료 스틸은 앞 도자기와 뒤 Claire의 눈을 같은 배치에서 비교합니다. Tein에서 카메라를 고정한 영상 A/B는 검증 전입니다.",
       "source_ids": [
         "PW-018-p12"
       ],
       "priority": 1,
-      "variant_a": "전체 시간 같은 초점",
-      "variant_b": "2초에는 앞 찻잔, 3초부터 뒤 Claire 눈으로 초점 이동",
+      "variant_a": "고정 카메라에서 앞 테이블의 도자기에 초점을 유지",
+      "variant_b": "2초부터 3초까지 앞 도자기에서 뒤 테이블 Claire의 눈으로 초점 이동",
       "acceptance": "선명한 대상이 한 번 바뀌며 카메라는 고정",
       "planning_links": [
+        {
+          "label": "앞 도자기와 뒤 Claire 눈 · 고정 구도 스틸",
+          "href": "review/fixed-focus/"
+        },
         {
           "label": "승인한3D 배치·이동 프리비즈",
           "href": "review/optics-low-angle-plan/"

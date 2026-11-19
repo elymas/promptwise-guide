@@ -1,0 +1,29 @@
+{
+  "source_id": "PW-018-p12",
+  "source_face": {
+    "path": "media/claire-reference.png",
+    "sha256": "301ce886477535e0ca88258c8c2761aedb64a4b87237c055244fc98c6835c591"
+  },
+  "provider_ending": "ChatGPT built-in image generation",
+  "images": [
+    {
+      "id": "near",
+      "path": "review/optics-low-angle-result/media/start.jpg",
+      "width": 2720,
+      "height": 1536,
+      "sha256": "39985b5cd822c70e18d12db92055396a3045a974fefe0f1ea85579b6858704b2",
+      "source_png_sha256": "36813cbe2cd6793c086ee2e61fae18f0faf32052af772c6d9bd17087e0b4bfdc"
+    },
+    {
+      "id": "far",
+      "path": "review/fixed-focus/media/eye-focus-target.webp",
+      "width": 1668,
+      "height": 943,
+      "sha256": "fa94e18069d335300eea32f1877ce89ebdc42f757823e56c62b7babf4b94b8d5",
+      "source_png_sha256": "da44201468b0785703d3de38e89be93f93359b9206c9d6d3d839f44e777ce8ac"
+    }
+  ],
+  "prompt_file": "review/fixed-focus/still-prompt.json",
+  "video_status": "unsubmitted",
+  "new_tein_requests": 0
+}

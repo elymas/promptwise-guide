@@ -20,6 +20,10 @@
     "audioLabel": "생성 원음 · 환경음",
     "related": [
       {
+        "label": "고정 구도 초점 비교 · E02 스틸",
+        "href": "review/fixed-focus/"
+      },
+      {
         "label": "E10 관련 · 두 테이블 이동 초안",
         "href": "review/optics-low-angle-result/"
       },
