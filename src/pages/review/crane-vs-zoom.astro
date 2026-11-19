@@ -1,0 +1,55 @@
+---
+import Base from '../../layouts/Base.astro';
+import { path } from '../../data/topics';
+import geometry from '../../../public/review/crane-vs-zoom/geometry.json';
+const folder = 'review/crane-vs-zoom/';
+const revealTime = geometry.B.first_workbench_center_visible.time_seconds.toFixed(2);
+const endings = [
+  { id: 'A', action: '높이를 유지한 줌 아웃', spec: '1.90m 고정 · 38mm → 22mm', description: '양옆이 넓어지고 지붕과 가로등이 작아집니다. 작업대는 벽 뒤에 가려져 있습니다.' },
+  { id: 'B', action: '화각을 유지한 크레인 업', spec: '1.90m → 5.80m · 38mm 고정', description: '벽의 위쪽 경계가 아래로 내려가고 주황색 작업대, 상자, 바닥의 노란 구획선이 드러납니다.' },
+];
+---
+<Base title="줌 아웃과 크레인 업 비교 — FRAME / NOTES" description="같은 적재장에서 렌즈만 넓히는 줌 아웃과 카메라를 높이는 크레인 업을 비교합니다.">
+  <section class="shell page-heading">
+    <h1>카메라가 올라가면<br />벽 너머가 보인다</h1>
+    <p>같은 3D 적재장과 시작 프레임으로 비교했습니다. A는 렌즈를 넓히고, B는 수평 위치와 초점거리를 고정한 채 위로 올라가며 아래를 향합니다.</p>
+    <a class="text-link" href={path('examples/#compare-E12')}>4초 A/B 재생 ↗</a>
+  </section>
+  <section class="shell">
+    <figure class="opening">
+      <img src={path(folder + 'media/shared-opening.jpg')} width="960" height="540" alt="회색 전경 벽에 뒤쪽 적재장이 가려진 공통 시작 프레임" />
+      <figcaption>0.00초 · 두 버전의 공통 시작 구도</figcaption>
+    </figure>
+  </section>
+  <section class="shell coverage-section">
+    <h2>마지막 프레임에 보이는 공간</h2>
+    <div class="frames">
+      {endings.map(take => (
+        <figure>
+          <img src={path(`${folder}media/${take.id}-ending.jpg`)} width="960" height="540" loading="lazy" alt={take.description} />
+          <figcaption><strong>{take.id} · {take.action}</strong><br />{take.spec}<br />{take.description}</figcaption>
+        </figure>
+      ))}
+    </div>
+    <p>B에서 작업대 상판 중앙을 향한 시선이 벽에 막히지 않고 프레임 안에 처음 들어오는 시각은 {revealTime}초입니다. A는 마지막 프레임에서도 같은 시선이 전경 벽에 막힙니다. B의 틸트는 드러난 작업 공간을 화면 안에 담습니다.</p>
+  </section>
+  <section class="shell coverage-section">
+    <h2>재현 조건</h2>
+    <p>Blender 프리비즈 · 960 × 540 · 24fps · 두 버전 각 4초. E03 B의 생성 환경음을 두 버전에 똑같이 깔았습니다. Claire가 등장하는 Tein 실사 A/B와 현장음은 후속 제작입니다.</p>
+    <div class="study-links">
+      <a class="text-link" href={path(folder+'render.py')} download>Blender 렌더 설정 ↗</a>
+      <a class="text-link" href={path(folder+'geometry.json')} download>카메라 높이·초점거리·가림 확인 기록 ↗</a>
+      <a class="text-link" href={path('review/optics-v1/#E03')}>공통 환경음의 원본 E03 B ↗</a>
+      <a class="text-link" href={path('prompts/?page=PW-032#PW-032-p9')}>PW-032 상승 샷 지시 ↗</a>
+    </div>
+  </section>
+</Base>
+<style>
+  figure { margin: 0; }
+  .opening { max-width: 600px; }
+  .frames { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
+  img { display: block; width: 100%; height: auto; }
+  figcaption { margin-top: .65rem; color: var(--muted); font-size: .85rem; line-height: 1.7; }
+  figcaption strong { color: var(--ink); }
+  @media (max-width: 560px) { .frames { grid-template-columns: 1fr; } }
+</style>

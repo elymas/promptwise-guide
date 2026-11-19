@@ -750,5 +750,41 @@
         "prompt": "ACT-06의 공통 오프닝을 유지한다. 157번째 프레임부터 마지막까지 x300, y278에서 356×200으로 크롭해 빨간 봉투로 끝낸다. 음성 데이터와 길이는 그대로 둔다."
       }
     ]
+  },
+  {
+    "id": "E12",
+    "topic": "camera",
+    "title": "줌 아웃과 크레인 업 · Blender 프리비즈",
+    "change": "A는 높이 1.90m에서 38mm→22mm로 줌 아웃합니다. B는 38mm를 유지하고 높이만 1.90m에서 5.80m로 올리면서 작업대 쪽으로 틸트합니다.",
+    "watch": "B의 약 1.5초와 두 버전의 마지막 프레임에서 주황색 작업대와 바닥 노란 선을 보세요. 미리보기는 끝 프레임입니다.",
+    "note": "같은 3D 세트, 시작 구도, 4초 길이와 E03 B에서 발췌한 공통 환경음을 사용했습니다. 실사 A/B는 후속 제작입니다.",
+    "still": false,
+    "a": {
+      "video": "review/crane-vs-zoom/media/A.mp4",
+      "poster": "review/crane-vs-zoom/media/A-ending.jpg",
+      "captions": "review/crane-vs-zoom/media/shared-sound.vtt",
+      "resolution": "960×540"
+    },
+    "b": {
+      "video": "review/crane-vs-zoom/media/B.mp4",
+      "poster": "review/crane-vs-zoom/media/B-ending.jpg",
+      "captions": "review/crane-vs-zoom/media/shared-sound.vtt",
+      "resolution": "960×540"
+    },
+    "review": "review/crane-vs-zoom/",
+    "sources": [
+      "PW-032-p9",
+      "PW-032-p10"
+    ],
+    "inputs": [
+      {
+        "label": "A · 실제 카메라 설정",
+        "prompt": "36mm 수평 센서, 초점거리 38→22mm. 높이 1.90m와 카메라 수평 위치·각도를 고정한다."
+      },
+      {
+        "label": "B · 실제 카메라 설정",
+        "prompt": "같은 센서, 초점거리 38mm 고정. 수평 위치를 유지하며 높이 1.90→5.80m로 상승한다. 카메라가 드러난 바닥을 담도록 아래로 틸트한다."
+      }
+    ]
   }
 ]

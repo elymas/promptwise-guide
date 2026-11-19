@@ -3,9 +3,9 @@
   "counts": {
     "available_draft": 7,
     "needs_rework": 2,
-    "planned": 3,
+    "planned": 2,
     "partial_related": 6,
-    "available_adaptation": 4,
+    "available_adaptation": 5,
     "workflow_documented": 2
   },
   "approval_scope": [
@@ -313,10 +313,19 @@
       "topic": "camera",
       "title": "상승으로 장소 공개",
       "format": "video_ab",
-      "state": "planned",
-      "label": "미제작",
-      "links": [],
-      "note": "기존 자료만으로 이 계획의 차이를 보여 줄 수 없어 전용 제작이 필요합니다.",
+      "state": "available_adaptation",
+      "label": "소리 있는 3D 프리비즈 A/B · 실사 제작 전",
+      "links": [
+        {
+          "label": "줌 아웃과 상승 A/B",
+          "href": "examples/#compare-E12"
+        },
+        {
+          "label": "시작·종료 프레임과 카메라 기록",
+          "href": "review/crane-vs-zoom/"
+        }
+      ],
+      "note": "Blender의 같은 적재장 세트에서 A는 화각만 넓히고 B는 위로 상승하며 아래를 향합니다. B에서 1.50초부터 주황색 작업대 중앙이 보입니다. Claire가 등장하는 Tein 실사 A/B는 후속 제작입니다.",
       "source_ids": [
         "PW-032-p9",
         "PW-032-p10"

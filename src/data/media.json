@@ -139,7 +139,7 @@
       "Claire",
       "Erin"
     ],
-    "coverageScope": "GEO-01 횡이동·E10 전진 돌리 초안 · E11 오빗·E12 상승 전용 비교 미완료",
+    "coverageScope": "GEO-01 횡이동·E10 전진 돌리·E12 상승 프리비즈 · E11 오빗 전용 비교 예정",
     "audioLabel": "편집 환경음 · GEO-01 A 원음 공유",
     "related": [
       {
@@ -149,6 +149,10 @@
       {
         "label": "두 테이블 이동 · 시차 보조 예시",
         "href": "review/optics-low-angle-result/"
+      },
+      {
+        "label": "줌 아웃과 크레인 업 · E12 프리비즈",
+        "href": "review/crane-vs-zoom/"
       }
     ],
     "archive": {
