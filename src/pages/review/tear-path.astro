@@ -4,22 +4,31 @@ import { path } from '../../data/topics';
 import manifest from '../../../public/review/tear-path/manifest.json';
 import prompts from '../../../public/review/tear-path/still-prompts.json';
 import plan from '../../../public/review/tear-path/video-plan.json';
-const [opening, target] = manifest.stills;
+const [opening, bead, target] = manifest.stills;
 const frames = [
-  { ...opening, title: '공통 시작 스틸', note: '눈 가장자리에 원래의 물기가 있고 볼에는 흐른 자국이 없습니다.' },
-  { ...target, title: '종료 시 검수 기준', note: '아랫눈꺼풀에서 볼로 얇은 물기가 이어지고, 볼 위에 작은 투명 방울이 남습니다.' },
+  { ...opening, label: '시작', title: '공통 시작 스틸', note: '눈 가장자리에 원래의 물기가 있고 볼에는 흐른 자국이 없습니다.' },
+  { ...bead, label: '눈꺼풀에 고임', title: '고이는 순간의 검수 기준', note: '속눈썹 뿌리 쪽에 투명한 방울이 붙어 있고 볼은 아직 마른 상태입니다.' },
+  { ...target, label: '볼에 흐른 뒤', title: '종료 시 검수 기준', note: '아랫눈꺼풀에서 볼로 얇은 물기가 이어지고 볼 위에 작은 투명 방울이 남습니다.' },
 ];
 ---
 <Base title="눈물의 시작점과 경로 — FRAME / NOTES" description="같은 Claire 클로즈업에서 눈물의 시작점과 흐른 자국을 정한 E09 영상 제작안입니다.">
   <section class="shell page-heading">
     <h1>아랫눈꺼풀에서<br />볼까지 이어지는 눈물</h1>
-    <p>Claire의 왼쪽 눈을 100mm 매크로 구도로 잡았습니다. 두 스틸에서 눈꺼풀 바로 아래와 볼 위 물방울의 끝을 대조하세요. 두 장은 영상의 촬영 기준이며, 눈물이 움직이는 비교 영상의 제작은 남아 있습니다.</p>
+    <p>Claire의 왼쪽 눈을 100mm 매크로 구도로 설계했습니다. 같은 위치에서 세 스틸을 바꿔 보며 속눈썹에 붙은 방울과 볼에 남는 흔적을 확인하세요. 세 스틸은 영상 제작 전 검수 자료입니다.</p>
   </section>
-  <section class="shell stills" aria-label="눈물의 시작과 종료 스틸">
-    {frames.map(frame => <figure>
-      <img src={path(frame.path)} width={frame.width} height={frame.height} alt={frame.note} />
+  <section class="shell stills" aria-label="눈물의 세 단계 스틸">
+    <div class="controls" role="group" aria-label="스틸 선택과 확대" hidden>
+      {frames.map((frame, i) => (
+        <button type="button" data-select={frame.role} aria-controls={`tear-${frame.role}`} aria-pressed={i === 0}>{frame.label}</button>
+      ))}
+      <button type="button" data-zoom aria-pressed="false">눈꺼풀 확대</button>
+    </div>
+    {frames.map(frame => <figure id={`tear-${frame.role}`} data-stage={frame.role}>
+      <div class="still-window">
+        <img src={path(frame.path)} width={frame.width} height={frame.height} alt={frame.note} />
+      </div>
       <figcaption><strong>{frame.title}</strong><br />{frame.note}</figcaption>
-      <a class="text-link" href={path(frame.path)}>1672 × 941 원본 크기로 보기 ↗</a>
+      <a class="text-link" href={path(frame.path)}>{frame.width} × {frame.height} 원본 크기로 보기 ↗</a>
     </figure>)}
   </section>
   <section class="shell coverage-section">
@@ -31,12 +40,12 @@ const frames = [
       <li><strong>2–3.2초</strong> · 방울이 눈꺼풀을 넘어 아래로 흐릅니다.</li>
       <li><strong>마지막</strong> · 끝 방울이 볼에 남고 물기가 눈꺼풀까지 이어집니다.</li>
     </ol>
-    <p>종료 스틸은 결과를 눈으로 대조하는 데 사용합니다. 이미지 편집 과정에서 피부와 속눈썹의 세부 픽셀도 일부 달라졌습니다. 영상에서는 방울이 볼 중간에 갑자기 생기거나 위로 흐르는지, 속눈썹이 뭉개지는지, 소리와 구도가 자연스럽게 이어지는지를 별도로 검사합니다.</p>
+    <p>고임·종료 스틸은 결과를 눈으로 대조하는 데 사용합니다. 이미지 편집 과정에서 피부와 속눈썹의 세부 픽셀도 일부 달라졌습니다. 영상에서는 방울이 눈꺼풀에서 시작해 이어서 내려오는지, 속눈썹이 뭉개지는지, 소리와 구도가 자연스럽게 이어지는지를 확인합니다.</p>
   </section>
   <section class="shell coverage-section">
     <h2>스틸 생성 입력문과 영상 제작안</h2>
     <p>스틸은 ChatGPT 내장 이미지 생성 도구로 만들었습니다. Tein 영상 입력문은 제출 전입니다.</p>
-    <details><summary>스틸 생성·편집에 사용한 입력문</summary><h3>시작 스틸</h3><pre>{prompts.opening}</pre><h3>종료 스틸</h3><pre>{prompts.ending}</pre></details>
+    <details><summary>스틸 생성·편집에 사용한 입력문</summary><h3>시작 스틸</h3><pre lang="en">{prompts.opening}</pre><h3>고임 스틸</h3><pre lang="en">{prompts.bead}</pre><h3>종료 스틸</h3><pre lang="en">{prompts.ending}</pre></details>
     <details><summary>아직 제출하지 않은 Tein A/B 입력문</summary><h3>공통</h3><pre>{plan.common}</pre><h3>A · 결과만 지정</h3><pre>{plan.variants.A}</pre><h3>B · 진행 순서 지정</h3><pre>{plan.variants.B}</pre></details>
     <div class="study-links">
       <a class="text-link" href={path('review/tear-path/manifest.json')} download>스틸과 원본의 파일 검증 기록 ↗</a>
@@ -45,15 +54,41 @@ const frames = [
     </div>
   </section>
 </Base>
+<script>
+  const viewer = document.querySelector('.stills');
+  const controls = viewer?.querySelector<HTMLElement>('.controls');
+  const zoom = controls?.querySelector<HTMLButtonElement>('[data-zoom]');
+  if (viewer && controls && zoom) {
+    const choices = controls.querySelectorAll<HTMLButtonElement>('[data-select]');
+    const stages = viewer.querySelectorAll<HTMLElement>('[data-stage]');
+    const select = (id: string | undefined) => {
+      for (const element of stages) element.hidden = element.dataset.stage !== id;
+      for (const button of choices) {
+        button.setAttribute('aria-pressed', String(button.dataset.select === id));
+      }
+    };
+    select(choices[0]?.dataset.select);
+    choices.forEach(choice => choice.addEventListener('click', () => select(choice.dataset.select)));
+    zoom.addEventListener('click', () => {
+      const enabled = viewer.classList.toggle('is-zoomed');
+      zoom.setAttribute('aria-pressed', String(enabled));
+    });
+    controls.hidden = false;
+  }
+</script>
 <style>
-  .stills { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
-  figure { margin: 0; }
+  .stills { max-width: 66rem; }
+  .controls:not([hidden]) { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: .8rem; }
+  .controls button { min-height: 44px; padding: .4rem .65rem; font: inherit; cursor: pointer; color: var(--ink); background: var(--surface); border: 1px solid var(--line); }
+  .controls button[aria-pressed='true'] { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  figure { margin: 0 0 1.2rem; }
+  .still-window { overflow: hidden; }
   img { display: block; width: 100%; height: auto; }
+  .is-zoomed img { transform: scale(1.9); transform-origin: 55% 60%; }
   figcaption { margin-block: .7rem; color: var(--muted); font-size: .9rem; }
   figcaption strong { color: var(--ink); }
   .beats li { margin-block: .6rem; }
   details { margin-block: .8rem; }
   summary { cursor: pointer; }
   pre { white-space: pre-wrap; overflow-wrap: anywhere; }
-  @media (max-width: 640px) { .stills { grid-template-columns: 1fr; } }
 </style>

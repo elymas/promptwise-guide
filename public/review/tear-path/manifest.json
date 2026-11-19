@@ -18,6 +18,14 @@
       "source_png_sha256": "3b6030b842f6a5be98fc70573b0a401608c53f316748baa7b200468693464fe4"
     },
     {
+      "path": "review/tear-path/media/bead-v1.webp",
+      "role": "review_midpoint",
+      "width": 1672,
+      "height": 941,
+      "sha256": "06c37cac1b87232a8f0185b7dab63c4b63d73ce8eb202c313d90d5bbfd81ce21",
+      "source_png_sha256": "e19d23d2ec6bcbaacb5c4ae51ae5a3cabacdb66e6381905c5133a80ebd36220d"
+    },
+    {
       "path": "review/tear-path/media/ending-target.webp",
       "role": "review_target",
       "width": 1672,
@@ -29,5 +37,10 @@
   "prompt_file": "review/tear-path/still-prompts.json",
   "video_status": "unsubmitted",
   "new_tein_requests": 0,
-  "end_and_start_pixel_matched": false
+  "end_and_start_pixel_matched": false,
+  "bead_reference_roles": {
+    "edit_target": "common_first_frame",
+    "continuity_guide": "review_target"
+  },
+  "stills_are_frames_from_video": false
 }
