@@ -630,5 +630,36 @@
         "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, fixed close-up of Erin facing Claire just outside frame-left. Both versions say only the exact same English words once: \"Claire, listen.\" Quiet room tone, no music or extra words.\n\nShe urgently needs to stop her friend from making a mistake. Straighten first, take one preparatory breath and project the exact English line firmly and clearly while leaning a few centimeters toward that actual partner; eyebrows draw inward briefly. Hold focused attention afterward. No smile, screaming, extra words or repeated call."
       }
     ]
+  },
+  {
+    "id": "E23",
+    "topic": "story",
+    "title": "충격음과 반응의 순서",
+    "change": "ACT-09 B에서 같은 세 구간을 사용했습니다. A는 반응→충격음→회복, B는 충격음→반응→회복 순서입니다.",
+    "watch": "시작부터 약 3.5초까지 Claire의 움찔함과 충격음 중 무엇이 먼저 오는지 보세요.",
+    "note": "기존 원본의 영상·소리를 함께 옮긴 편집 비교입니다. 사건의 길이, 소리의 종류와 인물은 같습니다.",
+    "still": false,
+    "a": {
+      "video": "review/story-e23/media/E23-A.mp4",
+      "poster": "review/story-e23/media/E23-A.jpg",
+      "resolution": "854×480"
+    },
+    "b": {
+      "video": "review/story-e23/media/E23-B.mp4",
+      "poster": "review/story-e23/media/E23-B.jpg",
+      "resolution": "854×480"
+    },
+    "review": "review/story-e23/",
+    "sources": [
+      "PW-106-p2",
+      "PW-106-p7",
+      "PW-106-p8"
+    ],
+    "inputs": [
+      {
+        "label": "두 편집이 공유하는 원본 입력문 · ACT-09 B",
+        "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, locked camera. A single door slam occurs offscreen at frame-left around2seconds. Claire says exactly in Korean \"깜짝이야.\" around3.5–4.5seconds, then closes her lips. Same scene, no visible door or extra person.\n\nBefore the audible impact she is composed. Only after its onset, one blink and small shoulder flinch occur, followed by a short inhalation. She regains composure, says the exact Korean line once and settles for the last second. No anticipation, repeated flinch or added interjection."
+      }
+    ]
   }
 ]

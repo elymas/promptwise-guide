@@ -1,0 +1,45 @@
+---
+import Base from '../../layouts/Base.astro';
+import {path} from '../../data/topics';
+---
+<Base title="충격음과 반응의 순서 — FRAME / NOTES" description="같은 영상과 소리를 재배열해 원인과 반응의 연결을 비교합니다.">
+  <section class="shell page-heading">
+    <h1>충격음과 반응의 순서</h1>
+    <p>Claire가 움찔하는 이유는 편집 순서에 따라 다르게 읽힙니다. 두 편집은 원본 ACT-09 B에서 똑같은 세 구간을 사용합니다.</p>
+    <a class="text-link" href={path('examples/#compare-E23')}>소리와 함께 A/B 보기 ↗</a>
+  </section>
+  <section class="shell">
+    <h2>같은 구간, 다른 순서</h2>
+    <div class="edit-pair">
+      <article>
+        <h3>A · 반응을 먼저 배치</h3>
+        <ol>
+          <li>0.00초 · Claire가 움찔합니다.</li>
+          <li>2.38초 · 침착한 자세로 돌아간 뒤 충격음이 들립니다.</li>
+          <li>3.50초 · 대화로 돌아옵니다.</li>
+        </ol>
+      </article>
+      <article>
+        <h3>B · 충격음이 반응으로 이어짐</h3>
+        <ol>
+          <li>0.00초 · 침착한 자세에서 충격음이 들립니다.</li>
+          <li>1.13초 · Claire가 움찔하고 자세를 가다듬습니다.</li>
+          <li>3.50초 · 대화로 돌아옵니다.</li>
+        </ol>
+      </article>
+    </div>
+    <p>두 편집 모두 소리를 화면과 함께 옮겼습니다. B에서 소리의 첫 큰 피크는 약 0.8초입니다. 반응을 먼저 보여 주는 A는 궁금증을 만들 수 있고, B는 충격음과 움직임의 관계를 바로 읽게 합니다.</p>
+    <p>PW-106의 인과 연결을 단일 사건으로 실습한 예시입니다. E22의 첫 화면과 E24의 소품 회수는 별도 이야기 사례로 제작합니다.</p>
+    <div class="study-links">
+      <a class="text-link" href={path('review/acting-v2/#ACT-09')}>원본·생성 입력문 ↗</a>
+      <a class="text-link" href={path('prompts/?page=PW-106#PW-106-p2')}>PW-106 원문 ↗</a>
+      <a class="text-link" href={path('review/story-e23/edit.json')} download>편집 기록 ↗</a>
+    </div>
+  </section>
+</Base>
+<style>
+  .edit-pair { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; margin-block: 1rem; }
+  article { padding: 1.25rem; background: #1c2117; }
+  li { margin-block: .65rem; }
+  @media (max-width: 680px) { .edit-pair { grid-template-columns: 1fr; } }
+</style>

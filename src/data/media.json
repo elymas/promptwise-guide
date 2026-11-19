@@ -296,28 +296,29 @@
     "captions": "media/captions/continuity.vtt"
   },
   "story": {
-    "status": "planned",
-    "statusLabel": "구조 예시 제작 예정",
-    "video": null,
-    "poster": null,
-    "duration": 0,
-    "model": null,
-    "resolution": null,
+    "status": "draft",
+    "statusLabel": "실제 편집 비교 · 480p",
+    "video": "review/story-e23/media/E23-B.mp4",
+    "poster": "review/story-e23/media/E23-B.jpg",
+    "duration": 6.042,
+    "model": "Tein 생성 원본 재편집",
+    "resolution": "854×480",
     "reviewed": false,
-    "studyLabel": "E22–E24 · 훅에서 결말까지",
-    "caption": "첫 화면에 문제를 보여 주고 마지막 소품으로 그 질문에 답하는 예시를 준비합니다.",
-    "watchFor": "같은 장면들을 어떻게 시작하고 끝내느냐에 따라 이야기가 읽히는 차이를 만들 계획입니다.",
-    "reviewNote": "기존 봉투 클립은 짧은 표정 전환 기록입니다. 문제 제시·인과 연결·결말 회수를 보여 주는 완성 사례로 표시하지 않습니다.",
-    "reviewUrl": "examples/coverage/#E22",
+    "studyLabel": "E23 · 원인과 반응의 순서",
+    "caption": "충격음을 먼저 배치하면 Claire의 후속 반응을 한 사건으로 읽을 수 있습니다.",
+    "watchFor": "0.8초 무렵 소리가 난 다음 Claire가 움찔하는 순서를 보세요.",
+    "reviewNote": "같은 ACT-09 B 원본의 영상과 소리를 구간 단위로 편집했습니다.",
+    "reviewUrl": "review/story-e23/",
     "cast": [
-      "Claire"
+      "Claire",
+      "Erin"
     ],
-    "coverageScope": "E22·E24 영상 미제작 · E23은 해당 영상 제작 후 편집으로 시연",
-    "audioLabel": "새 구조 예시 미제작",
+    "coverageScope": "E23 편집 A/B 공개 · E22 첫 화면과 E24 소품 회수는 제작 예정",
+    "audioLabel": "ACT-09 B 원음 · 한국어 대사",
     "related": [
       {
-        "label": "제작 범위와 우선순위",
-        "href": "examples/coverage/#next-production"
+        "label": "A/B 나란히 보기",
+        "href": "examples/#compare-E23"
       }
     ],
     "archive": {
@@ -330,7 +331,7 @@
       "reviewed": false,
       "reviewNote": "열린 봉투를 같은 오른손에 든 채 시선을 들고 표정이 바뀝니다. 숨을 들이쉴 때 입이 열리며, 전체 5단계 이야기를 시연하는 영상은 아닙니다."
     },
-    "description": "첫 화면에 문제를 보여 주고 마지막 소품으로 그 질문에 답하는 예시를 준비합니다. 같은 장면들을 어떻게 시작하고 끝내느냐에 따라 이야기가 읽히는 차이를 만들 계획입니다.",
+    "description": "두 사람이 작업실에서 마주 봅니다. 충격음이 난 뒤 Claire가 움찔하고 다시 대화로 돌아옵니다.",
     "captions": null
   }
 }

@@ -1,0 +1,42 @@
+{
+  "source": "review/acting-v2/media/ACT-09-b-take.mp4",
+  "source_sha256": "569eed823a0c717dd332ccdac990e34a9878927cbae442bfda10bc0dcd9b2230",
+  "fps": 24,
+  "width": 854,
+  "height": 480,
+  "generation_cost_usd": "0.00",
+  "segments": {
+    "cause": [
+      0,
+      27
+    ],
+    "reaction": [
+      27,
+      84
+    ],
+    "recovery": [
+      84,
+      145
+    ]
+  },
+  "edits": {
+    "A": [
+      "reaction",
+      "cause",
+      "recovery"
+    ],
+    "B": [
+      "cause",
+      "reaction",
+      "recovery"
+    ]
+  },
+  "media": {
+    "A": {
+      "sha256": "c9a87a9a3a82df27862ff1c4da8f2c9df5119116e559b4f33b867e054f726360"
+    },
+    "B": {
+      "sha256": "1d377af65256561292d9898161c8528d62396729fe4ea445785b50faa8320d13"
+    }
+  }
+}
