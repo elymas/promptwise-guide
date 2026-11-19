@@ -147,7 +147,7 @@
       "Claire",
       "Erin"
     ],
-    "coverageScope": "GEO-01 횡이동·E10 전진 돌리·E12 상승 프리비즈 · E11 오빗 전용 비교 예정",
+    "coverageScope": "GEO-01 횡이동·E10 전진 돌리 · E11 오빗·E12 상승 프리비즈",
     "audioLabel": "편집 환경음 · GEO-01 A 원음 공유",
     "related": [
       {
@@ -161,6 +161,10 @@
       {
         "label": "줌 아웃과 크레인 업 · E12 프리비즈",
         "href": "review/crane-vs-zoom/"
+      },
+      {
+        "label": "고정과 30도 오빗 · E11 프리비즈",
+        "href": "review/orbit-parallax/"
       }
     ],
     "archive": {

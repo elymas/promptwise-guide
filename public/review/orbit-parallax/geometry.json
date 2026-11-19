@@ -1,0 +1,53 @@
+{
+  "frame_width": 960,
+  "frame_height": 540,
+  "fps": 24,
+  "lens_mm": 40,
+  "sensor_width_mm": 36,
+  "takes": {
+    "A": {
+      "start": {
+        "frame": 1,
+        "azimuth_degrees": 0.0,
+        "radius_m": 4.0,
+        "height_m": 1.42,
+        "near_x_px": 665,
+        "far_x_px": 377,
+        "subject_height_px": 455.93
+      },
+      "end": {
+        "frame": 96,
+        "azimuth_degrees": 0.0,
+        "radius_m": 4.0,
+        "height_m": 1.42,
+        "near_x_px": 665,
+        "far_x_px": 377,
+        "subject_height_px": 455.93
+      },
+      "subject_height_px_min": 455.93,
+      "subject_height_px_max": 455.93
+    },
+    "B": {
+      "start": {
+        "frame": 1,
+        "azimuth_degrees": 0.0,
+        "radius_m": 4.0,
+        "height_m": 1.42,
+        "near_x_px": 665,
+        "far_x_px": 377,
+        "subject_height_px": 455.93
+      },
+      "end": {
+        "frame": 96,
+        "azimuth_degrees": 30.0,
+        "radius_m": 4.0,
+        "height_m": 1.42,
+        "near_x_px": 244,
+        "far_x_px": 707,
+        "subject_height_px": 455.93
+      },
+      "subject_height_px_min": 455.93,
+      "subject_height_px_max": 455.93
+    }
+  }
+}

@@ -4,8 +4,8 @@
     "available_draft": 9,
     "needs_rework": 2,
     "planned": 1,
-    "partial_related": 5,
-    "available_adaptation": 5,
+    "partial_related": 4,
+    "available_adaptation": 6,
     "workflow_documented": 2
   },
   "approval_scope": [
@@ -308,15 +308,23 @@
       "topic": "camera",
       "title": "오빗의 공간 변화",
       "format": "video_ab",
-      "state": "partial_related",
-      "label": "관련 자료 있음 · 전용 비교 미완료",
+      "state": "available_adaptation",
+      "label": "오빗 시차 프리비즈 A/B 공개 · 실사 제작 전",
       "links": [
+        {
+          "label": "고정과 30도 오빗을 비교",
+          "href": "examples/#compare-E11"
+        },
+        {
+          "label": "시차와 카메라 경로 기록",
+          "href": "review/orbit-parallax/"
+        },
         {
           "label": "초기 오빗 참고",
           "href": "examples/#archive-camera"
         }
       ],
-      "note": "초기 무음 단일 영상만 있습니다. 고정/오빗을 맞춘 전용 A/B는 없습니다.",
+      "note": "같은 3D 장면에서 30도 오빗할 때 앞 기둥은 왼쪽 421px, 먼 기둥은 오른쪽 330px 움직입니다. 인물 모형은 같은 크기로 유지됩니다. Claire를 촬영한 Tein 비교는 제작 전입니다.",
       "source_ids": [
         "PW-032-p6",
         "PW-032-p7"

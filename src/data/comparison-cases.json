@@ -849,5 +849,41 @@
         "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, locked camera. A single door slam occurs offscreen at frame-left around2seconds. Claire says exactly in Korean \"깜짝이야.\" around3.5–4.5seconds, then closes her lips. Same scene, no visible door or extra person.\n\nBefore the audible impact she is composed. Only after its onset, one blink and small shoulder flinch occur, followed by a short inhalation. She regains composure, says the exact Korean line once and settles for the last second. No anticipation, repeated flinch or added interjection."
       }
     ]
+  },
+  {
+    "id": "E11",
+    "topic": "camera",
+    "title": "고정 샷과 30도 오빗 · Blender 프리비즈",
+    "change": "A는 카메라를 고정하고, B는 인물 모형을 중심으로 4m 반경에서 30도 움직입니다.",
+    "watch": "앞 청록색 기둥과 먼 노란 기둥을 보세요. 끝 프레임에서 두 기준점이 서로 반대쪽에 있습니다.",
+    "note": "같은 시작 구도·인물 크기·환경음을 사용한 3D 실증입니다. 미리보기는 끝 프레임입니다. Tein 실사 비교는 제작 전입니다.",
+    "still": false,
+    "a": {
+      "video": "review/orbit-parallax/media/A.mp4",
+      "poster": "review/orbit-parallax/media/A-ending.jpg",
+      "captions": "review/orbit-parallax/media/shared-sound.vtt",
+      "resolution": "960×540"
+    },
+    "b": {
+      "video": "review/orbit-parallax/media/B.mp4",
+      "poster": "review/orbit-parallax/media/B-ending.jpg",
+      "captions": "review/orbit-parallax/media/shared-sound.vtt",
+      "resolution": "960×540"
+    },
+    "review": "review/orbit-parallax/",
+    "sources": [
+      "PW-032-p6",
+      "PW-032-p7"
+    ],
+    "inputs": [
+      {
+        "label": "공통 카메라 설정",
+        "prompt": "40mm 초점거리, 높이 1.42m, 반경 4m. 같은 인물 모형의 중심 고정."
+      },
+      {
+        "label": "B에 적용한 경로",
+        "prompt": "0도에서 30도까지 같은 높이의 원호로 이동. 시작·끝에서 잠시 고정."
+      }
+    ]
   }
 ]
