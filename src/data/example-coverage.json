@@ -1,9 +1,9 @@
 {
   "as_of": "2026-11-19",
   "counts": {
-    "available_draft": 7,
+    "available_draft": 8,
     "needs_rework": 2,
-    "planned": 2,
+    "planned": 1,
     "partial_related": 6,
     "available_adaptation": 5,
     "workflow_documented": 2
@@ -424,17 +424,26 @@
       "topic": "identity",
       "title": "캐릭터 시트",
       "format": "still_ab",
-      "state": "planned",
-      "label": "참조 팩 준비 · 전용 시트 미완료",
-      "links": [],
-      "note": "원본 정면·확정 장면 측면·새 종료 구도 후보의 역할과 앞·뒤 전신 시트 제작 기준을 정리했습니다. 같은 의상과 비율의 전용 시트가 필요합니다.",
+      "state": "available_draft",
+      "label": "3분할 시트와 마스킹 편집 후보 공개",
+      "links": [
+        {
+          "label": "원본 초상과 3분할 시트",
+          "href": "examples/#compare-E16"
+        },
+        {
+          "label": "시트·편집 후보와 입력문",
+          "href": "review/claire-character-sheet/"
+        }
+      ],
+      "note": "원본 정면과 같은 의상의 앞·뒤 전신을 한 시트에 배치했습니다. 정면 전신의 얼굴을 가린 편집 후보를 함께 공개했습니다. 영상에서의 일관성 효과는 검증 전입니다.",
       "source_ids": [
         "PW-016-p1",
         "PW-016-p2"
       ],
       "priority": 2,
-      "variant_a": "한 장의 미적 초상",
-      "variant_b": "같은 얼굴·옷·키 비율의 앞/뒤/얼굴 시트",
+      "variant_a": "얼굴 확인에 쓰는 원본 정면 한 장",
+      "variant_b": "얼굴 정면과 같은 의상·비율의 앞·뒤 전신을 담은 시트",
       "acceptance": "참조 자산의 정보 차이; 영상 모델 성능 비교로 표시하지 않음",
       "planning_links": [
         {
@@ -747,7 +756,8 @@
     "new_paid_requests": 0,
     "cost_usd": "0",
     "complete_character_sheet": false,
-    "multi_angle_identity_verified": false
+    "multi_angle_identity_verified": false,
+    "character_sheet_candidate": "review/claire-character-sheet/"
   },
   "performance_gate": {
     "provider": "Tein",

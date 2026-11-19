@@ -240,6 +240,10 @@
     "audioLabel": "생성 원음 · 호흡과 환경음",
     "related": [
       {
+        "label": "Claire 3분할 시트 · E16",
+        "href": "review/claire-character-sheet/"
+      },
+      {
         "label": "원본 정면과 실제 3개 앵글 대조",
         "href": "review/claire-angles/"
       },

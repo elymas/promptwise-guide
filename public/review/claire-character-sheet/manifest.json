@@ -1,0 +1,49 @@
+{
+  "provider": "ChatGPT built-in image generation",
+  "source_ids": [
+    "PW-016-p1",
+    "PW-016-p2"
+  ],
+  "inputs": [
+    {
+      "path": "media/claire-reference.png",
+      "role": "authoritative facial identity, hair, earrings and shirt",
+      "sha256": "301ce886477535e0ca88258c8c2761aedb64a4b87237c055244fc98c6835c591"
+    },
+    {
+      "path": "review/claire-angles/media/ACT-05-b-native-v3.jpg",
+      "role": "Claire on the left; support for ponytail, shirt and silhouette only",
+      "sha256": "2e0f189e407c91c928ce47254c414884f5413d170385cd399c067878e48ada7f"
+    }
+  ],
+  "images": [
+    {
+      "kind": "sheet",
+      "path": "review/claire-character-sheet/media/claire-sheet-v1.webp",
+      "width": 1672,
+      "height": 941,
+      "source_png_sha256": "793d8f3864de1af89ba29215a2747799fc8ecdfc176375df3da76e87dc8cedd3",
+      "web_sha256": "913272151c471d369f8987c1e4aeb5130aab28a1fe1228d228c65c175c87c35f"
+    },
+    {
+      "kind": "face_mask_edit",
+      "path": "review/claire-character-sheet/media/claire-sheet-mask-v1.webp",
+      "width": 1672,
+      "height": 941,
+      "source_png_sha256": "8ca3fabfe0d092062fb6326cf077679697b3835a36d8efb43bb752a14df40daf",
+      "web_sha256": "5a8eef0fa970381fa504e98e876853c2b32503c09c238368f5a192cbe2ac1f09"
+    }
+  ],
+  "new_tein_requests": 0,
+  "prompts_file": "review/claire-character-sheet/prompts.json",
+  "face_mask_review": {
+    "outside_target_identical": false,
+    "measured_region_ssim": {
+      "left_portrait": 0.921915,
+      "rear_full_body": 0.970873,
+      "center_below_face": 0.96935
+    },
+    "status": "illustrative_edit_candidate"
+  },
+  "video_identity_impact": "untested"
+}

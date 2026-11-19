@@ -786,5 +786,33 @@
         "prompt": "같은 센서, 초점거리 38mm 고정. 수평 위치를 유지하며 높이 1.90→5.80m로 상승한다. 카메라가 드러난 바닥을 담도록 아래로 틸트한다."
       }
     ]
+  },
+  {
+    "id": "E16",
+    "topic": "identity",
+    "title": "원본 초상 한 장과 Claire의 3분할 시트",
+    "change": "원본 정면을 얼굴 기준으로 유지하고, 같은 복장의 앞·뒤 전신을 별도 패널에 넣었습니다.",
+    "watch": "전신 정면과 후면에서 신발, 셔츠 길이, 묶은 머리와 비율을 대조하세요.",
+    "note": "원본에 보이지 않는 바지·신발을 이 시트에 맞춰 정했습니다. 실제 영상의 인물 일관성 개선은 검증 전입니다.",
+    "still": true,
+    "a": {
+      "poster": "media/claire-reference.png",
+      "resolution": "782×782"
+    },
+    "b": {
+      "poster": "review/claire-character-sheet/media/claire-sheet-v1.webp",
+      "resolution": "1672×941"
+    },
+    "review": "review/claire-character-sheet/",
+    "sources": [
+      "PW-016-p1",
+      "PW-016-p2"
+    ],
+    "inputs": [
+      {
+        "label": "B · 실제 3분할 시트 생성 입력문",
+        "prompt": "Use case: photorealistic-natural. Create a wide 16:9 three-panel photographic character reference sheet for the single fictional adult character Claire, produced for a Korean filmmaking guide. Image 1 is the authoritative identity and wardrobe reference: preserve the almond-shaped eyes and lid line, facial proportions, natural skin texture, chin, nose and lips, near-black straight hair with bangs and low ponytail, small gold hoops and slate blue-gray soft cotton button-front shirt. Image 2 is supplemental only for the low ponytail, shirt, and body silhouette of the black-haired woman on the LEFT. Disregard the other person, scene, objects, pose and lighting in image 2.\n\nExactly three equal-width adjacent panels in one horizontal row with boundaries at exactly one-third and two-thirds of the canvas width. Use the same matte neutral mid-gray studio backdrop, soft even white light, balanced exposure with natural texture, no props and no readable text or graphics. LEFT panel: photo of head and shoulders facing directly forward at eye level, both eyes visible with calm neutral expression, shoulders down, no beauty retouch, the same face as image 1. Include crown and a little space around hair. CENTER panel: full body front view, neutral symmetric upright stance with both arms loose at sides, fingers relaxed and legs straight, both feet flat, entire head and shoes visible with margin. RIGHT panel: full body rear view of literally the same person rotated 180 degrees, same stance, body proportions, size, shoulder height and floor level as center panel; low ponytail and back of the same shirt clearly visible. Full-body costume: that slate blue-gray long sleeve shirt untucked, straight charcoal work trousers, low matte black lace-up shoes, both views identical. Make the two standing figures head-to-toe with the same scale and matching horizontal head and floor lines. Use soft subtle contact shadows, realistic seams, no monochrome stylization. Preserve the clean gray gap between the panels, with subjects fully inside their own panel. No words, numbers, borders, logo or watermark. Do not blur or mask any face in this sheet."
+      }
+    ]
   }
 ]
