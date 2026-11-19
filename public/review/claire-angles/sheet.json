@@ -1,0 +1,24 @@
+{
+  "provider": "ChatGPT built-in image generation",
+  "portrait": {
+    "path": "media/claire-reference.png",
+    "sha256": "301ce886477535e0ca88258c8c2761aedb64a4b87237c055244fc98c6835c591"
+  },
+  "sheet": {
+    "path": "review/claire-angles/media/claire-angle-sheet-v1.webp",
+    "width": 1672,
+    "height": 941,
+    "sha256": "86b224749a78410f8791de725625ef3420eeafae603681ce604f6fda58bafdc1",
+    "png_sha256": "e4f2448feea912953cfc6df6eebfe8ad22f6477ace77ff4fbb052fe045ce8a94"
+  },
+  "panels": [
+    "left three-quarter",
+    "front",
+    "right three-quarter"
+  ],
+  "prompt_target_yaw_degrees": 45,
+  "angle_measurement": "not measured from the generated still",
+  "video_usage": "visual QC only",
+  "video_status": "unsubmitted",
+  "new_tein_requests": 0
+}

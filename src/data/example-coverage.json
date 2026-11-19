@@ -497,7 +497,7 @@
       "title": "실사 다중 앵글의 동일 인물",
       "format": "video_ab",
       "state": "partial_related",
-      "label": "실제 3개 앵글 관찰 · 전용 A/B 미완료",
+      "label": "실제 3개 앵글과 양쪽 사선 검수 시트 · 전용 영상 A/B 제작 전",
       "links": [
         {
           "label": "Claire 원본과 실제 3개 앵글 대조",
@@ -512,7 +512,7 @@
           "href": "review/acting-v2/#ACT-07"
         }
       ],
-      "note": "원본 정면과 Tein ACT-01 B, ACT-07 B, ACT-05 B의 1초 프레임을 공개했습니다. 앞머리·귀걸이·셔츠를 관찰할 수 있으며 반대편 측면과 동일 조건 전용 영상 A/B는 후속 검수입니다.",
+      "note": "원본 정면과 Tein ACT-01 B, ACT-07 B, ACT-05 B의 1초 프레임을 공개했습니다. 양쪽 사선 시트는 새 테이크에서 앞머리·귀걸이·셔츠와 얼굴 윤곽을 살필 때 쓰는 자료입니다. 전용 영상의 얼굴은 Claire 원본과 대조합니다.",
       "source_ids": [
         "PW-016-p1",
         "PW-017-p13"
@@ -522,6 +522,10 @@
       "variant_b": "동일 참조의 얼굴·헤어·귀걸이·의상을 각 앵글에 역할별로 고정",
       "acceptance": "정면·사선·측면 실사 컷의 얼굴 구조·나이 인상·머리·의상이 유지되는지 원본 참조와 대조",
       "planning_links": [
+        {
+          "label": "양쪽 사선 검수 시트와 이미지 입력문",
+          "href": "review/claire-angles/#angle-sheet"
+        },
         {
           "label": "Claire 참조 팩 · 확정 범위와 후보 구분",
           "href": "review/claire-reference-pack/"
