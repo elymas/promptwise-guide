@@ -1,0 +1,87 @@
+{
+  "provider": "Tein",
+  "frame_width": 854,
+  "frame_height": 480,
+  "fps": 24,
+  "frames": [
+    {
+      "index": 60,
+      "time_seconds": 2.5,
+      "takes": [
+        {
+          "variant": "A",
+          "note": "둘의 표정이 진지하고 Erin은 눈을 내리깝니다.",
+          "path": "review/reaction-timing/media/A-60.jpg",
+          "sha256": "2eb9e33f36bb4b396ccf9441668e9e820966b612f1618412bf08cfc200b3b388"
+        },
+        {
+          "variant": "B",
+          "note": "Erin은 미소를 보이고 Claire는 진지한 표정으로 지켜봅니다.",
+          "path": "review/reaction-timing/media/B-60.jpg",
+          "sha256": "542d4e71fd89957e881258967caa85503f13fcdf2a100ecf7cdf3f3f700d816c"
+        }
+      ]
+    },
+    {
+      "index": 144,
+      "time_seconds": 6.0,
+      "takes": [
+        {
+          "variant": "A",
+          "note": "두 사람이 시선을 내리고 각자 웃는 표정이 보입니다.",
+          "path": "review/reaction-timing/media/A-144.jpg",
+          "sha256": "6d8fd57d5f27e703b0c89ade9c10d19a48f26f0d3ee561703b0a6c97f607791b"
+        },
+        {
+          "variant": "B",
+          "note": "Claire가 입을 열며 풀리고 Erin의 미소가 이어집니다.",
+          "path": "review/reaction-timing/media/B-144.jpg",
+          "sha256": "61ba6c1f108946237568e4b52af330562afd17a5ccb062b4599070ea432c788f"
+        }
+      ]
+    },
+    {
+      "index": 168,
+      "time_seconds": 7.0,
+      "takes": [
+        {
+          "variant": "A",
+          "note": "둘 다 미소가 보입니다.",
+          "path": "review/reaction-timing/media/A-168.jpg",
+          "sha256": "3d5b3c65f839e8a3ac0666130e09e2d833923ee704c1388cbdc2121093fcfd5c"
+        },
+        {
+          "variant": "B",
+          "note": "Claire가 입을 다물고 웃으며 Erin을 바라봅니다.",
+          "path": "review/reaction-timing/media/B-168.jpg",
+          "sha256": "cbc6d0c73fc4067b2d9629762b1e80e6496c34b78940f98b913c4416cf2e89d7"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "review/acting-v2/media/ACT-05-a-take.mp4",
+      "sha256": "d585044a97ec485e9bcafa0f2a62fb3e7bb3f02e7de15d60c168aa4dadabbd9d"
+    },
+    {
+      "path": "review/acting-v2/media/ACT-05-b-native-v3.mp4",
+      "sha256": "90f8763f1f2f9268c930674d1a5325234d9b387bcecf9cecbe96c76777d43105"
+    },
+    {
+      "path": "review/acting-v2/media/ACT-10-claire-crop-native-v3.mp4",
+      "sha256": "b451758b3714b30a163e135145bf81bc62444cad90a3023eae2e14a05c3b2e54"
+    },
+    {
+      "path": "review/acting-v2/media/ACT-10-erin-crop-native-v3.mp4",
+      "sha256": "c83d5bdba827614ae239261211ddd5d6899fb28ba99ef9333887f15b97214160"
+    }
+  ],
+  "approval_scope": [
+    "ACT-05 B native-v3",
+    "ACT-10 paired crops"
+  ],
+  "approved_b_and_crops_aac_sha256": "f03c138b3c7d275315f7d20f9bc9b2a5d7994889b8c0b8a0702b3c04c9391c17",
+  "hd_status": "unsubmitted",
+  "new_paid_requests": 0
+}
