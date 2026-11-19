@@ -1,0 +1,39 @@
+{
+  "source_ids": [
+    "PW-087-p4"
+  ],
+  "stills": [
+    {
+      "role": "start",
+      "path": "review/condensation-rework/media/clear-start.webp",
+      "width": 1668,
+      "height": 942,
+      "sha256": "1702fc00832ef6538da9dcdb125b882caacb41813a4f44138b108196e061db30"
+    },
+    {
+      "role": "previous",
+      "path": "review/condensation-rework/media/previous-b-2s.jpg",
+      "width": 854,
+      "height": 480,
+      "sha256": "9a2ae5f78dfb3c5ea602d0c5af6c12fe7199f20ded07e292c11742074aa1a572"
+    },
+    {
+      "role": "target",
+      "path": "review/condensation-rework/media/condensation-target.webp",
+      "width": 1669,
+      "height": 942,
+      "sha256": "838a94f2da3bcad88f7f7c6067eeb4fb3dd62f8419138c9414f96c29f93cfa10"
+    }
+  ],
+  "previous": {
+    "video": "review/comparison-batch/media/E08-B.mp4",
+    "sha256": "85f72c23550914367415d26817d3ff0fdbe6a9fa968fb474eef3d8bea825aa73",
+    "frame": 48,
+    "time_seconds": 2
+  },
+  "target_provider": "ChatGPT built-in image generation",
+  "original_plate_sha256": "1f8978f60017b3b16f590946d7b4f94cd2b2b406d81090d2e072669c4fb852ce",
+  "target_png_sha256": "2d075cae494e9cba14bb274cb4f4957a2db8b99ac8ea4e62b1c178c70c4161d3",
+  "new_tein_requests": 0,
+  "video_status": "unsubmitted"
+}

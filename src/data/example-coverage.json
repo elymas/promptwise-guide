@@ -230,14 +230,18 @@
       "title": "입김의 표면 반응",
       "format": "video_ab",
       "state": "needs_rework",
-      "label": "영상 A/B 초안 · 결로의 사실감 재작업",
+      "label": "영상 A/B 초안 · 반투명 응결 기준 확보",
       "links": [
+        {
+          "label": "기존 2초 프레임과 반투명 응결 기준",
+          "href": "review/condensation-rework/"
+        },
         {
           "label": "실제 A/B와 입력문",
           "href": "review/comparison-batch/#E08"
         }
       ],
-      "note": "B에서 약 2초에 흰 타원이 뚜렷하게 나타납니다. 불투명도와 경계가 균일해 자연스러운 유리 결로로 읽히기 어렵습니다.",
+      "note": "기존 B의 2초 프레임에서는 흰 타원이 입술 반사와 배경을 가립니다. 두 요소가 물기 너머로 남는 새 스틸을 검수 기준으로 공개했습니다. 보완 영상 제작은 남아 있습니다.",
       "source_ids": [
         "PW-087-p4"
       ],

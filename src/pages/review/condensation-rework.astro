@@ -1,0 +1,59 @@
+---
+import Base from '../../layouts/Base.astro';
+import { path } from '../../data/topics';
+import manifest from '../../../public/review/condensation-rework/manifest.json';
+import prompts from '../../../public/review/condensation-rework/still-prompt.json';
+import plan from '../../../public/review/condensation-rework/video-plan.json';
+const [start, previous, target] = manifest.stills;
+const views = [
+  { ...previous, title: '기존 B · 2.00초 실제 프레임', note: '불투명한 흰 타원이 그 안의 입술 반사와 배경을 가립니다.' },
+  { ...target, title: '응결의 새 기준 스틸', note: '미세한 물방울 사이로 입술 반사와 유리 너머 배경이 읽힙니다.' },
+];
+---
+<Base title="입김이 유리에 남기는 흔적 — FRAME / NOTES" description="Tein 기존 초안과 반투명 응결 기준을 확대해 비교하고, 새 영상의 검수 조건을 공개합니다.">
+  <section class="shell page-heading">
+    <h1>입김 속에서도<br />유리 뒤가 보이게</h1>
+    <p>Claire가 차가운 유리에 숨을 내쉽니다. 같은 위치를 확대해 흰 타원과 유리 표면에 맺힌 반투명 물기의 차이를 비교하세요.</p>
+  </section>
+  <section class="shell detail-pair" aria-label="기존 2초 프레임과 새 응결 기준 확대 비교">
+    {views.map(view => (
+      <figure>
+        <a class="detail" href={path(view.path)} aria-label={`${view.title} · 전체 스틸 열기`}>
+          <img src={path(view.path)} width={view.width} height={view.height} alt={view.note} />
+        </a>
+        <figcaption><strong>{view.title}</strong><br />{view.note}</figcaption>
+      </figure>
+    ))}
+  </section>
+  <section class="shell coverage-section">
+    <h2>한 번의 숨 뒤에 생기고 가장자리부터 옅어집니다</h2>
+    <p>Tein A/B 두 편은 같은 6초 구도와 맑은 유리의 시작 스틸을 사용합니다. A는 숨을 한 번 내쉬도록 지시합니다. B는 숨이 닿은 뒤 물기가 나타나고, 배경의 대비만 조금 낮아지며, 3초부터 가장자리가 옅어지도록 씁니다.</p>
+    <p>기존 영상 B는 응결이 나타났지만 흰 타원으로 굳었습니다. 새 스틸은 투과와 불균일한 가장자리를 확인하는 기준입니다. 호흡과 응결이 이어지고 몸과 반사가 자연스럽게 유지되는지는 새 영상에서 확인해야 합니다.</p>
+    <div class="study-links">
+      <a class="text-link" href={path(start.path)}>두 편이 공유할 맑은 유리 스틸 ↗</a>
+      <a class="text-link" href={path('examples/#compare-E08')}>기존 Tein A/B와 원음 ↗</a>
+    </div>
+  </section>
+  <section class="shell coverage-section">
+    <h2>스틸과 영상 입력문</h2>
+    <p>응결 기준 스틸은 ChatGPT 내장 이미지 생성 도구로 만들었습니다. 아래 Tein 영상 입력안은 제출 전입니다.</p>
+    <details><summary>스틸에 실제로 사용한 편집 입력문</summary><pre>{prompts.edit}</pre></details>
+    <details><summary>Tein에 제출할 A/B 입력안</summary><h3>공통</h3><pre>{plan.common}</pre><h3>A</h3><pre>{plan.variants.A}</pre><h3>B</h3><pre>{plan.variants.B}</pre></details>
+    <div class="study-links">
+      <a class="text-link" href={path('review/condensation-rework/manifest.json')} download>프레임 시각과 원본 검증 기록 ↗</a>
+      <a class="text-link" href={path('prompts/?page=PW-087#PW-087-p4')}>PW-087 호흡과 표면 응결 ↗</a>
+    </div>
+  </section>
+</Base>
+<style>
+  .detail-pair { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
+  figure { margin: 0; }
+  .detail { display: block; overflow: hidden; aspect-ratio: 4/3; background: var(--surface); }
+  .detail img { display: block; width: 200%; max-width: none; height: auto; transform: translate(-37%,-24%); }
+  figcaption { margin-top: .7rem; font-size: .9rem; color: var(--muted); }
+  figcaption strong { color: var(--ink); }
+  details { margin-block: .8rem; }
+  summary { cursor: pointer; }
+  pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+  @media (max-width: 580px) { .detail-pair { grid-template-columns: 1fr; } }
+</style>

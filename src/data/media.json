@@ -112,6 +112,10 @@
         "href": "review/tear-path/"
       },
       {
+        "label": "E08 입김 · 반투명 응결 기준",
+        "href": "review/condensation-rework/"
+      },
+      {
         "label": "입김 A/B · 결로 사실감 검토",
         "href": "examples/#compare-E08"
       }
