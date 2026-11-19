@@ -14,6 +14,7 @@ const frames = manifest.images.map((image, index) => ({ ...image, ...text[index]
   <section class="shell page-heading">
     <h1>카메라를 두고<br />초점만 바꾸다</h1>
     <p>왼쪽 앞 테이블에는 작은 도자기가 있고 Claire는 오른쪽 뒤 테이블에 앉아 있습니다. 아래 버튼으로 두 스틸을 같은 위치에서 바꿔 보면서 도자기 입구와 Claire의 눈, 테이블 가장자리를 확인하세요.</p>
+    <a class="text-link" href={path('examples/#compare-E02')}>고정 초점과 랙 포커스 3D 영상 비교 ↗</a>
   </section>
   <section class="shell compare" aria-label="초점 기준 스틸 비교">
     <div class="controls" role="group" aria-label="초점 기준 선택" hidden>
@@ -28,6 +29,15 @@ const frames = manifest.images.map((image, index) => ({ ...image, ...text[index]
         <a class="text-link" href={path(frame.path)}>스틸 확대 ↗</a>
       </figure>
     ))}
+  </section>
+  <section class="shell coverage-section" id="optical-previz">
+    <h2>카메라가 고정된 상태에서 선명한 부분만 바뀌는가</h2>
+    <p>기존 두 테이블 Blender 장면의 같은 카메라에서 A는 앞 도자기 초점면을 유지했습니다. B는 2~3초 사이에 도자기에서 뒤 모형의 눈으로 초점면만 옮겼습니다. 앞 도자기가 흐려질 때 뒤 눈과 셔츠 윤곽이 읽히는지 보세요.</p>
+    <p>45mm · f/1.8 · 768 × 432 · 24fps · 무음. 앞 도자기 입구와 뒤 모형 눈의 투영 좌표는 시작부터 끝까지 같았습니다. 이 좌표는 3D 장면에 적용한 수치입니다. 실제 Claire의 얼굴·시선과 원음은 Tein 영상에서 검수할 항목입니다.</p>
+    <div class="study-links">
+      <a class="text-link" href={path('examples/#compare-E02')}>4초 프리비즈 A/B ↗</a>
+      <a class="text-link" href={path('review/fixed-focus/previz.json')} download>렌즈 설정·초점면·파일 해시 ↗</a>
+    </div>
   </section>
   <section class="shell coverage-section">
     <h2>두 테이블을 고정하는 이유</h2>

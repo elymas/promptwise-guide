@@ -44,6 +44,39 @@
     ]
   },
   {
+    "id": "E02",
+    "topic": "depth",
+    "title": "고정 카메라에서 도자기에서 뒤 인물로 랙 포커스",
+    "change": "같은 두 테이블과 고정 카메라에서 A는 앞 도자기에 초점을 유지합니다. B는 카메라를 고정한 채 초점면만 뒤 모형의 눈으로 옮깁니다.",
+    "watch": "2~3초에 도자기 입구가 흐려지고 뒤 모형의 눈과 셔츠 윤곽이 또렷해지는지 보세요. 미리보기는 각 영상의 마지막 프레임입니다.",
+    "note": "Blender Cycles 프리비즈 · 24fps · 무음. 도자기와 눈의 투영 위치 변화 0px. 실제 Claire의 얼굴·렌즈 응시·원음은 Tein 영상에서 검수합니다.",
+    "still": false,
+    "a": {
+      "video": "review/fixed-focus/media/previz/A.mp4",
+      "poster": "review/fixed-focus/media/previz/A-ending.jpg",
+      "resolution": "768×432"
+    },
+    "b": {
+      "video": "review/fixed-focus/media/previz/B.mp4",
+      "poster": "review/fixed-focus/media/previz/B-ending.jpg",
+      "resolution": "768×432"
+    },
+    "review": "review/fixed-focus/#optical-previz",
+    "sources": [
+      "PW-018-p12"
+    ],
+    "inputs": [
+      {
+        "label": "A · Blender 적용값",
+        "prompt": "고정 카메라, 45mm, f/1.8. 카메라 축을 따라 1.1853m에 초점면을 두고 4초 유지."
+      },
+      {
+        "label": "B · Blender 적용값",
+        "prompt": "같은 카메라 및 렌즈. 0~2초에는 1.1853m에 초점을 유지하고 2~3초에 3.2792m까지 부드럽게 이동. 3~4초 유지."
+      }
+    ]
+  },
+  {
     "id": "E03",
     "topic": "depth",
     "title": "역광으로 보이는 비",

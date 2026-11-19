@@ -1,0 +1,46 @@
+{
+  "scope": "Cycles optical previsualization, neutral mannequin",
+  "width": 768,
+  "height": 432,
+  "fps": 24,
+  "duration_seconds": 4,
+  "lens_mm": 45.0,
+  "f_stop": 1.8,
+  "camera_height_m": 0.82,
+  "near_focus_camera_axis_m": 1.1853,
+  "far_focus_camera_axis_m": 3.2792,
+  "target_uv": {
+    "vase_rim": [
+      0.12329897284507751,
+      0.43527907133102417
+    ],
+    "eye_line": [
+      0.6312179565429688,
+      0.597762405872345
+    ]
+  },
+  "target_motion_pixels": 0,
+  "transition_seconds": [
+    2.0,
+    3.0
+  ],
+  "audio": "none",
+  "source_scene_sha256": "a2b8a2ade0d7c0e8e2f9be7c278384de0adf840ba0409aa703f8d603e9c21be2",
+  "renderer_sha256": "1e2319022ccf92dc81ce0461facf8d5cf96f5f7fcc31a61dfc8fb4985d8a9684",
+  "shared_opening_render_sha256": "f850011391f736967dc9955672616e31477e5634b7e1bcfd9db0242323da39aa",
+  "source": "PW-018-p12",
+  "files": {
+    "A": {
+      "video": "review/fixed-focus/media/previz/A.mp4",
+      "sha256": "1662a2a4033b3cf9fad9ef297fda8a2ef58a7ad7b9ca74f5e9b99f2feaa4ebc3",
+      "poster": "review/fixed-focus/media/previz/A-ending.jpg",
+      "poster_sha256": "a8cc41cdacb222a910e34640bc87c5c41b3c9aa1d9d4c420203d441feb6b1994"
+    },
+    "B": {
+      "video": "review/fixed-focus/media/previz/B.mp4",
+      "sha256": "75f15620c2f8607f92de360612ebbeaf5bd70ca24e8e95295cb3662d5e660eba",
+      "poster": "review/fixed-focus/media/previz/B-ending.jpg",
+      "poster_sha256": "d850c32e485c6148760d0fc1ec855196f7fbee521c8aa197e1498894480cf174"
+    }
+  }
+}
