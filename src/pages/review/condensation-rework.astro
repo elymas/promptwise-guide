@@ -48,7 +48,11 @@ const views = [
         </figure>
       ))}
     </div>
-    <a class="text-link" href={path('examples/#compare-E08')}>반투명 응결 480p A/B 보기 ↗</a>
+    <div class="study-links">
+      <a class="text-link" href={path('examples/#compare-E08')}>반투명 응결 480p A/B · 검토용 +14 dB ↗</a>
+      <a class="text-link" href={path('review/condensation-rework/media/E08-480-A.mp4')}>A 게인 적용 전 ↗</a>
+      <a class="text-link" href={path('review/condensation-rework/media/E08-480-B-END.mp4')}>B 게인 적용 전 ↗</a>
+    </div>
     <div class="detail-pair">
       {['A','B'].map((side) => (
         <figure>

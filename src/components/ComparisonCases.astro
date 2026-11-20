@@ -10,6 +10,7 @@ const availableBlocks = new Set(catalog.prompts.map(prompt => prompt.id));
 const audioLabels: Readonly<Record<string, string>> = {
   native: '테이크의 생성 원음',
   'edited-original': '생성 원음 사용 · 편집본',
+  'gain-adjusted': '테이크의 생성 원음 · 검토용 +14 dB',
   reference: '다른 영상의 환경음',
   silent: '무음',
 };

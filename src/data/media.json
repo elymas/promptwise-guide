@@ -2,7 +2,7 @@
   "depth": {
     "status": "draft",
     "statusLabel": "480p 초안 · 검토 중",
-    "video": "review/fixed-focus/media/E02-480-B.mp4",
+    "video": "review/fixed-focus/media/E02-480-B-review-gain.mp4",
     "poster": "review/fixed-focus/media/E02-480-B.jpg",
     "duration": 4.064,
     "model": "Seedance 2.5 Standard",
@@ -17,7 +17,7 @@
       "Claire"
     ],
     "coverageScope": "E01 레이어 · E02 고정 구도 초점 · E03 역광 빗줄기 480p급 비교",
-    "audioLabel": "테이크의 생성 원음",
+    "audioLabel": "테이크의 생성 원음 · 검토용 +14 dB",
     "related": [
       {
         "label": "시작·종료 스틸과 초점 설계",

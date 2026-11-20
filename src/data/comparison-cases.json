@@ -51,17 +51,17 @@
     "title": "고정 카메라에서 도자기에서 Claire로 랙 포커스",
     "change": "공통 시작 화면에서 A는 앞 도자기 초점을 유지합니다. B는 뒤의 Claire가 또렷한 종료 스틸을 사용합니다.",
     "watch": "2.5~3초에 도자기 입구와 뒤쪽 Claire의 눈을 번갈아 보세요.",
-    "note": "A는 앞 도자기가 선명합니다. B는 2.5초 부근부터 Claire 얼굴이 선명해집니다. 시작·종료 스틸을 사용한 실사 초안이며 원음 청취는 검수 중입니다.",
+    "note": "A는 앞 도자기가 선명합니다. B는 2.5초 부근부터 Claire 얼굴이 선명해집니다. 시작·종료 스틸을 사용한 실사 초안이며 원음 청취는 검수 중입니다. 모바일 검토본은 두 테이크의 자체 원음에 같은 +14 dB를 적용했습니다.",
     "still": false,
     "a": {
-      "video": "review/fixed-focus/media/E02-480-A.mp4",
-      "audio": "native",
+      "video": "review/fixed-focus/media/E02-480-A-review-gain.mp4",
+      "audio": "gain-adjusted",
       "poster": "review/fixed-focus/media/E02-480-A.jpg",
       "resolution": "852×480"
     },
     "b": {
-      "video": "review/fixed-focus/media/E02-480-B.mp4",
-      "audio": "native",
+      "video": "review/fixed-focus/media/E02-480-B-review-gain.mp4",
+      "audio": "gain-adjusted",
       "poster": "review/fixed-focus/media/E02-480-B.jpg",
       "resolution": "852×480"
     },
@@ -519,17 +519,17 @@
     "title": "입김과 유리 표면의 변화",
     "change": "A는 맑은 유리 시작 스틸과 한 번의 숨을 사용합니다. B는 같은 시작 스틸에 반투명 물기 종료 스틸을 더했습니다.",
     "watch": "2~3.5초에 입술 반사와 오른쪽 건물 윤곽이 물기 너머로 이어지는지 보세요.",
-    "note": "B는 직전 생성의 흰 타원을 피했습니다. 물기 차이는 확대에서 더 잘 읽힙니다. B에만 종료 스틸을 지정했고 원음 청취는 검수 중입니다.",
+    "note": "B는 직전 생성의 흰 타원을 피했습니다. 물기 차이는 확대에서 더 잘 읽힙니다. B에만 종료 스틸을 지정했고 원음 청취는 검수 중입니다. 모바일 검토본은 두 테이크의 자체 원음에 같은 +14 dB를 적용했습니다.",
     "still": false,
     "a": {
-      "video": "review/condensation-rework/media/E08-480-A.mp4",
-      "audio": "native",
+      "video": "review/condensation-rework/media/E08-480-A-review-gain.mp4",
+      "audio": "gain-adjusted",
       "poster": "review/condensation-rework/media/E08-480-A.jpg",
       "resolution": "852×480"
     },
     "b": {
-      "video": "review/condensation-rework/media/E08-480-B-END.mp4",
-      "audio": "native",
+      "video": "review/condensation-rework/media/E08-480-B-END-review-gain.mp4",
+      "audio": "gain-adjusted",
       "poster": "review/condensation-rework/media/E08-480-B-END.jpg",
       "resolution": "852×480"
     },
