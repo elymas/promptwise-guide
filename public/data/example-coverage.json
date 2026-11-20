@@ -1,8 +1,8 @@
 {
   "as_of": "2026-11-20",
   "counts": {
-    "available_draft": 9,
-    "needs_rework": 3,
+    "available_draft": 11,
+    "needs_rework": 1,
     "planned": 1,
     "partial_related": 4,
     "available_adaptation": 5,
@@ -45,15 +45,19 @@
       "topic": "depth",
       "title": "랙 포커스",
       "format": "video_ab",
-      "state": "needs_rework",
-      "label": "고정 초점과 랙 포커스 3D A/B · 실사 영상 검증 전",
+      "state": "available_draft",
+      "label": "480p 실사 랙 포커스 A/B · 원음 검수 중",
       "links": [
+        {
+          "label": "실사 480p 랙 포커스 A/B",
+          "href": "examples/#compare-E02"
+        },
         {
           "label": "E10으로 분류한 이동 초안 · 초점 비교 아님",
           "href": "review/optics-low-angle-result/"
         }
       ],
-      "note": "같은 두 테이블 3D 장면에서 2~3초에 도자기에서 뒤 모형의 눈으로 초점면만 옮겼습니다. 공통 시작과 종료 후보 스틸도 공개했습니다. 실사 영상의 Claire 얼굴·시선·원음은 Tein 생성 후 검수합니다.",
+      "note": "같은 시작 스틸의 실사 A/B입니다. A는 앞 도자기, B는 2.5초 부근부터 뒤쪽 Claire의 눈이 선명해집니다. Blender 비교는 카메라와 초점 설계 근거로 함께 제공합니다.",
       "source_ids": [
         "PW-018-p12"
       ],
@@ -233,9 +237,13 @@
       "topic": "contact",
       "title": "입김의 표면 반응",
       "format": "video_ab",
-      "state": "needs_rework",
-      "label": "480p 재시험 · 반사 가림 남음",
+      "state": "available_draft",
+      "label": "480p 반투명 물기 비교 초안 · 확대 검수 중",
       "links": [
+        {
+          "label": "반투명 응결 480p A/B",
+          "href": "examples/#compare-E08"
+        },
         {
           "label": "480p 재시험과 반투명 응결 기준",
           "href": "review/condensation-rework/#pilot-480p"
@@ -245,7 +253,7 @@
           "href": "review/comparison-batch/#E08"
         }
       ],
-      "note": "480p A/B를 다시 만들었습니다. B의 2초 부근에서 흰 물기가 입술 반사를 가려 보완이 남았습니다.",
+      "note": "반투명 스틸을 B의 마지막 프레임으로 지정했습니다. 입술 반사와 배경 윤곽이 남고, 물기 차이는 확대에서 잘 읽힙니다.",
       "source_ids": [
         "PW-087-p4"
       ],

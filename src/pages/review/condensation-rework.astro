@@ -32,12 +32,14 @@ const views = [
     <p>기존 영상 B는 응결이 나타났지만 흰 타원으로 굳었습니다. 새 스틸은 투과와 불균일한 가장자리를 확인하는 기준입니다. 호흡과 응결이 이어지고 몸과 반사가 자연스럽게 유지되는지는 새 영상에서 확인해야 합니다.</p>
     <div class="study-links">
       <a class="text-link" href={path(start.path)}>두 편이 공유할 맑은 유리 스틸 ↗</a>
-      <a class="text-link" href={path('examples/#compare-E08')}>기존 Tein A/B와 원음 ↗</a>
+      <a class="text-link" href={path('examples/#compare-E08')}>현재 Tein A/B와 원음 ↗</a>
     </div>
   </section>
   <section class="shell coverage-section" id="pilot-480p">
     <h2>480p 2초 비교에서 남은 문제</h2>
     <p>A에서는 입술 반사와 건물이 보입니다. B에서는 물기가 나타나고 가장자리부터 옅어지지만, 가장 짙은 순간에는 흰 영역이 입술 반사를 가립니다.</p>
+    <p>다음 초안에서는 반투명 스틸을 종료 프레임으로 지정했습니다. 새 B는 입술 반사와 배경을 남깁니다.</p>
+    <a class="text-link" href={path('examples/#compare-E08')}>반투명 응결 480p A/B 보기 ↗</a>
     <div class="detail-pair">
       {['A','B'].map((side) => (
         <figure>

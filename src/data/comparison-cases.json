@@ -48,35 +48,35 @@
   {
     "id": "E02",
     "topic": "depth",
-    "title": "고정 카메라에서 도자기에서 뒤 인물로 랙 포커스",
-    "change": "같은 두 테이블과 고정 카메라에서 A는 앞 도자기에 초점을 유지합니다. B는 카메라를 고정한 채 초점면만 뒤 모형의 눈으로 옮깁니다.",
-    "watch": "2~3초에 도자기 입구가 흐려지고 뒤 모형의 눈과 셔츠 윤곽이 또렷해지는지 보세요. 미리보기는 각 영상의 마지막 프레임입니다.",
-    "note": "Blender Cycles 프리비즈 · 24fps · 무음. 도자기와 눈의 투영 위치 변화 0px. 실제 Claire의 얼굴·렌즈 응시·원음은 Tein 영상에서 검수합니다.",
+    "title": "고정 카메라에서 도자기에서 Claire로 랙 포커스",
+    "change": "공통 시작 화면에서 A는 앞 도자기 초점을 유지합니다. B는 뒤의 Claire가 또렷한 종료 스틸을 사용합니다.",
+    "watch": "2.5~3초에 도자기 입구와 뒤쪽 Claire의 눈을 번갈아 보세요.",
+    "note": "A는 앞 도자기가 선명합니다. B는 2.5초 부근부터 Claire 얼굴이 선명해집니다. 시작·종료 스틸을 사용한 실사 초안이며 원음 청취는 검수 중입니다.",
     "still": false,
     "a": {
-      "video": "review/fixed-focus/media/previz/A.mp4",
-      "audio": "silent",
-      "poster": "review/fixed-focus/media/previz/A-ending.jpg",
-      "resolution": "768×432"
+      "video": "review/fixed-focus/media/E02-480-A.mp4",
+      "audio": "native",
+      "poster": "review/fixed-focus/media/E02-480-A.jpg",
+      "resolution": "852×480"
     },
     "b": {
-      "video": "review/fixed-focus/media/previz/B.mp4",
-      "audio": "silent",
-      "poster": "review/fixed-focus/media/previz/B-ending.jpg",
-      "resolution": "768×432"
+      "video": "review/fixed-focus/media/E02-480-B.mp4",
+      "audio": "native",
+      "poster": "review/fixed-focus/media/E02-480-B.jpg",
+      "resolution": "852×480"
     },
-    "review": "review/fixed-focus/#optical-previz",
+    "review": "review/fixed-focus/",
     "sources": [
       "PW-018-p12"
     ],
     "inputs": [
       {
-        "label": "A · Blender 적용값",
-        "prompt": "고정 카메라, 45mm, f/1.8. 카메라 축을 따라 1.1853m에 초점면을 두고 4초 유지."
+        "label": "A 영상 · E02-480-A",
+        "prompt": "One continuous four-second photoreal shot from a locked, fixed-height camera, matching the supplied two-table composition. Keep the lens angle, camera position, field of view, exposure, framing, two table edges, gap, ceramic vessel, shelves and window light fixed. Claire sits behind the far table in the same proportions, blue-gray shirt, dark bangs and gold hoop earrings. She quietly looks directly into this lens from the first to the last frame, lips resting together and with at most one ordinary brief blink. No acting gesture, eye movement off the lens, zoom, pan, tilt, camera travel, cut, resizing or object shift. Keep quiet individual workshop room tone and one soft breath, no dialogue and no music.\n\nKeep sharp focus on the lip and glaze of the near ceramic vessel throughout all four seconds. Claire remains softly out of focus."
       },
       {
-        "label": "B · Blender 적용값",
-        "prompt": "같은 카메라 및 렌즈. 0~2초에는 1.1853m에 초점을 유지하고 2~3초에 3.2792m까지 부드럽게 이동. 3~4초 유지."
+        "label": "B 영상 · E02-480-B",
+        "prompt": "One continuous four-second photoreal shot from a locked, fixed-height camera, matching the supplied two-table composition. Keep the lens angle, camera position, field of view, exposure, framing, two table edges, gap, ceramic vessel, shelves and window light fixed. Claire sits behind the far table in the same proportions, blue-gray shirt, dark bangs and gold hoop earrings. She quietly looks directly into this lens from the first to the last frame, lips resting together and with at most one ordinary brief blink. No acting gesture, eye movement off the lens, zoom, pan, tilt, camera travel, cut, resizing or object shift. Keep quiet individual workshop room tone and one soft breath, no dialogue and no music.\n\nHold clear focus on the lip and glaze of the near ceramic vessel from 0 to 2 seconds. Between 2 and 3 seconds pull optical focus smoothly once to Claire’s eyes. The vessel and near table soften without shifting. Hold sharp iris and eyelash detail on Claire from 3 to 4 seconds, with no hunting or return."
       }
     ]
   },
@@ -517,38 +517,34 @@
     "id": "E08",
     "topic": "contact",
     "title": "입김과 유리 표면의 변화",
-    "change": "B에만 숨이 닿은 위치의 유리 표면이 국소적으로 흐려졌다가 옅어지는 과정까지 지시했습니다.",
-    "watch": "2–3초에 입 앞 유리의 반사와 흐려지는 부분을 보세요.",
-    "note": "차이는 뚜렷하지만 사실감 재작업 필요. A의 입김은 흐릿하고 넓게 보입니다. B에서는 약 2초에 흰 타원이 뚜렷하게 나타나지만 불투명하고 경계가 균일해 자연스러운 결로로 읽히기 어렵습니다. 다음 판단 기준은 반사가 조금씩 흐려지는 투명한 결로와 불규칙하게 사라지는 가장자리입니다.",
+    "change": "A는 맑은 유리 시작 스틸과 한 번의 숨을 사용합니다. B는 같은 시작 스틸에 반투명 물기 종료 스틸을 더했습니다.",
+    "watch": "2~3.5초에 입술 반사와 오른쪽 건물 윤곽이 물기 너머로 이어지는지 보세요.",
+    "note": "B는 직전 생성의 흰 타원을 피했습니다. 물기 차이는 확대에서 더 잘 읽힙니다. B에만 종료 스틸을 지정했고 원음 청취는 검수 중입니다.",
     "still": false,
     "a": {
-      "video": "review/comparison-batch/media/E08-A.mp4",
+      "video": "review/condensation-rework/media/E08-480-A.mp4",
       "audio": "native",
-      "poster": "review/comparison-batch/media/E08-A.jpg",
-      "resolution": "854×480"
+      "poster": "review/condensation-rework/media/E08-480-A.jpg",
+      "resolution": "852×480"
     },
     "b": {
-      "video": "review/comparison-batch/media/E08-B.mp4",
+      "video": "review/condensation-rework/media/E08-480-B-END.mp4",
       "audio": "native",
-      "poster": "review/comparison-batch/media/E08-B.jpg",
-      "resolution": "854×480"
+      "poster": "review/condensation-rework/media/E08-480-B-END.jpg",
+      "resolution": "852×480"
     },
-    "review": "review/comparison-batch/#E08",
+    "review": "review/condensation-rework/",
     "sources": [
       "PW-087-p4"
     ],
     "inputs": [
       {
-        "label": "breath-plate",
-        "prompt": "A realistic locked side-profile close shot of the reference Claire beside a vertical cold clear window. The same adult face, bangs, tied hair, gold earrings, and blue-gray shirt. Her mouth faces the pane from a few centimeters away, with her head in profile on frame left, the glass plane visible from a slight oblique angle and the area directly ahead of her lips clearly framed on the right. A dark, readable exterior and faint reflected side light make the surface legible. The glass is initially clear and dry. Her lips are gently together as she is about to breathe out. The face and near glass are readable. Hands remain out of frame. Natural skin, real cloth, quiet cold morning."
+        "label": "A 영상 · E08-480-A",
+        "prompt": "Four seconds of live action, locked close profile, a cold clear pane and existing window light. Use the supplied image as frame zero. Keep Claire’s reflection, profile, ponytail, earrings, clothing and distance fixed. The reflected lips and the building outside are visible. Claire exhales once gently from 0.8 to 1.6 seconds and lets her lips close. Each take records its own quiet room and one synchronized breath. Room tone only afterward, no speech, music or repeated breath.\n\nShe breathes once toward the glass. Hold the framing to the end."
       },
       {
-        "label": "E08-A",
-        "prompt": "One continuous four-second live-action close shot. @Image1 supplies Claire, the initial clear glass, the framing and the window light. Lock the camera and focus on the near glass and adjacent profile. Claire stays close to the glass. Hands out of frame and head steady. At one second she exhales gently through softly parted lips once toward the cold glass, then lets her lips rest together again. Record this take’s quiet room tone and soft exhalation with no music or dialogue. The camera holds the same composition through the end of the breath."
-      },
-      {
-        "label": "E08-B",
-        "prompt": "One continuous four-second live-action close shot. @Image1 supplies Claire, the initial clear glass, the framing and the window light. Lock the camera and focus on the near glass and adjacent profile. Claire stays close to the glass. Hands out of frame and head steady. At one second she exhales gently through softly parted lips once toward the cold glass, then lets her lips rest together again. Record this take’s quiet room tone and soft exhalation with no music or dialogue. A small patch of condensation blooms on the glass directly in front of her lips just after the breath reaches it, then thins at its edges. The rest of the glass remains clear. Keep the patch on the glass plane and preserve the visible facial profile."
+        "label": "B 영상 · E08-480-B-END",
+        "prompt": "Four seconds of live action, locked close profile, a cold clear pane and existing window light. Use the supplied image as frame zero. Keep Claire’s reflection, profile, ponytail, earrings, clothing and distance fixed. The reflected lips and the building outside are visible. Claire exhales once gently from 0.8 to 1.6 seconds and lets her lips close. Each take records its own quiet room and one synchronized breath. Room tone only afterward, no speech, music or repeated breath.\n\nThe exact supplied opening and ending images anchor the window reflection and Claire’s fixed face. After the breath, the exhibited thin layer of fine moisture appears on the glass; it never exceeds the density of the supplied ending image. The reflected lips and building stay readable through the center, and the moisture only reduces their local contrast slightly. Let the existing window bars and exterior shapes align throughout. Hold the same framing and thin moisture to the last frame."
       }
     ]
   },
