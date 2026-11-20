@@ -10,6 +10,7 @@ const sourceIds = new Set(catalog.prompts.map(prompt => prompt.id));
 const draft = coverage.examples.filter(item => item.goal_480p === 'live_draft');
 const records = coverage.examples.filter(item => item.goal_480p === 'still_or_record');
 const outstanding = coverage.examples.filter(item => item.goal_480p === 'pending_live');
+const awaitingGeneration = outstanding.filter(item => item.state !== 'needs_rework');
 const additional = cases.filter(item => coverage.additional_cases_480p.includes(item.id));
 const asOf = coverage.as_of.replaceAll('-', '.');
 ---
@@ -80,7 +81,7 @@ const asOf = coverage.as_of.replaceAll('-', '.');
   </section>
   <section class="shell coverage-section" id="next-production">
     <h2>실사 영상 제작·재작업·판정 대기</h2>
-    <p>E19는 재촬영본의 자세와 원음 판정을 기다립니다. E21은 공통 첫 샷과 다음 두 시작 스틸을 확보했습니다. 추가 1080p 제작은 보류 중입니다.</p>
+    <p>E19는 재촬영본의 자세와 원음 판정을 기다립니다. 전용 480p A/B 제작을 기다리는 {awaitingGeneration.length}개는 요청 초안이 준비됐습니다. 다음 제작 지점은 E21의 후속 A/B로, 공통 첫 샷과 두 시작 스틸을 확보했습니다. 추가 1080p 제작은 보류 중입니다.</p>
     <ul class="coverage-links production-links" role="list">
       {outstanding.map(item => <li><a href={`#${item.id}`}>{item.id} · {item.title} ↗</a></li>)}
     </ul>
