@@ -47,10 +47,25 @@ const original = prompts.find(shot => shot.id === 'ACT-07');
         <figcaption>Erin · “I’m fine.”</figcaption>
       </figure>
     </div>
-    <video controls playsinline preload="metadata" width="856" height="478" aria-label="E19 빈 테이블의 한국어 질문과 영어 답변">
-      <source src={path('review/conversation-axis/media/E19-480-hand-match.mp4')} type="video/mp4" />
-    </video>
-    <div class="frames" aria-label="Erin의 양손 위치 컷 전후 비교">
+    <div class="cut-playback">
+      <button type="button" data-review-start aria-controls="first-cut revised-cut">두 영상 모두 3초로 이동</button>
+      <div class="frames">
+        <div>
+          <h3 id="first-cut-label">첫 초안</h3>
+          <video id="first-cut" controls playsinline preload="metadata" width="856" height="478" aria-labelledby="first-cut-label">
+            <source src={path('review/conversation-axis/media/E19-480-bare-table.mp4')} type="video/mp4" />
+          </video>
+        </div>
+        <div>
+          <h3 id="revised-cut-label">Erin 재촬영본</h3>
+          <video id="revised-cut" controls playsinline preload="metadata" width="856" height="478" aria-labelledby="revised-cut-label">
+            <source src={path('review/conversation-axis/media/E19-480-hand-match.mp4')} type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+    <p>3.00초와 3.96초에는 공통 Claire 샷에서 Erin의 양손이 가깝게 보입니다. 4.00초 첫 초안보다 재촬영본에서 양손이 중앙으로 모이고 팔꿈치가 몸쪽에 가깝습니다. 컷 직전에는 Erin을 뒤에서 보기 때문에 상체 기울기를 같은 각도에서 직접 비교하기는 어렵습니다.</p>
+    <div class="cut-frames" role="group" aria-label="Erin의 양손 위치 컷 전후 비교">
       <figure>
         <img src={path('review/conversation-axis/media/claire-before-cut-3.958.jpg')} width="640" height="358" loading="lazy" alt="컷 직전 오른쪽 전경에서 Erin의 두 손이 가까이 놓여 있습니다." />
         <figcaption>3.96초 · 컷 직전, Erin의 손이 테이블 가장자리에서 가까이 놓여 있습니다.</figcaption>
@@ -59,11 +74,11 @@ const original = prompts.find(shot => shot.id === 'ACT-07');
         <img src={path('review/conversation-axis/media/erin-after-cut-4.000.jpg')} width="640" height="358" loading="lazy" alt="컷 직후 Erin의 두 손이 양쪽으로 벌어져 있습니다." />
         <figcaption>4.00초 · 첫 초안에서 양손이 벌어진 상태입니다.</figcaption>
       </figure>
+      <figure>
+        <img src={path('review/conversation-axis/media/erin-hand-match-4.000.jpg')} width="640" height="358" loading="lazy" alt="새 Erin 장면에서 양손이 테이블 가장자리에 가까이 모여 놓여 있습니다." />
+        <figcaption>4.00초 · 재촬영 뒤의 Erin. 양손을 테이블 가장자리 가까이 모았습니다.</figcaption>
+      </figure>
     </div>
-    <figure class="before">
-      <img src={path('review/conversation-axis/media/erin-hand-match-4.000.jpg')} width="640" height="358" loading="lazy" alt="새 Erin 장면에서 양손이 테이블 가장자리에 가까이 모여 놓여 있습니다." />
-      <figcaption>4.00초 · 재촬영 뒤의 Erin. 양손 간격과 상체를 컷 직전과 대조합니다.</figcaption>
-    </figure>
     <details><summary>Erin의 손 위치를 맞춰 제출한 실제 입력문</summary><pre>{draft.revised.erin_prompt}</pre></details>
     <details><summary>480p 두 숄더샷에 제출한 실제 입력문</summary><pre>{draft.prompts[0]}</pre><pre>{draft.prompts[1]}</pre></details>
   </section>
@@ -79,14 +94,34 @@ const original = prompts.find(shot => shot.id === 'ACT-07');
     </div>
   </section>
 </Base>
+<script>
+  const review = document.querySelector('#bare-table');
+  const videos = review?.querySelectorAll('video');
+  review?.querySelector('[data-review-start]')?.addEventListener('click', () => {
+    videos?.forEach(video => {
+      video.pause();
+      video.currentTime = 3;
+    });
+  });
+  videos?.forEach(video => video.addEventListener('play', () => {
+    videos.forEach(other => {
+      if (other !== video) other.pause();
+    });
+  }));
+</script>
 <style>
   figure { margin: 0; }
   .before { max-width: 740px; }
-  .frames { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .9rem; }
+  .frames, .cut-frames { display: grid; gap: .9rem; }
+  .frames { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .cut-frames { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .cut-playback { margin-block: 1rem; }
+  .cut-playback h3 { margin: .8rem 0 .4rem; font-size: 1rem; }
+  .cut-playback button { font: inherit; color: inherit; padding: .45rem .7rem; background: transparent; border: 1px solid var(--muted); border-radius: .35rem; cursor: pointer; }
   img { display: block; width: 100%; height: auto; }
-  video { display: block; width: 100%; max-width: 856px; height: auto; margin-block: 1rem; }
+  video { display: block; width: 100%; max-width: 856px; height: auto; }
   figcaption { color: var(--muted); font-size: .88rem; margin-top: .6rem; }
   figcaption strong { color: var(--ink); }
   pre { white-space: pre-wrap; overflow-wrap: anywhere; }
-  @media (max-width: 560px) { .frames { grid-template-columns: 1fr; } }
+  @media (max-width: 560px) { .frames, .cut-frames { grid-template-columns: 1fr; } }
 </style>
