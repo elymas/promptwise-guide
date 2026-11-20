@@ -2,6 +2,7 @@ import data from './media.json';
 export type Study = {
   status: 'approved' | 'draft' | 'planned'; statusLabel: string;
   video: string | null; poster: string | null; captions: string | null;
+  captionLabel?: string;
   duration: number; model: string | null; resolution: string | null; reviewed: boolean;
   studyLabel: string; caption: string; description: string; watchFor: string; reviewNote: string;
   reviewUrl: string; cast: string[]; coverageScope: string; audioLabel: string;

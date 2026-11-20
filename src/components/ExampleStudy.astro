@@ -10,7 +10,7 @@ const descriptionId = `study-${topic.slug}-description`;
 <div class="study-heading"><p class="eyebrow">{item.studyLabel}</p><span class="status" data-state={item.status}>{item.statusLabel}</span></div>
 {item.video ? <video controls playsinline preload="none" poster={item.poster ? path(item.poster) : undefined} width="854" height="480" aria-label={`${item.cast.join('·')} — ${item.studyLabel}`} aria-describedby={descriptionId}>
   <source src={path(item.video)} type="video/mp4" />
-  {item.captions && <track kind="captions" src={path(item.captions)} srclang="ko" label="한국어 자막·소리 설명" />}
+  {item.captions && <track kind="captions" src={path(item.captions)} srclang="ko" label={item.captionLabel ?? '한국어 자막·소리 설명'} />}
   동영상을 재생하려면 브라우저를 업데이트하세요.
 </video> : <Diagram kind={topic.slug} accent={topic.accent} />}
 <p class="example-caption">{item.caption}</p>

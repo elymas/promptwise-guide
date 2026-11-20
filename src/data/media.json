@@ -94,7 +94,7 @@
     "poster": "review/claire-v2/media/E07-b-physics-v1.jpg",
     "duration": 6.042,
     "model": "Seedance 2.5",
-    "resolution": "480p",
+    "resolution": "854×480",
     "reviewed": false,
     "studyLabel": "E07 B · 착지와 물의 반응",
     "caption": "발이 물에 닿는 순간의 반응을 관찰하는 예시입니다.",
@@ -186,7 +186,7 @@
     "poster": "review/acting-v2/media/ACT-05-b-native-v3.jpg",
     "duration": 8.096,
     "model": "Seedance 2 Mini",
-    "resolution": "480p",
+    "resolution": "854×480",
     "reviewed": true,
     "studyLabel": "ACT-05 B · 시간차로 풀리는 긴장",
     "caption": "Erin이 먼저 미소 짓고 Claire가 뒤늦게 풀리는 2인 원테이크입니다.",
@@ -249,7 +249,7 @@
     "poster": "review/acting-v2/media/ACT-01-b-take.jpg",
     "duration": 6.08,
     "model": "Seedance 2 Mini",
-    "resolution": "480p",
+    "resolution": "854×480",
     "reviewed": false,
     "studyLabel": "ACT-01 B · 얼굴 근접 관찰",
     "caption": "Claire의 근접 샷을 얼굴·헤어·의상 대조용으로 연결했습니다.",
@@ -315,7 +315,7 @@
       "Erin"
     ],
     "coverageScope": "E19 빈 테이블 재촬영 · E20 소품 인계 실사 제작 전 · E21 공통 첫 샷 확보",
-    "audioLabel": "각 샷의 생성 원음 · Claire 한국어 / Erin 영어",
+    "audioLabel": "각 샷의 생성 원음 · Claire +4 dB, Erin 0 dB · 한·영 대사",
     "related": [
       {
         "label": "E19 재촬영 전후 자세 비교",
@@ -341,7 +341,8 @@
       "reviewNote": "첫 초안의 컵 위치 점프를 수정했습니다. 컷 전에는 컵을 들고 유지하고, 컷 뒤에서 같은 오른손으로 내려놓습니다."
     },
     "description": "빈 작업대 양쪽에 Claire와 Erin이 앉아 있습니다. Claire가 괜찮아라고 묻고 4초 컷 뒤 Erin이 영어로 답합니다.",
-    "captions": "media/captions/continuity-hand-match.vtt"
+    "captions": "review/conversation-axis/media/revised-cut-dialogue.vtt",
+    "captionLabel": "한국어·영어 대사"
   },
   "story": {
     "status": "draft",
@@ -354,7 +355,7 @@
     "reviewed": false,
     "studyLabel": "E23 · 원인과 반응의 순서",
     "caption": "충격음을 먼저 배치하면 Claire의 후속 반응을 한 사건으로 읽을 수 있습니다.",
-    "watchFor": "0.8초 무렵 소리가 난 다음 Claire가 움찔하는 순서를 보세요.",
+    "watchFor": "약 0.89초의 충격음 피크 뒤 Claire가 움찔하고, 약 3.80초에 말하기 시작합니다.",
     "reviewNote": "같은 ACT-09 B 원본의 영상과 소리를 구간 단위로 편집했습니다.",
     "reviewUrl": "review/story-e23/",
     "cast": [
@@ -362,7 +363,7 @@
       "Erin"
     ],
     "coverageScope": "E22 첫 화면 · E23 인과 · E24 소품 회수 편집 A/B 공개",
-    "audioLabel": "ACT-09 B 원음 · 한국어 대사",
+    "audioLabel": "ACT-09 B의 생성 원음을 구간별로 재배열 · 한국어 대사",
     "related": [
       {
         "label": "A/B 나란히 보기",
@@ -383,7 +384,7 @@
       "reviewed": false,
       "reviewNote": "열린 봉투를 같은 오른손에 든 채 시선을 들고 표정이 바뀝니다. 숨을 들이쉴 때 입이 열리며, 전체 5단계 이야기를 시연하는 영상은 아닙니다."
     },
-    "description": "두 사람이 작업실에서 마주 봅니다. 충격음이 난 뒤 Claire가 움찔하고 다시 대화로 돌아옵니다.",
-    "captions": null
+    "description": "두 사람이 작업실에서 마주 봅니다. 충격음이 난 뒤 Claire가 움찔하고 “깜짝이야”라고 말합니다.",
+    "captions": "review/impact-and-reaction/media/B-dialogue.vtt"
   }
 }

@@ -818,20 +818,24 @@
     "topic": "story",
     "title": "충격음과 반응의 순서",
     "change": "ACT-09 B에서 같은 세 구간을 사용했습니다. A는 반응→충격음→회복, B는 충격음→반응→회복 순서입니다.",
-    "watch": "시작부터 약 3.5초까지 Claire의 움찔함과 충격음 중 무엇이 먼저 오는지 보세요.",
-    "note": "기존 원본의 영상·소리를 함께 옮긴 편집 비교입니다. 사건의 길이, 소리의 종류와 인물은 같습니다.",
+    "watch": "두 편의 충격음은 B 약 0.89초, A 약 3.26초에 가장 큽니다. Claire의 움찔함이 소리 앞에 오는지 뒤에 오는지 보세요.",
+    "note": "ACT-09 B의 생성 원음을 영상과 함께 옮겼습니다. 두 편 모두 3.50초부터 같은 회복 구간으로 돌아갑니다.",
     "still": false,
     "a": {
       "video": "review/story-e23/media/E23-A.mp4",
       "audio": "edited-original",
       "poster": "review/story-e23/media/E23-A.jpg",
-      "resolution": "854×480"
+      "resolution": "854×480",
+      "captions": "review/story-e23/media/A-dialogue.vtt",
+      "captionLanguage": "ko"
     },
     "b": {
       "video": "review/story-e23/media/E23-B.mp4",
       "audio": "edited-original",
       "poster": "review/story-e23/media/E23-B.jpg",
-      "resolution": "854×480"
+      "resolution": "854×480",
+      "captions": "review/impact-and-reaction/media/B-dialogue.vtt",
+      "captionLanguage": "ko"
     },
     "review": "review/story-e23/",
     "sources": [
@@ -847,13 +851,16 @@
     ],
     "cues": [
       {
-        "seconds": 0.875,
-        "label": "B 충격음"
+        "seconds": 0.89,
+        "label": "B 충격음 피크"
       },
       {
-        "seconds": 3.25,
-        "label": "A 충격음"
+        "seconds": 3.26,
+        "label": "A 충격음 피크"
       }
+    ],
+    "dialogue": [
+      "Claire · 한국어 · “깜짝이야.” · 두 편 모두 약 3.80~4.60초"
     ]
   },
   {
