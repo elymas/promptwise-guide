@@ -39,6 +39,15 @@ const views = [
     <h2>480p 2초 비교에서 남은 문제</h2>
     <p>A에서는 입술 반사와 건물이 보입니다. B에서는 물기가 나타나고 가장자리부터 옅어지지만, 가장 짙은 순간에는 흰 영역이 입술 반사를 가립니다.</p>
     <p>다음 초안에서는 반투명 스틸을 종료 프레임으로 지정했습니다. 새 B는 입술 반사와 배경을 남깁니다.</p>
+    <div class="detail-pair" aria-label="새 A/B 3.5초의 유리 확대">
+      {['A','B'].map((side) => (
+        <figure>
+          <img class="pilot-crop" src={path(`review/condensation-rework/media/480p-current-${side}-3.5s-glass.jpg`)} width="525" height="435" loading="lazy"
+            alt={side === 'A' ? 'A 3.5초의 맑은 유리와 입술 반사' : 'B 3.5초의 반투명한 물기, 입술 반사와 배경이 비치는 유리'} />
+          <figcaption>{side} · 현재 초안 3.50초 확대</figcaption>
+        </figure>
+      ))}
+    </div>
     <a class="text-link" href={path('examples/#compare-E08')}>반투명 응결 480p A/B 보기 ↗</a>
     <div class="detail-pair">
       {['A','B'].map((side) => (
