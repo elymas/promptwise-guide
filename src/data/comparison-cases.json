@@ -4,8 +4,8 @@
     "topic": "depth",
     "title": "앞·중간·뒤 레이어",
     "change": "전경을 화면 가장자리에 두고 중경의 Claire와 먼 배경을 나눕니다.",
-    "watch": "카메라가 다가갈 때 가까운 요소가 먼 배경보다 빠르게 움직이는지 보세요.",
-    "note": "배치도 달라진 비교 초안.",
+    "watch": "0초와 5.50초를 비교하세요. B에서 왼쪽 전경 기둥이 화면 가장자리로 빠지고 Claire의 얼굴은 커집니다. 뒤 선반은 프레임에 남습니다.",
+    "note": "B에서는 가까운 기둥이 물러나며 뒤 선반이 더 드러납니다. A의 시작 구도에는 같은 기둥이 없어 두 버전의 이동량을 동일한 기준점에서 비교하기는 어렵습니다.",
     "still": false,
     "a": {
       "poster": "review/claire-v2/media/E01-a-mini-v1.jpg",
@@ -42,6 +42,16 @@
       {
         "label": "B 시작 스틸",
         "prompt": "Photographic frame, horizontal 16:9. REFERENCE ROLES: image 1 is the adult Claire Yoon identity. Image 2 is the approved shallow workshop portrait A. Keep the same Claire, exact face size and position, pose, eye-level 35mm view, blue-grey shirt, dark coat, neutral skin color, window light from camera-right, exposure and worn pottery-workshop materials. Her eyes look directly into the camera; her hands stay relaxed at her sides. Change ONLY the spatial arrangement to make three very obvious depth layers: (1) a massive dark wet wooden doorway post extremely close to the lens occupies the left 20 percent of the frame, extending from the top to the bottom, soft enough to read as a near foreground edge; (2) Claire remains sharp at middle distance, fully clear of that post, same face scale as A; (3) the pottery shelves and rear wall now extend several meters behind her down the workshop, receding toward a far end instead of touching her back. The background is still recognizable. The camera is outside looking INTO the same workshop. Do not put a garden or night sky behind Claire. Do not change the lighting, wardrobe, face or add haze. This is a spatial staging comparison, not a change of style. Natural photographic skin and cloth, plain unlettered surfaces."
+      }
+    ],
+    "cues": [
+      {
+        "seconds": 0,
+        "label": "전경의 시작 배치"
+      },
+      {
+        "seconds": 5.5,
+        "label": "기둥과 선반의 상대 이동"
       }
     ]
   },
@@ -141,8 +151,8 @@
     "topic": "light",
     "title": "빛의 방향",
     "change": "얼굴 옆에 주광을 두고 반대편 볼에 그림자를 남깁니다.",
-    "watch": "볼과 코 옆의 밝고 어두운 영역을 비교하세요.",
-    "note": "광원 방향과 그림자 경도가 함께 달라졌습니다.",
+    "watch": "4.50초에 얼굴의 화면 왼쪽 볼과 코 옆을 보세요. A는 두 볼의 밝기가 비교적 고르고, B는 화면 오른쪽 볼이 밝고 왼쪽 볼과 콧등 옆에 그림자가 깊습니다.",
+    "note": "B에서 얼굴 양쪽 명암차와 그림자 경계의 선명도가 함께 커졌습니다. 이 테이크에서는 빛의 방향과 경도가 함께 달라졌습니다.",
     "still": false,
     "a": {
       "poster": "review/claire-v2/media/E04-a-mini-v2.jpg",
@@ -177,6 +187,12 @@
       {
         "label": "B 시작 스틸",
         "prompt": "RELIGHTING EDIT of image 2. Image 1 is the same adult Claire identity. Keep Claire's exact face, blue-grey shirt, seated pose, face size, camera framing and all workshop objects from image 2. Keep the bright background rectangle in EXACTLY its existing place; do not move a window behind her. Change the illumination ON HER FACE ONLY from frontal to clearly directional side light. The main large diffused key is outside the picture at camera-left, nearly 90 degrees to the camera axis. It strongly illuminates her camera-left cheek, with a clear nose shadow toward camera-right. Her camera-right cheek is visibly TWO TO THREE STOPS DARKER, with natural skin detail retained. This is a visibly split bright-side/shadow-side face, not a faint beauty-light adjustment. There is no frontal fill; the shadow side stays darker. Preserve neutral skin color, real skin texture, natural catchlights and both eyes looking directly into the lens. Keep background brightness, exposure of the lit cheek and color grading matched to A. Do not reshape the face, add makeup, add haze, add new lamps, change the background geometry or move the rear rectangle. Horizontal 16:9, photographic film frame."
+      }
+    ],
+    "cues": [
+      {
+        "seconds": 4.5,
+        "label": "볼과 코 옆의 명암"
       }
     ]
   },
@@ -389,8 +405,8 @@
     "topic": "performance",
     "title": "웃음을 참는 얼굴",
     "change": "웃음을 드러내는 연기와 입술·볼로 눌렀다가 풀리는 연기를 비교합니다.",
-    "watch": "웃음이 눈과 볼에 먼저 드러나고 입이 뒤따르는지 보세요.",
-    "note": "기존 연기 테이크를 활용한 변형 예시.",
+    "watch": "2.00초에 B가 입술을 누르는 모습, 4.50초에 A는 이를 드러내고 B는 입을 닫은 채 웃는 모습을 비교하세요.",
+    "note": "B에서도 볼이 올라가고 눈이 좁아지지만, 4.50초 A에서 더 크게 웃습니다. 이 비교는 표정의 크기와 입술 움직임을 보여 주며 눈·볼·입이 움직이기 시작한 순서는 판정하기 어렵습니다.",
     "still": false,
     "a": {
       "poster": "review/acting-v2/media/ACT-03-a-video-v1.jpg",
@@ -417,6 +433,16 @@
       {
         "label": "B 영상",
         "prompt": "Photographic live action from the approved scene frame, preserving adult identity, natural distance-appropriate skin, hair and cloth, motivated window light and stable exposure. One continuous real-time shot, locked camera and fixed focal length, no cuts. Natural breathing and brief blinks. No added people, text or music.\n\nLANGUAGE AND SPEAKERS: CLAIRE is the black-haired adult Korean woman and speaks KOREAN ONLY. ERIN is the red-haired adult woman and speaks ENGLISH ONLY. Say only the exact quoted dialogue for this scene. A wordless scene contains no spoken words. Never translate or swap their lines or languages.\n\n6 seconds, direct-to-camera composure challenge. Claire has just heard a joke before the take begins and is trying to keep a straight face for the viewer. Her eyes look into the actual lens. Both eyes, lips and chin remain in frame, hands resting below it. SOUND: natural breathing and one brief nasal snort of held-in laughter, quiet room tone; no spoken words or music.\n\nClaire is determined not to give the joke a visible reaction. Her lips press together lightly as her cheeks begin to rise; after a short struggle a single brief snort escapes through her nose, then she recovers into a small smile. Keep the movement human and restrained, without happy tears, contorted cheeks or prolonged open-mouthed laughter."
+      }
+    ],
+    "cues": [
+      {
+        "seconds": 2,
+        "label": "입술에 힘이 들어가는 순간"
+      },
+      {
+        "seconds": 4.5,
+        "label": "미소가 커진 뒤의 입"
       }
     ]
   },
