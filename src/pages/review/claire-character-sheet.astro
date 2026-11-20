@@ -4,6 +4,7 @@ import { path } from '../../data/topics';
 import manifest from '../../../public/review/claire-character-sheet/manifest.json';
 import prompts from '../../../public/review/claire-character-sheet/prompts.json';
 const [sheet, masked] = manifest.images;
+const { front_panel_comparison: front } = manifest.face_mask_review;
 ---
 <Base title="Claire 캐릭터 시트 — FRAME / NOTES" description="Claire의 정면 얼굴과 앞·뒤 전신을 한 시트에 모으고 얼굴 참조의 역할을 비교합니다.">
   <section class="shell page-heading">
@@ -26,12 +27,20 @@ const [sheet, masked] = manifest.images;
       <a class="text-link" href={path('review/acting-v2/#ACT-05')}>의상·헤어 참조 장면 ↗</a>
     </div>
   </section>
-  <section class="shell coverage-section">
+  <section class="shell coverage-section" id="face-mask">
     <h2>전신 패널에서 얼굴 정보 가리기</h2>
     <figure>
       <img src={path(masked.path)} width={masked.width} height={masked.height} loading="lazy" alt="가운데 전신 정면 패널의 얼굴 특징이 회색으로 가려지고 왼쪽 얼굴 정면과 오른쪽 전신 후면은 보이는 편집 후보" />
       <figcaption>편집 후보 · 전신 정면에서는 의상과 체형을 읽고, 얼굴 특징은 왼쪽 패널에서 읽습니다.</figcaption>
     </figure>
+    <div class="front-panels" role="group" aria-label="정면 전신 패널의 얼굴을 가리기 전과 후">
+      {front.images.map((image, index) => (
+        <figure>
+          <img src={path(image.path)} width={front.crop_width} height={front.crop_height} loading="lazy" alt={index === 0 ? '정면 전신의 눈, 코, 입이 보이는 시트 확대' : '같은 위치의 눈, 코, 입을 회색으로 가린 편집본 확대'} />
+          <figcaption>{index === 0 ? '가리기 전' : '가린 뒤'} · 정면 전신 패널 상단</figcaption>
+        </figure>
+      ))}
+    </div>
     <p>가운데 작은 얼굴의 눈·코·입을 가렸습니다. 생성 편집 과정에서 왼쪽 초상과 후면에도 미세한 픽셀 변화가 생겼습니다. 이 편집본은 마스킹 방법을 보여 주는 검토 자료입니다. 얼굴 정보가 하나일 때 영상의 일관성이 향상되는지는 Tein 비교로 확인해야 합니다.</p>
   </section>
   <section class="shell coverage-section">
@@ -51,6 +60,7 @@ const [sheet, masked] = manifest.images;
   figure { margin: 0; }
   img { display: block; width: 100%; height: auto; }
   figcaption { margin-top: .65rem; font-size: .85rem; color: var(--muted); }
+  .front-panels { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; max-width: 37rem; margin-block: 1rem; }
   details { margin-block: .9rem; }
   summary { cursor: pointer; }
   pre { white-space: pre-wrap; overflow-wrap: anywhere; }

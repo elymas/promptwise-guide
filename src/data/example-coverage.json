@@ -162,7 +162,7 @@
           "href": "review/optics-v1/#E05"
         }
       ],
-      "note": "코·볼·턱 그림자 경계를 스틸로 비교합니다. A는5Pro, B는같은A의5.5편집이며 밝기·색의 작은 차이도 있습니다.",
+      "note": "A에서 코 그림자의 경계가 볼 위로 뚜렷하게 갈립니다. B는 같은 A를 편집해 경계를 부드럽게 만들었고 밝기와 색에도 차이가 있습니다.",
       "source_ids": [
         "PW-015-p8",
         "PW-015-p10"
@@ -522,7 +522,7 @@
         },
         {
           "label": "시트·편집 후보와 입력문",
-          "href": "review/claire-character-sheet/"
+          "href": "review/claire-character-sheet/#face-mask"
         }
       ],
       "note": "원본 정면과 같은 의상의 앞·뒤 전신을 한 시트에 배치했습니다. 정면 전신의 얼굴을 가린 편집 후보를 함께 공개했습니다. 영상에서의 일관성 효과는 검증 전입니다.",
@@ -533,7 +533,7 @@
       "priority": 2,
       "variant_a": "얼굴 확인에 쓰는 원본 정면 한 장",
       "variant_b": "얼굴 정면과 같은 의상·비율의 앞·뒤 전신을 담은 시트",
-      "acceptance": "참조 자산의 정보 차이; 영상 모델 성능 비교로 표시하지 않음",
+      "acceptance": "정면과 뒤태의 머리·신발·셔츠 길이 및 마스킹 대상과 주변 변화를 대조",
       "planning_links": [
         {
           "label": "Claire 참조 팩 · 전신 시트 제작 기준",
@@ -607,9 +607,9 @@
         "PW-104-p4"
       ],
       "priority": null,
-      "variant_a": "이미지들을 역할 없이 나열",
-      "variant_b": "인물·장소·소품 참조를 프롬프트에서 슬롯별 배정",
-      "acceptance": "업로드→배정→결과를 기존 자산으로 설명; 별도 생성 성능 주장 없음",
+      "variant_a": "ACT-05 B는 공통 작업실 사진을 first_frame에 지정",
+      "variant_b": "GEO-01 B는 같은 사진을 reference_image에, 3D 경로를 reference_video에 지정",
+      "acceptance": "두 요청의 같은 이미지 업로드 해시, 배정 필드와 0.00초·4.50초 결과 프레임을 확인",
       "planning_links": [],
       "goal_480p": "still_or_record"
     },

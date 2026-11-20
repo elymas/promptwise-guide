@@ -33,6 +33,13 @@ const {shared_still: still, motion_reference: motion} = evidence;
         <figcaption>GEO-01 B에 사용한 카메라 경로의 웹 재생용 사본 · 무음 · 960 × 540</figcaption>
       </figure>
     </div>
+    <div class="result-cues" role="group" aria-label="두 결과의 같은 시각으로 이동" hidden>
+      {evidence.workflows[0].samples.map(sample => (
+        <button type="button" data-result-time={sample.seconds} aria-controls="result-act05 result-geo">
+          두 결과 {sample.seconds.toFixed(2)}초로 이동
+        </button>
+      ))}
+    </div>
   </section>
   {evidence.workflows.map(workflow => (
     <section class="shell coverage-section" id={workflow.id}>
@@ -44,7 +51,7 @@ const {shared_still: still, motion_reference: motion} = evidence;
         </div>)}
       </dl>
       <figure>
-        <video class="study-video" controls playsinline preload="none" poster={path(workflow.samples[0].path)} width={workflow.width} height={workflow.height} aria-label={titles[workflow.id]}>
+        <video id={`result-${workflow.id}`} class="study-video" data-result controls playsinline preload="none" poster={path(workflow.samples[0].path)} width={workflow.width} height={workflow.height} aria-label={titles[workflow.id]}>
           <source src={path(workflow.video)} type="video/mp4" />
         </video>
         <figcaption>{workflow.width} × {workflow.height} · {workflow.audio}</figcaption>
@@ -73,6 +80,21 @@ const {shared_still: still, motion_reference: motion} = evidence;
 </Base>
 <script>
   const videos = [...document.querySelectorAll<HTMLVideoElement>('.study-video')];
+  const results = document.querySelectorAll<HTMLVideoElement>('video[data-result]');
+  const controls = document.querySelector<HTMLElement>('.result-cues');
+  if (controls) {
+    controls.hidden = false;
+    controls.querySelectorAll<HTMLButtonElement>('[data-result-time]').forEach(button => {
+      button.addEventListener('click', () => {
+        const seconds = Number(button.dataset.resultTime);
+        results.forEach(video => {
+          video.pause();
+          if (seconds > 0 && video.readyState === HTMLMediaElement.HAVE_NOTHING) video.preload = 'metadata';
+          video.currentTime = seconds;
+        });
+      });
+    });
+  }
   for (const video of videos) {
     video.addEventListener('play', () => {
       for (const other of videos) if (other !== video) other.pause();
@@ -87,6 +109,8 @@ const {shared_still: still, motion_reference: motion} = evidence;
   .slots { display: flex; flex-wrap: wrap; gap: .7rem 2rem; margin-block: 1.1rem; }
   .slots dt { color: var(--accent); }
   .slots dd { margin: .25rem 0 0; }
+  .result-cues:not([hidden]) { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .75rem; }
+  .result-cues button { min-height: 44px; padding: .5rem .65rem; color: var(--ink); background: var(--surface); border: 1px solid var(--line); font: inherit; cursor: pointer; }
   .sample-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; margin-block: 1rem; }
   details { margin-block: 1rem; }
   summary { cursor: pointer; }

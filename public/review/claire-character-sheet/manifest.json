@@ -43,7 +43,25 @@
       "rear_full_body": 0.970873,
       "center_below_face": 0.96935
     },
-    "status": "illustrative_edit_candidate"
+    "status": "illustrative_edit_candidate",
+    "front_panel_comparison": {
+      "crop_width": 288,
+      "crop_height": 350,
+      "crop_x": 686,
+      "crop_y": 0,
+      "images": [
+        {
+          "path": "review/claire-character-sheet/media/front-panel-v1.jpg",
+          "source_path": "review/claire-character-sheet/media/claire-sheet-v1.webp",
+          "sha256": "ee8b6b9bc6b32805554cd7c54ac8c6384cac6ebd42b6bb6bd00548737900f70d"
+        },
+        {
+          "path": "review/claire-character-sheet/media/front-panel-mask-v1.jpg",
+          "source_path": "review/claire-character-sheet/media/claire-sheet-mask-v1.webp",
+          "sha256": "feb9e31cce5d6d7e3a23f1ff0da5a2a725f328209cc89c2f549d8539dc76067d"
+        }
+      ]
+    }
   },
   "video_identity_impact": "untested"
 }
