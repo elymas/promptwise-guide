@@ -604,6 +604,10 @@
       "label": "빈 테이블 480p · 양손 위치 재촬영 검토 중",
       "links": [
         {
+          "label": "빈 테이블 · 첫 초안과 재촬영 비교",
+          "href": "examples/#compare-E19"
+        },
+        {
           "label": "컷 후 방향 반전과 마주 보기 A/B",
           "href": "examples/#compare-E19-AXIS"
         },
@@ -673,7 +677,7 @@
       "label": "480p 공통 첫 샷 확보 · 다음 A/B 시작 스틸 준비",
       "links": [
         {
-          "label": "480p 공통 첫 샷과 실제 마지막 상태",
+          "label": "480p 공통 첫 샷과 3.96초 컷 기준",
           "href": "review/door-match/#door-480p"
         },
         {
@@ -689,7 +693,7 @@
           "href": "examples/#archive-continuity"
         }
       ],
-      "note": "실사 첫 샷은 문이 열린 상태에서 두 발이 문턱을 넘기 전 끝납니다. 실제 마지막 프레임을 기준으로 후속 A와 B의 시작 스틸을 준비했습니다.",
+      "note": "공통 첫 샷에서 Claire는 두 발이 문턱을 넘기 전에 손잡이를 놓습니다. 4.00초 편집 경계 직전인 3.96초의 자세와 문틈을 기준으로 후속 A/B의 시작 스틸을 준비했습니다.",
       "source_ids": [
         "PW-105-p1",
         "PW-105-p2",
