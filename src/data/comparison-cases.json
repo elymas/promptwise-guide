@@ -78,6 +78,16 @@
         "label": "B 영상 · E02-480-B",
         "prompt": "One continuous four-second photoreal shot from a locked, fixed-height camera, matching the supplied two-table composition. Keep the lens angle, camera position, field of view, exposure, framing, two table edges, gap, ceramic vessel, shelves and window light fixed. Claire sits behind the far table in the same proportions, blue-gray shirt, dark bangs and gold hoop earrings. She quietly looks directly into this lens from the first to the last frame, lips resting together and with at most one ordinary brief blink. No acting gesture, eye movement off the lens, zoom, pan, tilt, camera travel, cut, resizing or object shift. Keep quiet individual workshop room tone and one soft breath, no dialogue and no music.\n\nHold clear focus on the lip and glaze of the near ceramic vessel from 0 to 2 seconds. Between 2 and 3 seconds pull optical focus smoothly once to Claire’s eyes. The vessel and near table soften without shifting. Hold sharp iris and eyelash detail on Claire from 3 to 4 seconds, with no hunting or return."
       }
+    ],
+    "cues": [
+      {
+        "seconds": 0,
+        "label": "같은 시작"
+      },
+      {
+        "seconds": 2.75,
+        "label": "바뀐 초점"
+      }
     ]
   },
   {
@@ -207,8 +217,8 @@
     "topic": "contact",
     "title": "발의 무게와 물 반응",
     "change": "발이 물에 닿은 자리에서 하중을 받고 물이 뒤따라 튀도록 지시합니다.",
-    "watch": "착지 직후 물방울과 파문, 뒤 발의 자세를 보세요.",
-    "note": "착지 차이는 관찰되며 뒤 발의 후속 자세는 검토 중입니다.",
+    "watch": "0.96초에 들린 앞코, 1.13초에 부츠 주변 물기, 1.33초에 떠오른 물방울을 보세요.",
+    "note": "A는 발 주변 반사와 파문이 작습니다. B는 약 1.13초부터 뚜렷하게 물이 들리고 1.33초에 물방울이 공중에 퍼집니다. 뒤 발의 후속 자세와 소리의 접촉 시점은 추가 검수 중입니다.",
     "still": false,
     "a": {
       "poster": "review/claire-v2/media/E07-a-physics-v1.jpg",
@@ -243,6 +253,20 @@
       {
         "label": "B 시작 스틸",
         "prompt": "A photographic frame of the adult fictional Claire Yoon, 27. The supplied identity reference defines her face, black bangs, tied-back hair and small gold hoop earrings, not its neutral background, pose or studio lighting. Keep her recognizable age and facial proportions. At this shot distance, use natural skin color variation, restrained local shine and real lip texture; fine skin detail only where the camera can resolve it. Uneven individual hair strands and a few flyaways, ordinary woven clothing with small natural folds, and believable worn surfaces. Preserve natural facial asymmetry rather than retouching or beautifying her. Any visible hands have anatomically coherent fingers and relaxed joints. Plain unlettered surfaces. Horizontal 16:9.\n\nLow fixed side-view close shot of one black boot poised just above a shallow puddle on a worn wet stone tread. Claire wears the same dark coat, opaque trousers and plain black boots; the crop excludes her face and hands. The other foot already supports her on the previous tread. Correct connected ankle and leg anatomy; real leather creases, sole texture and water reflections. One nearby street lamp from upper camera-right provides the motivated key with consistent cast shadows. The leading boot and contact area are readable; distant steps are softer. Only one step and one shallow puddle.\n\nREFERENCE ROLES: image 1 is identity only; image 2 defines the boots, wardrobe, wet stone steps, puddle and side-view camera. Keep that scene. Change only the leading boot position: raise the whole leading boot so BOTH its heel and its toe are clearly 3 cm above the puddle; neither touches water or stone yet. Keep the other boot planted on the previous tread, with realistic leg anatomy and weight supported by that other leg. The boot is about to make one small forward step, no leap. Preserve the boot shape, materials, light and crop."
+      }
+    ],
+    "cues": [
+      {
+        "seconds": 0.958,
+        "label": "접촉 직전"
+      },
+      {
+        "seconds": 1.125,
+        "label": "물기 들림"
+      },
+      {
+        "seconds": 1.333,
+        "label": "물방울"
       }
     ]
   },
@@ -546,6 +570,16 @@
         "label": "B 영상 · E08-480-B-END",
         "prompt": "Four seconds of live action, locked close profile, a cold clear pane and existing window light. Use the supplied image as frame zero. Keep Claire’s reflection, profile, ponytail, earrings, clothing and distance fixed. The reflected lips and the building outside are visible. Claire exhales once gently from 0.8 to 1.6 seconds and lets her lips close. Each take records its own quiet room and one synchronized breath. Room tone only afterward, no speech, music or repeated breath.\n\nThe exact supplied opening and ending images anchor the window reflection and Claire’s fixed face. After the breath, the exhibited thin layer of fine moisture appears on the glass; it never exceeds the density of the supplied ending image. The reflected lips and building stay readable through the center, and the moisture only reduces their local contrast slightly. Let the existing window bars and exterior shapes align throughout. Hold the same framing and thin moisture to the last frame."
       }
+    ],
+    "cues": [
+      {
+        "seconds": 0,
+        "label": "맑은 시작"
+      },
+      {
+        "seconds": 3.5,
+        "label": "반사와 물기"
+      }
     ]
   },
   {
@@ -582,6 +616,12 @@
       {
         "label": "FACS-B",
         "prompt": "One continuous four-second realistic locked close-up. @Image1 fixes the same adult Claire, her face, framing, outfit and window light. She looks at the same person just beside the lens. During the first second, the faint smile in the reference settles to relaxed lips together. Both hands stay below frame, with natural blinking and breathing. Keep the face shape and skin texture consistent. This take has its own quiet interior room tone and subtle breath with no speech or music. At one second her cheeks rise and faint creases appear at the outer eye corners (AU6). Half a second later both corners of her closed lips follow (AU12). Hold briefly, then ease back toward the starting expression from three seconds."
+      }
+    ],
+    "cues": [
+      {
+        "seconds": 2.5,
+        "label": "볼과 눈가"
       }
     ]
   },
@@ -740,6 +780,16 @@
       {
         "label": "두 편집이 공유하는 원본 입력문 · ACT-09 B",
         "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, locked camera. A single door slam occurs offscreen at frame-left around2seconds. Claire says exactly in Korean \"깜짝이야.\" around3.5–4.5seconds, then closes her lips. Same scene, no visible door or extra person.\n\nBefore the audible impact she is composed. Only after its onset, one blink and small shoulder flinch occur, followed by a short inhalation. She regains composure, says the exact Korean line once and settles for the last second. No anticipation, repeated flinch or added interjection."
+      }
+    ],
+    "cues": [
+      {
+        "seconds": 0.875,
+        "label": "B 충격음"
+      },
+      {
+        "seconds": 3.25,
+        "label": "A 충격음"
       }
     ]
   },

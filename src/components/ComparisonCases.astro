@@ -29,6 +29,9 @@ const views = [
         {views.map(view => <button type="button" data-view={view.value} aria-controls={`takes-${item.id}`} aria-pressed={view.value === 'both'}>{view.label}</button>)}
       </div>
       <p>A와 B를 바꾸면 같은 재생 시각에서 멈춥니다.</p>
+      {item.cues && <div class="view-options cue-options" role="group" aria-label="A/B에서 같은 관찰 시각으로 이동">
+        {item.cues.map(cue => <button type="button" data-cue={cue.seconds} aria-controls={`takes-${item.id}`}>{cue.seconds.toFixed(2)}초 · {cue.label}</button>)}
+      </div>}
     </div>}
     <div id={`takes-${item.id}`} class="takes">
       {[item.a, item.b].map((take, i) => <figure>
@@ -77,6 +80,10 @@ const views = [
 
     let currentVideo: HTMLVideoElement | undefined;
     let userSelected = false;
+    const seek = (video: HTMLVideoElement, time: number) => {
+      if (time > 0 && video.readyState === HTMLMediaElement.HAVE_NOTHING) video.preload = 'metadata';
+      video.currentTime = Number.isFinite(video.duration) ? Math.min(time, video.duration) : time;
+    };
     const select = (view: string) => {
       const target = view === 'a' ? a : view === 'b' ? b : undefined;
       const time = currentVideo?.currentTime ?? 0;
@@ -89,10 +96,7 @@ const views = [
       options.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.view === view)));
 
       if (target && currentVideo && currentVideo !== target && target.currentTime !== time) {
-        if (time > 0 && target.readyState === HTMLMediaElement.HAVE_NOTHING) {
-          target.preload = 'metadata';
-        }
-        target.currentTime = Number.isFinite(target.duration) ? Math.min(time, target.duration) : time;
+        seek(target, time);
       }
       if (target) currentVideo = target;
     };
@@ -110,6 +114,13 @@ const views = [
       userSelected = true;
       select(button.dataset.view || 'both');
     }));
+    controls.querySelectorAll<HTMLButtonElement>('[data-cue]').forEach(button => button.addEventListener('click', () => {
+      const time = Number(button.dataset.cue);
+      a.pause();
+      b.pause();
+      seek(a, time);
+      seek(b, time);
+    }));
     narrow.addEventListener('change', applyDefault);
     applyDefault();
     controls.hidden = false;
@@ -124,6 +135,7 @@ const views = [
   .view-options { display: flex; flex-wrap: wrap; gap: .35rem; }
   .view-options button { min-width: 44px; min-height: 44px; padding: .35rem .7rem; border: 1px solid var(--line); color: var(--ink); background: var(--surface); cursor: pointer; }
   .view-options button[aria-pressed='true'] { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .cue-options { margin-block-start: .55rem; }
   .comparison-controls p { margin: .35rem 0 0; color: var(--muted); font-size: .82rem; }
   .takes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; margin-top: 1rem; }
   .takes.single-take { grid-template-columns: 1fr; }
