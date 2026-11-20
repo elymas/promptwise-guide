@@ -2,34 +2,34 @@
   "depth": {
     "status": "draft",
     "statusLabel": "480p 초안 · 검토 중",
-    "video": "review/claire-v2/media/E01-b-mini-v1.mp4",
-    "poster": "review/claire-v2/media/E01-b-mini-v1.jpg",
-    "duration": 6.08,
-    "model": "Seedance 2 Mini",
-    "resolution": "480p",
+    "video": "review/fixed-focus/media/E02-480-B.mp4",
+    "poster": "review/fixed-focus/media/E02-480-B.jpg",
+    "duration": 4.064,
+    "model": "Seedance 2.5 Standard",
+    "resolution": "852×480",
     "reviewed": false,
-    "studyLabel": "E01 B · 앞·중간·뒤 레이어",
-    "caption": "가까운 기둥 너머 Claire와 먼 선반을 함께 봅니다.",
-    "watchFor": "가까운 기둥이 먼저 화면 밖으로 빠지고 뒤 선반이 남는지 확인하세요.",
-    "reviewNote": "실제 렌즈를 향하는 시선을 확인한 새 파일럿입니다. A/B는 인물 위치·배경 배치에도 차이가 있어 이동 거리의 정량 재현을 뜻하지 않습니다.",
-    "reviewUrl": "review/claire-v2/#E01",
+    "studyLabel": "E02 B · 앞 도자기에서 뒤 인물로 초점 이동",
+    "caption": "카메라는 같은 자리에 있고 선명한 면만 Claire 쪽으로 이동합니다.",
+    "watchFor": "2.5~3초에 앞 도자기 입구와 뒤쪽 Claire의 눈을 번갈아 보세요.",
+    "reviewNote": "같은 시작 스틸에서 A는 도자기 초점을 유지하고 B는 Claire가 선명한 종료 스틸에 맞춥니다. 원음은 청취 판정 중입니다.",
+    "reviewUrl": "examples/#compare-E02",
     "cast": [
       "Claire"
     ],
-    "coverageScope": "E01 레이어·E03 비 조명 초안 · E02 고정 카메라 초점 A/B 미완료",
-    "audioLabel": "생성 원음 · 환경음",
+    "coverageScope": "E01 레이어 · E02 고정 구도 초점 · E03 역광 빗줄기 480p급 비교",
+    "audioLabel": "테이크의 생성 원음",
     "related": [
       {
-        "label": "고정 구도 초점 비교 · E02 스틸",
+        "label": "시작·종료 스틸과 초점 설계",
         "href": "review/fixed-focus/"
       },
       {
-        "label": "E10 관련 · 두 테이블 이동 초안",
-        "href": "review/optics-low-angle-result/"
+        "label": "E01 전경과 배경 레이어",
+        "href": "examples/#compare-E01"
       },
       {
-        "label": "역광의 비 · 소리 영상 A/B",
-        "href": "review/optics-v1/#E03"
+        "label": "E03 역광 빗줄기 A/B",
+        "href": "examples/#compare-E03"
       }
     ],
     "archive": {
@@ -42,36 +42,36 @@
       "reviewed": false,
       "reviewNote": "전경·배경의 시차가 보이며, 첫 초안의 긴 눈 감음을 수정했습니다. 이동 거리와 방향의 정량적 재현은 검증하지 않았습니다."
     },
-    "description": "가까운 기둥 너머 Claire와 먼 선반을 함께 봅니다. 가까운 기둥이 먼저 화면 밖으로 빠지고 뒤 선반이 남는지 확인하세요.",
-    "captions": "media/captions/depth.vtt"
+    "description": "고정된 두 테이블 구도에서 앞 도자기가 흐려지고 뒤쪽에 앉은 Claire의 눈이 선명해집니다.",
+    "captions": null
   },
   "light": {
     "status": "draft",
     "statusLabel": "480p 초안 · 검토 중",
-    "video": "review/claire-v2/media/E04-b-mini-v2.mp4",
-    "poster": "review/claire-v2/media/E04-b-mini-v2.jpg",
-    "duration": 6.08,
+    "video": "review/comparison-batch/media/E06-B.mp4",
+    "poster": "review/comparison-batch/media/E06-B.jpg",
+    "duration": 4.096,
     "model": "Seedance 2 Mini",
-    "resolution": "480p",
+    "resolution": "864×496",
     "reviewed": false,
-    "studyLabel": "E04 B · 빛의 방향",
-    "caption": "Claire 얼굴의 밝은 면과 반대편 그림자를 비교합니다.",
-    "watchFor": "얼굴 오른쪽의 밝은 면, 코·턱 그림자의 경계를 보세요.",
-    "reviewNote": "대표 E04 B는 빛의 방향과 함께 그림자 경도도 달라졌습니다. 별도 E05에서는 코·볼·턱 그림자 경계를 스틸로 비교하며, 밝기·색·이미지 모델의 작은 차이도 공개했습니다.",
-    "reviewUrl": "review/claire-v2/#E04",
+    "studyLabel": "E06 B · 뒤쪽 빛으로 머리와 어깨 분리",
+    "caption": "어두운 벽 앞에서 머리카락과 어깨에 밝은 윤곽이 생깁니다.",
+    "watchFor": "약 2초에 머리카락 오른쪽과 어깨 경계를 확인하세요.",
+    "reviewNote": "비교 초안에서 윤곽 차이는 읽힙니다. 테이크별 입과 깜빡임, 얼굴의 밝기에는 편차가 있습니다.",
+    "reviewUrl": "examples/#compare-E06",
     "cast": [
       "Claire"
     ],
     "coverageScope": "E04 방향 비교 · E05 그림자 경도 스틸 A/B · E06 림 라이트 영상 A/B",
-    "audioLabel": "생성 원음 · 환경음",
+    "audioLabel": "테이크의 생성 원음",
     "related": [
       {
-        "label": "하드/소프트 그림자 · 스틸 A/B",
-        "href": "review/optics-v1/#E05"
+        "label": "E04 빛의 방향 A/B",
+        "href": "examples/#compare-E04"
       },
       {
-        "label": "림 라이트 A/B · 머리와 어깨 윤곽",
-        "href": "examples/#compare-E06"
+        "label": "E05 하드·소프트 그림자 스틸",
+        "href": "examples/#compare-E05"
       }
     ],
     "archive": {
@@ -84,8 +84,8 @@
       "reviewed": false,
       "reviewNote": "창 쪽으로 얼굴을 돌리는 동작과 배경 램프 유지가 확인됩니다. 실제 회전 폭은 요청한 15도보다 큽니다."
     },
-    "description": "Claire 얼굴의 밝은 면과 반대편 그림자를 비교합니다. 얼굴 오른쪽의 밝은 면, 코·턱 그림자의 경계를 보세요.",
-    "captions": "media/captions/light.vtt"
+    "description": "Claire가 어두운 벽 앞에 서 있습니다. 뒤쪽의 좁은 빛이 머리카락과 어깨 윤곽을 드러냅니다.",
+    "captions": null
   },
   "contact": {
     "status": "draft",
@@ -104,7 +104,7 @@
     "cast": [
       "Claire"
     ],
-    "coverageScope": "E07 물 접촉 · E08 입김 영상 A/B 검토 · E09 눈물 미제작",
+    "coverageScope": "E07 물 접촉 · E08 반투명 응결 480p 초안 · E09 눈물 영상 제작 전",
     "audioLabel": "생성 원음 · 발소리와 물소리",
     "related": [
       {
@@ -136,39 +136,34 @@
   "camera": {
     "status": "draft",
     "statusLabel": "480p 초안 · 검토 중",
-    "video": "review/acting-v2/media/GEO-01-b-take.mp4",
-    "poster": "review/acting-v2/media/GEO-01-b-take.jpg",
-    "duration": 8.0,
+    "video": "review/claire-v2/media/E10-b-mini-v2r1.mp4",
+    "poster": "review/claire-v2/media/E10-b-mini-v2r1.jpg",
+    "duration": 6.08,
     "model": "Seedance 2 Mini",
-    "resolution": "480p",
+    "resolution": "854×480",
     "reviewed": false,
-    "studyLabel": "GEO-01 B · 같은 공간을 잇는 횡이동",
-    "caption": "연속된 테이블과 선반을 배경으로 두 사람이 같은 공간에 있음을 봅니다.",
-    "watchFor": "테이블과 먼 선반이 서로 다른 속도로 움직이는지 확인하세요.",
-    "reviewNote": "카메라의 횡이동을 고정 구도와 비교한 초안입니다. B는 거의 무음이어서 비교용 소리에 GEO-01 A 환경음을 사용했습니다. 광학 줌·오빗·크레인 시연과 구분합니다.",
-    "reviewUrl": "review/acting-v2/#GEO-01",
+    "studyLabel": "E10 B · 문틀 사이로 전진하는 카메라",
+    "caption": "카메라가 앞으로 움직일 때 가까운 문틀과 먼 선반의 움직임이 다릅니다.",
+    "watchFor": "2.5~5.5초에 왼쪽 문틀이 가장자리로 빠지고 Claire가 커지는지 보세요.",
+    "reviewNote": "고정 A는 첫 프레임, 이동 B는 같은 작업실 사진과 3D 카메라 경로를 사용했습니다. 문틀 시차를 관찰할 수 있으며 입력 방식에도 차이가 있습니다.",
+    "reviewUrl": "examples/#compare-E10",
     "cast": [
-      "Claire",
-      "Erin"
+      "Claire"
     ],
-    "coverageScope": "GEO-01 횡이동·E10 전진 돌리 · E11 오빗·E12 상승 프리비즈",
-    "audioLabel": "편집 환경음 · GEO-01 A 원음 공유",
+    "coverageScope": "E10 전진 돌리 실사 초안 · E11 오빗·E12 상승 실사 제작 전",
+    "audioLabel": "테이크의 생성 원음",
     "related": [
       {
-        "label": "E10 전진 돌리 · 문틀과 얼굴 크기 비교",
+        "label": "전진 돌리 실제 입력과 프레임",
         "href": "review/dolly-depth/"
       },
       {
-        "label": "두 테이블 이동 · 시차 보조 예시",
-        "href": "review/optics-low-angle-result/"
-      },
-      {
-        "label": "줌 아웃과 크레인 업 · E12 프리비즈",
-        "href": "review/crane-vs-zoom/"
-      },
-      {
-        "label": "고정과 30도 오빗 · E11 프리비즈",
+        "label": "E11 오빗 프리비즈",
         "href": "review/orbit-parallax/"
+      },
+      {
+        "label": "E12 상승 프리비즈",
+        "href": "review/crane-vs-zoom/"
       }
     ],
     "archive": {
@@ -181,8 +176,8 @@
       "reviewed": false,
       "reviewNote": "카메라의 오빗과 난간·도시의 시차가 보입니다. 회전 폭과 마지막 정지는 계획과 차이가 있습니다."
     },
-    "description": "연속된 테이블과 선반을 배경으로 두 사람이 같은 공간에 있음을 봅니다. 테이블과 먼 선반이 서로 다른 속도로 움직이는지 확인하세요.",
-    "captions": "media/captions/camera.vtt"
+    "description": "Claire가 작업실 끝을 바라봅니다. 카메라가 전진하면서 앞 문틀이 화면 가장자리로 이동합니다.",
+    "captions": null
   },
   "performance": {
     "status": "approved",
@@ -303,35 +298,35 @@
   },
   "continuity": {
     "status": "draft",
-    "statusLabel": "480p 초안 · 검토 중",
-    "video": "review/acting-v2/media/ACT-07-b-take.mp4",
-    "poster": "review/acting-v2/media/ACT-07-b-take.jpg",
-    "duration": 8.021,
-    "model": "Seedance 2 Mini",
-    "resolution": "480p",
+    "statusLabel": "480p 재촬영 · 검토 중",
+    "video": "review/conversation-axis/media/E19-480-hand-match.mp4",
+    "poster": "review/conversation-axis/media/E19-480-hand-match.jpg",
+    "duration": 8,
+    "model": "Seedance 2.5 Standard",
+    "resolution": "856×478",
     "reviewed": false,
-    "studyLabel": "ACT-07 B · 대화의 축과 대응 OTS",
+    "studyLabel": "E19 · 양손 위치를 맞춘 대화 축",
     "caption": "Claire의 한국어 질문과 Erin의 영어 답변을 대응 어깨 너머 샷으로 연결합니다.",
-    "watchFor": "Claire의 오른쪽 시선과 Erin의 왼쪽 시선이 서로 마주보는지 확인하세요.",
-    "reviewNote": "각 4초의 독립 샷을 하드 컷으로 이은 커버리지입니다. 대화 축을 설명하는 변형 예시이며 손·소품 인계 전용 A/B 비교는 아직 없습니다.",
-    "reviewUrl": "review/acting-v2/#ACT-07",
+    "watchFor": "4초 컷에서 Erin의 양손 간격과 상체 방향을 확인하세요. Claire와 Erin은 계속 서로를 봅니다.",
+    "reviewNote": "기존 Claire 샷에서 새 Erin 역앵글로 이어집니다. 빈 상판과 양손 위치를 대조하고, 최종 자연스러움과 원음을 확인하는 초안입니다.",
+    "reviewUrl": "review/conversation-axis/#bare-table",
     "cast": [
       "Claire",
       "Erin"
     ],
-    "coverageScope": "E19 대화 축 변형 예시 · E20·E21 머그 컷 경계 검토 자료",
-    "audioLabel": "생성 원음 · Claire 한국어 / Erin 영어",
+    "coverageScope": "E19 빈 테이블 재촬영 · E20 소품 인계 실사 제작 전 · E21 공통 첫 샷 확보",
+    "audioLabel": "각 샷의 생성 원음 · Claire 한국어 / Erin 영어",
     "related": [
       {
-        "label": "컷 전후 열린 문틈 · E21 기준 스틸",
-        "href": "review/door-match/"
+        "label": "E19 재촬영 전후 자세 비교",
+        "href": "review/conversation-axis/#bare-table"
       },
       {
-        "label": "대화 축 · E19 화면 방향 A/B",
-        "href": "review/conversation-axis/"
+        "label": "E21 실사 첫 샷과 열린 문틈",
+        "href": "review/door-match/#door-480p"
       },
       {
-        "label": "머그 높이와 오른손 · 컷 양옆 프레임",
+        "label": "E20 머그 컷 경계 보조 자료",
         "href": "review/cut-boundary/"
       }
     ],
@@ -345,8 +340,8 @@
       "reviewed": false,
       "reviewNote": "첫 초안의 컵 위치 점프를 수정했습니다. 컷 전에는 컵을 들고 유지하고, 컷 뒤에서 같은 오른손으로 내려놓습니다."
     },
-    "description": "Claire의 한국어 질문과 Erin의 영어 답변을 대응 어깨 너머 샷으로 연결합니다. Claire의 오른쪽 시선과 Erin의 왼쪽 시선이 서로 마주보는지 확인하세요. 대사: Claire “괜찮아?” / Erin “I’m fine.”",
-    "captions": "media/captions/continuity.vtt"
+    "description": "빈 작업대 양쪽에 Claire와 Erin이 앉아 있습니다. Claire가 괜찮아라고 묻고 4초 컷 뒤 Erin이 영어로 답합니다.",
+    "captions": "media/captions/continuity-hand-match.vtt"
   },
   "story": {
     "status": "draft",
