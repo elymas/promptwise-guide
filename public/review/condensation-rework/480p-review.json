@@ -1,0 +1,18 @@
+{
+  "seconds": 2,
+  "source_resolution": [
+    852,
+    480
+  ],
+  "frame_crop": [
+    380,
+    84,
+    350,
+    290
+  ],
+  "status": "needs_rework",
+  "prompts": [
+    "Four seconds of live action, locked close profile, a cold clear pane and existing window light. Use the supplied image as frame zero. Keep Claire’s reflection, profile, ponytail, earrings, clothing and distance fixed. The reflected lips and the building outside are visible. Claire exhales once gently from 0.8 to 1.6 seconds and lets her lips close. Each take records its own quiet room and one synchronized breath. Room tone only afterward, no speech, music or repeated breath.\n\nShe breathes once toward the glass. Hold the framing to the end.",
+    "Four seconds of live action, locked close profile, a cold clear pane and existing window light. Use the supplied image as frame zero. Keep Claire’s reflection, profile, ponytail, earrings, clothing and distance fixed. The reflected lips and the building outside are visible. Claire exhales once gently from 0.8 to 1.6 seconds and lets her lips close. Each take records its own quiet room and one synchronized breath. Room tone only afterward, no speech, music or repeated breath.\n\nThe breath reaches the pane before any change. From 1.1 to 2.1 seconds, minute translucent droplets collect on the near face of the glass at the level of the reflected lips. An uneven, soft-edged layer forms. Keep the reflection and the building continuously visible through the moisture, including its center, with lower contrast in the damp area. The droplets stay on the glass, with feathered edges. From 2.8 seconds they thin from the edges. End with the same composition."
+  ]
+}

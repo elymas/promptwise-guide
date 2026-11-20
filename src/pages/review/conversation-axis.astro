@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { path } from '../../data/topics';
 import evidence from '../../../public/review/conversation-axis/edit.json';
+import draft from '../../../public/review/conversation-axis/480p-review.json';
 import prompts from '../../../public/review/acting-v2/prompts.json';
 const [before, matched, reversed] = evidence.frames;
 const original = prompts.find(shot => shot.id === 'ACT-07');
@@ -34,8 +35,8 @@ const original = prompts.find(shot => shot.id === 'ACT-07');
     <p>두 화면은 컷 직후 {evidence.cut_pts.toFixed(2)}초입니다. B에서는 두 사람이 서로를 향하며 긴 테이블과 도자기 선반이 공간의 단서가 됩니다. 붉은 봉투의 방향은 컷에서 달라집니다. A는 축이 뒤집힌 화면 방향을 보여 주는 좌우 반전 편집입니다.</p>
   </section>
   <section class="shell coverage-section" id="bare-table">
-    <h2>빈 테이블로 다시 찍을 두 숄더샷</h2>
-    <p>같은 자리에서 상대를 바라보는 Claire와 Erin의 시작 스틸입니다. 480p 재제작에서는 상판을 비워 두고 나뭇결, 손 그림자, 시선 방향을 컷 전후로 확인합니다.</p>
+    <h2>빈 테이블로 다시 찍은 480p 초안</h2>
+    <p>4초 컷 전후로 Claire와 Erin이 서로를 바라봅니다. 두 대사는 각 샷에서 생성한 소리를 사용했고, 대사 크기를 맞췄습니다. 최종 청취 검수 중입니다.</p>
     <div class="frames">
       <figure>
         <img src={path('review/conversation-axis/media/claire-bare-table.jpg')} width="1678" height="937" loading="lazy" alt="Claire가 Erin을 바라보며 빈 나무 테이블에 손을 얹고 있는 시작 스틸" />
@@ -46,6 +47,10 @@ const original = prompts.find(shot => shot.id === 'ACT-07');
         <figcaption>Erin · “I’m fine.”</figcaption>
       </figure>
     </div>
+    <video controls playsinline preload="metadata" width="856" height="478" aria-label="E19 빈 테이블의 한국어 질문과 영어 답변">
+      <source src={path('review/conversation-axis/media/E19-480-bare-table.mp4')} type="video/mp4" />
+    </video>
+    <details><summary>480p 두 숄더샷에 제출한 실제 입력문</summary><pre>{draft.prompts[0]}</pre><pre>{draft.prompts[1]}</pre></details>
   </section>
   <section class="shell coverage-section">
     <h2>촬영 기준과 실제 입력문</h2>
@@ -64,6 +69,7 @@ const original = prompts.find(shot => shot.id === 'ACT-07');
   .before { max-width: 740px; }
   .frames { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .9rem; }
   img { display: block; width: 100%; height: auto; }
+  video { display: block; width: 100%; max-width: 856px; height: auto; margin-block: 1rem; }
   figcaption { color: var(--muted); font-size: .88rem; margin-top: .6rem; }
   figcaption strong { color: var(--ink); }
   pre { white-space: pre-wrap; overflow-wrap: anywhere; }
