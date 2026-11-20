@@ -14,6 +14,7 @@ const maxAmplitude = Math.max(...manifest.takes.flatMap(take => take.waveform));
       <h2>{take.variant} · {take.title}</h2>
       <video controls playsinline preload="metadata" poster={path(take.poster)} width="854" height="480" aria-label={`Claire 충격과 반응 ${take.variant} 원본`}>
         <source src={path(take.video)} type="video/mp4" />
+        <track kind="captions" src={path(take.dialogue.captions)} srclang="ko" label="한국어 자막" />
       </video>
       <figure class="audio-plot">
         <div class="bars" aria-hidden="true">
@@ -26,7 +27,9 @@ const maxAmplitude = Math.max(...manifest.takes.flatMap(take => take.waveform));
       <div class="cue-controls" aria-label="재생 위치 선택" hidden>
         <button type="button" data-time={Math.max(0,take.peak_seconds-.2)}>충격음 직전으로</button>
         <button type="button" data-time={take.frames[1].time_seconds}>눈 감김으로</button>
+        <button type="button" data-time={take.dialogue.listen_from_seconds}>대사 직전으로</button>
       </div>
+      <p>Claire의 “깜짝이야”는 약 {take.dialogue.start_seconds.toFixed(2)}~{take.dialogue.end_seconds.toFixed(2)}초에 들립니다.</p>
       <div class="frames">
         {take.frames.map(frame => (
           <figure>

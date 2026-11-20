@@ -99,7 +99,13 @@
           "path": "review/impact-and-reaction/media/A-16.jpg",
           "sha256": "720bca214c7cdc094dab95500c1b0cd19298bd7a3af0445b36abe44285243f63"
         }
-      ]
+      ],
+      "dialogue": {
+        "start_seconds": 4.2,
+        "end_seconds": 4.9,
+        "listen_from_seconds": 4.12,
+        "captions": "review/impact-and-reaction/media/A-dialogue.vtt"
+      }
     },
     {
       "variant": "B",
@@ -172,7 +178,13 @@
           "path": "review/impact-and-reaction/media/B-30.jpg",
           "sha256": "15fecf7ade46c1b94943c3862f287b5d3bdf19400210391ddbacc38218d21894"
         }
-      ]
+      ],
+      "dialogue": {
+        "start_seconds": 3.8,
+        "end_seconds": 4.6,
+        "listen_from_seconds": 3.74,
+        "captions": "review/impact-and-reaction/media/B-dialogue.vtt"
+      }
     }
   ]
 }

@@ -953,7 +953,7 @@
     "id": "E22",
     "topic": "story",
     "dialogue": [
-      "Claire · 한국어 · “찾았어.”"
+      "Claire · 한국어 · “찾았어.” · 공통 약 1.20~1.90초"
     ],
     "still": false,
     "review": "review/story-envelope/",
@@ -965,13 +965,17 @@
       "video": "review/acting-v2/media/ACT-06-b-take.mp4",
       "audio": "edited-original",
       "poster": "review/story-envelope/media/wide-opening.jpg",
-      "resolution": "854×480"
+      "resolution": "854×480",
+      "captions": "review/story-envelope/media/shared-dialogue.vtt",
+      "captionLanguage": "ko"
     },
     "b": {
       "video": "review/story-envelope/media/envelope-opening.mp4",
       "audio": "edited-original",
       "poster": "review/story-envelope/media/insert-opening.jpg",
-      "resolution": "854×480"
+      "resolution": "854×480",
+      "captions": "review/story-envelope/media/shared-dialogue.vtt",
+      "captionLanguage": "ko"
     },
     "sources": [
       "PW-106-p1",
@@ -982,13 +986,23 @@
         "label": "B에 적용한 편집 지시",
         "prompt": "ACT-06 원본의 첫 36프레임을 x252, y278에서 356×200으로 크롭해 봉투와 손을 강조한다. 37번째 프레임부터 원본 구도를 유지한다. 음성 데이터와 길이는 그대로 둔다."
       }
+    ],
+    "cues": [
+      {
+        "seconds": 1.25,
+        "label": "대사가 시작되는 구도"
+      },
+      {
+        "seconds": 1.5,
+        "label": "B 인서트에서 인물로 전환"
+      }
     ]
   },
   {
     "id": "E24",
     "topic": "story",
     "dialogue": [
-      "Claire · 한국어 · “찾았어.”"
+      "Claire · 한국어 · “찾았어.” · 공통 약 1.20~1.90초"
     ],
     "still": false,
     "review": "review/story-envelope/",
@@ -1000,13 +1014,17 @@
       "video": "review/story-envelope/media/envelope-opening.mp4",
       "audio": "edited-original",
       "poster": "review/story-envelope/media/wide-ending.jpg",
-      "resolution": "854×480"
+      "resolution": "854×480",
+      "captions": "review/story-envelope/media/shared-dialogue.vtt",
+      "captionLanguage": "ko"
     },
     "b": {
       "video": "review/story-envelope/media/envelope-opening-and-ending.mp4",
       "audio": "edited-original",
       "poster": "review/story-envelope/media/insert-ending.jpg",
-      "resolution": "854×480"
+      "resolution": "854×480",
+      "captions": "review/story-envelope/media/shared-dialogue.vtt",
+      "captionLanguage": "ko"
     },
     "sources": [
       "PW-106-p5",
@@ -1017,6 +1035,20 @@
       {
         "label": "B에 적용한 편집 지시",
         "prompt": "ACT-06의 공통 오프닝을 유지한다. 157번째 프레임부터 마지막까지 x300, y278에서 356×200으로 크롭해 빨간 봉투로 끝낸다. 음성 데이터와 길이는 그대로 둔다."
+      }
+    ],
+    "cues": [
+      {
+        "seconds": 1.25,
+        "label": "공통 시작 대사"
+      },
+      {
+        "seconds": 6.5,
+        "label": "B에서 봉투가 다시 등장"
+      },
+      {
+        "seconds": 7,
+        "label": "마지막 화면의 차이"
       }
     ]
   },
@@ -1104,20 +1136,24 @@
     "watch": "A 약 0.34초, B 약 0.89초의 충격음 부근과 이후 눈 감김을 비교하세요.",
     "note": "두 편 모두 충격음 뒤에 눈 감김이 보입니다. 효과음은 두 편에서 약 2초 지시보다 먼저 발생했습니다. 각 테이크의 생성 원음을 그대로 재생합니다.",
     "dialogue": [
-      "Claire · 한국어 · “깜짝이야.”"
+      "Claire · 한국어 · “깜짝이야.” · A 약 4.20~4.90초 / B 약 3.80~4.60초"
     ],
     "still": false,
     "a": {
       "video": "review/acting-v2/media/ACT-09-a-take.mp4",
       "audio": "native",
       "poster": "review/acting-v2/media/ACT-09-a-take.jpg",
-      "resolution": "854×480"
+      "resolution": "854×480",
+      "captions": "review/impact-and-reaction/media/A-dialogue.vtt",
+      "captionLanguage": "ko"
     },
     "b": {
       "video": "review/acting-v2/media/ACT-09-b-take.mp4",
       "audio": "native",
       "poster": "review/acting-v2/media/ACT-09-b-take.jpg",
-      "resolution": "854×480"
+      "resolution": "854×480",
+      "captions": "review/impact-and-reaction/media/B-dialogue.vtt",
+      "captionLanguage": "ko"
     },
     "review": "review/impact-and-reaction/",
     "sources": [
@@ -1133,6 +1169,20 @@
       {
         "label": "B · 실제 Tein 입력문",
         "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, locked camera. A single door slam occurs offscreen at frame-left around2seconds. Claire says exactly in Korean \"깜짝이야.\" around3.5–4.5seconds, then closes her lips. Same scene, no visible door or extra person.\n\nBefore the audible impact she is composed. Only after its onset, one blink and small shoulder flinch occur, followed by a short inhalation. She regains composure, says the exact Korean line once and settles for the last second. No anticipation, repeated flinch or added interjection."
+      }
+    ],
+    "cues": [
+      {
+        "seconds": 0.34,
+        "label": "A 충격음"
+      },
+      {
+        "seconds": 0.89,
+        "label": "B 충격음"
+      },
+      {
+        "seconds": 3.74,
+        "label": "대사 비교 시작"
       }
     ]
   },
