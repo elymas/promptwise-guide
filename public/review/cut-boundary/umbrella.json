@@ -21,16 +21,16 @@
     "provider": "Tein",
     "takes": 2,
     "duration_seconds": 6,
-    "resolution": "1080p",
+    "resolution": "480p",
     "generate_audio": true,
     "common_prompt": "Exactly two photoreal shots with one hard cut at about 3.0s. Start from the supplied medium frame. Claire looks at the folded umbrella while seated at the walnut worktable. A soft window on frame-left lights the blue-gray cotton, matte nylon and walnut grain. Shot 1 is fixed; shot 2 is a fixed tighter view from the same side of the action axis. Both show the umbrella tip and the tabletop with a clear margin. The left hand rests at the far side of the table. The right hand holds the strap side of a single folded red umbrella. Keep the physical grip, clothing, light and space plausible. Natural breathing, no extra gestures. The umbrella is placed on the tabletop once and the right hand releases from the resting umbrella. Native quiet workshop air, a light nylon brush during the move, one soft wood tap on actual contact. No dialogue, music or sounds on the cut itself.",
     "directions": [
       {
-        "label": "E20-A",
+        "label": "A · 컷 전부터 하강",
         "prompt": "In the wider shot Claire starts to lower the folded umbrella. At the cut, go closer and continue the lowering action until the umbrella rests on the table. Hold briefly."
       },
       {
-        "label": "E20-B",
+        "label": "B · 컷을 넘긴 뒤 하강",
         "prompt": "In the wider shot Claire holds the folded umbrella at its starting height above the tabletop, parallel to the front edge, black handle toward camera-left, tip right, with the same right-hand grip. Keep that still in the last frame before the cut and the first frame after the cut. Keep the tip and handle on the same sides. After the cut, lower in one continuous move, make contact once and release once around 4.8s. Hold briefly."
       }
     ],

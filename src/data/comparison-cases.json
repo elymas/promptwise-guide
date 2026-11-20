@@ -848,7 +848,7 @@
     "title": "컷 전후 머그의 높이와 오른손",
     "change": "A는 앞 샷에서 머그를 내리기 시작하도록 지시했습니다. B는 컷 직후까지 같은 오른손과 높이로 유지한 뒤 내리도록 바꿨습니다.",
     "watch": "두 영상의 2.00초에 앵글이 바뀝니다. 컷 직전·직후에 머그 밑면과 테이블 사이의 틈을 보세요.",
-    "note": "A는 머그가 테이블에 닿은 뒤 다음 앵글에서 다시 들려 있습니다. B는 머그를 든 자세로 컷을 넘긴 뒤 내려놓습니다. 기존 무음 제작본을 컷 기준으로 맞춘 발췌이며, 빨간 우산의 원음 A/B는 제작 전입니다.",
+    "note": "A는 머그가 테이블에 닿은 뒤 다음 앵글에서 다시 들려 있습니다. B는 머그를 든 자세로 컷을 넘긴 뒤 내려놓습니다. 기존 무음 제작본을 컷 기준으로 맞춘 발췌이며, 빨간 우산의 원음 480p A/B는 시작 스틸과 제작안을 준비했습니다.",
     "still": false,
     "a": {
       "video": "review/cut-boundary/media/A-aligned.mp4",
@@ -875,6 +875,16 @@
       {
         "label": "B · 실제 보완 입력문",
         "prompt": "Exactly two shots, with one hard cut at 3 seconds. SHOT 1, 0.0-3.0 seconds: locked medium view. Claire holds the single ivory mug completely motionless at the same height as the first frame, well above the tabletop. The right hand grips its single handle, and the left hand rests on the table. The mug does NOT lower or touch the table anywhere in shot 1. SHOT 2, 3.0-6.0 seconds: hard cut to a closer view on the same side of the action axis. The first frame after the cut shows the same mug still suspended at the same height in the same right hand. Only AFTER the cut, from 3.2 to 4.8 seconds, the right hand lowers the mug in one continuous movement onto the table. From 4.8 to 5.5 seconds the right fingers release the handle; hold to the end. The left hand never moves. Same face, blue-grey shirt, ivory mug, handle and walnut table throughout. One mug, two hands, no hand swap, no liquid. Silent, no text, captions or logos."
+      }
+    ],
+    "cues": [
+      {
+        "seconds": 1.96,
+        "label": "머그 컷 직전"
+      },
+      {
+        "seconds": 2,
+        "label": "머그 컷 직후"
       }
     ]
   },

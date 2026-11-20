@@ -41,9 +41,10 @@ const cuts = [
       </a>
       <figcaption>공통 시작 스틸 후보 · {umbrella.image.width} × {umbrella.image.height} · ChatGPT 이미지 생성</figcaption>
     </figure>
-    <p>Tein으로 1080p 6초 두 편을 제작할 계획입니다. A는 컷 전에 우산을 내리기 시작하고, B는 컷 양옆에서 같은 높이와 손잡이 방향을 유지한 뒤 내려놓습니다. 우산이 상판에 닿을 때 각 테이크의 접촉음이 한 번 들리는지 확인합니다.</p>
+    <p>Tein {umbrella.video_plan.resolution} · {umbrella.video_plan.duration_seconds}초 두 편 · 원음 포함 · 제작 대기. 약 3초에 같은 쪽에서 더 가까운 앵글로 컷을 바꿉니다. A는 컷 전에 우산을 내리기 시작하고 B는 컷 전후에 높이와 손잡이 방향을 유지한 뒤 내려놓도록 지시합니다.</p>
+    <p>실제 컷 양옆의 두 프레임에서 우산 밑면과 상판 사이의 틈, 오른손이 잡은 지점, 왼쪽 손잡이와 오른쪽 끝의 방향을 확인합니다. 컷 뒤에는 우산이 상판에 닿는 프레임과 접촉음이 한 번만 들리는지 확인합니다.</p>
     <details>
-      <summary>스틸 생성 입력문과 영상 제작안</summary>
+      <summary>스틸 생성에 사용한 입력문과 480p 요청 초안</summary>
       <h3>스틸 생성에 사용한 입력문</h3>
       <pre lang="en">{umbrella.image_prompt}</pre>
       <h3>영상 요청 초안 · 공통 지시</h3>
