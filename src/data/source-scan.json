@@ -1,0 +1,14 @@
+{
+  "checked_kst": "2026-11-21",
+  "range": [
+    1,
+    500
+  ],
+  "http_200": 31,
+  "http_404": 469,
+  "request_errors": 0,
+  "new_pages": [],
+  "changed_pages": [],
+  "archived_base_pages": 31,
+  "unique_base_pages": 30
+}
