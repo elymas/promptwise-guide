@@ -1,0 +1,18 @@
+{
+  "resolution": "480p",
+  "duration_seconds": 4,
+  "generate_audio": true,
+  "status": "unsubmitted",
+  "opening": {
+    "path": "review/orbit-parallax/media/480p-opening.jpg",
+    "width": 1672,
+    "height": 941,
+    "source_png_sha256": "11ce6956da1090bfb6416a18ccd15ed17cb59fd6f6ce30b51d4afce136bae36d",
+    "preview_sha256": "022214172aad5d1c020cd643be8b2c9180e503e57207848a76a8d043f1364dd0"
+  },
+  "common": "Use the supplied photograph as the exact opening frame. Four continuous seconds, real-time photography, soft daylight, fixed 40 mm focal length and fixed camera height. Keep Claire centered and at the same apparent scale, feet planted and hands quiet. Keep her starting gaze on a fixed point at the opening camera location, without following the moving lens. Preserve the rail, the dark near post, the yellow middle post, the windows and their depth order. Same quiet outdoor room tone from this take, no music, no dialogue.",
+  "variants": {
+    "A": "The camera stays in its starting position, rotation and aim. Neither post moves in the image. Hold the composition.",
+    "B": "From 0.6 to 3.3 seconds the camera orbits horizontally 30 degrees to camera-right along an arc centered on Claire, aimed at her, fixed distance and focal length. Read depth from the near dark rail post shifting across frame faster than the far windows. The posts and courtyard stay fixed in the real world. Brief hold after the move."
+  }
+}

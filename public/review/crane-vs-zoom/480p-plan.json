@@ -1,0 +1,18 @@
+{
+  "resolution": "480p",
+  "duration_seconds": 4,
+  "generate_audio": true,
+  "status": "unsubmitted",
+  "opening": {
+    "path": "review/crane-vs-zoom/media/480p-opening.jpg",
+    "width": 1672,
+    "height": 941,
+    "source_png_sha256": "d946ebdf260d2a7dbe11ea312a04fb8102f8dacd5da6a8144a399eecab360f49",
+    "preview_sha256": "fa07ed824eb9292836f4d19a3a3d8c6a9e741efabcb522c962bd2145bfc84a5b"
+  },
+  "common": "Use the supplied photograph as the exact opening frame. Four seconds, one live-action take. Retain the blue-gray facade and its three closed shutters, gray retaining wall and subdued overcast light. Behind the wall are a single orange workbench in a yellow loading rectangle and two separated stacks of brown crates, with one worker by the right of the workbench. The wall hides the yard in the original composition. Keep the same proportions and clean geometry throughout. Native quiet open-air workshop ambience, no speech, no music.",
+  "variants": {
+    "A": "Camera stays at its physical starting location, 1.90 m high, with the original angle and direction. Optical zoom from 38 to 22 mm. It widens toward the roof and wall edges but the wall continues to obscure the workbench and yard. Hold at the end.",
+    "B": "Keep the 38 mm focal length. Crane straight up from 1.90 m to 5.80 m, fixed floor position, with gradual down tilt. The near wall drops in the frame and exposes the existing orange workbench and loading rectangle by the middle of the shot. Then reveal the two crate stacks and still worker at right. Hold briefly. The yard stays physically fixed."
+  }
+}
