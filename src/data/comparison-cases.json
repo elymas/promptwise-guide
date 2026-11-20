@@ -489,21 +489,27 @@
     "watch": "3.96초에 보이는 Erin의 양손 간격을 4.00초 각 영상의 컷 직후와 비교하세요.",
     "note": "4.00초 B에서 양손이 더 가까이 모입니다. 반대편 앵글 때문에 컷 전후의 상체 기울기는 판정이 남아 있습니다. 각 테이크의 생성 원음을 사용했습니다. 게인은 A의 Claire +6 dB·Erin −3 dB, B의 Claire +4 dB·Erin 0 dB이며 최종 청취 검토가 남아 있습니다.",
     "dialogue": [
-      "Claire · 한국어 · “괜찮아?”",
-      "Erin · 영어 · “I’m fine.”"
+      "Claire · 한국어 · “괜찮아?” · 공통 약 0.65~1.20초",
+      "Erin · 영어 · “I’m fine.” · A 약 4.55~5.20초 / B 약 4.30~4.90초"
     ],
     "still": false,
     "a": {
       "poster": "review/conversation-axis/media/erin-after-cut-4.000.jpg",
       "video": "review/conversation-axis/media/E19-480-bare-table.mp4",
       "audio": "edited-original",
-      "resolution": "856×478"
+      "resolution": "856×478",
+      "captions": "review/conversation-axis/media/first-cut-dialogue.vtt",
+      "captionLanguage": "ko",
+      "captionLabel": "한국어·영어 대사"
     },
     "b": {
       "poster": "review/conversation-axis/media/erin-hand-match-4.000.jpg",
       "video": "review/conversation-axis/media/E19-480-hand-match.mp4",
       "audio": "edited-original",
-      "resolution": "856×478"
+      "resolution": "856×478",
+      "captions": "review/conversation-axis/media/revised-cut-dialogue.vtt",
+      "captionLanguage": "ko",
+      "captionLabel": "한국어·영어 대사"
     },
     "review": "review/conversation-axis/#bare-table",
     "sources": [
@@ -527,12 +533,20 @@
     ],
     "cues": [
       {
+        "seconds": 0.6,
+        "label": "Claire 질문 직전"
+      },
+      {
         "seconds": 3.9583333333,
         "label": "공통 컷 직전"
       },
       {
         "seconds": 4,
         "label": "Erin 컷 직후"
+      },
+      {
+        "seconds": 4.25,
+        "label": "Erin 답변 시작 구간"
       }
     ]
   },

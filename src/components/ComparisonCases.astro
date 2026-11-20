@@ -43,7 +43,7 @@ const views = [
           <source src={path(take.video)} type="video/mp4" />
           {take.captions && <track kind="captions" src={path(take.captions)}
             srclang={take.captionLanguage ?? 'ko'}
-            label={take.captionLanguage === 'en' ? 'English captions' : take.captionLanguage === 'ko' ? '한국어 자막' : '한국어 소리 설명'} />}
+            label={take.captionLabel ?? (take.captionLanguage === 'en' ? 'English captions' : take.captionLanguage === 'ko' ? '한국어 자막' : '한국어 소리 설명')} />}
         </video> : <img src={path(take.poster)} alt={`${item.title} ${i === 0 ? 'A' : 'B'}`} loading="lazy" />}
       </figure>)}
     </div>
