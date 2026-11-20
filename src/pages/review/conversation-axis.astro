@@ -36,7 +36,7 @@ const original = prompts.find(shot => shot.id === 'ACT-07');
   </section>
   <section class="shell coverage-section" id="bare-table">
     <h2>빈 테이블로 다시 찍은 480p 초안</h2>
-    <p>4초 컷 전후로 Claire와 Erin이 서로를 바라봅니다. 두 대사는 각 샷에서 생성한 소리를 사용했고, 대사 크기를 맞췄습니다. 최종 청취 검수 중입니다.</p>
+    <p>4초 컷 전후로 Claire와 Erin이 서로를 바라봅니다. 두 대사는 각 샷에서 생성한 소리를 사용했고, 대사 크기를 맞췄습니다. Erin의 앉은 자세와 두 손 위치가 컷에서 바뀌어 재작업 대상으로 남겼습니다.</p>
     <div class="frames">
       <figure>
         <img src={path('review/conversation-axis/media/claire-bare-table.jpg')} width="1678" height="937" loading="lazy" alt="Claire가 Erin을 바라보며 빈 나무 테이블에 손을 얹고 있는 시작 스틸" />
@@ -50,6 +50,16 @@ const original = prompts.find(shot => shot.id === 'ACT-07');
     <video controls playsinline preload="metadata" width="856" height="478" aria-label="E19 빈 테이블의 한국어 질문과 영어 답변">
       <source src={path('review/conversation-axis/media/E19-480-bare-table.mp4')} type="video/mp4" />
     </video>
+    <div class="frames" aria-label="Erin의 양손 위치 컷 전후 비교">
+      <figure>
+        <img src={path('review/conversation-axis/media/claire-before-cut-3.958.jpg')} width="640" height="358" loading="lazy" alt="컷 직전 오른쪽 전경에서 Erin의 두 손이 가까이 놓여 있습니다." />
+        <figcaption>3.96초 · 컷 직전, Erin의 손이 테이블 가장자리에서 가까이 놓여 있습니다.</figcaption>
+      </figure>
+      <figure>
+        <img src={path('review/conversation-axis/media/erin-after-cut-4.000.jpg')} width="640" height="358" loading="lazy" alt="컷 직후 Erin의 두 손이 양쪽으로 벌어져 있습니다." />
+        <figcaption>4.00초 · Erin 샷 첫 프레임에서 양손이 더 넓게 벌어집니다.</figcaption>
+      </figure>
+    </div>
     <details><summary>480p 두 숄더샷에 제출한 실제 입력문</summary><pre>{draft.prompts[0]}</pre><pre>{draft.prompts[1]}</pre></details>
   </section>
   <section class="shell coverage-section">
