@@ -1,0 +1,91 @@
+{
+  "width": 852,
+  "height": 480,
+  "fps": 24,
+  "frame": 66,
+  "coordinates_order": "width, height, x, y",
+  "rois": {
+    "vase": [
+      52,
+      48,
+      94,
+      242
+    ],
+    "face": [
+      70,
+      54,
+      603,
+      73
+    ]
+  },
+  "measurement": "Population variance of the four-neighbor Laplacian on the decoded gray crop interior, computed per region.",
+  "stills": {
+    "A": {
+      "path": "review/fixed-focus/media/E02-480-A-2.75s.jpg",
+      "sha256": "5155d2f3c04d1eab1b9d7ed0db78fbf5943e0a5416bb9801041d68057fa42c29",
+      "video_sha256": "14f50623cfc4e5f371fbe43177d719ef2fd8e757faef873f98a2cdde86b70ba2"
+    },
+    "B": {
+      "path": "review/fixed-focus/media/E02-480-B-2.75s.jpg",
+      "sha256": "7e7debc4c392301b5999de69084ab9aec90a25f261e66cda8e5c0ebd53e5df4b",
+      "video_sha256": "1db106ffe058b58b7e4e5bb9520304251c3450c6f9fc5da0d6892a9ac168a3b8"
+    }
+  },
+  "observations": [
+    {
+      "seconds": 0.0,
+      "A": {
+        "vase": 439.2,
+        "face": 24.5
+      },
+      "B": {
+        "vase": 481.9,
+        "face": 27.4
+      }
+    },
+    {
+      "seconds": 1.75,
+      "A": {
+        "vase": 447.3,
+        "face": 18.8
+      },
+      "B": {
+        "vase": 206.4,
+        "face": 34.8
+      }
+    },
+    {
+      "seconds": 2.25,
+      "A": {
+        "vase": 446.3,
+        "face": 17.1
+      },
+      "B": {
+        "vase": 41.1,
+        "face": 105.4
+      }
+    },
+    {
+      "seconds": 2.75,
+      "A": {
+        "vase": 444.9,
+        "face": 17.0
+      },
+      "B": {
+        "vase": 25.0,
+        "face": 198.6
+      }
+    },
+    {
+      "seconds": 3.5,
+      "A": {
+        "vase": 445.1,
+        "face": 19.6
+      },
+      "B": {
+        "vase": 18.5,
+        "face": 236.0
+      }
+    }
+  ]
+}

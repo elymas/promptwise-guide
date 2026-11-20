@@ -60,7 +60,7 @@
     "topic": "depth",
     "title": "고정 카메라에서 도자기에서 Claire로 랙 포커스",
     "change": "공통 시작 화면에서 A는 앞 도자기 초점을 유지합니다. B는 뒤의 Claire가 또렷한 종료 스틸을 사용합니다.",
-    "watch": "2.5~3초에 도자기 입구와 뒤쪽 Claire의 눈을 번갈아 보세요.",
+    "watch": "약 1.75초부터 B의 도자기가 흐려집니다. 2.25~3.50초에는 뒤쪽 Claire의 눈과 앞머리가 점차 또렷해집니다.",
     "note": "A는 앞 도자기가 선명합니다. B는 2.5초 부근부터 Claire 얼굴이 선명해집니다. 시작·종료 스틸을 사용한 실사 초안이며 원음 청취는 검수 중입니다. 모바일 검토본은 두 테이크의 자체 원음에 같은 +14 dB를 적용했습니다.",
     "still": false,
     "a": {
@@ -75,7 +75,7 @@
       "poster": "review/fixed-focus/media/E02-480-B.jpg",
       "resolution": "852×480"
     },
-    "review": "review/fixed-focus/",
+    "review": "review/fixed-focus/#focus-480p",
     "sources": [
       "PW-018-p12"
     ],
@@ -92,11 +92,15 @@
     "cues": [
       {
         "seconds": 0,
-        "label": "같은 시작"
+        "label": "공통 시작"
+      },
+      {
+        "seconds": 1.75,
+        "label": "B의 도자기 흐려짐"
       },
       {
         "seconds": 2.75,
-        "label": "바뀐 초점"
+        "label": "Claire 눈과 도자기 비교"
       }
     ]
   },
