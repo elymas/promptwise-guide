@@ -598,13 +598,17 @@
       "video": "review/acting-v2/media/ACT-08-a-video-v1.mp4",
       "audio": "native",
       "poster": "review/acting-v2/media/ACT-08-a-video-v1.jpg",
-      "resolution": "854×480"
+      "resolution": "854×480",
+      "captions": "media/captions/act-08-a.vtt",
+      "captionLanguage": "en"
     },
     "b": {
       "video": "review/acting-v2/media/ACT-08-b-video-v2.mp4",
       "audio": "native",
       "poster": "review/acting-v2/media/ACT-08-b-video-v2.jpg",
-      "resolution": "854×480"
+      "resolution": "854×480",
+      "captions": "media/captions/act-08-b.vtt",
+      "captionLanguage": "en"
     },
     "review": "review/acting-v2/#ACT-08",
     "sources": [
@@ -636,13 +640,17 @@
       "video": "review/acting-v2/media/ACT-11-a-video-v2.mp4",
       "audio": "native",
       "poster": "review/acting-v2/media/ACT-11-a-video-v2.jpg",
-      "resolution": "854×480"
+      "resolution": "854×480",
+      "captions": "media/captions/act-11-a.vtt",
+      "captionLanguage": "ko"
     },
     "b": {
       "video": "review/acting-v2/media/ACT-11-b-video-v1.mp4",
       "audio": "native",
       "poster": "review/acting-v2/media/ACT-11-b-video-v1.jpg",
-      "resolution": "854×480"
+      "resolution": "854×480",
+      "captions": "media/captions/act-11-b.vtt",
+      "captionLanguage": "ko"
     },
     "review": "review/acting-v2/#ACT-11",
     "sources": [
@@ -673,13 +681,17 @@
       "video": "review/acting-v2/media/ACT-12-a-take.mp4",
       "audio": "native",
       "poster": "review/acting-v2/media/ACT-12-a-take.jpg",
-      "resolution": "854×480"
+      "resolution": "854×480",
+      "captions": "media/captions/act-12-a.vtt",
+      "captionLanguage": "en"
     },
     "b": {
       "video": "review/acting-v2/media/ACT-12-b-take.mp4",
       "audio": "native",
       "poster": "review/acting-v2/media/ACT-12-b-take.jpg",
-      "resolution": "854×480"
+      "resolution": "854×480",
+      "captions": "media/captions/act-12-b.vtt",
+      "captionLanguage": "en"
     },
     "review": "review/acting-v2/#ACT-12",
     "sources": [
