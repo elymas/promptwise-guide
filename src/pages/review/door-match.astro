@@ -4,6 +4,7 @@ import { path } from '../../data/topics';
 import manifest from '../../../public/review/door-match/manifest.json';
 import prompts from '../../../public/review/door-match/still-prompts.json';
 import previz from '../../../public/review/door-match/previz.json';
+import real from '../../../public/review/door-match/480p-first-shot.json';
 const [opening, cutBefore, matched, jumped] = manifest.stills;
 ---
 <Base title="문틈과 진행 방향을 잇는 컷 — FRAME / NOTES" description="문을 열고 이동하는 Claire의 컷 직전과 직후에 어떤 상태를 이어야 하는지 스틸로 대조합니다.">
@@ -11,6 +12,24 @@ const [opening, cutBefore, matched, jumped] = manifest.stills;
     <h1>열리던 문을<br />다음 컷에 넘기다</h1>
     <p>Claire가 작업실에서 복도로 나갑니다. 컷을 바꾸기 전과 후에 문틈, 손잡이, 문턱 앞의 발, 화면 오른쪽을 향한 몸의 방향을 대조하세요.</p>
     <a class="text-link" href={path('examples/#compare-E21')}>문틈의 변화를 3D 영상으로 비교 ↗</a>
+  </section>
+  <section class="shell coverage-section" id="door-480p">
+    <h2>480p 공통 첫 샷과 컷 직전 상태</h2>
+    <p>3.96초에 문틈으로 복도 바닥이 보입니다. Claire의 손은 손잡이에서 떨어져 있고 두 발은 문턱 앞에 있습니다. 실제 마지막 프레임을 기준으로, 다음 앵글의 A는 문이 닫힌 상태로, B는 열린 문틈을 이어받는 상태로 준비했습니다.</p>
+    <video class="opening" controls playsinline preload="metadata" width="852" height="480" poster={path('review/door-match/media/E21-cut-out-3.958.jpg')} aria-label="Claire가 문을 열고 문턱 앞에 멈추는 480p 첫 샷">
+      <source src={path('review/door-match/media/E21-480-SHARED.mp4')} type="video/mp4" />
+    </video>
+    <div class="frames">
+      <figure>
+        <img src={path('review/door-match/media/E21-A-closed-start.jpg')} width="1000" height="563" loading="lazy" alt="같은 자세의 Claire와 완전히 닫힌 문" />
+        <figcaption>A · 다음 샷에서 문틈이 사라지는 시작 스틸</figcaption>
+      </figure>
+      <figure>
+        <img src={path('review/door-match/media/E21-B-open-start.jpg')} width="1000" height="563" loading="lazy" alt="같은 자세의 Claire와 열린 문틈 너머 복도 바닥" />
+        <figcaption>B · 열린 문틈이 이어지는 시작 스틸</figcaption>
+      </figure>
+    </div>
+    <details><summary>공통 첫 샷에 실제 제출한 입력문</summary><pre>{real.prompt}</pre></details>
   </section>
   <section class="shell">
     <h2>공통 컷 직전</h2>
@@ -72,6 +91,7 @@ const [opening, cutBefore, matched, jumped] = manifest.stills;
   .opening { max-width: 740px; }
   .frames { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
   .cut-frames { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .7rem; margin-block: 1rem; }
+  video { display: block; width: 100%; height: auto; margin-block: 1rem; }
   img { display: block; width: 100%; height: auto; }
   figcaption { color: var(--muted); margin-top: .6rem; font-size: .88rem; }
   figcaption strong { color: var(--ink); }

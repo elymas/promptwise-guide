@@ -35,8 +35,8 @@ const original = prompts.find(shot => shot.id === 'ACT-07');
     <p>두 화면은 컷 직후 {evidence.cut_pts.toFixed(2)}초입니다. B에서는 두 사람이 서로를 향하며 긴 테이블과 도자기 선반이 공간의 단서가 됩니다. 붉은 봉투의 방향은 컷에서 달라집니다. A는 축이 뒤집힌 화면 방향을 보여 주는 좌우 반전 편집입니다.</p>
   </section>
   <section class="shell coverage-section" id="bare-table">
-    <h2>빈 테이블로 다시 찍은 480p 초안</h2>
-    <p>4초 컷 전후로 Claire와 Erin이 서로를 바라봅니다. 두 대사는 각 샷에서 생성한 소리를 사용했고, 대사 크기를 맞췄습니다. Erin의 앉은 자세와 두 손 위치가 컷에서 바뀌어 재작업 대상으로 남겼습니다.</p>
+    <h2>빈 테이블 480p · 손 위치를 맞춘 재촬영</h2>
+    <p>첫 초안에서는 4초 컷에서 Erin의 자세와 두 손 위치가 바뀌었습니다. 아래 수정본은 Claire 샷을 사용하고, Erin이 양손을 가장자리 가까이 모은 상태에서 답하는 샷을 다시 찍었습니다. 두 테이크의 대사에 사용한 소리는 각각의 생성 원음입니다.</p>
     <div class="frames">
       <figure>
         <img src={path('review/conversation-axis/media/claire-bare-table.jpg')} width="1678" height="937" loading="lazy" alt="Claire가 Erin을 바라보며 빈 나무 테이블에 손을 얹고 있는 시작 스틸" />
@@ -48,7 +48,7 @@ const original = prompts.find(shot => shot.id === 'ACT-07');
       </figure>
     </div>
     <video controls playsinline preload="metadata" width="856" height="478" aria-label="E19 빈 테이블의 한국어 질문과 영어 답변">
-      <source src={path('review/conversation-axis/media/E19-480-bare-table.mp4')} type="video/mp4" />
+      <source src={path('review/conversation-axis/media/E19-480-hand-match.mp4')} type="video/mp4" />
     </video>
     <div class="frames" aria-label="Erin의 양손 위치 컷 전후 비교">
       <figure>
@@ -57,9 +57,14 @@ const original = prompts.find(shot => shot.id === 'ACT-07');
       </figure>
       <figure>
         <img src={path('review/conversation-axis/media/erin-after-cut-4.000.jpg')} width="640" height="358" loading="lazy" alt="컷 직후 Erin의 두 손이 양쪽으로 벌어져 있습니다." />
-        <figcaption>4.00초 · Erin 샷 첫 프레임에서 양손이 더 넓게 벌어집니다.</figcaption>
+        <figcaption>4.00초 · 첫 초안에서 양손이 벌어진 상태입니다.</figcaption>
       </figure>
     </div>
+    <figure class="before">
+      <img src={path('review/conversation-axis/media/erin-hand-match-4.000.jpg')} width="640" height="358" loading="lazy" alt="새 Erin 장면에서 양손이 테이블 가장자리에 가까이 모여 놓여 있습니다." />
+      <figcaption>4.00초 · 재촬영 뒤의 Erin. 양손 간격과 상체를 컷 직전과 대조합니다.</figcaption>
+    </figure>
+    <details><summary>Erin의 손 위치를 맞춰 제출한 실제 입력문</summary><pre>{draft.revised.erin_prompt}</pre></details>
     <details><summary>480p 두 숄더샷에 제출한 실제 입력문</summary><pre>{draft.prompts[0]}</pre><pre>{draft.prompts[1]}</pre></details>
   </section>
   <section class="shell coverage-section">
