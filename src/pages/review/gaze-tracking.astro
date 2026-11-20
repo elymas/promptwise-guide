@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { path } from '../../data/topics';
 import manifest from '../../../public/review/gaze-tracking/frames.json';
+import plan from '../../data/e13-e17-480p-plan.json';
 const moving = manifest.frames.filter(frame => frame.source === 'moving');
 const fixed = manifest.frames.find(frame => frame.source === 'fixed');
 ---
@@ -39,9 +40,20 @@ const fixed = manifest.frames.find(frame => frame.source === 'fixed');
     <p>고정 샷의 1.5초 프레임에서는 눈이 렌즈 쪽을 향하고 입술이 닫혀 있습니다. 두 영상은 모델과 구도, 이동, 길이도 다릅니다. 움직이는 렌즈를 따라가는 조건의 비교는 같은 카메라 경로에서 제작할 예정입니다.</p>
     <a class="text-link" href={path('review/claire-performance-gate/')}>고정 샷 원본과 깜빡임 기록 ↗</a>
   </section>}
-  <section class="shell coverage-section">
+  <section class="shell coverage-section" id="gaze-plan">
     <h2>다음 비교에서 바꿀 것은 시선의 목적지</h2>
-    <p>두 편에서 같은 시작 스틸과 55cm 옆 이동을 사용합니다. A는 시작점의 고정 표시를 계속 보고, B는 카메라가 멈출 때까지 움직이는 렌즈 중심을 따라갑니다. 두 편 모두 같은 카메라 방향·높이·화각을 지시합니다. 먼저 카메라가 실제로 이동했는지 확인한 뒤 눈동자 방향과 입, 원음, Claire 원본과의 일관성을 검수합니다.</p>
+    <p>Tein {plan.resolution} · {plan.duration_seconds}초 두 편 · 원음 포함 · 제작 대기. 공통 지시는 0.75~3.25초에 카메라를 오른쪽으로 55cm 옮기는 것입니다. A는 렌즈가 출발한 고정 지점을 계속 보고, B는 움직이는 렌즈 중심을 따라갑니다.</p>
+    <figure class="fixed">
+      <img src={path(plan.start_still.display_file)} width={plan.start_still.width} height={plan.start_still.height} loading="lazy" alt="Claire의 앉은 상반신과 테이블, 뒤 선반이 보이는 공통 시작 스틸" />
+      <figcaption>공통 시작 스틸 · 공간과 구도 기준</figcaption>
+    </figure>
+    <p>먼저 선반과 테이블 가장자리의 상대 이동으로 두 편의 카메라 경로를 대조합니다. 시작, 이동 중간, 3.25초 이후에서 홍채 방향과 입술을 보고 깜빡임을 따로 확인합니다. 얼굴은 Claire 원본과 대조하고 각 테이크의 원음도 확인합니다.</p>
+    <details>
+      <summary>제출 대기 중인 Tein 480p A/B 입력문</summary>
+      <h3>공통</h3><pre lang="en">{plan.E13.common}</pre>
+      <h3>A · 고정 지점</h3><pre lang="en">{plan.E13.variants.A}</pre>
+      <h3>B · 움직이는 렌즈</h3><pre lang="en">{plan.E13.variants.B}</pre>
+    </details>
     <div class="study-links">
       <a class="text-link" href={path('review/gaze-tracking/frames.json')} download>프레임 번호와 원본 파일 검증 기록 ↗</a>
       <a class="text-link" href={path('prompts/?page=PW-051#PW-051-p3')}>PW-051 렌즈 응시 원문 ↗</a>
@@ -75,5 +87,7 @@ const fixed = manifest.frames.find(frame => frame.source === 'fixed');
   .gaze-cues button { min-height: 44px; padding: .4rem .65rem; font: inherit; cursor: pointer; color: var(--ink); background: var(--surface); border: 1px solid var(--line); }
   figcaption { color: var(--muted); font-size: .87rem; margin-top: .55rem; }
   figcaption strong { color: var(--ink); }
+  summary { cursor: pointer; }
+  pre { white-space: pre-wrap; overflow-wrap: anywhere; }
   @media (max-width: 560px) { .frames { grid-template-columns: 1fr; } }
 </style>

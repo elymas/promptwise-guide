@@ -33,7 +33,7 @@ const frames = [
   </section>
   <section class="shell coverage-section">
     <h2>볼 위에서 생기기 전에 눈꺼풀에 고이게 하기</h2>
-    <p>Tein에서 두 4초 영상에 같은 시작 스틸과 조명·카메라·소리 지시를 사용합니다. A에는 한 방울이 흐른다고만 쓰고, B에는 아랫눈꺼풀에 맺히고 불어났다 한 번 넘치는 순서를 씁니다.</p>
+    <p>Tein {plan.resolution} · {plan.duration_seconds}초 두 편 · 원음 포함 · 제작 대기. 두 편에 같은 시작 스틸과 조명·카메라·소리 지시를 사용합니다. A에는 한 방울이 흐른다고만 쓰고, B에는 아랫눈꺼풀에 맺히고 불어났다 한 번 넘치는 순서를 씁니다.</p>
     <ol class="beats">
       <li><strong>0–0.8초</strong> · 볼은 마른 상태로 유지합니다.</li>
       <li><strong>0.8–1.8초</strong> · 홍채 바깥쪽 아래에 투명한 한 방울이 맺혀 커집니다.</li>
@@ -46,7 +46,7 @@ const frames = [
     <h2>스틸 생성 입력문과 영상 제작안</h2>
     <p>스틸은 ChatGPT 내장 이미지 생성 도구로 만들었습니다. Tein 영상 입력문은 제출 전입니다.</p>
     <details><summary>스틸 생성·편집에 사용한 입력문</summary><h3>시작 스틸</h3><pre lang="en">{prompts.opening}</pre><h3>고임 스틸</h3><pre lang="en">{prompts.bead}</pre><h3>종료 스틸</h3><pre lang="en">{prompts.ending}</pre></details>
-    <details><summary>아직 제출하지 않은 Tein A/B 입력문</summary><h3>공통</h3><pre>{plan.common}</pre><h3>A · 결과만 지정</h3><pre>{plan.variants.A}</pre><h3>B · 진행 순서 지정</h3><pre>{plan.variants.B}</pre></details>
+    <details><summary>제출 대기 중인 Tein 480p A/B 입력문</summary><h3>공통</h3><pre lang="en">{plan.common}</pre><h3>A · 결과만 지정</h3><pre lang="en">{plan.variants.A}</pre><h3>B · 진행 순서 지정</h3><pre lang="en">{plan.variants.B}</pre></details>
     <div class="study-links">
       <a class="text-link" href={path('review/tear-path/manifest.json')} download>스틸과 원본의 파일 검증 기록 ↗</a>
       <a class="text-link" href={path('prompts/?page=PW-103#PW-103-p1')}>PW-103 눈물 매크로 촬영 지시 ↗</a>

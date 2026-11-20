@@ -7,5 +7,7 @@
   "variants": {
     "A": "Her eye wells up and one tear runs down the cheek.",
     "B": "From 0.0 to 0.8 seconds the cheek stays dry and the gaze steady. From 0.8 to 1.8 seconds one transparent bead builds on the lower lid below the outer iris as the lid barely quivers. Hold that bead attached to the lash line for one brief beat, then let it spill down the cheek under gravity between 2.0 and 3.2 seconds. The trail remains connected to the lower lid and the small tip stays on the cheek for the final beat. Only this one tear. No second bead appearing mid-cheek, disappearing trail, opaque stripe or fused eyelashes."
-  }
+  },
+  "resolution": "480p",
+  "generate_audio": true
 }

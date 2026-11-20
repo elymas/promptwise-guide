@@ -1,0 +1,23 @@
+{
+  "resolution": "480p",
+  "duration_seconds": 4,
+  "start_still": {
+    "display_file": "review/claire-reference-pack/media/draft-end.jpg",
+    "width": 2720,
+    "height": 1536
+  },
+  "E13": {
+    "common": "One continuous four-second photographic real-time shot of Claire seated in the same workshop, starting from the exact supplied image. Preserve her adult face, dark bangs, ponytail, gold hoops, blue-gray shirt, seated posture and quiet neutral closed lips. Keep the existing wooden table, uninterrupted shelf, lighting and shadows. The camera physically trucks sideways 55 cm toward frame-right from 0.75 to 3.25 seconds, parallel to the table edge. Keep the same fixed focal length, height, camera orientation and focus on her irises without zoom or pan. The shelf and tabletop must show modest parallax. Hold still at the end. Hands remain outside the frame, no dialogue or music. Keep only this take's workshop air and quiet breath. At most one ordinary blink, no searching or spoken mouth movements.",
+    "variants": {
+      "A": "Her gaze rests on the fixed point in the room where the lens started, throughout the shot. Small neutral breathing; no intentional eye tracking as the camera moves.",
+      "B": "Her eyes continuously follow the center of the physical moving lens with a small, smooth adjustment as it trucks. She maintains direct eye contact with the moving lens, including when the slide ends. Keep the head adjustment minimal and natural."
+    }
+  },
+  "E17": {
+    "common": "One continuous four-second photoreal locked-camera shot beginning with the supplied frontal shot of her upper body behind the table of fictional adult Claire in the ceramics workshop. Neutral lips together, seated with shoulders facing forward. Keep the original composition, table, wardrobe, focal length, lighting, and exposure. Focus on the eyes. Hold front through 0.5 seconds, turn her head smoothly toward frame-left to a clear three-quarter angle by 1.4 seconds, pause briefly, then pass through front and turn smoothly toward frame-right by about 3.1 seconds. Settle there through the end. Let eyes follow her natural head direction. No extra person, camera motion, zoom or cut. Native quiet workshop air and gentle breath from this take only, no words or music.",
+    "variants": {
+      "A": "Preserve the same person as she turns and settles.",
+      "B": "Treat the supplied frontal face as the same identity across every angle. Keep the natural asymmetric eye and eyelid form, nose bridge, lip corners, chin proportions and apparent age consistent as the view changes. Keep the same bangs and low ponytail, small gold hoops in the same ears and the same blue-gray shirt. Keep near and far cheek perspective physically plausible without reshaping her face, swapping sides, adding earrings or changing expression."
+    }
+  }
+}
