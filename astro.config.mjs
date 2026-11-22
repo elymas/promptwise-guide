@@ -5,5 +5,5 @@ export default defineConfig({
   base: '/promptwise-guide',
   trailingSlash: 'always',
   output: 'static',
-  integrations: [sitemap()],
+  integrations: [sitemap({ filter: page => !new URL(page).pathname.endsWith('/examples/coverage/') })],
 });

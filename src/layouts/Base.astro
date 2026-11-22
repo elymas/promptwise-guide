@@ -1,8 +1,8 @@
 ---
 import '../styles/global.css';
 import { path } from '../data/topics';
-interface Props { title?: string; description?: string; }
-const {title = 'FRAME / NOTES — AI 영상 연출 가이드', description = '구도, 빛, 연기, 컷 연속성을 설계하는 한국어 AI 영상 연출 노트.'} = Astro.props;
+interface Props { title?: string; description?: string; noindex?: boolean; }
+const {title = 'FRAME / NOTES — AI 영상 연출 가이드', description = '구도, 빛, 연기, 컷 연속성을 설계하는 한국어 AI 영상 연출 노트.', noindex = false} = Astro.props;
 const canonical = new URL(Astro.url.pathname.endsWith('/404/') ? path('404.html') : Astro.url.pathname, Astro.site);
 ---
 <!doctype html>
@@ -10,10 +10,10 @@ const canonical = new URL(Astro.url.pathname.endsWith('/404/') ? path('404.html'
   <head>
     <meta charset="UTF-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>{title}</title><meta name="description" content={description} />
-    <link rel="canonical" href={canonical} /><link rel="icon" type="image/svg+xml" href={path('favicon.svg')} />
+    {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonical} />}<link rel="icon" type="image/svg+xml" href={path('favicon.svg')} />
     <meta name="theme-color" content="#10120f" />
     <meta property="og:title" content={title} /><meta property="og:description" content={description} />
-    <meta property="og:type" content="website" /><meta property="og:url" content={canonical} />
+    <meta property="og:type" content="website" />{!noindex && <meta property="og:url" content={canonical} />}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
