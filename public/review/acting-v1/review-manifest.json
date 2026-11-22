@@ -25,27 +25,6 @@
       "comparison": "media/ACT-01-comparison.mp4"
     },
     {
-      "id": "ACT-02",
-      "title": "서운함을 감추는 미소",
-      "kind": "direction_specificity",
-      "duration": 6,
-      "note": "B는 작은 미소를 더 오래 유지하지만, 서운함을 숨기는 순간의 차이는 충분히 뚜렷하지 않습니다. 성공한 감정 연출의 증거로 단정하지 않았습니다.",
-      "status": "보완 대상 · 감춰진 서운함은 약함",
-      "cast": [
-        "CLAIRE"
-      ],
-      "speech": [],
-      "a_label": "일반 지시",
-      "b_label": "구체적인 지시",
-      "a": "media/ACT-02-a-video-v2.mp4",
-      "a_poster": "media/ACT-02-a-video-v2.jpg",
-      "a_name": "ACT-02-a-video-v2",
-      "b": "media/ACT-02-b-video-v1.mp4",
-      "b_poster": "media/ACT-02-b-video-v1.jpg",
-      "b_name": "ACT-02-b-video-v1",
-      "comparison": "media/ACT-02-comparison.mp4"
-    },
-    {
       "id": "ACT-03",
       "title": "웃음 억제와 짧은 해방",
       "kind": "direction_specificity",
@@ -70,7 +49,6 @@
       "id": "ACT-04",
       "title": "같은 연기의 넓은 화면과 얼굴 크롭",
       "kind": "local_analysis",
-      "source_id": "ACT-01",
       "source": "media/ACT-01-b-video-v1.mp4",
       "crops": [
         {
@@ -234,7 +212,6 @@
       "id": "ACT-10",
       "title": "2인 원테이크의 두 얼굴 동기 관찰",
       "kind": "local_analysis",
-      "source_id": "ACT-07",
       "source": "media/ACT-07-b-video-v1.mp4",
       "crops": [
         {

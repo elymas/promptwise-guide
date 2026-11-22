@@ -20,12 +20,6 @@
       "resolution": "854×480"
     },
     "review": "review/claire-v2/#E01",
-    "sources": [
-      "PW-002-p1",
-      "PW-002-p2",
-      "PW-002-p3",
-      "PW-002-p4"
-    ],
     "inputs": [
       {
         "label": "A 영상",
@@ -53,7 +47,11 @@
         "seconds": 5.5,
         "label": "기둥과 선반의 상대 이동"
       }
-    ]
+    ],
+    "decision": "부분 채택",
+    "use": "비교 자료",
+    "selected": "둘 다",
+    "decisionNote": "A를 기본 공간 구성, B를 가까운 기둥이 빠지고 뒷선반이 드러나는 예시로 함께 둡니다."
   },
   {
     "id": "E02",
@@ -76,9 +74,6 @@
       "resolution": "852×480"
     },
     "review": "review/fixed-focus/#focus-480p",
-    "sources": [
-      "PW-018-p12"
-    ],
     "inputs": [
       {
         "label": "A 영상 · E02-480-A",
@@ -102,7 +97,11 @@
         "seconds": 2.75,
         "label": "Claire 눈과 도자기 비교"
       }
-    ]
+    ],
+    "decision": "부분 채택",
+    "use": "대표본 + 비교 자료",
+    "selected": "B",
+    "decisionNote": "B의 1.75~3.50초를 초점 이동의 대표 후보로 쓰고, A는 도자기에 초점을 유지한 비교군으로 둡니다."
   },
   {
     "id": "E03",
@@ -127,10 +126,6 @@
       "resolution": "864×496"
     },
     "review": "review/optics-v1/#E03",
-    "sources": [
-      "PW-025-p11",
-      "PW-025-p13"
-    ],
     "inputs": [
       {
         "label": "E03-a-image-v5",
@@ -148,7 +143,11 @@
         "label": "E03-b-video-v2",
         "prompt": "One continuous six-second photographic live-action shot beginning at the supplied first frame. Preserve the scene, identity, wardrobe, cup or umbrella geometry, framing, light and exposure except for the explicitly tested variable. The camera is physically locked: no dolly, pan, zoom, cuts, reframing or stabilization warp. Claire maintains the first-frame lens gaze and head angle for all six seconds, with brief natural blinks and quiet nasal breathing. Her lips stay closed. The falling rain is the only large visible motion; her right hand keeps the umbrella steady. No music, text or added person.\n\nKeep the bright narrow backlit rain streaks from the first frame, with the same face brightness and umbrella placement. Rain falls at ordinary real-time speed with a constant density; the umbrella stays at the same height and angle, held by the same right hand. The rain streaks remain bright against the dark hedge without adding drops or increasing the rainfall. Claire holds her gaze and posture with only normal breath and blinks. Keep the constant face fill unchanged. Native sound for the full take: rain drumming on the umbrella and wet paving at a steady natural level; no dialogue, thunder or musical swell."
       }
-    ]
+    ],
+    "decision": "부분 채택",
+    "use": "비교 자료",
+    "selected": "둘 다",
+    "decisionNote": "A/B에서 약 3초의 어두운 배경 앞 빗줄기와 우산 가장자리의 반사를 비교합니다."
   },
   {
     "id": "E04",
@@ -171,10 +170,6 @@
       "resolution": "854×480"
     },
     "review": "review/claire-v2/#E04",
-    "sources": [
-      "PW-015-p2",
-      "PW-015-p4"
-    ],
     "inputs": [
       {
         "label": "A 영상",
@@ -198,7 +193,11 @@
         "seconds": 4.5,
         "label": "볼과 코 옆의 명암"
       }
-    ]
+    ],
+    "decision": "부분 채택",
+    "use": "비교 자료",
+    "selected": "둘 다",
+    "decisionNote": "A의 비교적 고른 얼굴 명암과 B의 코 옆·볼 그림자를 함께 보여 줍니다."
   },
   {
     "id": "E05",
@@ -217,10 +216,6 @@
       "resolution": "986×808"
     },
     "review": "review/optics-v1/#E05",
-    "sources": [
-      "PW-015-p8",
-      "PW-015-p10"
-    ],
     "inputs": [
       {
         "label": "E05-a-image-v1",
@@ -230,7 +225,11 @@
         "label": "E05-b-image-v6",
         "prompt": "Relight this same photograph with very soft light. Keep the woman, her exact face, pose, blue-gray shirt, camera and neutral gray wall unchanged. Replace the hard key by a large diffused key from the same camera-left direction. Remove the sharp-edged nose shadow on her right cheek and turn it into a broad, gentle gradient. The chin shadow should also have a soft feathered edge. Keep the lit cheek at the original brightness and preserve the low fill on the shaded side. Keep her eyes, eyelashes, lips, hair and cloth texture sharp. Only the shadow edges soften; do not blur or retouch the woman. The wall remains the same neutral gray without a bright patch, window or visible light fixture."
       }
-    ]
+    ],
+    "decision": "부분 채택",
+    "use": "스틸·작업 기록",
+    "selected": "둘 다",
+    "decisionNote": "A와 B 스틸을 함께 써서 코 옆에서 볼로 이어지는 급한 경계와 완만한 경계를 보여 줍니다."
   },
   {
     "id": "E07",
@@ -253,10 +252,6 @@
       "resolution": "854×480"
     },
     "review": "review/claire-v2/#E07",
-    "sources": [
-      "PW-051-p5",
-      "PW-051-p6"
-    ],
     "inputs": [
       {
         "label": "A 영상",
@@ -288,51 +283,11 @@
         "seconds": 1.333,
         "label": "물방울"
       }
-    ]
-  },
-  {
-    "id": "E10",
-    "topic": "camera",
-    "title": "고정 카메라와 전진 돌리",
-    "change": "A는 작업실 이미지를 첫 프레임으로 고정합니다. B는 같은 이미지와 3D 카메라 경로를 참조해 전진하도록 지시했습니다.",
-    "watch": "2.50~5.50초에 B의 왼쪽 앞 문틀이 가장자리로 밀리고 Claire의 얼굴이 커지는 모습을 보세요.",
-    "note": "B의 얼굴 폭은 5.50초에 시작 대비 약 2.16배입니다. 두 편은 입력 방식과 첫 화면의 얼굴 크기에 차이가 있습니다. 1080p 후보는 같은 첫 프레임 방식을 사용합니다.",
-    "still": false,
-    "a": {
-      "poster": "review/claire-v2/media/E10-a-mini-static-v1.jpg",
-      "video": "review/claire-v2/media/E10-a-mini-static-v1.mp4",
-      "audio": "native",
-      "resolution": "854×480"
-    },
-    "b": {
-      "poster": "review/claire-v2/media/E10-b-mini-v2r1.jpg",
-      "video": "review/claire-v2/media/E10-b-mini-v2r1.mp4",
-      "audio": "native",
-      "resolution": "854×480"
-    },
-    "review": "review/dolly-depth/",
-    "sources": [
-      "PW-032-p3",
-      "PW-032-p4"
     ],
-    "inputs": [
-      {
-        "label": "A 영상",
-        "prompt": "6 seconds, horizontal16:9, one continuous real-time take from the supplied workshop scene frame. CAMERA: completely LOCKED CAMERA, constant focal length and constant framing. The near doorway edges, far shelves and Claire remain the SAME apparent size and position throughout all six seconds. There is no forward move, zoom, pan, reframing or cut. PERFORMANCE: Claire stands on the same spot, both feet planted, arms relaxed at her sides, calmly making eye contact with the lens; allow small natural breathing and one or two brief natural blinks. She does not walk toward the camera. Preserve the original photographic skin, coat, shirt, workshop, focus, light and exposure. SOUND: clearly audible quiet rain outside and low indoor room tone, no dialogue or music. End on the same camera view as the opening."
-      },
-      {
-        "label": "B 영상",
-        "prompt": "6 seconds, one continuous photorealistic live-action take. REFERENCE ROLES: @image1 defines the real photographic Claire, her exact face, blue-grey shirt, dark coat, workshop corridor, nested doorways, light, skin and materials. @video1 supplies ONLY the camera path: forward dolly. Keep the actual scene and person from @image1; do not copy the faceless stand-in, grey/plastic surfaces, simple geometry or studio appearance of @video1. Follow @video1's camera movement and lens behavior across the same six seconds, with a still opening and settled ending. Claire remains standing with relaxed arms, natural breathing and brief blinks, looking toward the actual camera lens. Keep photographic texture, original scene lighting and stable exposure. SOUND: clearly audible quiet rain outside and low workshop room tone, no dialogue or music."
-      },
-      {
-        "label": "A 시작 스틸",
-        "prompt": "A photographic frame of the adult fictional Claire Yoon, 27. The supplied identity reference defines her face, black bangs, tied-back hair and small gold hoop earrings, not its neutral background, pose or studio lighting. Keep her recognizable age and facial proportions. At this shot distance, use natural skin color variation, restrained local shine and real lip texture; fine skin detail only where the camera can resolve it. Uneven individual hair strands and a few flyaways, ordinary woven clothing with small natural folds, and believable worn surfaces. Preserve natural facial asymmetry rather than retouching or beautifying her. Any visible hands have anatomically coherent fingers and relaxed joints. Plain unlettered surfaces. Horizontal 16:9.\n\nEye-level medium-wide view, 35 mm fixed-focal-length look, down a worn workshop corridor with two doorway edges at distinct distances. Claire stands at the far end in an opaque blue-grey shirt and dark coat, both hands relaxed at her sides and both feet planted. Eyes in focus, door edges and receding shelves readable rather than dissolved into bokeh. A high side window provides one motivated key with consistent shadows. Keep natural skin and worn wood texture. Claire looks into the lens. Use the identical starting frame for both variants.\n\nSame approved image for A and B."
-      },
-      {
-        "label": "B 시작 스틸",
-        "prompt": "A photographic frame of the adult fictional Claire Yoon, 27. The supplied identity reference defines her face, black bangs, tied-back hair and small gold hoop earrings, not its neutral background, pose or studio lighting. Keep her recognizable age and facial proportions. At this shot distance, use natural skin color variation, restrained local shine and real lip texture; fine skin detail only where the camera can resolve it. Uneven individual hair strands and a few flyaways, ordinary woven clothing with small natural folds, and believable worn surfaces. Preserve natural facial asymmetry rather than retouching or beautifying her. Any visible hands have anatomically coherent fingers and relaxed joints. Plain unlettered surfaces. Horizontal 16:9.\n\nEye-level medium-wide view, 35 mm fixed-focal-length look, down a worn workshop corridor with two doorway edges at distinct distances. Claire stands at the far end in an opaque blue-grey shirt and dark coat, both hands relaxed at her sides and both feet planted. Eyes in focus, door edges and receding shelves readable rather than dissolved into bokeh. A high side window provides one motivated key with consistent shadows. Keep natural skin and worn wood texture. Claire looks into the lens. Use the identical starting frame for both variants.\n\nSame approved image for A and B."
-      }
-    ]
+    "decision": "부분 채택",
+    "use": "비교 자료",
+    "selected": "둘 다",
+    "decisionNote": "0.96~1.33초의 발 착지 전후를 A/B로 보여 주고, B의 물방울이 더 읽히는 점을 채택합니다."
   },
   {
     "id": "ACT-01",
@@ -355,9 +310,6 @@
       "resolution": "854×480"
     },
     "review": "review/acting-v2/#ACT-01",
-    "sources": [
-      "PW-034-p8"
-    ],
     "inputs": [
       {
         "label": "A 영상",
@@ -367,22 +319,21 @@
         "label": "B 영상",
         "prompt": "6 seconds, one locked photographic close-up from this exact scene image. Preserve CLAIRE's supplied adult identity, clothes, natural skin and lips, same workshop window light and fixed65mm lens look. Both eyes, lips and chin remain visible for the whole shot. She attends to her actual friend Erin just outside frame-right, never to the lens. At about one second, a brief downward glance notices the returned letter on the existing table just below the crop; the letter is not lifted or shown. Then her attention returns to her real friend. No camera move, cut, new person, text or music. Sound is only quiet room tone and natural breathing. No dialogue, vocalized words or narration.\nThe starting small polite smile masks her worry. Keep visible tension in the jaw and lips through the first two seconds. After noticing the letter, release one long breath she has held, parting the lips only for that exhale; let the jaw and brow visibly soften, and only afterward let a clearly readable relieved smile arrive. Hold that softer new expression through the last second. This is one release of tension, not a laugh, cry or repeated nod."
       }
-    ]
+    ],
+    "decision": "부분 채택",
+    "use": "비교 자료",
+    "selected": "둘 다",
+    "decisionNote": "A/B를 숨을 내쉰 뒤 입과 뺨이 풀리는 안도 표현 비교로 사용합니다."
   },
   {
     "id": "ACT-02",
     "topic": "performance",
     "title": "미소가 무너졌다 돌아오는 순간",
-    "change": "미소를 유지하는 연기와 잠깐 표정이 무너졌다가 회복되는 연기를 비교합니다.",
+    "change": "표정이 잠시 무너졌다가 돌아오는 연기를 보여 줍니다.",
     "watch": "눈과 입의 움직임이 엇갈리는 순간을 보세요.",
-    "note": "미세 표정 비교 초안.",
+    "note": "B 단독 대표본입니다.",
     "still": false,
-    "a": {
-      "poster": "review/acting-v2/media/ACT-02-a-take.jpg",
-      "video": "review/acting-v2/media/ACT-02-a-take.mp4",
-      "audio": "native",
-      "resolution": "854×480"
-    },
+    "a": null,
     "b": {
       "poster": "review/acting-v2/media/ACT-02-b-take.jpg",
       "video": "review/acting-v2/media/ACT-02-b-take.mp4",
@@ -390,19 +341,16 @@
       "resolution": "854×480"
     },
     "review": "review/acting-v2/#ACT-02",
-    "sources": [
-      "PW-034-p8"
-    ],
     "inputs": [
-      {
-        "label": "A 영상",
-        "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, locked close-up. Claire smiles courteously toward Erin at frame-right. A quiet chair scrape from that partner position is the cause at about1 second. Room tone and breath; no spoken words.\n\nClaire feels hurt that her friend is leaving but keeps smiling politely."
-      },
       {
         "label": "B 영상",
         "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, locked close-up. Claire smiles courteously toward Erin at frame-right. A quiet chair scrape from that partner position is the cause at about1 second. Room tone and breath; no spoken words.\n\nAfter the chair sound, hold the polite smile briefly, then let it disappear visibly for about a second: lips close and press lightly, mouth corners lower and the breath pauses. Only then recover the polite smile for her friend. Give the viewer one readable mask-slip and recovery, without crying, head shaking or a big grimace."
       }
-    ]
+    ],
+    "decision": "채택",
+    "use": "대표본만",
+    "selected": "B",
+    "decisionNote": "B만 미소 유지와 잠시 표정이 무너졌다 돌아오는 변화 예시로 둡니다."
   },
   {
     "id": "E15",
@@ -425,10 +373,6 @@
       "resolution": "854×480"
     },
     "review": "review/acting-v2/#ACT-03",
-    "sources": [
-      "PW-103-p5",
-      "PW-103-p6"
-    ],
     "inputs": [
       {
         "label": "A 영상",
@@ -448,7 +392,11 @@
         "seconds": 4.5,
         "label": "미소가 커진 뒤의 입"
       }
-    ]
+    ],
+    "decision": "부분 채택",
+    "use": "비교 자료",
+    "selected": "둘 다",
+    "decisionNote": "A의 더 큰 웃음과 B의 입술을 누르는 웃음을 2초·4.5초에서 함께 보여 줍니다."
   },
   {
     "id": "ACT-05",
@@ -471,9 +419,6 @@
       "resolution": "854×480"
     },
     "review": "review/acting-v2/#ACT-05",
-    "sources": [
-      "PW-052-p4"
-    ],
     "inputs": [
       {
         "label": "A 영상",
@@ -483,7 +428,11 @@
         "label": "B 영상",
         "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nSOUND RECORDED WITH THIS PERFORMANCE: record a continuous eight-second production soundtrack with quiet workshop air audible throughout. At second2, Erin gives one clearly audible warm nonverbal chuckle, timed to her smile and small chest movement; Claire is still tense and quiet. At second4.5, Claire sees Erin smiling and gives one clearly audible relieved outward breath as her shoulders lower and her smile arrives. These are two distinct, separated vocal events from the pictured women, recorded at normal conversational audibility above the low room sound. Keep the intervening and final room sound continuous through second8. Wordless human reactions only: no dialogue, whispering, music or background speakers. \n\nThe camera moves physically0.6m to the right over the full8seconds along the front side of the axis, Same fixed35mm lens look, no zoom, no cut or axis crossing. Both people remain visible and their faces readable. The tabletop and distant shelf show different parallax speeds. In both A/B use this exact same camera instruction. The letter stays still, hands remain separate. The sound follows the staggered breaths and chuckle described above, with no spoken words.\n\nErin notices first, exhales and smiles during seconds1–3. Claire remains visibly concerned and unsmiling through the first3seconds. Only after noticing Erin's reaction around4seconds does Claire relax and smile. Hold their staggered emotional states long enough to read, then settle together. No synchronized nods or extra dialogue.\nSTART FRAME: the supplied photographic frame is the literal starting image. Preserve its two actors, connected table, shelf, wardrobe and letter while executing the camera and staggered reactions described above."
       }
-    ]
+    ],
+    "decision": "부분 채택",
+    "use": "비교 자료",
+    "selected": "B",
+    "decisionNote": "A만 이번 판정 대상입니다. A는 같은 공간의 외부 환경음을 붙인 대조 자료로 두고, 이미 확정된 B를 곁에 놓습니다."
   },
   {
     "id": "E19",
@@ -516,11 +465,6 @@
       "captionLabel": "한국어·영어 대사"
     },
     "review": "review/conversation-axis/#bare-table",
-    "sources": [
-      "PW-052-p1",
-      "PW-052-p2",
-      "PW-052-p4"
-    ],
     "inputs": [
       {
         "label": "A/B 공통 · Claire",
@@ -552,7 +496,11 @@
         "seconds": 4.25,
         "label": "Erin 답변 시작 구간"
       }
-    ]
+    ],
+    "decision": "부분 채택",
+    "use": "대표본 + 비교 자료",
+    "selected": "B",
+    "decisionNote": "B를 손 자세 연속성의 대표 후보로 올리고, A는 4초 컷에서 양손이 벌어지는 반례로만 함께 둡니다."
   },
   {
     "id": "E06",
@@ -575,10 +523,6 @@
       "resolution": "864×496"
     },
     "review": "review/comparison-batch/#E06",
-    "sources": [
-      "PW-029-p13",
-      "PW-029-p17"
-    ],
     "inputs": [
       {
         "label": "rim-plate-a",
@@ -596,7 +540,11 @@
         "label": "E06-B",
         "prompt": "One continuous four-second scene. @Image1 fixes the exact adult Claire face, camera, composition and lighting. Locked camera, one woman, sharp eyes, stable skin texture. She listens quietly, with lips together, soft breathing and a short natural blink. Hands stay below frame. Keep the same window key, wall and overall exposure. Record this take’s low workshop room tone and breathing. No music or dialogue. A narrow light behind her catches only the outer edge of her hair and shoulder, which stays distinct from the dark wall. Hold the framing to the end."
       }
-    ]
+    ],
+    "decision": "부분 채택",
+    "use": "대표본 + 비교 자료",
+    "selected": "B",
+    "decisionNote": "B를 어두운 벽에서 머리·어깨가 분리되는 화면 대표 후보로 하고 A를 비교군으로 둡니다."
   },
   {
     "id": "E08",
@@ -619,9 +567,6 @@
       "resolution": "852×480"
     },
     "review": "review/condensation-rework/",
-    "sources": [
-      "PW-087-p4"
-    ],
     "inputs": [
       {
         "label": "A 영상 · E08-480-A",
@@ -645,7 +590,11 @@
         "seconds": 3.5,
         "label": "반사와 물기"
       }
-    ]
+    ],
+    "decision": "부분 채택",
+    "use": "비교 자료",
+    "selected": "둘 다",
+    "decisionNote": "현재 A/B의 2.0초와 3.5초 확대를 사용해 반사와 건물 윤곽이 물기 너머로 남는 정도를 비교합니다. 첫 B의 흰 얼룩 프레임은 이전 실패 참고로 둡니다."
   },
   {
     "id": "FACS",
@@ -668,11 +617,6 @@
       "resolution": "864×496"
     },
     "review": "review/comparison-batch/#FACS",
-    "sources": [
-      "PW-107-p1",
-      "PW-107-p8",
-      "PW-107-p11"
-    ],
     "inputs": [
       {
         "label": "FACS-A",
@@ -688,7 +632,11 @@
         "seconds": 2.5,
         "label": "볼과 눈가"
       }
-    ]
+    ],
+    "decision": "부분 채택",
+    "use": "비교 자료",
+    "selected": "둘 다",
+    "decisionNote": "A/B를 2.5초의 볼·눈가 움직임 강도 비교로 둡니다. B도 입이 먼저 벌어지거나 눈을 감는 구간이 있습니다."
   },
   {
     "id": "ACT-08",
@@ -718,11 +666,6 @@
       "captionLanguage": "en"
     },
     "review": "review/acting-v2/#ACT-08",
-    "sources": [
-      "PW-034-p8",
-      "PW-052-p9",
-      "PW-103-p8"
-    ],
     "inputs": [
       {
         "label": "A 영상",
@@ -732,7 +675,11 @@
         "label": "B 영상",
         "prompt": "Photographic live action from the approved scene frame, preserving adult identity, natural distance-appropriate skin, hair and cloth, motivated window light and stable exposure. One continuous real-time shot, locked camera and fixed focal length, no cuts. Natural breathing and brief blinks. No added people, text or music.\n\nLANGUAGE AND SPEAKERS: CLAIRE is the black-haired adult Korean woman and speaks KOREAN ONLY. ERIN is the red-haired adult woman and speaks ENGLISH ONLY. Say only the exact quoted dialogue for this scene. A wordless scene contains no spoken words. Never translate or swap their lines or languages.\n\n6 seconds, one locked photographic close-up of ERIN, the adult red-haired woman with the supplied freckles and identity. Her partner Claire is just outside frame-left. Erin says exactly in English: \"I'm fine. Really.\" during about 1-3 seconds, then remains quiet. Same words, camera, starting frame, lighting and room tone in both variants. No Korean, other dialogue, music or tears.\n\nERIN: Natural adult female English voice, clear warm middle register with a light Irish lilt, restrained and human. Never Korean.\n\nErin is quietly shaken but tries to end the conversation. She cannot bring herself to smile: keep the corners of her mouth level or slightly lowered, never a broad grin. Say the exact English words with a brief catch in the breath before Really. After the words, her lips close and press lightly, her eyebrows draw together for a moment and her gaze lowers toward the table before returning to her real partner at frame-left. End with visible unease and a held breath, no relief smile, tears or theatrical sobbing."
       }
-    ]
+    ],
+    "decision": "부분 채택",
+    "use": "비교 자료",
+    "selected": "둘 다",
+    "decisionNote": "A의 안도와 B의 숨은 불안을 “Really” 전후의 쉼·시선·발성 조합으로 비교합니다."
   },
   {
     "id": "ACT-11",
@@ -762,10 +709,6 @@
       "captionLanguage": "ko"
     },
     "review": "review/acting-v2/#ACT-11",
-    "sources": [
-      "PW-034-p8",
-      "PW-103-p8"
-    ],
     "inputs": [
       {
         "label": "A 영상",
@@ -775,7 +718,11 @@
         "label": "B 영상",
         "prompt": "Photographic live action from the approved scene frame, preserving adult identity, natural distance-appropriate skin, hair and cloth, motivated window light and stable exposure. One continuous real-time shot, locked camera and fixed focal length, no cuts. Natural breathing and brief blinks. No added people, text or music.\n\nLANGUAGE AND SPEAKERS: CLAIRE is the black-haired adult Korean woman and speaks KOREAN ONLY. ERIN is the red-haired adult woman and speaks ENGLISH ONLY. Say only the exact quoted dialogue for this scene. A wordless scene contains no spoken words. Never translate or swap their lines or languages.\n\n6 seconds. One locked close-up of CLAIRE facing her actual partner just outside frame-right. She says exactly in Korean, between1 and3 seconds: \"이제 됐어.\" Then remains silent. Same starting frame, fixed camera, light and real-time duration in both. Only her exact Korean line, room tone and breath; no English, extra words or music.\n\nCLAIRE: Natural adult female mid-register, warm clear conversational Korean, restrained and human. Never English.\n\nClaire is drawing a firm boundary after her partner has pushed too far. The initial polite smile fades completely before the line; her jaw steadies, chin lifts just slightly and her eyes remain firmly on that real partner. Say the same Korean words low, precise and final, with a short quiet pause afterward. No smile after speaking, no yelling, no tears, no head-shaking loop."
       }
-    ]
+    ],
+    "decision": "부분 채택",
+    "use": "비교 자료",
+    "selected": "둘 다",
+    "decisionNote": "같은 한국어 대사를 안도 A와 단호함 B로 읽는 비교 쌍으로 둡니다."
   },
   {
     "id": "ACT-12",
@@ -805,11 +752,6 @@
       "captionLanguage": "en"
     },
     "review": "review/acting-v2/#ACT-12",
-    "sources": [
-      "PW-034-p8",
-      "PW-052-p9",
-      "PW-103-p8"
-    ],
     "inputs": [
       {
         "label": "A 영상",
@@ -819,150 +761,11 @@
         "label": "B 영상",
         "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, fixed close-up of Erin facing Claire just outside frame-left. Both versions say only the exact same English words once: \"Claire, listen.\" Quiet room tone, no music or extra words.\n\nShe urgently needs to stop her friend from making a mistake. Straighten first, take one preparatory breath and project the exact English line firmly and clearly while leaning a few centimeters toward that actual partner; eyebrows draw inward briefly. Hold focused attention afterward. No smile, screaming, extra words or repeated call."
       }
-    ]
-  },
-  {
-    "id": "E23",
-    "topic": "story",
-    "title": "충격음과 반응의 순서",
-    "change": "ACT-09 B에서 같은 세 구간을 사용했습니다. A는 반응→충격음→회복, B는 충격음→반응→회복 순서입니다.",
-    "watch": "두 편의 충격음은 B 약 0.89초, A 약 3.26초에 가장 큽니다. Claire의 움찔함이 소리 앞에 오는지 뒤에 오는지 보세요.",
-    "note": "ACT-09 B의 생성 원음을 영상과 함께 옮겼습니다. 두 편 모두 3.50초부터 같은 회복 구간으로 돌아갑니다.",
-    "still": false,
-    "a": {
-      "video": "review/story-e23/media/E23-A.mp4",
-      "audio": "edited-original",
-      "poster": "review/story-e23/media/E23-A.jpg",
-      "resolution": "854×480",
-      "captions": "review/story-e23/media/A-dialogue.vtt",
-      "captionLanguage": "ko"
-    },
-    "b": {
-      "video": "review/story-e23/media/E23-B.mp4",
-      "audio": "edited-original",
-      "poster": "review/story-e23/media/E23-B.jpg",
-      "resolution": "854×480",
-      "captions": "review/impact-and-reaction/media/B-dialogue.vtt",
-      "captionLanguage": "ko"
-    },
-    "review": "review/story-e23/",
-    "sources": [
-      "PW-106-p2",
-      "PW-106-p7",
-      "PW-106-p8"
     ],
-    "inputs": [
-      {
-        "label": "두 편집이 공유하는 원본 입력문 · ACT-09 B",
-        "prompt": "Photographic live action from the reviewed reference scene. Preserve identities, wardrobe, light direction, one-room geometry and ordinary skin/cloth detail. One continuous real-time shot with natural breath and brief blinks, no added people, text or music. Exact quoted dialogue only.\n\nCLAIRE, the black-haired Korean woman, speaks KOREAN ONLY. ERIN, the auburn-haired woman, speaks ENGLISH ONLY. Never swap or translate their lines. A wordless shot contains no spoken words. Only the named speaker moves her mouth for speech; the listener breathes and reacts without mouthing words.\n\nNatural adult female conversational voices. Claire: clear Korean, warm mid-register. Erin: clearly articulated English, warm mid-register. Keep speech intelligible; no inaudible whisper or exaggerated accent. This phase does not establish a new recurring voice identity.\n\n6 seconds, locked camera. A single door slam occurs offscreen at frame-left around2seconds. Claire says exactly in Korean \"깜짝이야.\" around3.5–4.5seconds, then closes her lips. Same scene, no visible door or extra person.\n\nBefore the audible impact she is composed. Only after its onset, one blink and small shoulder flinch occur, followed by a short inhalation. She regains composure, says the exact Korean line once and settles for the last second. No anticipation, repeated flinch or added interjection."
-      }
-    ],
-    "cues": [
-      {
-        "seconds": 0.89,
-        "label": "B 충격음 피크"
-      },
-      {
-        "seconds": 3.26,
-        "label": "A 충격음 피크"
-      }
-    ],
-    "dialogue": [
-      "Claire · 한국어 · “깜짝이야.” · 두 편 모두 약 3.80~4.60초"
-    ]
-  },
-  {
-    "id": "E20",
-    "topic": "continuity",
-    "title": "컷 전후 머그의 높이와 오른손",
-    "change": "A는 앞 샷에서 머그를 내리기 시작하도록 지시했습니다. B는 컷 직후까지 같은 오른손과 높이로 유지한 뒤 내리도록 바꿨습니다.",
-    "watch": "두 영상의 2.00초에 앵글이 바뀝니다. 컷 직전·직후에 머그 밑면과 테이블 사이의 틈을 보세요.",
-    "note": "A는 머그가 테이블에 닿은 뒤 다음 앵글에서 다시 들려 있습니다. B는 머그를 든 자세로 컷을 넘긴 뒤 내려놓습니다. 기존 무음 제작본을 컷 기준으로 맞춘 발췌이며, 빨간 우산의 원음 480p A/B는 시작 스틸과 제작안을 준비했습니다.",
-    "still": false,
-    "a": {
-      "video": "review/cut-boundary/media/A-aligned.mp4",
-      "audio": "silent",
-      "poster": "review/cut-boundary/media/A-opening.jpg",
-      "resolution": "864×496"
-    },
-    "b": {
-      "video": "review/cut-boundary/media/B-aligned.mp4",
-      "audio": "silent",
-      "poster": "review/cut-boundary/media/B-opening.jpg",
-      "resolution": "864×496"
-    },
-    "review": "review/cut-boundary/",
-    "sources": [
-      "PW-108-p2",
-      "PW-104-p4"
-    ],
-    "inputs": [
-      {
-        "label": "A · 기존 샷 계획의 입력문",
-        "prompt": "A six-second continuity demonstration with one hard cut at three seconds. Zero to three seconds: the right hand holds the single ivory mug with its handle facing her right, then lowers it halfway. At the cut change only to a closer camera angle on the same side of the action axis. Three to five seconds: the same right hand continues lowering the same mug and sets it upright on the walnut table. The left hand stays on the table. Five to six seconds: release the handle and hold. No hand swap, duplicated mug or disappearing handle. Preserve the person, outfit, objects and lighting established in the first frame. No readable text, captions, logos or music. Silent."
-      },
-      {
-        "label": "B · 실제 보완 입력문",
-        "prompt": "Exactly two shots, with one hard cut at 3 seconds. SHOT 1, 0.0-3.0 seconds: locked medium view. Claire holds the single ivory mug completely motionless at the same height as the first frame, well above the tabletop. The right hand grips its single handle, and the left hand rests on the table. The mug does NOT lower or touch the table anywhere in shot 1. SHOT 2, 3.0-6.0 seconds: hard cut to a closer view on the same side of the action axis. The first frame after the cut shows the same mug still suspended at the same height in the same right hand. Only AFTER the cut, from 3.2 to 4.8 seconds, the right hand lowers the mug in one continuous movement onto the table. From 4.8 to 5.5 seconds the right fingers release the handle; hold to the end. The left hand never moves. Same face, blue-grey shirt, ivory mug, handle and walnut table throughout. One mug, two hands, no hand swap, no liquid. Silent, no text, captions or logos."
-      }
-    ],
-    "cues": [
-      {
-        "seconds": 1.96,
-        "label": "머그 컷 직전"
-      },
-      {
-        "seconds": 2,
-        "label": "머그 컷 직후"
-      }
-    ]
-  },
-  {
-    "id": "E21",
-    "topic": "continuity",
-    "title": "컷 직후 닫혀 버린 문과 열린 채 이어지는 문",
-    "change": "Blender의 같은 장면에서 앞 샷과 컷 시각을 공유합니다. A는 컷 직후 문 각도를 0도로 되돌리고, B는 약 58도를 이어받습니다.",
-    "watch": "2.00초 컷에서 오른쪽 문틈과 파란 복도 바닥이 사라지는지 확인하세요. 미리보기는 컷 직후입니다.",
-    "note": "무음 3D 프리비즈입니다. 인물 모형의 자세·이동과 카메라 앵글은 A/B에서 같습니다. 소리 있는 480p 공통 첫 샷과 후속 시작 스틸은 상세 기록에 있으며 후속 실사 A/B는 제작 대기 중입니다.",
-    "still": false,
-    "a": {
-      "video": "review/door-match/media/previz/A.mp4",
-      "audio": "silent",
-      "poster": "review/door-match/media/previz/A-after.jpg",
-      "resolution": "768×432"
-    },
-    "b": {
-      "video": "review/door-match/media/previz/B.mp4",
-      "audio": "silent",
-      "poster": "review/door-match/media/previz/B-after.jpg",
-      "resolution": "768×432"
-    },
-    "review": "review/door-match/#door-480p",
-    "sources": [
-      "PW-105-p1",
-      "PW-105-p2",
-      "PW-108-p3"
-    ],
-    "inputs": [
-      {
-        "label": "공통 · Blender 적용값",
-        "prompt": "24fps. 프레임 48인 2.00초에서 44mm 구도에서 45mm 구도로 컷. 컷 직전 문 각도는 약 58도. 인물 모형은 컷 뒤 같은 길을 걸어 통과."
-      },
-      {
-        "label": "A · Blender 적용값",
-        "prompt": "컷 직후 문 각도를 0도로 되돌린 뒤 82도까지 다시 연다."
-      },
-      {
-        "label": "B · Blender 적용값",
-        "prompt": "컷 직후 문 각도를 58도로 유지한 뒤 82도까지 이어서 연다."
-      }
-    ],
-    "cues": [
-      {
-        "seconds": 2,
-        "label": "프리비즈 컷 직후"
-      }
-    ]
+    "decision": "부분 채택",
+    "use": "비교 자료",
+    "selected": "둘 다",
+    "decisionNote": "작은 부탁 A와 다급한 호출 B를 호흡·몸통 움직임·발성의 조합으로 보여 줍니다."
   },
   {
     "id": "E22",
@@ -992,10 +795,6 @@
       "captions": "review/story-envelope/media/shared-dialogue.vtt",
       "captionLanguage": "ko"
     },
-    "sources": [
-      "PW-106-p1",
-      "PW-106-p9"
-    ],
     "inputs": [
       {
         "label": "B에 적용한 편집 지시",
@@ -1011,7 +810,11 @@
         "seconds": 1.5,
         "label": "B 인서트에서 인물로 전환"
       }
-    ]
+    ],
+    "decision": "채택",
+    "use": "대표본 + 비교 자료",
+    "selected": "B",
+    "decisionNote": "B를 봉투가 먼저 읽히는 오프닝 편집 예시로 쓰고 A를 원래 구도의 비교군으로 둡니다."
   },
   {
     "id": "E24",
@@ -1041,11 +844,6 @@
       "captions": "review/story-envelope/media/shared-dialogue.vtt",
       "captionLanguage": "ko"
     },
-    "sources": [
-      "PW-106-p5",
-      "PW-106-p9",
-      "PW-106-p10"
-    ],
     "inputs": [
       {
         "label": "B에 적용한 편집 지시",
@@ -1065,55 +863,11 @@
         "seconds": 7,
         "label": "마지막 화면의 차이"
       }
-    ]
-  },
-  {
-    "id": "E12",
-    "topic": "camera",
-    "title": "줌 아웃과 크레인 업 · Blender 프리비즈",
-    "change": "A는 높이 1.90m에서 38mm→22mm로 줌 아웃합니다. B는 38mm를 유지하고 높이만 1.90m에서 5.80m로 올리면서 작업대 쪽으로 틸트합니다.",
-    "watch": "B의 약 1.5초와 두 버전의 마지막 프레임에서 주황색 작업대와 바닥 노란 선을 보세요. 미리보기는 끝 프레임입니다.",
-    "note": "같은 3D 세트, 시작 구도, 4초 길이와 E03 B에서 발췌한 공통 환경음을 사용했습니다. 실사 A/B는 후속 제작입니다.",
-    "still": false,
-    "a": {
-      "video": "review/crane-vs-zoom/media/A.mp4",
-      "audio": "reference",
-      "poster": "review/crane-vs-zoom/media/A-ending.jpg",
-      "captions": "review/crane-vs-zoom/media/shared-sound.vtt",
-      "resolution": "960×540"
-    },
-    "b": {
-      "video": "review/crane-vs-zoom/media/B.mp4",
-      "audio": "reference",
-      "poster": "review/crane-vs-zoom/media/B-ending.jpg",
-      "captions": "review/crane-vs-zoom/media/shared-sound.vtt",
-      "resolution": "960×540"
-    },
-    "review": "review/crane-vs-zoom/",
-    "sources": [
-      "PW-032-p9",
-      "PW-032-p10"
     ],
-    "inputs": [
-      {
-        "label": "A · 실제 카메라 설정",
-        "prompt": "36mm 수평 센서, 초점거리 38→22mm. 높이 1.90m와 카메라 수평 위치·각도를 고정한다."
-      },
-      {
-        "label": "B · 실제 카메라 설정",
-        "prompt": "같은 센서, 초점거리 38mm 고정. 수평 위치를 유지하며 높이 1.90→5.80m로 상승한다. 카메라가 드러난 바닥을 담도록 아래로 틸트한다."
-      }
-    ],
-    "cues": [
-      {
-        "seconds": 1.5,
-        "label": "작업대 중앙이 드러나는 시점"
-      },
-      {
-        "seconds": 3.96,
-        "label": "적재장 노출 비교"
-      }
-    ]
+    "decision": "채택",
+    "use": "대표본 + 비교 자료",
+    "selected": "B",
+    "decisionNote": "B를 마지막에 봉투를 다시 보여 주는 엔딩 편집으로 쓰고, A를 인물 화면으로 끝나는 비교군으로 둡니다."
   },
   {
     "id": "E16",
@@ -1132,16 +886,16 @@
       "resolution": "1672×941"
     },
     "review": "review/claire-character-sheet/",
-    "sources": [
-      "PW-016-p1",
-      "PW-016-p2"
-    ],
     "inputs": [
       {
         "label": "B · 실제 3분할 시트 생성 입력문",
         "prompt": "Use case: photorealistic-natural. Create a wide 16:9 three-panel photographic character reference sheet for the single fictional adult character Claire, produced for a Korean filmmaking guide. Image 1 is the authoritative identity and wardrobe reference: preserve the almond-shaped eyes and lid line, facial proportions, natural skin texture, chin, nose and lips, near-black straight hair with bangs and low ponytail, small gold hoops and slate blue-gray soft cotton button-front shirt. Image 2 is supplemental only for the low ponytail, shirt, and body silhouette of the black-haired woman on the LEFT. Disregard the other person, scene, objects, pose and lighting in image 2.\n\nExactly three equal-width adjacent panels in one horizontal row with boundaries at exactly one-third and two-thirds of the canvas width. Use the same matte neutral mid-gray studio backdrop, soft even white light, balanced exposure with natural texture, no props and no readable text or graphics. LEFT panel: photo of head and shoulders facing directly forward at eye level, both eyes visible with calm neutral expression, shoulders down, no beauty retouch, the same face as image 1. Include crown and a little space around hair. CENTER panel: full body front view, neutral symmetric upright stance with both arms loose at sides, fingers relaxed and legs straight, both feet flat, entire head and shoes visible with margin. RIGHT panel: full body rear view of literally the same person rotated 180 degrees, same stance, body proportions, size, shoulder height and floor level as center panel; low ponytail and back of the same shirt clearly visible. Full-body costume: that slate blue-gray long sleeve shirt untucked, straight charcoal work trousers, low matte black lace-up shoes, both views identical. Make the two standing figures head-to-toe with the same scale and matching horizontal head and floor lines. Use soft subtle contact shadows, realistic seams, no monochrome stylization. Preserve the clean gray gap between the panels, with subjects fully inside their own panel. No words, numbers, borders, logo or watermark. Do not blur or mask any face in this sheet."
       }
-    ]
+    ],
+    "decision": "채택",
+    "use": "스틸·작업 기록",
+    "selected": "B",
+    "decisionNote": "B 전신 3분할 시트를 앞·뒤 의상과 묶은 머리의 설계 참조로 채택하고, A 원본 초상과 마스킹 확대를 출처·비교 자료로 남깁니다."
   },
   {
     "id": "E14",
@@ -1171,11 +925,6 @@
       "captionLanguage": "ko"
     },
     "review": "review/impact-and-reaction/",
-    "sources": [
-      "PW-104-p4",
-      "PW-034-p8",
-      "PW-034-p10"
-    ],
     "inputs": [
       {
         "label": "A · 실제 Tein 입력문",
@@ -1199,91 +948,190 @@
         "seconds": 3.74,
         "label": "대사 비교 시작"
       }
-    ]
+    ],
+    "decision": "부분 채택",
+    "use": "비교 자료",
+    "selected": "둘 다",
+    "decisionNote": "A/B를 충격음 뒤 눈 감김이 오는 순서 예시로 둡니다. 두 편 모두 지시한 약 2초보다 효과음이 빠릅니다."
+  },
+  {
+    "id": "E09",
+    "topic": "contact",
+    "title": "눈물이 고이고 볼을 따라 흐르는 순서",
+    "change": "일반적인 눈물 지시와 고임·흐름의 시점을 지정한 지시를 비교합니다.",
+    "watch": "0.88초 고임, 1.50초 방울, 2.50초 볼의 흔적을 보세요.",
+    "note": "B의 마지막 방울은 희미해집니다.",
+    "review": "review/tear-path/",
+    "inputs": [],
+    "cues": [
+      {
+        "seconds": 0.875,
+        "label": "고임"
+      },
+      {
+        "seconds": 1.5,
+        "label": "방울"
+      },
+      {
+        "seconds": 2.5,
+        "label": "흐름"
+      }
+    ],
+    "a": {
+      "video": "media/review-480p/e09/A.mp4",
+      "poster": "media/review-480p/e09/A.jpg",
+      "audio": "native",
+      "resolution": "852×480"
+    },
+    "b": {
+      "video": "media/review-480p/e09/B.mp4",
+      "poster": "media/review-480p/e09/B.jpg",
+      "audio": "native",
+      "resolution": "852×480"
+    },
+    "decision": "부분 채택",
+    "use": "비교 자료",
+    "selected": "둘 다",
+    "decisionNote": "A와 B를 눈물 표현 지시의 비교 쌍으로 둡니다. 0.88~2.50초의 고임·방울·볼의 흔적을 보여 주고, 이 범위에서는 B가 보여 주는 단계가 더 또렷합니다."
   },
   {
     "id": "E11",
     "topic": "camera",
-    "title": "고정 샷과 30도 오빗 · Blender 프리비즈",
-    "change": "A는 카메라를 고정하고, B는 인물 모형을 중심으로 4m 반경에서 30도 움직입니다.",
-    "watch": "앞 청록색 기둥과 먼 노란 기둥을 보세요. 끝 프레임에서 두 기준점이 서로 반대쪽에 있습니다.",
-    "note": "같은 시작 구도·인물 크기·환경음을 사용한 3D 실증입니다. 미리보기는 끝 프레임입니다. Tein 실사 비교는 제작 전입니다.",
-    "still": false,
-    "a": {
-      "video": "review/orbit-parallax/media/A.mp4",
-      "audio": "reference",
-      "poster": "review/orbit-parallax/media/A-ending.jpg",
-      "captions": "review/orbit-parallax/media/shared-sound.vtt",
-      "resolution": "960×540"
-    },
-    "b": {
-      "video": "review/orbit-parallax/media/B.mp4",
-      "audio": "reference",
-      "poster": "review/orbit-parallax/media/B-ending.jpg",
-      "captions": "review/orbit-parallax/media/shared-sound.vtt",
-      "resolution": "960×540"
-    },
+    "title": "고정 카메라와 오빗의 전경 시차",
+    "change": "카메라 고정 A와 Claire를 중심으로 이동하는 B를 비교합니다.",
+    "watch": "각 테이크의 시작과 3.75초에서 가까운 난간 기둥의 위치를 보세요.",
+    "note": "두 영상의 시작 구도가 다릅니다. 각 영상의 시작과 끝을 먼저 비교합니다.",
     "review": "review/orbit-parallax/",
-    "sources": [
-      "PW-032-p6",
-      "PW-032-p7"
-    ],
-    "inputs": [
-      {
-        "label": "공통 카메라 설정",
-        "prompt": "40mm 초점거리, 높이 1.42m, 반경 4m. 같은 인물 모형의 중심 고정."
-      },
-      {
-        "label": "B에 적용한 경로",
-        "prompt": "0도에서 30도까지 같은 높이의 원호로 이동. 시작·끝에서 잠시 고정."
-      }
-    ],
+    "inputs": [],
     "cues": [
       {
         "seconds": 0,
-        "label": "공통 시작 구도"
+        "label": "시작 구도"
       },
       {
-        "seconds": 3.96,
-        "label": "두 기둥의 위치"
+        "seconds": 3.75,
+        "label": "전경 기둥 위치"
       }
-    ]
+    ],
+    "a": {
+      "video": "media/review-480p/e11/A.mp4",
+      "poster": "media/review-480p/e11/A.jpg",
+      "audio": "native",
+      "resolution": "852×480"
+    },
+    "b": {
+      "video": "media/review-480p/e11/B.mp4",
+      "poster": "media/review-480p/e11/B.jpg",
+      "audio": "native",
+      "resolution": "854×480"
+    },
+    "decision": "부분 채택",
+    "use": "비교 자료",
+    "selected": "둘 다",
+    "decisionNote": "A는 고정 비교군, B는 가까운 기둥이 먼 창문보다 크게 움직이는 시차 예시로 둡니다. 각 테이크의 0초와 3.75초를 먼저 비교하세요."
   },
   {
-    "id": "E19-AXIS",
-    "topic": "continuity",
-    "title": "대화 축이 바뀌는 순간 · 같은 장면 편집",
-    "change": "같은 ACT-07 B에서 A만 약 4초부터 두 번째 화면을 좌우로 반전했습니다.",
-    "watch": "컷 직후 Erin이 어느 쪽을 보는지 확인하세요. 미리보기는 컷 직후 4.02초입니다.",
-    "note": "A에서는 Claire와 Erin이 차례로 같은 방향을 봅니다. B에서는 서로 마주 봅니다. 두 편집의 생성 원음은 같습니다. 기존 테이크에서는 붉은 봉투 방향이 컷에서 달라집니다. 빈 테이블 재제작용 스틸은 검토 페이지에서 확인할 수 있습니다.",
-    "dialogue": [
-      "Claire · 한국어 · “괜찮아?”",
-      "Erin · 영어 · “I’m fine.”"
+    "id": "E12",
+    "topic": "camera",
+    "title": "줌 아웃과 크레인 업의 작업대 노출",
+    "change": "제자리 줌 아웃과 카메라가 위로 올라가는 숏을 비교합니다.",
+    "watch": "2~3초에 주황 작업대와 바닥 표시가 얼마나 보이는지 비교하세요.",
+    "note": "A에서도 작업대 상단 일부가 보입니다.",
+    "review": "review/crane-vs-zoom/",
+    "inputs": [],
+    "cues": [
+      {
+        "seconds": 2,
+        "label": "작업대 상단"
+      },
+      {
+        "seconds": 3,
+        "label": "작업대와 바닥"
+      }
     ],
-    "still": false,
     "a": {
-      "video": "review/conversation-axis/media/reversed-second-shot.mp4",
+      "video": "media/review-480p/e12/A.mp4",
+      "poster": "media/review-480p/e12/A.jpg",
+      "audio": "native",
+      "resolution": "852×480"
+    },
+    "b": {
+      "video": "media/review-480p/e12/B.mp4",
+      "poster": "media/review-480p/e12/B.jpg",
+      "audio": "native",
+      "resolution": "852×480"
+    },
+    "decision": "부분 채택",
+    "use": "비교 자료",
+    "selected": "둘 다",
+    "decisionNote": "A는 작업대 일부 노출, B는 작업대와 바닥 표시 전체 노출 사례로 묶습니다. 두 방식의 공간 공개 범위를 보여 줄 때 사용합니다."
+  },
+  {
+    "id": "E21",
+    "topic": "continuity",
+    "title": "클립 경계에서 문틈과 진행 방향 잇기",
+    "change": "공통 앞 4초 다음에 닫힌 문 A와 열린 문 B를 연결합니다.",
+    "watch": "3.96초의 공통 화면과 4.00초의 문틈을 비교하세요. 발소리와 경첩 소리의 동기는 청취가 남았습니다.",
+    "note": "A는 문 상태가 끊기는 반례입니다. B 사용 범위는 화면 연속성입니다.",
+    "review": "review/door-match/",
+    "inputs": [],
+    "cues": [
+      {
+        "seconds": 3.9583333333333335,
+        "label": "컷 직전"
+      },
+      {
+        "seconds": 4,
+        "label": "컷 직후"
+      }
+    ],
+    "a": {
+      "video": "media/review-480p/e21/A.mp4",
+      "poster": "media/review-480p/e21/A.jpg",
       "audio": "edited-original",
-      "poster": "review/conversation-axis/media/reversed.jpg",
+      "resolution": "852×480"
+    },
+    "b": {
+      "video": "media/review-480p/e21/B.mp4",
+      "poster": "media/review-480p/e21/B.jpg",
+      "audio": "edited-original",
+      "resolution": "852×480"
+    },
+    "decision": "부분 채택",
+    "use": "대표본 + 비교 자료",
+    "selected": "B",
+    "decisionNote": "B를 문틈 인계의 화면 대표 후보로 두고, A는 같은 첫 컷 뒤 문 상태가 끊기는 반례로 둡니다."
+  },
+  {
+    "id": "E18",
+    "topic": "identity",
+    "title": "같은 사진과 두 참조 역할",
+    "change": "첫 프레임과 이미지·카메라 경로의 역할을 비교합니다.",
+    "watch": "시작 구도와 후반의 카메라 이동을 확인하세요.",
+    "note": "두 영상은 참조 배정의 작업 기록입니다.",
+    "review": "review/reference-roles/",
+    "inputs": [],
+    "cues": [
+      {
+        "seconds": 4.5,
+        "label": "참조 역할과 이동 차이"
+      }
+    ],
+    "a": {
+      "video": "review/acting-v2/media/ACT-05-b-native-v3.mp4",
+      "poster": "review/reference-roles/media/act05-0.jpg",
+      "audio": "native",
       "resolution": "854×480"
     },
     "b": {
-      "video": "review/acting-v2/media/ACT-07-b-take.mp4",
-      "audio": "edited-original",
-      "poster": "review/conversation-axis/media/matched.jpg",
+      "video": "review/acting-v2/media/GEO-01-b-take.mp4",
+      "poster": "review/reference-roles/media/geo-0.jpg",
+      "audio": "reference",
       "resolution": "854×480"
     },
-    "review": "review/conversation-axis/",
-    "sources": [
-      "PW-052-p1",
-      "PW-052-p2",
-      "PW-052-p4"
-    ],
-    "inputs": [
-      {
-        "label": "A · 실제 편집 지시",
-        "prompt": "ACT-07 B에서 0부터 센 프레임 번호 96 이후의 화면을 수평 반전한다. 비디오 시각과 원본 AAC는 유지한다. FFmpeg: hflip=enable='gte(n,96)'."
-      }
-    ]
+    "decision": "채택",
+    "use": "스틸·작업 기록",
+    "selected": "둘 다",
+    "decisionNote": "공통 이미지와 두 결과를 함께 보여 주는 작업 기록으로 채택합니다. A는 첫 프레임, B는 사진과 카메라 경로의 역할 분리 사례입니다."
   }
 ]

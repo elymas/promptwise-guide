@@ -1,9 +1,5 @@
 {
   "provider": "ChatGPT built-in image generation",
-  "source_ids": [
-    "PW-016-p1",
-    "PW-016-p2"
-  ],
   "inputs": [
     {
       "path": "media/claire-reference.png",

@@ -43,24 +43,6 @@
     "video_mode": "Choose either first/last-frame endpoint conditioning OR reference_image + reference_video camera path; official API disallows mixing them in one request. Verify current availability/price before paid work.",
     "3d": "Review/geometry evidence only. Camera-only reference is conditional and requires model support; neutral mannequin likeness must never transfer."
   },
-  "sources": [
-    {
-      "id": "PW-002",
-      "applied": "three physical depth layers, diagonal blocking and parallax"
-    },
-    {
-      "id": "PW-018-p12",
-      "applied": "one sharp subject, explicit target/time; keep camera still for pure rack focus"
-    },
-    {
-      "id": "PW-032-p2",
-      "applied": "describe real camera translation and start/end positions, no zoom"
-    },
-    {
-      "id": "PW-034",
-      "applied": "map geography first; identity vs place/camera references each have one responsibility; regenerate failed layer"
-    }
-  ],
   "acceptance": [
     "Same Claire in sharp proof and final eye-focused frame; failed identity stops before video",
     "Two distinct tabletop side edges, their own legs and the negative space between the staggered tables are legible at390px; same room continuous architecture. The floor gap is verified in top view, not claimed visible in every low-angle frame.",

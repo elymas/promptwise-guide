@@ -1,8 +1,4 @@
 {
-  "source_ids": [
-    "PW-017-p13",
-    "PW-104-p4"
-  ],
   "model_provider": "Tein",
   "shared_still": {
     "path": "media/examples/space-master-reference.jpg",

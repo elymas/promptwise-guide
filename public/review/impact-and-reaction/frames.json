@@ -13,11 +13,6 @@
     390,
     370
   ],
-  "source_ids": [
-    "PW-104-p4",
-    "PW-034-p8",
-    "PW-034-p10"
-  ],
   "plot_seconds": 1.6,
   "peak_window_seconds": [
     0,

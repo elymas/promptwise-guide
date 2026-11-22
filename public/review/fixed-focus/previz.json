@@ -28,7 +28,6 @@
   "source_scene_sha256": "a2b8a2ade0d7c0e8e2f9be7c278384de0adf840ba0409aa703f8d603e9c21be2",
   "renderer_sha256": "1e2319022ccf92dc81ce0461facf8d5cf96f5f7fcc31a61dfc8fb4985d8a9684",
   "shared_opening_render_sha256": "f850011391f736967dc9955672616e31477e5634b7e1bcfd9db0242323da39aa",
-  "source": "PW-018-p12",
   "files": {
     "A": {
       "video": "review/fixed-focus/media/previz/A.mp4",

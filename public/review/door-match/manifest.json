@@ -1,10 +1,5 @@
 {
   "provider": "ChatGPT built-in image generation",
-  "sources": [
-    "PW-105-p1",
-    "PW-105-p2",
-    "PW-108-p3"
-  ],
   "stills": [
     {
       "id": "shot-1-start",

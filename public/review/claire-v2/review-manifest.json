@@ -30,16 +30,6 @@
       "b": "media/E07-b-physics-v1.mp4",
       "b_poster": "media/E07-b-physics-v1.jpg",
       "comparison": "media/E07-comparison.mp4"
-    },
-    {
-      "id": "E10",
-      "note": "고정 카메라와 전진 돌리를 비교합니다. 광학 줌은 문장과 3D 참조로도 확실히 분리되지 않아 이 항목을 단순화했습니다. 고정 구도도 유효한 연출이며, 이 결과를 줌/돌리 재현 성공으로 표시하지 않습니다.",
-      "status": "review_candidate",
-      "a": "media/E10-a-mini-static-v1.mp4",
-      "a_poster": "media/E10-a-mini-static-v1.jpg",
-      "b": "media/E10-b-mini-v2r1.mp4",
-      "b_poster": "media/E10-b-mini-v2r1.jpg",
-      "comparison": "media/E10-comparison.mp4"
     }
   ]
 }

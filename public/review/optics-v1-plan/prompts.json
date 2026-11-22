@@ -16,9 +16,6 @@
       "id": "E02",
       "title_ko": "컵에서 눈으로 초점을 인계하다",
       "format": "video_ab",
-      "source_ids": [
-        "PW-018-p12"
-      ],
       "a_label": "컵에 초점 고정",
       "b_label": "컵 → Claire 눈으로 초점 인계",
       "variable": "초점 대상과 전환 시점",
@@ -40,23 +37,12 @@
         "390px 화면에서도 초점 대상의 차이를 구별할 수 있음"
       ],
       "sound": "각 테이크 고유의 작업실 환경음·호흡. 대사·음악·강조 효과음 없음.",
-      "g1_note": "3D 대역의 초점 거리만 바꾼 설계도. 실제 Claire 영상이나 생성 모델의 랙 포커스 재현 검증이 아니다.",
-      "sources": [
-        {
-          "id": "PW-018-p12",
-          "source_url": "https://promptwise-free.vercel.app/18",
-          "sha256": "0a9ade440186869560a1eef9b6617980adee21d0ee22bb17d886d845b9690928"
-        }
-      ]
+      "g1_note": "3D 대역의 초점 거리만 바꾼 설계도. 실제 Claire 영상이나 생성 모델의 랙 포커스 재현 검증이 아니다."
     },
     {
       "id": "E03",
       "title_ko": "같은 비를 역광으로 드러내다",
       "format": "video_ab",
-      "source_ids": [
-        "PW-025-p11",
-        "PW-025-p13"
-      ],
       "a_label": "카메라 쪽에서 비를 비춤",
       "b_label": "비 뒤에서 카메라 쪽으로 비춤",
       "variable": "비를 비추는 별도 광원의 위치·방향",
@@ -77,28 +63,12 @@
         "우산·손·줄기와 빗소리가 자연스럽고 소리가 전 구간에 있음"
       ],
       "sound": "각 테이크 고유의 우산·바닥 빗소리. 같은 자연스러운 청취 수준, 대사·음악·천둥 없음.",
-      "g1_note": "입자 수·위치는 같은3D 도해이며 전방 산란을 단순화한 밝기 계산을 쓴다. 물방울의 정밀 광학 시뮬레이션이나 실사 결과가 아니다.",
-      "sources": [
-        {
-          "id": "PW-025-p11",
-          "source_url": "https://promptwise-free.vercel.app/25",
-          "sha256": "cb828e826fa4b7853ec4b908996b0cb14a73a9e77c3f6470458fee9ab57fbae1"
-        },
-        {
-          "id": "PW-025-p13",
-          "source_url": "https://promptwise-free.vercel.app/25",
-          "sha256": "94fbe5ad1a2d142cd48c86d8e4810ecf5be5a89892c8cbf2c5143ae6328e8e1b"
-        }
-      ]
+      "g1_note": "입자 수·위치는 같은3D 도해이며 전방 산란을 단순화한 밝기 계산을 쓴다. 물방울의 정밀 광학 시뮬레이션이나 실사 결과가 아니다."
     },
     {
       "id": "E05",
       "title_ko": "그림자 경계를 바꾸다",
       "format": "still_ab",
-      "source_ids": [
-        "PW-015-p8",
-        "PW-015-p10"
-      ],
       "a_label": "작은 광원 · 또렷한 경계",
       "b_label": "넓은 확산광 · 완만한 경계",
       "variable": "같은 방향·거리에서 본 광원의 상대 크기·확산",
@@ -119,19 +89,7 @@
         "하드/소프트는 목적에 따른 선택이며 한 쪽의 우월성으로 표시하지 않음"
       ],
       "sound": "스틸 비교. 새 오디오 생성·가짜 영상 재생 없음.",
-      "g1_note": "같은3D 대역과 광원 중심을 고정하고, 광원 크기 변경과 밝기 맞춤 출력 보정으로 그림자 경계를 확인한 설계도. 실제 Claire 스틸은 생성 전이다.",
-      "sources": [
-        {
-          "id": "PW-015-p8",
-          "source_url": "https://promptwise-free.vercel.app/15",
-          "sha256": "1f0d0eeb186f832570f9aa59bff140445b7bf5eba0cf6daeb3fc951d5f7da3e5"
-        },
-        {
-          "id": "PW-015-p10",
-          "source_url": "https://promptwise-free.vercel.app/15",
-          "sha256": "0c9ccd507cfae903d5ec4d84ca149d78cb65e715f621874e7a9b285b20a1e366"
-        }
-      ]
+      "g1_note": "같은3D 대역과 광원 중심을 고정하고, 광원 크기 변경과 밝기 맞춤 출력 보정으로 그림자 경계를 확인한 설계도. 실제 Claire 스틸은 생성 전이다."
     }
   ],
   "image_requests": [

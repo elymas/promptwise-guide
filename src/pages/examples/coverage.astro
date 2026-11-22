@@ -2,118 +2,69 @@
 import Base from '../../layouts/Base.astro';
 import { topics, path } from '../../data/topics';
 import coverage from '../../data/example-coverage.json';
-import cases from '../../data/comparison-cases.json';
-import catalog from '../../data/catalog.json';
 
-const comparisonIds = new Set(cases.map(item => item.id));
-const sourceIds = new Set(catalog.prompts.map(prompt => prompt.id));
-const draft = coverage.examples.filter(item => item.goal_480p === 'live_draft');
-const records = coverage.examples.filter(item => item.goal_480p === 'still_or_record');
-const outstanding = coverage.examples.filter(item => item.goal_480p === 'pending_live');
-const awaitingGeneration = outstanding.filter(item => item.state !== 'needs_rework');
-const additional = cases.filter(item => coverage.additional_cases_480p.includes(item.id));
+const decisions = [...coverage.examples, ...coverage.additional];
+const visible = decisions.filter(item => ['채택','부분 채택'].includes(item.decision)).length;
+const outstanding = decisions.filter(item => ['재작업','보류'].includes(item.decision));
+const excluded = decisions.filter(item => item.decision === '제외').length;
 const asOf = coverage.as_of.replaceAll('-', '.');
+const groups = [
+  ...topics.map(topic => ({id:topic.slug,title:topic.title,guide:topic.slug,items:coverage.examples.filter(item => item.topic === topic.slug)})),
+  {id:'additional-480p',title:'보조 사례',guide:null,items:coverage.additional},
+];
 ---
-<Base title="주요 프롬프트 24개 제작 현황 — FRAME / NOTES" description="8개 주제의 자료, 실제 비교, 제작안과 검수 기준을 항목별로 확인합니다.">
+<Base title="제작·검수 현황 — FRAME / NOTES" description="장면별 판정·테이크·사용 범위와 재작업 상태를 확인합니다.">
   <section class="shell page-heading">
-    <h1>주요 프롬프트<br />24개 제작 현황</h1>
-    <p>{asOf} 기준 · 소리 있는 480p급 실사 A/B 초안 {draft.length}개, 스틸·작업 기록 {records.length}개, 실사 제작·재작업·판정 대기 {outstanding.length}개.</p>
+    <h1>제작·검수 현황</h1>
+    <p>{asOf} · {decisions.length}개 판정 · 채택·부분 채택 {visible}개 · 재작업·보류 {outstanding.length}개 · 제외 {excluded}개</p>
     <div class="study-links">
-      <a class="text-link" href={path('examples/')}>주제별 예시 ↗</a>
-      <a class="text-link" href="#next-production">남은 실사 항목 ↘</a>
-      <a class="text-link" href="#additional-480p">추가 비교 사례 ↘</a>
-      <a class="text-link" href="#reference-roles">실제 참조 역할 ↘</a>
-      <a class="text-link" href={path('data/example-coverage.json')} download>현황 JSON ↗</a>
+      <a class="text-link" href={path('examples/')}>공개 예시 ↗</a>
+      <a class="text-link" href="#next-production">재작업과 보류 ↘</a>
+      <a class="text-link" href={path('data/example-coverage.json')} download>판정 JSON ↗</a>
     </div>
-  </section>
-  <div class="shell">
-    <div class="evidence-note">
-      <strong>사용자 확정 · ACT-05 B와 ACT-10</strong>
-      <p>ACT-05 B의 영상·고유 원음과 그 원음을 사용한 ACT-10의 두 얼굴 동기 관찰을 확정했습니다.</p>
-      <a class="text-link" href={path('review/reaction-timing/')}>확정본 프레임과 원음 검수 ↗</a>
-    </div>
-    <nav class="coverage-nav" aria-label="제작 현황 주제">
-      {topics.map(topic => <a href={`#${topic.slug}`}>{topic.title}</a>)}
+    <nav class="coverage-nav" aria-label="검수 주제">
+      {groups.map(group => <a href={`#${group.id}`}>{group.title}</a>)}
     </nav>
-  </div>
-  {topics.map(topic => (
-    <section class="shell coverage-section" id={topic.slug}>
+  </section>
+  {groups.map(group => (
+    <section class="shell coverage-section" id={group.id}>
       <div class="section-heading small">
-        <h2>{topic.title}</h2>
-        <a class="text-link" href={path(`guides/${topic.slug}/`)}>{topic.title} 가이드 ↗</a>
+        <h2>{group.title}</h2>
+        {group.guide && <a class="text-link" href={path(`guides/${group.guide}/`)}>연출 가이드 ↗</a>}
       </div>
       <ul class="coverage-items" role="list">
-        {coverage.examples.filter(item => item.topic === topic.slug).map(item => (
-          <li class="coverage-item" id={item.id} tabindex="-1">
-            <h3><span class="eyebrow">{item.id}</span> {item.title}</h3>
-            <p class="coverage-state">{item.label}</p>
-            <ul class="coverage-links" role="list" aria-label={`${item.id} 자료`}>
-              {comparisonIds.has(item.id) && !item.links.some(link => link.href === `examples/#compare-${item.id}`) && (
-                <li><a href={path(`examples/#compare-${item.id}`)} aria-label={`예시 목록에서 A/B 보기 · ${item.id} ${item.title}`}>예시 목록에서 A/B 보기 ↗</a></li>
-              )}
-              {[...item.links, ...item.planning_links].map(link => (
-                <li><a href={path(link.href)}>{link.label} ↗</a></li>
-              ))}
-            </ul>
-            <p class="coverage-note">{item.note}</p>
-            <details>
-              <summary>비교 지시와 검수 기준</summary>
-              <dl>
-                <div><dt>A · 기준</dt><dd>{item.variant_a}</dd></div>
-                <div><dt>B · 적용</dt><dd>{item.variant_b}</dd></div>
-                <div><dt>확인할 것</dt><dd>{item.acceptance}</dd></div>
-              </dl>
-              <ul class="prompt-links" role="list" aria-label={`${item.id} PromptWise 원문`}>
-                {item.source_ids.map(id => sourceIds.has(id) ? (
-                  <li><a href={path(`prompts/?page=${id.split('-p')[0]}#${id}`)} aria-label={`${id} PromptWise 원문`}>{id} ↗</a></li>
-                ) : <li>{id}</li>)}
-              </ul>
-            </details>
-          </li>
-        ))}
+        {group.items.map(item => <li class="coverage-item" id={item.id} tabindex="-1">
+          <h3><span class="eyebrow">{item.id}</span> {item.title}</h3>
+          <p class="coverage-state">{item.decision} · {item.use}{item.selected ? ` · ${item.selected}` : ''}</p>
+          {item.decisionNote && <p class="coverage-note">{item.decisionNote}</p>}
+          {item.links.length > 0 && <ul class="coverage-links" role="list">
+            {item.links.map(link => <li><a href={path(link.href)}>{link.label} ↗</a></li>)}
+          </ul>}
+        </li>)}
       </ul>
     </section>
   ))}
-  <section class="shell coverage-section" id="reference-roles">
-    <h2>참조 역할을 배정한 두 실제 요청</h2>
-    <p>ACT-05 B와 GEO-01 B는 같은 파일을 각각 첫 프레임과 장면 참조에 사용했습니다. 요청 필드와 업로드 해시, 3D 경로, 공개 결과를 함께 확인할 수 있습니다.</p>
-    <a class="text-link" href={path('review/reference-roles/')}>E18 참조 입력과 결과 보기 ↗</a>
-  </section>
   <section class="shell coverage-section" id="next-production">
-    <h2>실사 영상 제작·재작업·판정 대기</h2>
-    <p>E19는 재촬영본의 자세와 원음 판정을 기다립니다. 전용 480p A/B 제작을 기다리는 {awaitingGeneration.length}개는 요청 초안이 준비됐습니다. 다음 제작 지점은 E21의 후속 A/B로, 공통 첫 샷과 두 시작 스틸을 확보했습니다. 추가 1080p 제작은 보류 중입니다.</p>
-    <ul class="coverage-links production-links" role="list">
-      {outstanding.map(item => <li><a href={`#${item.id}`}>{item.id} · {item.title} ↗</a></li>)}
-    </ul>
+    <h2>재작업과 보류</h2>
+    <ul>{outstanding.map(item => <li><a class="text-link" href={`#${item.id}`}>{item.id} · {item.title}</a></li>)}</ul>
   </section>
-  <section class="shell coverage-section" id="additional-480p">
-    <h2>주요 24개 밖의 실사 A/B 비교</h2>
-    <ul class="coverage-links production-links" role="list">
-      {additional.map(item => <li><a href={path(`examples/#compare-${item.id}`)}>{item.id === 'FACS' ? 'PW-107 · ' : ''}{item.title} ↗</a></li>)}
-    </ul>
+  <section class="shell coverage-section" id="reference-roles">
+    <h2>참조 역할을 배정한 두 요청</h2>
+    <a class="text-link" href={path('review/reference-roles/')}>E18 참조 입력과 결과 ↗</a>
   </section>
 </Base>
 <style>
-  .coverage-nav a { display: inline-flex; align-items: center; min-height: 44px; }
-  .coverage-items, .coverage-links, .prompt-links { margin: 0; padding: 0; list-style: none; }
-  .coverage-items { display: grid; gap: .8rem; }
-  .coverage-item { min-width: 0; padding: 1.15rem; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); }
-  .coverage-item:target { border-color: var(--accent); }
-  .coverage-item:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
-  .coverage-item h3 { font-size: 1.15rem; }
-  .coverage-item h3 .eyebrow { display: block; margin-bottom: .25rem; }
-  .coverage-state { margin-block: .55rem .4rem; color: var(--ink); font-weight: 600; font-size: .9rem; }
-  .coverage-links a, .prompt-links a { display: inline-flex; align-items: center; min-height: 44px; color: var(--accent); text-decoration: underline; text-underline-offset: .2em; }
-  .production-links { display: flex; flex-wrap: wrap; column-gap: 1rem; }
-  .coverage-note { margin-block: .6rem 0; color: var(--muted); font-size: .9rem; }
-  details { margin-top: .85rem; border-top: 1px solid var(--line); }
-  summary { min-height: 44px; padding-block: .6rem; cursor: pointer; font-size: .9rem; }
-  dl { margin: .4rem 0; font-size: .88rem; }
-  dl div + div { margin-top: .45rem; }
-  dt { font-weight: 600; }
-  dd { margin: 0; color: var(--muted); }
-  .prompt-links { display: flex; flex-wrap: wrap; gap: 0 1rem; font: .82rem var(--mono); }
-  @media (min-width: 720px) { .coverage-items { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (min-width: 1000px) { .coverage-items { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-  @media (prefers-reduced-motion: reduce) { :global(html) { scroll-behavior: auto; } }
+  .coverage-nav { display:flex; flex-wrap:wrap; gap:.65rem; }
+  .coverage-nav a { display:inline-flex; align-items:center; min-height:44px; }
+  .coverage-items,.coverage-links { margin:0; padding:0; list-style:none; }
+  .coverage-items { display:grid; gap:.8rem; }
+  .coverage-item { min-width:0; padding:1.15rem; border:1px solid var(--line); border-radius:4px; background:var(--surface); scroll-margin-top:6rem; }
+  .coverage-item:target { border-color:var(--accent); }
+  .coverage-item h3 { font-size:1.15rem; }
+  .coverage-item h3 .eyebrow { display:block; margin-bottom:.25rem; }
+  .coverage-state { margin:.55rem 0 .4rem; font-weight:600; font-size:.9rem; }
+  .coverage-links a { display:inline-flex; align-items:center; min-height:44px; color:var(--accent); text-decoration:underline; }
+  .coverage-note { margin:.6rem 0 0; color:var(--muted); font-size:.9rem; }
+  @media (min-width:720px) { .coverage-items { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+  @media (min-width:1000px) { .coverage-items { grid-template-columns:repeat(3,minmax(0,1fr)); } }
 </style>
