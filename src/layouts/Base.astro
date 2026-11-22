@@ -23,11 +23,11 @@ const canonical = new URL(Astro.url.pathname.endsWith('/404/') ? path('404.html'
     <header class="header"><div class="shell header-inner">
       <a class="wordmark" href={path()} aria-label="FRAME NOTES 홈"><span class="mark" aria-hidden="true"></span>FRAME <span class="slash">/</span> NOTES</a>
       <nav aria-label="주 메뉴">
-        <a href={path('#guides')}>연출 가이드</a><a href={path('examples/')}>예시 영상</a><a href={path('prompts/')}>템플릿</a><a href={path('library/')}>검수·업데이트</a>
+        <a href={path('#guides')}>연출 가이드</a><a href={path('examples/')}>예시 영상</a><a href={path('prompts/')}>프롬프트 갤러리</a>
       </nav>
 
     </div></header>
     <main id="main"><slot /></main>
-    <footer class="footer"><div class="shell footer-top"><a class="wordmark" href={path()}>FRAME <span class="slash">/</span> NOTES</a><p>장면을 구체적으로.<br />선택에는 이유를.</p><div><a href={path('library/')}>검수·업데이트 ↗</a></div></div><div class="shell footer-bottom"><span>AI 영상 제작 과정과 실습 결과를 다루는 한국어 연출 노트입니다.</span></div></footer>
+    <footer class="footer"><div class="shell footer-top"><a class="wordmark" href={path()}>FRAME <span class="slash">/</span> NOTES</a><p>장면을 구체적으로.<br />선택에는 이유를.</p></div><div class="shell footer-bottom"><span>AI 영상 제작 과정과 실습 결과를 다루는 한국어 연출 노트입니다.</span></div></footer>
   </body>
 </html>

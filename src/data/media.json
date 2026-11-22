@@ -91,7 +91,7 @@
     "status": "planned",
     "statusLabel": "A/B 비교 자료",
     "video": null,
-    "poster": null,
+    "poster": "media/examples/e07-water-contact.jpg",
     "duration": 6.042,
     "model": "Seedance 2.5",
     "resolution": "854×480",
@@ -100,17 +100,13 @@
     "caption": "발이 물에 닿는 순간의 반응을 관찰하는 예시입니다.",
     "watchFor": "약 1.13초에 부츠 주변의 물이 들리고 1.33초에 물방울이 공중에 퍼지는 것을 확인하세요.",
     "reviewNote": "A는 발 주변 반사와 파문이 작고 B는 물방울이 더 크게 보입니다. 뒤 발 자세와 소리의 접촉 시점은 검수 중입니다.",
-    "reviewUrl": "review/claire-v2/#E07",
+    "reviewUrl": "examples/#compare-E07",
     "cast": [
       "Claire"
     ],
     "coverageScope": "E07 발과 물, E08 유리 입김, E09 눈물은 A/B 비교로 공개합니다.",
     "audioLabel": "생성 원음 · 발소리와 물소리",
     "related": [
-      {
-        "label": "E07 비교",
-        "href": "examples/#compare-E07"
-      },
       {
         "label": "E08 비교",
         "href": "examples/#compare-E08"
@@ -131,22 +127,25 @@
       "reviewNote": "오른 검지로 누르고 놓는 동작과 왼손의 고정이 보입니다. 천의 미세한 눌림은 약해 본편 해상도에서 다시 확인해야 합니다."
     },
     "description": "발이 물에 닿는 순간의 반응을 관찰하는 예시입니다. 약 1–2초의 착지와 튀는 물방울이 같은 위치에서 시작하는지 보세요.",
-    "captions": null
+    "captions": null,
+    "posterAlt": "젖은 돌바닥에 닿은 검은 부츠 주변으로 물방울이 튀는 모습",
+    "posterLabel": "E07 B · 생성 영상 프레임",
+    "reviewLinkLabel": "착지와 물 반응 A/B"
   },
   "camera": {
     "status": "planned",
-    "statusLabel": "E10 음향 재작업",
+    "statusLabel": "A/B 비교 자료",
     "video": null,
-    "poster": null,
+    "poster": "media/review-480p/e11/B.jpg",
     "duration": 6.08,
     "model": "Seedance 2 Mini",
     "resolution": "854×480",
     "reviewed": false,
-    "studyLabel": "전진 돌리 · 재작업",
-    "caption": "카메라가 앞으로 움직일 때 가까운 문틀과 먼 선반의 움직임이 다릅니다.",
-    "watchFor": "2.5~5.5초에 왼쪽 문틀이 가장자리로 빠지고 Claire가 커지는지 보세요.",
-    "reviewNote": "고정 A는 첫 프레임, 이동 B는 같은 작업실 사진과 3D 카메라 경로를 사용했습니다. 문틀 시차를 관찰할 수 있으며 입력 방식에도 차이가 있습니다.",
-    "reviewUrl": "review/dolly-depth/",
+    "studyLabel": "E11 B · 오빗의 전경 시차",
+    "caption": "오빗의 끝부분에서 Claire 앞의 난간 기둥과 뒤쪽 작업실 창문을 한 화면에 담았습니다.",
+    "watchFor": "오빗 B의 시작과 3.75초를 비교해 가까운 난간 기둥이 먼 창문보다 얼마나 움직이는지 보세요.",
+    "reviewNote": "A는 카메라를 고정합니다. 두 영상의 시작 구도가 달라, 각 영상의 시작과 끝을 먼저 비교합니다.",
+    "reviewUrl": "examples/#compare-E11",
     "cast": [
       "Claire"
     ],
@@ -154,12 +153,12 @@
     "audioLabel": "테이크의 생성 원음",
     "related": [
       {
-        "label": "오빗 A/B",
-        "href": "examples/#compare-E11"
-      },
-      {
         "label": "크레인 업 A/B",
         "href": "examples/#compare-E12"
+      },
+      {
+        "label": "E10 전진 돌리 재작업",
+        "href": "review/dolly-depth/"
       }
     ],
     "archive": {
@@ -172,8 +171,11 @@
       "reviewed": false,
       "reviewNote": "카메라의 오빗과 난간·도시의 시차가 보입니다. 회전 폭과 마지막 정지는 계획과 차이가 있습니다."
     },
-    "description": "Claire가 작업실 끝을 바라봅니다. 카메라가 전진하면서 앞 문틀이 화면 가장자리로 이동합니다.",
-    "captions": null
+    "description": "작업실 마당의 Claire를 중심으로 카메라가 움직입니다. 가까운 난간과 먼 창문의 상대 이동을 비교합니다.",
+    "captions": null,
+    "posterAlt": "작업실 앞마당에 선 Claire 앞쪽에 난간 기둥이 있고 뒤쪽에 창문이 보이는 구도",
+    "posterLabel": "E11 B · 생성 영상 프레임",
+    "reviewLinkLabel": "오빗 A/B"
   },
   "performance": {
     "status": "approved",
@@ -247,21 +249,17 @@
     "model": "Seedance 2 Mini",
     "resolution": "854×480",
     "reviewed": false,
-    "studyLabel": "ACT-01 B · 얼굴 근접 관찰",
-    "caption": "Claire의 근접 샷을 얼굴·헤어·의상 대조용으로 연결했습니다.",
-    "watchFor": "눈·입 주변과 머리 모양, 같은 옷의 식별 특징을 원본 참조와 대조하세요.",
-    "reviewNote": "기존 연기 배치의 한 앵글을 활용한 관찰 자료입니다. 세 앵글의 동일 인물 A/B 실험이나 최종 신원·피부 검증을 완료한 영상은 아닙니다.",
-    "reviewUrl": "review/acting-v2/#ACT-01",
+    "studyLabel": "E16 B · Claire 3분할 캐릭터 시트",
+    "caption": "얼굴 정면과 전신 앞·뒤를 한 장에 배치한 의상·헤어 참조입니다.",
+    "watchFor": "앞뒤에서 청회색 셔츠의 길이와 검은 신발, 후면의 묶은 머리를 확인하세요.",
+    "reviewNote": "E16 시트를 의상과 헤어 참조로 채택했습니다. E17 영상의 얼굴 동일성은 같은 각도를 대조한 뒤 판정합니다.",
+    "reviewUrl": "review/claire-character-sheet/",
     "cast": [
       "Claire"
     ],
     "coverageScope": "E16 전신 시트와 E18 참조 작업 기록을 채택했습니다. E17은 같은 각도 대조가 필요합니다.",
     "audioLabel": "생성 원음 · 호흡과 환경음",
     "related": [
-      {
-        "label": "채택한 전신 시트",
-        "href": "review/claire-character-sheet/"
-      },
       {
         "label": "참조 역할 비교",
         "href": "review/reference-roles/"
@@ -277,8 +275,11 @@
       "reviewed": false,
       "reviewNote": "한 번의 컷 뒤에도 얼굴·머리·셔츠가 이어집니다. 두 번째 앵글 변화는 요청한 15도보다 큽니다."
     },
-    "description": "Claire의 근접 샷을 얼굴·헤어·의상 대조용으로 연결했습니다. 눈·입 주변과 머리 모양, 같은 옷의 식별 특징을 원본 참조와 대조하세요.",
-    "captions": null
+    "description": "Claire의 얼굴 정면과 전신 앞·뒤가 나란히 있는 생성 캐릭터 시트입니다.",
+    "captions": null,
+    "posterAlt": "왼쪽 얼굴 정면, 가운데 전신 정면, 오른쪽 전신 후면으로 구성한 Claire의 3분할 캐릭터 시트",
+    "posterLabel": "E16 B · 생성 캐릭터 시트",
+    "reviewLinkLabel": "전신 시트 상세"
   },
   "continuity": {
     "status": "draft",

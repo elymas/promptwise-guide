@@ -7,6 +7,6 @@ const {topic} = Astro.props;
 const media = studies[topic.slug];
 ---
 <a class="guide-card" href={path(`guides/${topic.slug}/`)} style={`--card-accent:${topic.accent}`}>
-  {media?.poster ? <div class="card-photo"><img src={path(media.poster)} alt={`${media.cast.join('·')} — ${media.studyLabel}`} width="1280" height="720" loading="lazy" /><span>{media.cast.join(' & ').toUpperCase()} / {media.status==='approved'?'CONFIRMED TAKE':'DRAFT STUDY'}</span></div> : <Diagram kind={topic.slug} accent={topic.accent} />}
+  {media?.poster ? <div class="card-photo"><img src={path(media.poster)} alt={media.posterAlt ?? `${media.cast.join('·')} — ${media.studyLabel}`} width="1280" height="720" loading="lazy" /><span>{media.posterLabel ?? `${media.cast.join(' & ').toUpperCase()} / ${media.status === 'approved' ? 'CONFIRMED TAKE' : 'DRAFT STUDY'}`}</span></div> : <Diagram kind={topic.slug} accent={topic.accent} />}
   <div class="card-body"><div class="eyebrow"><span>{topic.number} / {topic.english}</span><span class="arrow" aria-hidden="true">↗</span></div><h3>{topic.title}</h3><p>{topic.summary}</p></div>
 </a>
